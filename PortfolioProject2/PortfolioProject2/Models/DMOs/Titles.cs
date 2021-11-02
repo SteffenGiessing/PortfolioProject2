@@ -1,5 +1,8 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace PortfolioProject2.Models.DMOs
 {
+    [Table("titles")]
     public class Titles
     {
         public string TitlesId { get; set; }

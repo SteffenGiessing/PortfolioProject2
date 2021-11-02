@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RZjXmSpr2mF5myYzRf2cJJvKbFXMTAEgFLOIRLE/QXmhCWR/5yrGbnXgf1agX/zdJZ86BwlkUlVZ2I7XgKL7CQ==",
+  "dgSpecHash": "Et43IvAYOyL1lqizyOjVukEfekC7/L4FvRfjK76yENCqgRSVd8BofUnTHlswCqwVQNnkA4UcVBDcN0KQuz0hFQ==",
   "success": true,
-  "projectFilePath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
+  "projectFilePath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/WebApplication.csproj",
   "expectedPackageFiles": [
     "/Users/steffensiltamiesgiessing/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/steffensiltamiesgiessing/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
