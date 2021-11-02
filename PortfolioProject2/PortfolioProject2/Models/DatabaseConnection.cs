@@ -14,6 +14,9 @@ namespace PortfolioProject2.Models
             optionsBuilder.EnableSensitiveDataLogging();
 
             optionsBuilder.UseNpgsql("host=localhost;db=imdb_new;uid=postgres;pwd=");
+            
+            
+            Console.WriteLine("Hallo");
         }
     }
 }
