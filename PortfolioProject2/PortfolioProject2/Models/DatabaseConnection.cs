@@ -13,7 +13,7 @@ namespace PortfolioProject2.Models
             optionsBuilder.LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
             optionsBuilder.EnableSensitiveDataLogging();
 
-            optionsBuilder.UseNpgsql("host=localhost;db=imdb_new;uid=postgres;pwd=Gie2761!");
+            optionsBuilder.UseNpgsql("host=localhost;db=imdb_new;uid=postgres;pwd=");
         }
     }
 }
