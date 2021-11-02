@@ -2,14 +2,14 @@ namespace PortfolioProject2.Models.DMOs
 {
     public class Titles
     {
-        public string Titlesid { get; set; }
-        public string Titletype { get; set; }
-        public string Primarytitle { get; set; }
-        public string Originaltitle { get; set; }
-        public bool Isadult { get; set; }
-        public string Startyear { get; set; }
-        public string Endyear { get; set; }
-        public int Runtime { get; set; }
+        public string TitlesId { get; set; }
+        public string TitleType { get; set; }
+        public string PrimaryTitle { get; set; }
+        public string OriginalTitle { get; set; }
+        public bool IsAdult { get; set; }
+        public string StartYear { get; set; }
+        public string EndYear { get; set; }
+        public int RunTime { get; set; }
         public string Genres { get; set; }
         
     }

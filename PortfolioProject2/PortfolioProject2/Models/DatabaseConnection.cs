@@ -27,14 +27,14 @@ namespace PortfolioProject2.Models
             base.OnModelCreating(modelBuilder);
             
             modelBuilder.Entity<Titles>().ToTable("titles");
-            modelBuilder.Entity<Titles>().Property(x => x.Titlesid).HasColumnName("titleid");
-            modelBuilder.Entity<Titles>().Property(x => x.Titletype).HasColumnName("titletype");
-            modelBuilder.Entity<Titles>().Property(x => x.Primarytitle).HasColumnName("primarytitle");
-            modelBuilder.Entity<Titles>().Property(x => x.Originaltitle).HasColumnName("originaltitle");
-            modelBuilder.Entity<Titles>().Property(x => x.Isadult).HasColumnName("isadult");
-            modelBuilder.Entity<Titles>().Property(x => x.Startyear).HasColumnName("startyear");
-            modelBuilder.Entity<Titles>().Property(x => x.Endyear).HasColumnName("endyear");
-            modelBuilder.Entity<Titles>().Property(x => x.Runtime).HasColumnName("runtime");
+            modelBuilder.Entity<Titles>().Property(x => x.TitlesId).HasColumnName("titleid");
+            modelBuilder.Entity<Titles>().Property(x => x.TitleType).HasColumnName("titletype");
+            modelBuilder.Entity<Titles>().Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
+            modelBuilder.Entity<Titles>().Property(x => x.OriginalTitle).HasColumnName("originaltitle");
+            modelBuilder.Entity<Titles>().Property(x => x.IsAdult).HasColumnName("isadult");
+            modelBuilder.Entity<Titles>().Property(x => x.StartYear).HasColumnName("startyear");
+            modelBuilder.Entity<Titles>().Property(x => x.EndYear).HasColumnName("endyear");
+            modelBuilder.Entity<Titles>().Property(x => x.RunTime).HasColumnName("runtime");
             modelBuilder.Entity<Titles>().Property(x => x.Genres).HasColumnName("genres");
 
         }
