@@ -5,6 +5,7 @@ namespace PortfolioProject2.Models
 {
     public class DatabaseConnection : DbContext
     {
+        private readonly string connectionString = "host=rawdata.ruc.dk;port=5432;database=raw8;username=raw8;password=utuBOPUw";
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -13,7 +14,7 @@ namespace PortfolioProject2.Models
             optionsBuilder.LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
             optionsBuilder.EnableSensitiveDataLogging();
 
-            optionsBuilder.UseNpgsql("host=localhost;db=imdb_new;uid=postgres;pwd=");
+            optionsBuilder.UseNpgsql(connectionString);
             
             
             Console.WriteLine("Hallo");
