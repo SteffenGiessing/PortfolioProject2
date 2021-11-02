@@ -1,6 +1,6 @@
 namespace PortfolioProject2.Models.DMOs
 {
-    public class User_Raitings
+    public class User_Ratings
     {
         public string TitleId { get; set; }
         
