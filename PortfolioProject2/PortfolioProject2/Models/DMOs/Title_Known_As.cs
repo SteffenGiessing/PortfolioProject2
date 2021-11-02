@@ -1,6 +1,6 @@
 namespace PortfolioProject2.Models.DMOs
 {
-    public class Title_Known_For
+    public class Title_Known_As
     {
         public string TitleId { get; set; }
         public int Ordering { get; set; }

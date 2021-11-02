@@ -4,7 +4,24 @@
     <projectFile>PortfolioProject2/PortfolioProject2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd5def04-e063-4554-a3fc-d1a7ed003b70" name="Changes" comment="" />
+    <list default="true" id="dd5def04-e063-4554-a3fc-d1a7ed003b70" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/Models/DMOs/Person_Known_For.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/Models/DMOs/Person_Known_For.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/Models/DMOs/Raitings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/Models/DMOs/Ratings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/Models/DMOs/Title_Known_As.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/Models/DMOs/Title_Known_As.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/Models/DMOs/User_BooksMarks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/Models/DMOs/User_BookMarks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/Models/DMOs/User_Raitings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/Models/DMOs/User_Ratings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/Models/DatabaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/Models/DatabaseConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/obj/PortfolioProject2.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/obj/PortfolioProject2.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/obj/PortfolioProject2.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/obj/PortfolioProject2.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject2/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject2/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635855417438</updated>
       <workItem from="1635855437969" duration="3870000" />
+      <workItem from="1635884390062" duration="3207000" />
     </task>
     <servers />
   </component>
@@ -62,8 +80,20 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

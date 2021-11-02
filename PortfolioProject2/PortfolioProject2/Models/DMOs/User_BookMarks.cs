@@ -1,6 +1,6 @@
 namespace PortfolioProject2.Models.DMOs
 {
-    public class User_BooksMarks
+    public class User_BookMarks
     {
         public string UserId { get; set; }
         

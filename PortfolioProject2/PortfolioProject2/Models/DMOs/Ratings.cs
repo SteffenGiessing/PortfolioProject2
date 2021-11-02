@@ -1,6 +1,6 @@
 namespace PortfolioProject2.Models.DMOs
 {
-    public class Raitings
+    public class Ratings
     {
         public string TitleId { get; set; }
         public int AverageRating { get; set; }
