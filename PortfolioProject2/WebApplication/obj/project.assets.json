@@ -252,6 +252,21 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
+      },
+      "PortfolioProject2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AutoMapper": "10.1.1",
+          "Microsoft.EntityFrameworkCore": "5.0.11",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
+        },
+        "compile": {
+          "bin/placeholder/PortfolioProject2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PortfolioProject2.dll": {}
+        }
       }
     }
   },
@@ -842,13 +857,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "PortfolioProject2/1.0.0": {
+      "type": "project",
+      "path": "../PortfolioProject2/PortfolioProject2.csproj",
+      "msbuildProject": "../PortfolioProject2/PortfolioProject2.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "AutoMapper >= 10.1.1",
-      "Microsoft.EntityFrameworkCore >= 5.0.11",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.10"
+      "PortfolioProject2 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -859,11 +878,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
-      "projectName": "PortfolioProject2",
-      "projectPath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
+      "projectName": "WebApplication",
+      "projectPath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
       "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\obj\\",
+      "outputPath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -885,7 +904,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -901,14 +924,6 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[10.1.1, )"
-          },
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[5.0.11, )"
-          },
-          "Npgsql.EntityFrameworkCore.PostgreSQL": {
-            "target": "Package",
-            "version": "[5.0.10, )"
           }
         },
         "imports": [
@@ -922,6 +937,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

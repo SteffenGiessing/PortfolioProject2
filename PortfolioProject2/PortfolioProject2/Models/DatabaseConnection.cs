@@ -7,7 +7,7 @@ namespace PortfolioProject2.Models
 {
     public class DatabaseConnection : DbContext
     {
-        public DbSet<Titles> titles { get; set; }
+        public DbSet<Titles> Titles { get; set; }
         
         private readonly string connectionString = "host=rawdata.ruc.dk;port=5432;database=raw8;username=raw8;password=utuBOPUw";
 
@@ -18,7 +18,7 @@ namespace PortfolioProject2.Models
             optionsBuilder.LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
             optionsBuilder.EnableSensitiveDataLogging();
 
-            optionsBuilder.UseNpgsql(connectionString);
+            optionsBuilder.UseNpgsql(connectionString, options => options.EnableRetryOnFailure());
             
         }
 

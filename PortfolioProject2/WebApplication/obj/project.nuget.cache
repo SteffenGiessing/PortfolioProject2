@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "55MzC08pFa7HOF4mTfHPo52kZRPMNiUhX0rTR8seHpsmkj0xB1CCaYrUMc4yCSh+Q5vf382bWYuds0TqRKdBFQ==",
+  "dgSpecHash": "DL8diLk4IYsIq+gaulaJVEfnDUoh3EGrD+vV4yI9QK8CsMTwwdDbzBnRZMXYqcosOIwTs6cnhaP+cDiAWwYWDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+  "projectFilePath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bruger\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
