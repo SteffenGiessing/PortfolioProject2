@@ -1,12 +1,12 @@
 using System;
 using Microsoft.EntityFrameworkCore;
-using System;
 using PortfolioProject2.Models.DMOs;
 
 namespace PortfolioProject2.Models
 {
     public class DatabaseConnection : DbContext
     {
+        public DbSet<Titles> Titles { get; set; }
         public DbSet<Episodes> Episodes { get; set; }
         public DbSet<Genre> Genre { get; set; }
         public DbSet<Omdb_Data> Omdb_Data { get; set; }
@@ -16,7 +16,7 @@ namespace PortfolioProject2.Models
         public DbSet<Person_Profession> Person_Profession { get; set; }
         public DbSet<Ratings> Ratings { get; set; }
         public DbSet<Title_Known_As> Title_Known_As { get; set; }
-        public DbSet<Titles> Titles { get; set; }
+      
         public DbSet<User_BookMarks> User_BookMarks { get; set; }
         public DbSet<User_Comments> User_Comments { get; set; }
         public DbSet<User_History> User_History { get; set; }
@@ -42,121 +42,331 @@ namespace PortfolioProject2.Models
         {
             base.OnModelCreating(modelBuilder);
 
+            // Episodes
+            modelBuilder.Entity<Episodes>(entity =>
+            {
+                // Points to Database Episodes
+                entity.ToTable("episodes");
+                
+                // Sets Primary Key
+                entity.HasKey(x => x.EpisodeId).HasName("episodeid");
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.EpisodeId).HasColumnName("episodeid");
+                entity.Property(x => x.SeriesId).HasColumnName("seriesid");
+                entity.Property(x => x.SeasonNumber).HasColumnName("seasonnumber");
+                entity.Property(x => x.EpisodeNumber).HasColumnName("episodenumber");
+            });
+            
+            
+            // Genre
+            modelBuilder.Entity<Genre>(entity =>
+            {
+                // Points to Database Genre
+                entity.ToTable("genre");
+                
+                //Sets Primary Key -> Composite
+                entity.HasKey(x => new { titleid = x.TitleId, genres = x.Genres});
+                
+                //Sets Foreign Key
+                
+                //Sets Properties
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.Genres).HasColumnName("genres");
+            });
 
-            modelBuilder.Entity<Episodes>().ToTable("episodes");
-            modelBuilder.Entity<Episodes>().Property(x => x.EpisodeId).HasColumnName("episodeid");
-            modelBuilder.Entity<Episodes>().Property(x => x.SeriesId).HasColumnName("seriesid");
-            modelBuilder.Entity<Episodes>().Property(x => x.SeasonNumber).HasColumnName("seasonnumber");
-            modelBuilder.Entity<Episodes>().Property(x => x.EpisodeNumber).HasColumnName("episodenumber");
+            
+            // Omdb_Data
+            modelBuilder.Entity<Omdb_Data>(entity =>
+            {
+                // Points to Database Omdb_Data
+                entity.ToTable("omdb_Data");
+                
+                // Sets Primary Key
+                entity.HasKey(x => x.TitleId).HasName("titleid");
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.Poster).HasColumnName("poster");
+                entity.Property(x => x.Awards).HasColumnName("awards");
+                entity.Property(x => x.Plot).HasColumnName("plot");
+            });
 
-
-            modelBuilder.Entity<Genre>().ToTable("genre");
-            modelBuilder.Entity<Genre>().Property(x => x.TitleId).HasColumnName("titleid");
-            modelBuilder.Entity<Genre>().Property(x => x.Genres).HasColumnName("genres");
+            
+            // Person_In_Title
+            modelBuilder.Entity<Person_In_Title>(entity =>
+            {
+                // Points to Database Person_In_Title
+                entity.ToTable("person_in_title");
+                
+                // Sets Primary Key
+                entity.HasKey(x => new { titleid = x.TitleId, ordering = x.Ordering});
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.Ordering).HasColumnName("ordering");
+                entity.Property(x => x.Pid).HasColumnName("pid");
+                entity.Property(x => x.Role).HasColumnName("role");
+                entity.Property(x => x.Job).HasColumnName("job");
+                entity.Property(x => x.CharName).HasColumnName("charname");
+            });
             
 
-            modelBuilder.Entity<Omdb_Data>().ToTable("omdb_Data");
-            modelBuilder.Entity<Omdb_Data>().Property(x => x.TitleId).HasColumnName("titleid");
-            modelBuilder.Entity<Omdb_Data>().Property(x => x.Poster).HasColumnName("poster");
-            modelBuilder.Entity<Omdb_Data>().Property(x => x.Awards).HasColumnName("awards");
-            modelBuilder.Entity<Omdb_Data>().Property(x => x.Plot).HasColumnName("plot");
+            // Person_Info
+            modelBuilder.Entity<Person_Info>(entity =>
+            {
+                // Points to Database Person_Info
+                entity.ToTable("person_info");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.Pid).HasColumnName("pid");
+                entity.Property(x => x.PrimaryName).HasColumnName("primaryname");
+                entity.Property(x => x.BirthYear).HasColumnName("birthyear");
+                entity.Property(x => x.DeathYear).HasColumnName("deathyear");
+            });
+            
+            
+            // Person_Known_For
+            modelBuilder.Entity<Person_Known_For>(entity =>
+            {
+                // Points to Database person_known_for
+                entity.ToTable("person_known_for");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.Pid).HasColumnName("pid");
+                entity.Property(x => x.KnownForTitle).HasColumnName("knownfortitle");
+            });
+            
 
+            // Person_Profession
+            modelBuilder.Entity<Person_Profession>(entity =>
+            {
+                // Points to Database person_profession
+                entity.ToTable("person_profession");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.Pid).HasColumnName("pid");
+                entity.Property(x => x.Profession).HasColumnName("profession");
+            });
+            
+            
+            // Ratings
+            modelBuilder.Entity<Ratings>(entity =>
+            {
+                // Points to Database ratings
+                entity.ToTable("ratings");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.AverageRating).HasColumnName("averagerating");
+                entity.Property(x => x.NumVotes).HasColumnName("numvotes");
+            });
+          
+            
+            // Title_Known_As
+            modelBuilder.Entity<Title_Known_As>(entity =>
+            {
+                // Points to Database title_known_as
+                entity.ToTable("title_known_as");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.Ordering).HasColumnName("ordering");
+                entity.Property(x => x.Title).HasColumnName("title");
+                entity.Property(x => x.Region).HasColumnName("region");
+                entity.Property(x => x.Language).HasColumnName("language");
+                entity.Property(x => x.Types).HasColumnName("types");
+                entity.Property(x => x.Attributes).HasColumnName("attributes");
+                entity.Property(x => x.IsOriginalTitle).HasColumnName("isoriginaltitle");
+            });
 
-            modelBuilder.Entity<Person_In_Title>().ToTable("person_in_title");
-            modelBuilder.Entity<Person_In_Title>().Property(x => x.TitleId).HasColumnName("titleid");
-            modelBuilder.Entity<Person_In_Title>().Property(x => x.Ordering).HasColumnName("ordering");
-            modelBuilder.Entity<Person_In_Title>().Property(x => x.Pid).HasColumnName("pid");
-            modelBuilder.Entity<Person_In_Title>().Property(x => x.Role).HasColumnName("role");
-            modelBuilder.Entity<Person_In_Title>().Property(x => x.Job).HasColumnName("job");
-            modelBuilder.Entity<Person_In_Title>().Property(x => x.CharName).HasColumnName("charname");
+            
+            // Titles
+            modelBuilder.Entity<Titles>(entity =>
+            {
+                // Points to Database titles
+                entity.ToTable("titles");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.TitleType).HasColumnName("titletype");
+                entity.Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
+                entity.Property(x => x.OriginalTitle).HasColumnName("originaltitle");
+                entity.Property(x => x.IsAdult).HasColumnName("isadult");
+                entity.Property(x => x.StartYear).HasColumnName("startyear");
+                entity.Property(x => x.EndYear).HasColumnName("endyear");
+                entity.Property(x => x.RunTime).HasColumnName("runtime");
+                entity.Property(x => x.Genres).HasColumnName("genres");
 
+            });
+        
+            
+            // User_BookMarks
+            modelBuilder.Entity<User_BookMarks>(entity =>
+            {
+                // Points to Database user_bookmarks
+                entity.ToTable("user_bookmarks");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.UserId).HasColumnName("userid");
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+            });
+            
+            
+            // User_Comments
+            modelBuilder.Entity<User_Comments>(entity =>
+            {
+                // Points to Database user_comments
+                entity.ToTable("user_comments");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.CommentText).HasColumnName("commenttext");
+                entity.Property(x => x.UserId).HasColumnName("userid");
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.CommentTime).HasColumnName("commenttime");
+                entity.Property(x => x.CommentId).HasColumnName("commentid");
 
-            modelBuilder.Entity<Person_Info>().ToTable("person_info");
-            modelBuilder.Entity<Person_Info>().Property(x => x.Pid).HasColumnName("pid");
-            modelBuilder.Entity<Person_Info>().Property(x => x.PrimaryName).HasColumnName("primaryname");
-            modelBuilder.Entity<Person_Info>().Property(x => x.BirthYear).HasColumnName("birthyear");
-            modelBuilder.Entity<Person_Info>().Property(x => x.DeathYear).HasColumnName("deathyear");
+            });
+          
 
+            // User_History
+            modelBuilder.Entity<User_History>(entity =>
+            {
+                // Points to Database user_history
+                entity.ToTable("user_history");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.SearchId).HasColumnName("searchid");
+                entity.Property(x => x.SearchText).HasColumnName("searchtext");
+                entity.Property(x => x.UserId).HasColumnName("userid");
+            });
+           
 
-            modelBuilder.Entity<Person_Known_For>().ToTable("person_known_for");
-            modelBuilder.Entity<Person_Known_For>().Property(x => x.Pid).HasColumnName("pid");
-            modelBuilder.Entity<Person_Known_For>().Property(x => x.KnownForTitle).HasColumnName("knownfortitle");
+            // User_Ratings
+            modelBuilder.Entity<User_Ratings>(entity =>
+            {
+                // Points to Database user_ratings
+                entity.ToTable("user_ratings");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.UserId).HasColumnName("userid");
+                entity.Property(x => x.RateNumber).HasColumnName("ratenumber");
+            });
+            
 
+            // User_User
+            modelBuilder.Entity<User_User>(entity =>
+            {
+                // Points to Database user_user
+                entity.ToTable("user_user");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.UserId).HasColumnName("userid");
+                entity.Property(x => x.FirstName).HasColumnName("firstname");
+                entity.Property(x => x.LastName).HasColumnName("lastname");
+                entity.Property(x => x.UserName).HasColumnName("username");
+                entity.Property(x => x.EmailAddress).HasColumnName("emailaddress");
+                entity.Property(x => x.PasswordSalt).HasColumnName("passwordsalt");
+                entity.Property(x => x.PasswordHash).HasColumnName("passwordhash");
+            });
+           
 
-            modelBuilder.Entity<Person_Profession>().ToTable("person_profession");
-            modelBuilder.Entity<Person_Profession>().Property(x => x.Pid).HasColumnName("pid");
-            modelBuilder.Entity<Person_Profession>().Property(x => x.Profession).HasColumnName("profession");
-
-
-            modelBuilder.Entity<Ratings>().ToTable("ratings");
-            modelBuilder.Entity<Ratings>().Property(x => x.TitleId).HasColumnName("titleid");
-            modelBuilder.Entity<Ratings>().Property(x => x.AverageRating).HasColumnName("averagerating");
-            modelBuilder.Entity<Ratings>().Property(x => x.NumVotes).HasColumnName("numvotes");
-
-
-            modelBuilder.Entity<Title_Known_As>().ToTable("title_known_as");
-            modelBuilder.Entity<Title_Known_As>().Property(x => x.TitleId).HasColumnName("titleid");
-            modelBuilder.Entity<Title_Known_As>().Property(x => x.Ordering).HasColumnName("ordering");
-            modelBuilder.Entity<Title_Known_As>().Property(x => x.Title).HasColumnName("title");
-            modelBuilder.Entity<Title_Known_As>().Property(x => x.Region).HasColumnName("region");
-            modelBuilder.Entity<Title_Known_As>().Property(x => x.Language).HasColumnName("language");
-            modelBuilder.Entity<Title_Known_As>().Property(x => x.Types).HasColumnName("types");
-            modelBuilder.Entity<Title_Known_As>().Property(x => x.Attributes).HasColumnName("attributes");
-            modelBuilder.Entity<Title_Known_As>().Property(x => x.IsOriginalTitle).HasColumnName("isoriginaltitle");
-
-
-            modelBuilder.Entity<Titles>().ToTable("titles");
-            modelBuilder.Entity<Titles>().Property(x => x.TitleId).HasColumnName("titleid");
-            modelBuilder.Entity<Titles>().Property(x => x.TitleType).HasColumnName("titletype");
-            modelBuilder.Entity<Titles>().Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
-            modelBuilder.Entity<Titles>().Property(x => x.OriginalTitle).HasColumnName("originaltitle");
-            modelBuilder.Entity<Titles>().Property(x => x.IsAdult).HasColumnName("isadult");
-            modelBuilder.Entity<Titles>().Property(x => x.StartYear).HasColumnName("startyear");
-            modelBuilder.Entity<Titles>().Property(x => x.EndYear).HasColumnName("endyear");
-            modelBuilder.Entity<Titles>().Property(x => x.RunTime).HasColumnName("runtime");
-            modelBuilder.Entity<Titles>().Property(x => x.Genres).HasColumnName("genres");
-
-
-            modelBuilder.Entity<User_BookMarks>().ToTable("user_bookmarks");
-            modelBuilder.Entity<User_BookMarks>().Property(x => x.UserId).HasColumnName("userid");
-            modelBuilder.Entity<User_BookMarks>().Property(x => x.TitleId).HasColumnName("titleid");
-
-
-            modelBuilder.Entity<User_Comments>().ToTable("user_comments");
-            modelBuilder.Entity<User_Comments>().Property(x => x.CommentText).HasColumnName("commenttext");
-            modelBuilder.Entity<User_Comments>().Property(x => x.UserId).HasColumnName("userid");
-            modelBuilder.Entity<User_Comments>().Property(x => x.TitleId).HasColumnName("titleid");
-            modelBuilder.Entity<User_Comments>().Property(x => x.CommentTime).HasColumnName("commenttime");
-            modelBuilder.Entity<User_Comments>().Property(x => x.CommentId).HasColumnName("commentid");
-
-
-            modelBuilder.Entity<User_History>().ToTable("user_history");
-            modelBuilder.Entity<User_History>().Property(x => x.SearchId).HasColumnName("searchid");
-            modelBuilder.Entity<User_History>().Property(x => x.SearchText).HasColumnName("searchtext");
-            modelBuilder.Entity<User_History>().Property(x => x.UserId).HasColumnName("userid");
-
-
-            modelBuilder.Entity<User_Ratings>().ToTable("user_ratings");
-            modelBuilder.Entity<User_Ratings>().Property(x => x.TitleId).HasColumnName("titleid");
-            modelBuilder.Entity<User_Ratings>().Property(x => x.UserId).HasColumnName("userid");
-            modelBuilder.Entity<User_Ratings>().Property(x => x.RateNumber).HasColumnName("ratenumber");
-
-
-            modelBuilder.Entity<User_User>().ToTable("user_user");
-            modelBuilder.Entity<User_User>().Property(x => x.UserId).HasColumnName("userid");
-            modelBuilder.Entity<User_User>().Property(x => x.FirstName).HasColumnName("firstname");
-            modelBuilder.Entity<User_User>().Property(x => x.LastName).HasColumnName("lastname");
-            modelBuilder.Entity<User_User>().Property(x => x.UserName).HasColumnName("username");
-            modelBuilder.Entity<User_User>().Property(x => x.EmailAddress).HasColumnName("emailaddress");
-            modelBuilder.Entity<User_User>().Property(x => x.PasswordSalt).HasColumnName("passwordsalt");
-            modelBuilder.Entity<User_User>().Property(x => x.PasswordHash).HasColumnName("passwordhash");
-
-
-            modelBuilder.Entity<Wi>().ToTable("wi");
-            modelBuilder.Entity<Wi>().Property(x => x.TitleId).HasColumnName("titleid");
-            modelBuilder.Entity<Wi>().Property(x => x.Word).HasColumnName("word");
-            modelBuilder.Entity<Wi>().Property(x => x.Field).HasColumnName("field");
-            modelBuilder.Entity<Wi>().Property(x => x.Lexeme).HasColumnName("lexeme");
+            // Wi
+            modelBuilder.Entity<Wi>(entity =>
+            {
+                // Points to Database wi
+                entity.ToTable("wi");
+                
+                // Sets Primary Key
+                
+                
+                // Sets Foreign Key
+              
+                
+                // Sets properties
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.Word).HasColumnName("word");
+                entity.Property(x => x.Field).HasColumnName("field");
+                entity.Property(x => x.Lexeme).HasColumnName("lexeme");
+            });
+            
+            
         }
     }
 }
