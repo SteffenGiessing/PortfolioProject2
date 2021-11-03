@@ -5,7 +5,7 @@ namespace PortfolioProject2.Models.DMOs
     [Table("titles")]
     public class Titles
     {
-        public string TitlesId { get; set; }
+        public string TitleId { get; set; }
         public string TitleType { get; set; }
         public string PrimaryTitle { get; set; }
         public string OriginalTitle { get; set; }
