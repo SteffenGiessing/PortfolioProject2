@@ -1,6 +1,7 @@
+#nullable enable
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using PortfolioProject2.Models;
+using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
 
 namespace WebApplication.Controllers
@@ -22,6 +23,14 @@ namespace WebApplication.Controllers
             var titles = _iDataServices.getAllTitles();
             return Ok(titles);
         }
+
+        [HttpGet("{titleId?}")]
+        public ActionResult<Titles> getTitleById(string? titleId)
+        {
+            var titles = _iDataServices.getTitleById(titleId);
+            return Ok(titles);
+        }
+        
         
         
     }
