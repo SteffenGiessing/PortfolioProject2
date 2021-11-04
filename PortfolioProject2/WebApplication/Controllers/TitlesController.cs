@@ -1,5 +1,6 @@
 #nullable enable
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
@@ -25,9 +26,9 @@ namespace WebApplication.Controllers
         }
 
         [HttpGet("{titleId?}")]
-        public ActionResult<Titles> getTitleById(string? titleId)
+        public async Task<ActionResult<Titles>> getTitleById(string? titleId)
         {
-            var titles = _iDataServices.getTitleById(titleId);
+            var titles =  _iDataServices.getTitleById(titleId).Result;
             return Ok(titles);
         }
         

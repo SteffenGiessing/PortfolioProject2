@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using PortfolioProject2.Models.DMOs;
 
 namespace PortfolioProject2.Models.DataInterfaces
@@ -8,6 +9,6 @@ namespace PortfolioProject2.Models.DataInterfaces
     {
         IList<Titles> getAllTitles();
 
-        IQueryable<Titles> getTitleById(string id);
+        Task<List<Titles>> getTitleById(string id);
     }
 }
