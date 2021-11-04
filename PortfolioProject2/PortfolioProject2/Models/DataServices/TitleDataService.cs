@@ -14,13 +14,11 @@ namespace PortfolioProject2.Models.DataServices
             return list;
         }
         
-
         public IQueryable<Titles> getTitleById(string id)
         {
             using var ctx = new DatabaseConnection();
-            
+
             return ctx.Titles.Where(x => x.TitleId == id).Select(x => x);
         }
-        /*a new thing here ddd*/
     }
 }
