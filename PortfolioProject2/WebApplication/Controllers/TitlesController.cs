@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using PortfolioProject2.Models;
+using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
 
 namespace WebApplication.Controllers
@@ -20,6 +21,13 @@ namespace WebApplication.Controllers
         public ActionResult<IEnumerable<Titles>> GetTitles()
         {
             var titles = _iDataServices.getAllTitles();
+            return Ok(titles);
+        }
+
+        [HttpGet("{titleId}")]
+        public ActionResult<Titles> getTitleById(string id)
+        {
+            var titles = _iDataServices.getTitleById(id);
             return Ok(titles);
         }
         
