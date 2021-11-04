@@ -9,5 +9,8 @@ namespace PortfolioProject2.Models.DMOs
         public int SeasonNumber { get; set; }
         
         public int EpisodeNumber { get; set; }
+        
+        //for foreign keys
+        public virtual Titles Titles { get; set; }
     }
 }

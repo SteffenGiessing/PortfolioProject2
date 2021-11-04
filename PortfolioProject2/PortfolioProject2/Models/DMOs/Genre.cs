@@ -4,6 +4,8 @@ namespace PortfolioProject2.Models.DMOs
     {
         public string TitleId { get; set;}
         public string Genres { get; set;}
-
+        
+        //for foreign keys
+        public virtual Titles Titles { get; set; }
     }
 }

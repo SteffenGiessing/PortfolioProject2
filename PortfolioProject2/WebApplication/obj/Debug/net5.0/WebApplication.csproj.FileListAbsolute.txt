@@ -72,3 +72,41 @@ D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProje
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\obj\Debug\net5.0\ref\WebApplication.dll
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.pdb
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.genruntimeconfig.cache
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\appsettings.json
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\PortfolioProject2.deps.json
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\PortfolioProject2.runtimeconfig.json
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\PortfolioProject2.runtimeconfig.dev.json
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\PortfolioProject2.exe
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\WebApplication.exe
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\WebApplication.deps.json
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\WebApplication.runtimeconfig.json
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\WebApplication.runtimeconfig.dev.json
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\WebApplication.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\ref\WebApplication.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\WebApplication.pdb
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Npgsql.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\PortfolioProject2.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\PortfolioProject2.pdb
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.csproj.AssemblyReference.cache
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.AssemblyInfoInputs.cache
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.AssemblyInfo.cs
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.csproj.CoreCompileInputs.cache
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\staticwebassets\WebApplication.StaticWebAssets.Manifest.cache
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\staticwebassets\WebApplication.StaticWebAssets.xml
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\scopedcss\bundle\WebApplication.styles.css
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.RazorTargetAssemblyInfo.cache
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.csproj.CopyComplete
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\ref\WebApplication.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.pdb
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.genruntimeconfig.cache

@@ -63,3 +63,36 @@ D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProje
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\ref\PortfolioProject2.dll
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.pdb
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.genruntimeconfig.cache
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.exe
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.deps.json
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.runtimeconfig.json
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.runtimeconfig.dev.json
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\ref\PortfolioProject2.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.pdb
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Npgsql.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.csproj.AssemblyReference.cache
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.AssemblyInfoInputs.cache
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.AssemblyInfo.cs
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.csproj.CoreCompileInputs.cache
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.csproj.CopyComplete
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\ref\PortfolioProject2.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.pdb
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.genruntimeconfig.cache
