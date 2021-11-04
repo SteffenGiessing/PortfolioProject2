@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace PortfolioProject2.Models.DMOs
 {
     public class Episodes
     {
+       [Key]
         public string EpisodeId { get; set; }
         
         public string SeriesId { get; set; }
