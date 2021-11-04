@@ -21,6 +21,6 @@ namespace PortfolioProject2.Models.DataServices
             
             return ctx.Titles.Where(x => x.TitleId == id).Select(x => x);
         }
-        
+        /*a new thing here ddd*/
     }
 }
