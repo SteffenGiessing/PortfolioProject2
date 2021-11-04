@@ -4,6 +4,7 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/steffensiltamiesgiessing/.nuget/packages/</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/steffensiltamiesgiessing/.nuget/packages/</NuGetPackageFolders>
@@ -11,15 +12,23 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\jfd\.nuget\packages\</NuGetPackageFolders>
 >>>>>>> main
+=======
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/steffensiltamiesgiessing/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/steffensiltamiesgiessing/.nuget/packages/</NuGetPackageFolders>
+>>>>>>> Title by id
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.10.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
     <SourceRoot Include="/Users/steffensiltamiesgiessing/.nuget/packages/" />
 =======
     <SourceRoot Include="C:\Users\jfd\.nuget\packages\" />
 >>>>>>> main
+=======
+    <SourceRoot Include="/Users/steffensiltamiesgiessing/.nuget/packages/" />
+>>>>>>> Title by id
   </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>

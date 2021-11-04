@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models.DMOs;
 
@@ -28,7 +29,7 @@ namespace PortfolioProject2.Models
 
         private readonly string connectionString =
             "host=rawdata.ruc.dk;port=5432;database=raw8;username=raw8;password=utuBOPUw";
-
+     
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
@@ -36,7 +37,9 @@ namespace PortfolioProject2.Models
             optionsBuilder.LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
             optionsBuilder.EnableSensitiveDataLogging();
 
+        
             optionsBuilder.UseNpgsql(connectionString, options => options.EnableRetryOnFailure());
+          
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

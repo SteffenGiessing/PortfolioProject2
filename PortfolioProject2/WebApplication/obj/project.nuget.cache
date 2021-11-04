@@ -1,7 +1,11 @@
 {
   "version": 2,
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
   "dgSpecHash": "0QwoEFbbIa4Ewpzdg7VTx84ee0Hcj8aGgsGDdqc/UG1MiOhdnDG+uANkWcWDcfth15f+Ne2DPWqOEwf8Qu31Hg==",
+=======
+  "dgSpecHash": "Et43IvAYOyL1lqizyOjVukEfekC7/L4FvRfjK76yENCqgRSVd8BofUnTHlswCqwVQNnkA4UcVBDcN0KQuz0hFQ==",
+>>>>>>> Title by id
   "success": true,
   "projectFilePath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/WebApplication.csproj",
   "expectedPackageFiles": [
@@ -27,6 +31,7 @@
     "/Users/steffensiltamiesgiessing/.nuget/packages/system.diagnostics.diagnosticsource/5.0.1/system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "/Users/steffensiltamiesgiessing/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",
     "/Users/steffensiltamiesgiessing/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+<<<<<<< refs/remotes/origin/main
 =======
   "dgSpecHash": "argJ1RsqCAQY2TTs+vR4EcPjs4Vehc1/OjHZ2xbbaI7GYAylPe2XMd+9YO2iLaNnCYH5zgRByhWCk+TavlFqsQ==",
   "success": true,
@@ -55,6 +60,8 @@
     "C:\\Users\\jfd\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\jfd\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
 >>>>>>> main
+=======
+>>>>>>> Title by id
   ],
   "logs": []
 }

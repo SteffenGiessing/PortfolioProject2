@@ -1,6 +1,9 @@
 {
   "version": 2,
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
+=======
+>>>>>>> Title by id
   "dgSpecHash": "RZjXmSpr2mF5myYzRf2cJJvKbFXMTAEgFLOIRLE/QXmhCWR/5yrGbnXgf1agX/zdJZ86BwlkUlVZ2I7XgKL7CQ==",
   "success": true,
   "projectFilePath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
@@ -27,6 +30,7 @@
     "/Users/steffensiltamiesgiessing/.nuget/packages/system.diagnostics.diagnosticsource/5.0.1/system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "/Users/steffensiltamiesgiessing/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",
     "/Users/steffensiltamiesgiessing/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+<<<<<<< refs/remotes/origin/main
 =======
   "dgSpecHash": "h+kZRVj9iyV7ooNI151qQuWFNww5KURQMrgXwyihVEpFKf1psSjqUNed2wpFHXlQmbYCNm1LQLE3nvbizb86uw==",
   "success": true,
@@ -55,6 +59,8 @@
     "C:\\Users\\jfd\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\jfd\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
 >>>>>>> main
+=======
+>>>>>>> Title by id
   ],
   "logs": []
 }

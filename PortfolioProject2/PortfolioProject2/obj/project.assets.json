@@ -852,21 +852,29 @@
     ]
   },
   "packageFolders": {
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
     "/Users/steffensiltamiesgiessing/.nuget/packages/": {}
 =======
     "C:\\Users\\jfd\\.nuget\\packages\\": {}
 >>>>>>> main
+=======
+    "/Users/steffensiltamiesgiessing/.nuget/packages/": {}
+>>>>>>> Title by id
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
+=======
+>>>>>>> Title by id
       "projectUniqueName": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
       "projectName": "PortfolioProject2",
       "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
       "packagesPath": "/Users/steffensiltamiesgiessing/.nuget/packages/",
       "outputPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/",
+<<<<<<< refs/remotes/origin/main
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
@@ -880,6 +888,11 @@
       "configFilePaths": [
         "C:\\Users\\jfd\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> main
+=======
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
+>>>>>>> Title by id
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -931,11 +944,15 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
 >>>>>>> main
+=======
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+>>>>>>> Title by id
       }
     }
   }
