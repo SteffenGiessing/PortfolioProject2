@@ -128,7 +128,7 @@ namespace PortfolioProject2.Models
                 entity.ToTable("person_info");
                 
                 // Sets Primary Key
-                
+                entity.HasKey(x => x.Pid).HasName("pid");
                 
                 // Sets Foreign Key
               
@@ -147,8 +147,8 @@ namespace PortfolioProject2.Models
                 // Points to Database person_known_for
                 entity.ToTable("person_known_for");
                 
-                // Sets Primary Key
-                
+                // Sets Primary Key -> Composite key
+                entity.HasKey(x => new {pid = x.Pid, knownfortitle = x.KnownForTitle});
                 
                 // Sets Foreign Key
               
@@ -165,8 +165,8 @@ namespace PortfolioProject2.Models
                 // Points to Database person_profession
                 entity.ToTable("person_profession");
                 
-                // Sets Primary Key
-                
+                // Sets Primary Key -> Composite Key
+                entity.HasKey(x => new {pid = x.Pid, profession = x.Profession});
                 
                 // Sets Foreign Key
               
@@ -184,7 +184,7 @@ namespace PortfolioProject2.Models
                 entity.ToTable("ratings");
                 
                 // Sets Primary Key
-                
+                entity.HasKey(x => x.TitleId).HasName("titleid");
                 
                 // Sets Foreign Key
               
@@ -202,8 +202,8 @@ namespace PortfolioProject2.Models
                 // Points to Database title_known_as
                 entity.ToTable("title_known_as");
                 
-                // Sets Primary Key
-                
+                // Sets Primary Key -> Composite Key
+                entity.HasKey(x => new { titleid = x.TitleId, ordering = x.Ordering});
                 
                 // Sets Foreign Key
               
@@ -227,7 +227,7 @@ namespace PortfolioProject2.Models
                 entity.ToTable("titles");
                 
                 // Sets Primary Key
-                
+                entity.HasKey(x => x.TitleId).HasName("titleid");
                 
                 // Sets Foreign Key
               
@@ -253,12 +253,13 @@ namespace PortfolioProject2.Models
                 entity.ToTable("user_bookmarks");
                 
                 // Sets Primary Key
-                
+                entity.HasKey(x => x.BookMarkId).HasName("bookmarkid");
                 
                 // Sets Foreign Key
               
                 
                 // Sets properties
+                entity.Property(x => x.BookMarkId).HasColumnName("bookmarkid");
                 entity.Property(x => x.UserId).HasColumnName("userid");
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
             });
@@ -271,7 +272,7 @@ namespace PortfolioProject2.Models
                 entity.ToTable("user_comments");
                 
                 // Sets Primary Key
-                
+                entity.HasKey(x => x.CommentId).HasName("commentid");
                 
                 // Sets Foreign Key
               
@@ -293,7 +294,7 @@ namespace PortfolioProject2.Models
                 entity.ToTable("user_history");
                 
                 // Sets Primary Key
-                
+                entity.HasKey(x => x.SearchId).HasName("searchid");
                 
                 // Sets Foreign Key
               
@@ -311,8 +312,8 @@ namespace PortfolioProject2.Models
                 // Points to Database user_ratings
                 entity.ToTable("user_ratings");
                 
-                // Sets Primary Key
-                
+                // Sets Primary Key -> Composite Key
+                entity.HasKey(x => new { titleid = x.TitleId, userid = x.UserId});
                 
                 // Sets Foreign Key
               
@@ -331,7 +332,7 @@ namespace PortfolioProject2.Models
                 entity.ToTable("user_user");
                 
                 // Sets Primary Key
-                
+                entity.HasKey(x => x.UserId).HasName("userid");
                 
                 // Sets Foreign Key
               
@@ -353,8 +354,8 @@ namespace PortfolioProject2.Models
                 // Points to Database wi
                 entity.ToTable("wi");
                 
-                // Sets Primary Key
-                
+                // Sets Primary Key -> Composite Key
+                entity.HasKey(x => new { titleid = x.TitleId, word = x.Word, field = x.Lexeme});
                 
                 // Sets Foreign Key
               

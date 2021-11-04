@@ -872,11 +872,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "/Users/steffensiltamiesgiessing/.nuget/packages/": {}
+=======
+    "C:\\Users\\jfd\\.nuget\\packages\\": {}
+>>>>>>> main
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/WebApplication.csproj",
       "projectName": "WebApplication",
       "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/WebApplication.csproj",
@@ -885,6 +890,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
+=======
+      "projectUniqueName": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
+      "projectName": "WebApplication",
+      "projectPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
+      "packagesPath": "C:\\Users\\jfd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\jfd\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> main
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -896,8 +911,13 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+<<<<<<< HEAD
             "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {
               "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj"
+=======
+            "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
+              "projectPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
+>>>>>>> main
             }
           }
         }
@@ -939,7 +959,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+>>>>>>> main
       }
     }
   }
