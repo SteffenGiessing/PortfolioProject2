@@ -195,7 +195,6 @@ namespace PortfolioProject2.Models
                 entity.ToTable("user_bookmarks");
 
                 // Sets properties
-                entity.Property(x => x.BookMarkId).HasColumnName("bookmarkid");
                 entity.Property(x => x.UserId).HasColumnName("userid");
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
             });
