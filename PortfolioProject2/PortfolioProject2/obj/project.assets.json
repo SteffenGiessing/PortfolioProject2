@@ -852,19 +852,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/steffensiltamiesgiessing/.nuget/packages/": {}
+    "C:\\Users\\jfd\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
+      "projectUniqueName": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
       "projectName": "PortfolioProject2",
-      "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
-      "packagesPath": "/Users/steffensiltamiesgiessing/.nuget/packages/",
-      "outputPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/",
+      "projectPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+      "packagesPath": "C:\\Users\\jfd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\jfd\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -916,7 +916,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -19,7 +19,9 @@ namespace WebApplication
             services.AddHttpContextAccessor();
 
             services.AddControllers();
-            services.AddSingleton<IDataServices, TitleDataService>();
+            services.AddSingleton<ITitlesDataService, TitleDataService>();
+            services.AddSingleton<IActorDataService, ActorDataService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
