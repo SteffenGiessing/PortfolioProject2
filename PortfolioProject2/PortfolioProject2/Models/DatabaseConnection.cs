@@ -48,6 +48,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database Episodes
                 entity.ToTable("episodes");
+                
+                // Sets Primary Key
+                entity.HasKey(x => x.EpisodeId).HasName("episodeid");
 
                 // Sets properties
                 entity.Property(x => x.EpisodeId).HasColumnName("episodeid");
@@ -63,6 +66,9 @@ namespace PortfolioProject2.Models
                 // Points to Database Genre
                 entity.ToTable("genre");
                 
+                //Sets Primary Key -> Composite
+                entity.HasKey(x => new { titleid = x.TitleId, genres = x.Genres});
+                
                 //Sets Properties
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
                 entity.Property(x => x.Genres).HasColumnName("genres");
@@ -74,6 +80,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database Omdb_Data
                 entity.ToTable("omdb_Data");
+                
+                // Sets Primary Key
+                entity.HasKey(x => x.TitleId).HasName("titleid");
 
                 // Sets properties
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
@@ -88,6 +97,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database Person_In_Title
                 entity.ToTable("person_in_title");
+                
+                // Sets Primary Key
+                entity.HasKey(x => new { titleid = x.TitleId, ordering = x.Ordering});
                 
                 // Sets properties
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
@@ -105,6 +117,9 @@ namespace PortfolioProject2.Models
                 // Points to Database Person_Info
                 entity.ToTable("person_info");
                 
+                // Sets Primary Key
+                entity.HasKey(x => x.Pid).HasName("pid");
+                
                 // Sets properties
                 entity.Property(x => x.Pid).HasColumnName("pid");
                 entity.Property(x => x.PrimaryName).HasColumnName("primaryname");
@@ -118,6 +133,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database person_known_for
                 entity.ToTable("person_known_for");
+                
+                // Sets Primary Key -> Composite key
+                entity.HasKey(x => new {pid = x.Pid, knownfortitle = x.KnownForTitle});
 
                 // Sets properties
                 entity.Property(x => x.Pid).HasColumnName("pid");
@@ -131,6 +149,9 @@ namespace PortfolioProject2.Models
                 // Points to Database person_profession
                 entity.ToTable("person_profession");
                 
+                // Sets Primary Key -> Composite Key
+                entity.HasKey(x => new {pid = x.Pid, profession = x.Profession});
+                
                 // Sets properties
                 entity.Property(x => x.Pid).HasColumnName("pid");
                 entity.Property(x => x.Profession).HasColumnName("profession");
@@ -142,6 +163,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database ratings
                 entity.ToTable("ratings");
+                
+                // Sets Primary Key
+                entity.HasKey(x => x.TitleId).HasName("titleid");
                 
                 // Sets properties
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
@@ -155,6 +179,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database title_known_as
                 entity.ToTable("title_known_as");
+                
+                // Sets Primary Key -> Composite Key
+                entity.HasKey(x => new { titleid = x.TitleId, ordering = x.Ordering});
 
                 // Sets properties
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
@@ -173,6 +200,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database titles
                 entity.ToTable("titles");
+                
+                // Sets Primary Key
+                entity.HasKey(x => x.TitleId).HasName("titleid");
 
                 // Sets properties
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
@@ -193,8 +223,12 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database user_bookmarks
                 entity.ToTable("user_bookmarks");
+                
+                // Sets Primary Key
+                entity.HasKey(x => x.BookmarkId).HasName("bookmarkid");
 
                 // Sets properties
+                entity.Property(x => x.BookmarkId).HasColumnName("bookmarkid");
                 entity.Property(x => x.UserId).HasColumnName("userid");
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
             });
@@ -205,6 +239,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database user_comments
                 entity.ToTable("user_comments");
+                
+                // Sets Primary Key
+                entity.HasKey(x => x.CommentId).HasName("commentid");
                 
                 // Sets properties
                 entity.Property(x => x.CommentText).HasColumnName("commenttext");
@@ -221,6 +258,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database user_history
                 entity.ToTable("user_history");
+                
+                // Sets Primary Key
+                entity.HasKey(x => x.SearchId).HasName("searchid");
 
                 // Sets properties
                 entity.Property(x => x.SearchId).HasColumnName("searchid");
@@ -234,6 +274,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database user_ratings
                 entity.ToTable("user_ratings");
+                
+                // Sets Primary Key -> Composite Key
+                entity.HasKey(x => new { titleid = x.TitleId, userid = x.UserId});
 
                 // Sets properties
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
@@ -247,6 +290,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database user_user
                 entity.ToTable("user_user");
+                
+                // Sets Primary Key
+                entity.HasKey(x => x.UserId).HasName("userid");
 
                 // Sets properties
                 entity.Property(x => x.UserId).HasColumnName("userid");
@@ -264,6 +310,9 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database wi
                 entity.ToTable("wi");
+                
+                // Sets Primary Key -> Composite Key
+                entity.HasKey(x => new { titleid = x.TitleId, word = x.Word, field = x.Lexeme});
 
                 // Sets properties
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
