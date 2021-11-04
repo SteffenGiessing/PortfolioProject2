@@ -3,6 +3,7 @@
     "additionalProbingPaths": [
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
       "/Users/steffensiltamiesgiessing/.dotnet/store/|arch|/|tfm|",
       "/Users/steffensiltamiesgiessing/.nuget/packages"
@@ -18,6 +19,11 @@
       "C:\\Users\\jfd\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\jfd\\.nuget\\packages"
 >>>>>>> Added Actor Dataservice, IDataservice and controller
+=======
+      "C:\\Users\\Andrei\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Andrei\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+>>>>>>> Fixed small issue that didnt let server run
     ]
   }
 }

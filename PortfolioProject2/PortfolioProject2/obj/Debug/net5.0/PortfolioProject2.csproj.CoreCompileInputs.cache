@@ -1,5 +1,6 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 02c84df8e6604545dfb3339d4078d82ba973fe6d
 =======
@@ -11,3 +12,6 @@
 =======
 1d380c1cdbb154e047750ac115b79e37bbb7ad6f
 >>>>>>> Added Actor Dataservice, IDataservice and controller
+=======
+b2aad81b3ace1ae3ed903db9f2083cefe3c8d22c
+>>>>>>> Fixed small issue that didnt let server run
