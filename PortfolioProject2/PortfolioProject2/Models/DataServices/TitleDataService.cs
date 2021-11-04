@@ -8,16 +8,16 @@ using PortfolioProject2.Models.DMOs;
 
 namespace PortfolioProject2.Models.DataServices
 {
-    public class TitleDataService : IDataServices
+    public class TitleDataService : ITitlesDataService
     {
-        public IList<Titles> getAllTitles()
+        public IList<Titles> GetAllTitles()
         {
             using var ctx = new DatabaseConnection();
             IList<Titles> list = ctx.Titles.ToList();
             return list;
         }
         
-        public async Task<List<Titles>> getTitleById(string id)
+        public async Task<List<Titles>> GetTitleById(string id)
         {
              var ctx = new DatabaseConnection();
               return  await ctx.Titles.FromSqlRaw("SELECT * FROM titles WHERE titleid = {0}", id).ToListAsync();

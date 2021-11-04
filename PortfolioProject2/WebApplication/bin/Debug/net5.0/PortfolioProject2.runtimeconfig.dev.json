@@ -2,6 +2,7 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
       "/Users/steffensiltamiesgiessing/.dotnet/store/|arch|/|tfm|",
       "/Users/steffensiltamiesgiessing/.nuget/packages"
@@ -13,6 +14,10 @@
       "/Users/steffensiltamiesgiessing/.dotnet/store/|arch|/|tfm|",
       "/Users/steffensiltamiesgiessing/.nuget/packages"
 >>>>>>> Title by id
+=======
+      "C:\\Users\\jfd\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jfd\\.nuget\\packages"
+>>>>>>> Added Actor Dataservice, IDataservice and controller
     ]
   }
 }

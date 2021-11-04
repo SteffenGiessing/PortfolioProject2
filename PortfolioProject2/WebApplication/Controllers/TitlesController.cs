@@ -11,9 +11,9 @@ namespace WebApplication.Controllers
     [Route("api/titles")]
     public class TitlesController : Controller
     {
-        private readonly IDataServices _iDataServices;
+        private readonly ITitlesDataService _iDataServices;
 
-        public TitlesController(IDataServices dataServices)
+        public TitlesController(ITitlesDataService dataServices)
         {
             _iDataServices = dataServices;
         }
@@ -21,14 +21,14 @@ namespace WebApplication.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Titles>> GetTitles()
         {
-            var titles = _iDataServices.getAllTitles();
+            var titles = _iDataServices.GetAllTitles();
             return Ok(titles);
         }
 
         [HttpGet("{titleId?}")]
         public async Task<ActionResult<Titles>> getTitleById(string? titleId)
         {
-            var titles =  _iDataServices.getTitleById(titleId).Result;
+            var titles =  _iDataServices.GetTitleById(titleId).Result;
             return Ok(titles);
         }
         

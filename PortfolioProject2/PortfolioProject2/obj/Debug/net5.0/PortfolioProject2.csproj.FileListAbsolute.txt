@@ -126,9 +126,15 @@ C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2
 C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.AssemblyInfoInputs.cache
 C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.AssemblyInfo.cs
 C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.csproj.CoreCompileInputs.cache
+<<<<<<< refs/remotes/origin/main
 C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.csproj.CopyComplete
+=======
+>>>>>>> Added Actor Dataservice, IDataservice and controller
 C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.dll
 C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\ref\PortfolioProject2.dll
 C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.pdb
 C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.genruntimeconfig.cache
+<<<<<<< refs/remotes/origin/main
 >>>>>>> main
+=======
+>>>>>>> Added Actor Dataservice, IDataservice and controller

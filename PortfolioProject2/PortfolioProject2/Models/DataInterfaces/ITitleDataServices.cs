@@ -5,10 +5,11 @@ using PortfolioProject2.Models.DMOs;
 
 namespace PortfolioProject2.Models.DataInterfaces
 {
-    public interface IDataServices
+    public interface ITitlesDataService
     {
-        IList<Titles> getAllTitles();
+        IList<Titles> GetAllTitles();
 
-        Task<List<Titles>> getTitleById(string id);
+        Task<List<Titles>> GetTitleById(string id);
     }
+    
 }

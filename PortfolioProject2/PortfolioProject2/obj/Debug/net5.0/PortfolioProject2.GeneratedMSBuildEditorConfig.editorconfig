@@ -8,6 +8,7 @@ build_property.IncludeAllContentForSelfExtract =
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = PortfolioProject2
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 build_property.ProjectDir = /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/
 =======
@@ -16,3 +17,6 @@ build_property.ProjectDir = C:\Users\jfd\RiderProjects\PortfolioProject2\Portfol
 =======
 build_property.ProjectDir = /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/
 >>>>>>> Title by id
+=======
+build_property.ProjectDir = C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\
+>>>>>>> Added Actor Dataservice, IDataservice and controller

@@ -1,13 +1,18 @@
 {
   "version": 2,
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 =======
 >>>>>>> Title by id
   "dgSpecHash": "RZjXmSpr2mF5myYzRf2cJJvKbFXMTAEgFLOIRLE/QXmhCWR/5yrGbnXgf1agX/zdJZ86BwlkUlVZ2I7XgKL7CQ==",
+=======
+  "dgSpecHash": "h+kZRVj9iyV7ooNI151qQuWFNww5KURQMrgXwyihVEpFKf1psSjqUNed2wpFHXlQmbYCNm1LQLE3nvbizb86uw==",
+>>>>>>> Added Actor Dataservice, IDataservice and controller
   "success": true,
-  "projectFilePath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
+  "projectFilePath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
   "expectedPackageFiles": [
+<<<<<<< refs/remotes/origin/main
     "/Users/steffensiltamiesgiessing/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/steffensiltamiesgiessing/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/steffensiltamiesgiessing/.nuget/packages/microsoft.entityframeworkcore/5.0.11/microsoft.entityframeworkcore.5.0.11.nupkg.sha512",
@@ -36,6 +41,8 @@
   "success": true,
   "projectFilePath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
   "expectedPackageFiles": [
+=======
+>>>>>>> Added Actor Dataservice, IDataservice and controller
     "C:\\Users\\jfd\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\jfd\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\jfd\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.11\\microsoft.entityframeworkcore.5.0.11.nupkg.sha512",
@@ -58,9 +65,12 @@
     "C:\\Users\\jfd\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\jfd\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\jfd\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+<<<<<<< refs/remotes/origin/main
 >>>>>>> main
 =======
 >>>>>>> Title by id
+=======
+>>>>>>> Added Actor Dataservice, IDataservice and controller
   ],
   "logs": []
 }

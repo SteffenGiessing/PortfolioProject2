@@ -873,6 +873,7 @@
   },
   "packageFolders": {
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
     "/Users/steffensiltamiesgiessing/.nuget/packages/": {}
 =======
@@ -881,10 +882,14 @@
 =======
     "/Users/steffensiltamiesgiessing/.nuget/packages/": {}
 >>>>>>> Title by id
+=======
+    "C:\\Users\\jfd\\.nuget\\packages\\": {}
+>>>>>>> Added Actor Dataservice, IDataservice and controller
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 =======
@@ -913,6 +918,16 @@
       "configFilePaths": [
         "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
 >>>>>>> Title by id
+=======
+      "projectUniqueName": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
+      "projectName": "WebApplication",
+      "projectPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
+      "packagesPath": "C:\\Users\\jfd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\jfd\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> Added Actor Dataservice, IDataservice and controller
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -925,6 +940,7 @@
           "targetAlias": "net5.0",
           "projectReferences": {
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
             "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {
               "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj"
@@ -936,6 +952,10 @@
             "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {
               "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj"
 >>>>>>> Title by id
+=======
+            "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
+              "projectPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
+>>>>>>> Added Actor Dataservice, IDataservice and controller
             }
           }
         }
@@ -978,6 +998,7 @@
           }
         },
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
 =======
@@ -986,6 +1007,9 @@
 =======
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
 >>>>>>> Title by id
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+>>>>>>> Added Actor Dataservice, IDataservice and controller
       }
     }
   }
