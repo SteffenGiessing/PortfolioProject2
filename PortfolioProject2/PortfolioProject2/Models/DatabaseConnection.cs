@@ -2,6 +2,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models.DMOs;
 
+
 namespace PortfolioProject2.Models
 {
     public class DatabaseConnection : DbContext
@@ -52,7 +53,8 @@ namespace PortfolioProject2.Models
                 entity.HasKey(x => x.EpisodeId).HasName("episodeid");
                 
                 // Sets Foreign Key
-              
+                entity.HasOne(x => x.Titles).WithOne(d => d.Episodes)
+                    .HasForeignKey<Episodes>(x => x.SeriesId);
                 
                 // Sets properties
                 entity.Property(x => x.EpisodeId).HasColumnName("episodeid");
@@ -72,6 +74,8 @@ namespace PortfolioProject2.Models
                 entity.HasKey(x => new { titleid = x.TitleId, genres = x.Genres});
                 
                 //Sets Foreign Key
+                entity.HasOne(x => x.Titles).WithOne(d => d.Genre)
+                    .HasForeignKey<Genre>(x => x.TitleId);
                 
                 //Sets Properties
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
@@ -89,7 +93,8 @@ namespace PortfolioProject2.Models
                 entity.HasKey(x => x.TitleId).HasName("titleid");
                 
                 // Sets Foreign Key
-              
+                entity.HasOne(x => x.Titles).WithOne(d => d.Omdb_Data)
+                    .HasForeignKey<Omdb_Data>(x => x.TitleId);
                 
                 // Sets properties
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
@@ -206,7 +211,8 @@ namespace PortfolioProject2.Models
                 entity.HasKey(x => new { titleid = x.TitleId, ordering = x.Ordering});
                 
                 // Sets Foreign Key
-              
+                entity.HasOne(x => x.Titles).WithOne(d => d.Title_Known_As)
+                    .HasForeignKey<Title_Known_As>(x => x.TitleId);
                 
                 // Sets properties
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
