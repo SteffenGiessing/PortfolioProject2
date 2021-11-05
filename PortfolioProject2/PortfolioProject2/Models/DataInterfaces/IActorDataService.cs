@@ -11,5 +11,9 @@ namespace PortfolioProject2.Models.DataInterfaces
     {
         IList<Person_Info> GetAllActors();
 
+        Task<List<Person_Known_For>> GetPersonKnownFor(string pid);
+        Task<List<Person_Info>> GetActorOnPid(string pid);
+
+
     }
 }

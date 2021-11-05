@@ -24,5 +24,19 @@ namespace WebApplication.Controllers
             var actor = _iDataServices.GetAllActors();
             return Ok(actor);
         }
+
+        [HttpGet("{pid}")]
+        public async Task<ActionResult<Person_Info>> getPersonKnownFor(string? pid)
+        {
+            var personKnownFor = _iDataServices.GetPersonKnownFor(pid).Result;
+            return Ok(personKnownFor);
+        }
+        
+        [HttpGet("info/{pid}")]
+        public async Task<ActionResult<Person_Info>> getActorOnPid(string? pid)
+        {
+            var actorPid = _iDataServices.GetActorOnPid(pid).Result;
+            return Ok(actorPid);
+        }
     }
 }

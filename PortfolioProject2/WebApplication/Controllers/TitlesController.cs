@@ -31,8 +31,5 @@ namespace WebApplication.Controllers
             var titles =  _iDataServices.GetTitleById(titleId).Result;
             return Ok(titles);
         }
-        
-        
-        
     }
 }
