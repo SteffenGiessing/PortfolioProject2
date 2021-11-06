@@ -40,5 +40,17 @@ namespace PortfolioProject2.Models.DataServices
                 .FromSqlRaw("SELECT * FROM person_info WHERE pid = {0}", pid)
                 .ToListAsync();
         }
+
+        public async Task<List<Person_Info>> GetActorsByName(string name)
+        {
+            var ctx = new DatabaseConnection();
+            return await ctx.Person_Info
+                .Where(a => a.PrimaryName.Contains(name))
+                .ToListAsync();
+
+            /*
+                .FromSqlRaw("SELECT * FROM person_info where primaryname = 'Anthony '")
+                .ToListAsync();*/
+        }
     }
 }
