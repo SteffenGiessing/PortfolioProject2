@@ -10,6 +10,8 @@ namespace PortfolioProject2.Models.DataInterfaces
         IList<Titles> GetAllTitles();
 
         Task<List<Titles>> GetTitleById(string id);
+        
+        Task<List<Titles>> GetTitleByName(string id);
     }
     
 }

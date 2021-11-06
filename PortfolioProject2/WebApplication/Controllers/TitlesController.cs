@@ -31,5 +31,12 @@ namespace WebApplication.Controllers
             var titles =  _iDataServices.GetTitleById(titleId).Result;
             return Ok(titles);
         }
+        
+        [HttpGet("result/{titleName}")]
+        public async Task<ActionResult<Titles>> getTitleByName(string? titleName)
+        {
+            var nameTitles =  _iDataServices.GetTitleByName(titleName).Result;
+            return Ok(nameTitles);
+        }
     }
 }
