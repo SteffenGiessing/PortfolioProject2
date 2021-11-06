@@ -11,6 +11,7 @@ build_property.RootNamespace = WebApplication
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 build_property.ProjectDir = /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/
 =======
@@ -28,3 +29,6 @@ build_property.ProjectDir = D:\RUC\Second Semester\Computer Science\C#\git\Proje
 =======
 build_property.ProjectDir = C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\
 >>>>>>> Added GetPersonProfessionByActorID
+=======
+build_property.ProjectDir = C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\
+>>>>>>> omdb & ratings

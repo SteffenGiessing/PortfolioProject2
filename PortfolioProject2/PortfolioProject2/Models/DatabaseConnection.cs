@@ -82,7 +82,7 @@ namespace PortfolioProject2.Models
             modelBuilder.Entity<Omdb_Data>(entity =>
             {
                 // Points to Database Omdb_Data
-                entity.ToTable("omdb_Data");
+                entity.ToTable("omdb_data");
                 
                 // Sets Primary Key
                 entity.HasKey(x => x.TitleId).HasName("titleid");

@@ -5,6 +5,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
       "/Users/steffensiltamiesgiessing/.dotnet/store/|arch|/|tfm|",
       "/Users/steffensiltamiesgiessing/.nuget/packages"
@@ -29,6 +30,10 @@
       "C:\\Users\\jonas\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\jonas\\.nuget\\packages"
 >>>>>>> Added GetPersonProfessionByActorID
+=======
+      "C:\\Users\\Steffen Giessing\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Steffen Giessing\\.nuget\\packages"
+>>>>>>> omdb & ratings
     ]
   }
 }

@@ -172,4 +172,39 @@ C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProjec
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\ref\PortfolioProject2.dll
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.pdb
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.genruntimeconfig.cache
+<<<<<<< refs/remotes/origin/main
 >>>>>>> Added GetPersonProfessionByActorID
+=======
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.exe
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.deps.json
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.runtimeconfig.json
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.runtimeconfig.dev.json
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\ref\PortfolioProject2.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\PortfolioProject2.pdb
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Npgsql.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.csproj.AssemblyReference.cache
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.AssemblyInfoInputs.cache
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.AssemblyInfo.cs
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.csproj.CoreCompileInputs.cache
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\ref\PortfolioProject2.dll
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.pdb
+C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.genruntimeconfig.cache
+>>>>>>> omdb & ratings
