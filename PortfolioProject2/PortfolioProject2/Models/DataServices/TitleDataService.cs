@@ -21,7 +21,6 @@ namespace PortfolioProject2.Models.DataServices
         {
              var ctx = new DatabaseConnection();
               return  await ctx.Titles.FromSqlRaw("SELECT * FROM titles WHERE titleid = {0}", id).ToListAsync();
-           
         }
     }
 }
