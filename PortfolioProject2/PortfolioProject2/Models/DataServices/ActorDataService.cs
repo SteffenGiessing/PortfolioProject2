@@ -48,5 +48,12 @@ namespace PortfolioProject2.Models.DataServices
                 .Where(a => a.PrimaryName.Contains(name))
                 .ToListAsync();
         }
+        public async Task<List<Person_Profession>> GetPersonProfessionByActorId(string pid)
+        {
+            var ctx = new DatabaseConnection();
+            return await ctx.Person_Profession
+                .FromSqlRaw("SELECT * FROM person_profession WHERE pid = {0}", pid)
+                .ToListAsync();
+        }
     }
 }

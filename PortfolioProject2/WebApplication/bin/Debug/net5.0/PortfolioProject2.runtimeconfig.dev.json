@@ -4,6 +4,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
       "/Users/steffensiltamiesgiessing/.dotnet/store/|arch|/|tfm|",
       "/Users/steffensiltamiesgiessing/.nuget/packages"
@@ -24,6 +25,10 @@
       "C:\\Users\\Andrei\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
 >>>>>>> Fixed small issue that didnt let server run
+=======
+      "C:\\Users\\jonas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jonas\\.nuget\\packages"
+>>>>>>> Added GetPersonProfessionByActorID
     ]
   }
 }
