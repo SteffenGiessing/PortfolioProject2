@@ -47,10 +47,6 @@ namespace PortfolioProject2.Models.DataServices
             return await ctx.Person_Info
                 .Where(a => a.PrimaryName.Contains(name))
                 .ToListAsync();
-
-            /*
-                .FromSqlRaw("SELECT * FROM person_info where primaryname = 'Anthony '")
-                .ToListAsync();*/
         }
     }
 }
