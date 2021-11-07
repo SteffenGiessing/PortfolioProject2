@@ -23,7 +23,7 @@ namespace WebApplication.Controllers
         public async Task<ActionResult<Omdb_Data>> getOmdbDataById(string omdbId)
         {
             var omdb = _iOmdbDataService.GetOmdbById(omdbId).Result;
-            return Ok(omdbId);
+            return Ok(omdb);
         }
     }
 }
