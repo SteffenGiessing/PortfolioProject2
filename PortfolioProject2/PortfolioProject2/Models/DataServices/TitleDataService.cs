@@ -41,7 +41,9 @@ namespace PortfolioProject2.Models.DataServices
 
         public int NumberOffProducts()
         {
-            return _titles.Count;
+            var ctx = new DatabaseConnection();
+            
+            return ctx.Titles.Count();
         }
 
         public async Task<List<Titles>> GetTitleById(string id)
