@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models.DMOs;
@@ -217,9 +218,9 @@ namespace PortfolioProject2.Models
                 entity.Property(x => x.EndYear).HasColumnName("endyear");
                 entity.Property(x => x.RunTime).HasColumnName("runtime");
                 entity.Property(x => x.Genres).HasColumnName("genres");
-
+                
             });
-        
+
             
             // User_BookMarks
             modelBuilder.Entity<User_BookMarks>(entity =>

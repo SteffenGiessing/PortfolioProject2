@@ -5,6 +5,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 =======
 >>>>>>> Title by id
@@ -21,9 +22,13 @@
 =======
   "dgSpecHash": "rlqgAk/1LVFr42P0xumRQq2Bt1ljpnU0uCFrcpZ5UG37V8HOI0Y2Pn6YGa8LqbjlONMjP50ZpllhmjkDM7OKAQ==",
 >>>>>>> omdb & ratings
+=======
+  "dgSpecHash": "Qdmg547oSH9Ny18X452hWRn4HLaIuDYC/i3j4CsJjU1piJ/yxQmg0/cSLkFJUt6VEdLdCAqoAYqxpfErfDR8fg==",
+>>>>>>> Made the pagination
   "success": true,
-  "projectFilePath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+  "projectFilePath": "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
   "expectedPackageFiles": [
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -88,6 +93,10 @@
 >>>>>>> Added Actor Dataservice, IDataservice and controller
 =======
     "C:\\Users\\Andrei\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+=======
+    "C:\\Users\\Andrei\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+>>>>>>> Made the pagination
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.11\\microsoft.entityframeworkcore.5.0.11.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.11\\microsoft.entityframeworkcore.abstractions.5.0.11.nupkg.sha512",
@@ -109,6 +118,7 @@
     "C:\\Users\\Andrei\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+<<<<<<< refs/remotes/origin/main
 >>>>>>> Fixed small issue that didnt let server run
 =======
     "C:\\Users\\jonas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
@@ -158,6 +168,8 @@
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
 >>>>>>> omdb & ratings
+=======
+>>>>>>> Made the pagination
   ],
   "logs": []
 }

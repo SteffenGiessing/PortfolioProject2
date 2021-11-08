@@ -6,6 +6,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 =======
 >>>>>>> Title by id
@@ -39,18 +40,25 @@
 =======
     "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {}
 >>>>>>> omdb & ratings
+=======
+    "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {}
+>>>>>>> Made the pagination
   },
   "projects": {
-    "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
+    "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+        "projectUniqueName": "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
         "projectName": "PortfolioProject2",
-        "projectPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
-        "packagesPath": "C:\\Users\\Steffen Giessing\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\obj\\",
+        "projectPath": "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+        "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
+        "outputPath": "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -80,11 +88,17 @@
 =======
           "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> omdb & ratings
+=======
+          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> Made the pagination
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -106,6 +120,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -140,6 +158,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
 =======
@@ -160,6 +179,9 @@
 =======
           "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
 >>>>>>> omdb & ratings
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+>>>>>>> Made the pagination
         }
       }
     }

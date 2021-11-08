@@ -185,3 +185,4 @@ C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\WebA
 C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\ref\WebApplication.dll
 C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.pdb
 C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.genruntimeconfig.cache
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
