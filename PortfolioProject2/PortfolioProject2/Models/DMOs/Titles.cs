@@ -15,6 +15,6 @@ namespace PortfolioProject2.Models.DMOs
         public string EndYear { get; set; }
         public int? RunTime { get; set; }
         public string Genres { get; set; }
-        
     }
+    
 }

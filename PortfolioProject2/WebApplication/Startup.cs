@@ -1,3 +1,4 @@
+using System;
 using PortfolioProject2.Models.DataServices;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -5,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
+using PortfolioProject2.Models;
 
 namespace WebApplication
 {
@@ -16,7 +18,7 @@ namespace WebApplication
         {
             services.AddCors();
             services.AddMvc();
-            //services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddHttpContextAccessor();
 
             services.AddControllers();

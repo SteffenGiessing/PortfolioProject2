@@ -7,7 +7,9 @@ namespace PortfolioProject2.Models.DataInterfaces
 {
     public interface ITitlesDataService
     {
-        IList<Titles> GetAllTitles();
+        IList<Titles> GetAllTitles(QueryString queryString);
+
+        int NumberOffProducts();
 
         Task<List<Titles>> GetTitleById(string id);
         
