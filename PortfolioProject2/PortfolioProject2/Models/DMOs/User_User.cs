@@ -9,6 +9,16 @@ namespace PortfolioProject2.Models.DMOs
         public string EmailAddress { get; set; }
         public string PasswordSalt { get; set; }
         public string PasswordHash { get; set; }
-
+        public  User_User()
+        {
+            UserId = 1;
+            FirstName = "Steffen";
+            LastName = "Giessing";
+            UserName = "Stef";
+            EmailAddress = "Stef@gmail.com";
+            PasswordSalt = "Stef";
+            PasswordHash = "Stef";
+            
+        }
     }
 }

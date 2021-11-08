@@ -3,8 +3,10 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PortfolioProject2.DataServices;
 using PortfolioProject2.Models.DataInterfaces;
-using PortfolioProject2.Models.DMOs;
+using PortfolioProject2.Middleware;
+
 
 namespace WebApplication
 {
@@ -24,6 +26,7 @@ namespace WebApplication
             services.AddSingleton<IActorDataService, ActorDataService>();
             services.AddSingleton<IOmdbDataService, OmdbDataService>();
             services.AddSingleton<IRatings, RatingsDataService>();
+            services.AddSingleton<IUserDataService, UserDataService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +39,8 @@ namespace WebApplication
 
             app.UseRouting();
             
+            app.UseJwtAuth();
+
             app.UseCors(x => x
                 .AllowAnyMethod()
                 .AllowAnyHeader()
