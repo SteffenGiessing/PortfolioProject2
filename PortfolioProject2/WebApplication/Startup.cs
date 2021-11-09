@@ -26,6 +26,7 @@ namespace WebApplication
             services.AddSingleton<IActorDataService, ActorDataService>();
             services.AddSingleton<IOmdbDataService, OmdbDataService>();
             services.AddSingleton<IRatings, RatingsDataService>();
+            services.AddSingleton<IUserDataService, UserDataService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

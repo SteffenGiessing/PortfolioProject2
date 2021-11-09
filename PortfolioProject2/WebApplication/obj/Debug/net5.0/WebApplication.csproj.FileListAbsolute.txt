@@ -231,3 +231,12 @@ C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2
 C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\System.IO.Pipelines.dll
 C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\WebApplication.Views.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\WebApplication.Views.pdb
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\System.IO.Pipelines.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

@@ -8,6 +8,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
       "/Users/steffensiltamiesgiessing/.dotnet/store/|arch|/|tfm|",
       "/Users/steffensiltamiesgiessing/.nuget/packages"
@@ -47,6 +48,11 @@
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
       "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
 >>>>>>> added User (interface, dataservice and controller)
+=======
+      "C:\\Users\\Andrei\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Andrei\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+>>>>>>> Fixed the User Controllers
     ]
   }
 }

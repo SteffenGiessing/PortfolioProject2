@@ -25,20 +25,20 @@ namespace WebApplication.Controllers
                 var comments = _iDataServices.GetAllComments();
                 return Ok(comments);
             }
-            
-            [HttpGet("{userid}")]
-            public async Task<ActionResult<User_Comments>> GetAllCommentsFromOneUser(string? userid)
-            {
-                var allCommentsFromOneUser = _iDataServices.GetAllCommentsFromOneUser(userid).Result;
-                return Ok(allCommentsFromOneUser);
-            }
-            
-            [HttpGet("{titleid}")]
-            public async Task<ActionResult<User_Comments>> GetAllCommentsFromOneTitle(string? titleid)
-            {
-                var allCommentsFromOneTitle = _iDataServices.GetAllCommentsFromOneTitle(titleid).Result;
-                return Ok(allCommentsFromOneTitle);
-            }
+
+        [HttpGet("{userid}")]
+        public ActionResult<User_Comments> GetAllCommentsFromOneUser(string? userid)
+        {
+            var allCommentsFromOneUser = _iDataServices.GetAllCommentsFromOneUser(userid).Result;
+            return Ok(allCommentsFromOneUser);
+        }
+
+        [HttpGet("movieComment/{titleid}")]
+        public async Task<ActionResult<User_Comments>> GetAllCommentsFromOneTitle(string? titleid)
+        {
+            var allCommentsFromOneTitle = _iDataServices.GetAllCommentsFromOneTitle(titleid).Result;
+            return Ok(allCommentsFromOneTitle);
+        }
     }
 }
 

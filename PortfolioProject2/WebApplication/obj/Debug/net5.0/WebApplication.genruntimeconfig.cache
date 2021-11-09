@@ -5,6 +5,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 732cd46c0f387f2a7f54e48e381b07773b8b361a
 =======
@@ -31,3 +32,6 @@ b77b8ec3a5574cd3a3eeca0981390419d8e0a1b1
 =======
 5f7216773dc5acd310605b4e57593d39d8289891
 >>>>>>> added User (interface, dataservice and controller)
+=======
+0927410a064ecc14dd44386afe5f0411155dbcdf
+>>>>>>> Fixed the User Controllers

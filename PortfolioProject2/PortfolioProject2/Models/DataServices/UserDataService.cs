@@ -15,7 +15,7 @@ namespace PortfolioProject2.Models.DataServices
             IList<User_Comments> list = ctx.User_Comments.ToList();
             return list;
         }
-        
+
         public async Task<List<User_Comments>> GetAllCommentsFromOneUser(string userid)
         {
             var ctx = new DatabaseConnection();
@@ -23,7 +23,7 @@ namespace PortfolioProject2.Models.DataServices
                 .FromSqlRaw("SELECT * FROM user_comments WHERE userid = {0}", userid)
                 .ToListAsync();
         }
-        
+
         public async Task<List<User_Comments>> GetAllCommentsFromOneTitle(string titleid)
         {
             var ctx = new DatabaseConnection();
@@ -31,7 +31,7 @@ namespace PortfolioProject2.Models.DataServices
                 .FromSqlRaw("SELECT * FROM user_comments WHERE titleid = {0}", titleid)
                 .ToListAsync();
         }
-        
+
     }
 }
 

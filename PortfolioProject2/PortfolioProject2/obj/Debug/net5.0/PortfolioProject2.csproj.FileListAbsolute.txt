@@ -273,4 +273,32 @@ C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2
 C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.IO.Pipelines.dll
 C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+<<<<<<< refs/remotes/origin/main
 >>>>>>> added User (interface, dataservice and controller)
+=======
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Core.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Http.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Extensions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Core.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.WebUtilities.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.ObjectPool.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Net.Http.Headers.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.IO.Pipelines.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+>>>>>>> Fixed the User Controllers
