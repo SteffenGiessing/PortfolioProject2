@@ -13,6 +13,7 @@ build_property.RootNamespace = PortfolioProject2
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 build_property.ProjectDir = /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/
 =======
@@ -36,3 +37,6 @@ build_property.ProjectDir = C:\Users\Steffen Giessing\RiderProjects\PortfolioPro
 =======
 build_property.ProjectDir = D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\
 >>>>>>> Made the pagination
+=======
+build_property.ProjectDir = C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\PortfolioProject2\
+>>>>>>> added User (interface, dataservice and controller)

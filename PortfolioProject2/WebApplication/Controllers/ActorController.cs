@@ -8,7 +8,7 @@ using PortfolioProject2.Models.DMOs;
 namespace WebApplication.Controllers
 {
     [ApiController]
-    [Route("api/actor")]
+    [Route("api/actor")]  //
     public class ActorController : Controller
     {
         private readonly IActorDataService _iDataServices;

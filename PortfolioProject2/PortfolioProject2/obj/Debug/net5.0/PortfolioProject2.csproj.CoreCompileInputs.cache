@@ -4,6 +4,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 02c84df8e6604545dfb3339d4078d82ba973fe6d
 =======
@@ -27,3 +28,6 @@ b2aad81b3ace1ae3ed903db9f2083cefe3c8d22c
 =======
 7dc8a38067a061dcb6ef07aa6d5115853182153a
 >>>>>>> Made the pagination
+=======
+12074e1c053f9c22c48eec63738a6f7673aa69f3
+>>>>>>> added User (interface, dataservice and controller)

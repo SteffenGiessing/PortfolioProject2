@@ -12,7 +12,12 @@
 =======
 =======
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+<<<<<<< refs/remotes/origin/main
 >>>>>>> Made the pagination
+=======
+      <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="6.0.0-preview.4.21253.5" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+>>>>>>> added User (interface, dataservice and controller)
       <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="5.0.11" />
 >>>>>>> Fixed small issue that didnt let server run
     </ItemGroup>
