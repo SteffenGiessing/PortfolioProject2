@@ -55,5 +55,11 @@ namespace PortfolioProject2.Models.DataServices
                 .FromSqlRaw("SELECT * FROM person_profession WHERE pid = {0}", pid)
                 .ToListAsync();
         }
+
+        public async Task<List<NameSearch>> GetBestMatchPersonName(string searchWord)
+        {
+            var ctx = new DatabaseConnection();
+            return await ctx.NameSearches.FromSqlRaw("SELECT pid, primaryname from actor_search({0})", searchWord).ToListAsync();
+        }
     }
 }

@@ -26,6 +26,7 @@ namespace PortfolioProject2.Models
         public DbSet<User_Ratings> User_Ratings { get; set; }
         public DbSet<User_User> User_User { get; set; }
         public DbSet<Wi> Wi { get; set; }
+        public DbSet<NameSearch> NameSearches { get; set; }
 
 
         private readonly string connectionString =
@@ -323,6 +324,15 @@ namespace PortfolioProject2.Models
                 entity.Property(x => x.Word).HasColumnName("word");
                 entity.Property(x => x.Field).HasColumnName("field");
                 entity.Property(x => x.Lexeme).HasColumnName("lexeme");
+            });
+
+            modelBuilder.Entity<NameSearch>(entity =>
+            {
+                entity.ToTable("actor_search");
+
+                entity.HasNoKey();
+                entity.Property(x => x.Pid).HasColumnName("pid");
+                entity.Property(x => x.PrimaryName).HasColumnName("primaryname");
             });
         }
     }

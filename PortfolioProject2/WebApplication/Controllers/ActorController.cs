@@ -1,4 +1,5 @@
 ﻿#nullable enable
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -44,6 +45,14 @@ namespace WebApplication.Controllers
         {
             var actorPid = _iDataServices.GetActorOnPid(pid).Result;
             return Ok(actorPid);
+        }
+
+        [HttpGet("namesearch/{namessearch}")]
+        public async Task<ActionResult<NameSearch>> getActorByName(string namessearch)
+        {
+            Console.WriteLine("HERE" + namessearch);
+            var actorName = _iDataServices.GetBestMatchPersonName(namessearch).Result;
+            return Ok(actorName);
         }
     }
 }
