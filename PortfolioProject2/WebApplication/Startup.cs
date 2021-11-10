@@ -21,7 +21,7 @@ namespace WebApplication
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddHttpContextAccessor();
 
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddSingleton<ITitlesDataService, TitleDataService>();
             services.AddSingleton<IActorDataService, ActorDataService>();
             services.AddSingleton<IOmdbDataService, OmdbDataService>();
