@@ -243,3 +243,14 @@ D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProje
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

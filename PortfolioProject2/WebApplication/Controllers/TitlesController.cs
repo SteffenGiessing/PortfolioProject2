@@ -62,6 +62,14 @@ namespace WebApplication.Controllers
             return Ok(nameTitles);
         }
         
+        [HttpGet("searchresult/{titlesearch}")]
+        public async Task<ActionResult<TitleSearch>> TitleSearch(string titlesearch)
+        {
+            Console.WriteLine("HERE" + titlesearch);
+            var titleName = _iDataServices.TitleSearch(titlesearch).Result;
+            return Ok(titleName);
+        }
+        
         
         // Helper Methods
         

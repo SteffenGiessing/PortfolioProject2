@@ -59,5 +59,10 @@ namespace PortfolioProject2.Models.DataServices
                 .Where(a => a.PrimaryTitle.Contains(name))
                 .ToListAsync();
         }
+        public async Task<List<TitleSearch>> TitleSearch(string searchWord)
+        {
+            var ctx = new DatabaseConnection();
+            return await ctx.TitleSearch.FromSqlRaw("SELECT primarytitle, titleid from title_search({0})", searchWord).ToListAsync();
+        }
     }
 }

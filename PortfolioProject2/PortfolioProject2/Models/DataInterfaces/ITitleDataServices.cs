@@ -14,6 +14,8 @@ namespace PortfolioProject2.Models.DataInterfaces
         Task<List<Titles>> GetTitleById(string id);
         
         Task<List<Titles>> GetTitleByName(string id);
+        
+        Task<List<TitleSearch>> TitleSearch(string titleSearch);
     }
     
 }
