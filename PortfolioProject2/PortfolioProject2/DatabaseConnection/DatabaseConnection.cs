@@ -29,6 +29,8 @@ namespace PortfolioProject2.Models
         public DbSet<NameSearch> NameSearches { get; set; }
         
         public DbSet<TitleSearch> TitleSearch { get; set; }
+        
+        public DbSet<PopularTitles> PopularTitles { get; set; }
 
         private readonly string connectionString =
             "host=rawdata.ruc.dk;port=5432;database=raw8;username=raw8;password=utuBOPUw";
@@ -345,6 +347,17 @@ namespace PortfolioProject2.Models
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
 
             });
+            
+            modelBuilder.Entity<PopularTitles>(entity =>
+            {
+                entity.ToTable("populartitles");
+
+                entity.HasNoKey();
+                entity.Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
+                entity.Property(x => x.Poster).HasColumnName("poster");
+
+            });
+
         }
     }
 }
