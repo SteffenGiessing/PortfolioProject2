@@ -26,7 +26,7 @@ namespace WebApplication.Controllers
                 return Ok(comments);
             }
 
-        [HttpGet("{userid}")]
+        [HttpGet("userComment/{userid}")]
         public ActionResult<User_Comments> GetAllCommentsFromOneUser(string? userid)
         {
             var allCommentsFromOneUser = _iDataServices.GetAllCommentsFromOneUser(userid).Result;
