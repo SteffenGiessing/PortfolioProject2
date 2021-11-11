@@ -254,3 +254,7 @@ C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bi
 C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\System.IO.Pipelines.dll
 C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.csproj.CopyComplete
