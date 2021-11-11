@@ -64,5 +64,11 @@ namespace PortfolioProject2.Models.DataServices
             var ctx = new DatabaseConnection();
             return await ctx.TitleSearch.FromSqlRaw("SELECT primarytitle, titleid from title_search({0})", searchWord).ToListAsync();
         }
+        
+        public async Task<List<PopularTitles>> GetPopularTitles()
+        {
+            var ctx = new DatabaseConnection();
+            return await ctx.PopularTitles. FromSqlRaw("SELECT primarytitle, poster from titles natural join omdb_data natural join ratings where numvotes > 100000and startyear = '2019' and averagerating > 8 order by numvotes limit (10)").ToListAsync();
+        }
     }
 }
