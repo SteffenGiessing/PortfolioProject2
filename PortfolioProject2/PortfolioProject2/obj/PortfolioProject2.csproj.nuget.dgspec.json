@@ -12,6 +12,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 =======
 >>>>>>> Title by id
@@ -25,13 +26,17 @@
 =======
     "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {}
 >>>>>>> Added GetPopularTitles
+=======
+    "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {}
+>>>>>>> added GetInfo
   },
   "projects": {
-    "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
+    "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+        "projectUniqueName": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
         "projectName": "PortfolioProject2",
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -105,8 +110,18 @@
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\obj\\",
 >>>>>>> Added GetPopularTitles
+=======
+        "projectPath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\obj\\",
+>>>>>>> added GetInfo
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        ],
         "configFilePaths": [
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
           "C:\\Users\\jfd\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -130,10 +145,13 @@
 =======
 =======
 >>>>>>> rework of the structure
+=======
+>>>>>>> added GetInfo
           "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 >>>>>>> added User (interface, dataservice and controller)
 =======
@@ -149,11 +167,14 @@
 =======
           "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> Added GetPopularTitles
+=======
+>>>>>>> added GetInfo
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

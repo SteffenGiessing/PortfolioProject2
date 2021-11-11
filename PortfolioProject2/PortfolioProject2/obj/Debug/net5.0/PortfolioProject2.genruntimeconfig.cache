@@ -9,6 +9,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 48db52dbee847e40ee6ecc583956c713bf02a8bb
 =======
@@ -47,3 +48,6 @@ b602e92909189d1f12f7d4eb3a25578f60d8293e
 =======
 67ad7a29a768e4bd2d4fc047db2091032750146d
 >>>>>>> Added GetPopularTitles
+=======
+b602e92909189d1f12f7d4eb3a25578f60d8293e
+>>>>>>> added GetInfo

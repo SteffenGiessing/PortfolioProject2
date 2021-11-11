@@ -11,6 +11,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 =======
 >>>>>>> Title by id
@@ -45,9 +46,13 @@
 =======
   "dgSpecHash": "vy9+znM+y3pSaOuQp48C1MTvomxYdpLbcpHgq7QjarL5zT7Q9qfhJHhmNyLDaIH0Y5Bb2BB5Axsk2+E3a6PrJw==",
 >>>>>>> Added GetPopularTitles
+=======
+  "dgSpecHash": "yfeMlZlFGjObE7lLuMlzoxhrz8jIaG133IRgf1OAZSiXhoTIuj3NmMHq3LTVS5O8mDuBjlv0TynkyYLCRB7Hjw==",
+>>>>>>> added GetInfo
   "success": true,
-  "projectFilePath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+  "projectFilePath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
   "expectedPackageFiles": [
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -267,6 +272,8 @@
 =======
 =======
 >>>>>>> rework of the structure
+=======
+>>>>>>> added GetInfo
     "C:\\Users\\Bruger\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -352,6 +359,7 @@
     "C:\\Users\\Bruger\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512"
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 >>>>>>> added User (interface, dataservice and controller)
 =======
@@ -530,6 +538,8 @@
     "C:\\Users\\jonas\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512"
 >>>>>>> Added GetPopularTitles
+=======
+>>>>>>> added GetInfo
   ],
   "logs": []
 }

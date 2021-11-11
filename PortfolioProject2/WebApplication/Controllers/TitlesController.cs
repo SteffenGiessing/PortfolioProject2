@@ -77,6 +77,20 @@ namespace WebApplication.Controllers
             return Ok(result);
         }
         
+        [HttpGet("getInfo/{titleid?}")]
+        public async Task<ActionResult<Titles>> GetInfoSpecificTitle(string? titleid)
+        {
+            var titleInfo =  _iDataServices.GetInfoSpecificTitle(titleid).Result;
+            return Ok(titleInfo);
+        }
+        /*
+         * [HttpGet("{pid}")]
+        public async Task<ActionResult<Person_Info>> getPersonKnownFor(string? pid)
+        {
+            var personKnownFor = _iDataServices.GetPersonKnownFor(pid).Result;
+            return Ok(personKnownFor);
+        }
+         */
         
         // Helper Methods
         
