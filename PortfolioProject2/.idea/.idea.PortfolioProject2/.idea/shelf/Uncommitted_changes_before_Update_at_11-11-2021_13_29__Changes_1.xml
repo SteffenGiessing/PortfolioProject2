@@ -1,0 +1,49 @@
+﻿<changelist name="Uncommitted_changes_before_Update_at_11-11-2021_13_29_[Changes]1" date="1636633804907" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/shelf/Uncommitted_changes_before_Update_at_11-11-2021_13_29_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 11-11-2021 13:29 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="PortfolioProject2/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="PortfolioProject2/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/shelf/Uncommitted_changes_before_Update_at_11-11-2021_13_29_[Changes]1/project.nuget.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.csproj.CoreCompileInputs.cache" />
+    <option name="AFTER_PATH" value="PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.csproj.CoreCompileInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/shelf/Uncommitted_changes_before_Update_at_11-11-2021_13_29_[Changes]1/PortfolioProject2.csproj.CoreCompileInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="WebApplication/obj/Debug/net5.0/WebApplication.assets.cache" />
+    <option name="AFTER_PATH" value="WebApplication/obj/Debug/net5.0/WebApplication.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/shelf/Uncommitted_changes_before_Update_at_11-11-2021_13_29_[Changes]1/WebApplication.assets.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.assets.cache" />
+    <option name="AFTER_PATH" value="PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/shelf/Uncommitted_changes_before_Update_at_11-11-2021_13_29_[Changes]1/PortfolioProject2.assets.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/shelf/Uncommitted_changes_before_Update_at_11-11-2021_13_29_[Changes]1/PortfolioProject2.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="WebApplication/obj/Debug/net5.0/WebApplication.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="WebApplication/obj/Debug/net5.0/WebApplication.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/shelf/Uncommitted_changes_before_Update_at_11-11-2021_13_29_[Changes]1/WebApplication.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.genruntimeconfig.cache" />
+    <option name="AFTER_PATH" value="PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.genruntimeconfig.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/shelf/Uncommitted_changes_before_Update_at_11-11-2021_13_29_[Changes]1/PortfolioProject2.genruntimeconfig.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="WebApplication/obj/Debug/net5.0/WebApplication.genruntimeconfig.cache" />
+    <option name="AFTER_PATH" value="WebApplication/obj/Debug/net5.0/WebApplication.genruntimeconfig.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/shelf/Uncommitted_changes_before_Update_at_11-11-2021_13_29_[Changes]1/WebApplication.genruntimeconfig.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="WebApplication/obj/Debug/net5.0/WebApplication.csproj.CoreCompileInputs.cache" />
+    <option name="AFTER_PATH" value="WebApplication/obj/Debug/net5.0/WebApplication.csproj.CoreCompileInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.PortfolioProject2/.idea/shelf/Uncommitted_changes_before_Update_at_11-11-2021_13_29_[Changes]1/WebApplication.csproj.CoreCompileInputs.cache" />
+  </binary>
+</changelist>
