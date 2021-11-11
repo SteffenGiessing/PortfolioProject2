@@ -6,6 +6,6 @@ namespace PortfolioProject2.Models.DataInterfaces
 {
     public interface IRatings
     {
-        Task<List<Ratings>> getRaitingById(string id);
+        Task<List<Ratings>> GetRatingBy(string id);
     }
 }

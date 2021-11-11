@@ -21,7 +21,7 @@ namespace WebApplication.Controllers
             [HttpGet("{id}")]
             public ActionResult<IEnumerable<Ratings>> getRatings(string id)
             {
-                var ratings = _iratings.getRaitingById(id).Result;
+                var ratings = _iratings.GetRatingBy(id).Result;
                 return Ok(ratings);
             }
         }
