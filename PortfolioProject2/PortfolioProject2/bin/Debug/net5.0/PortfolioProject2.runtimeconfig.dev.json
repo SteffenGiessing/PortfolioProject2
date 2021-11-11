@@ -9,6 +9,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
       "/Users/steffensiltamiesgiessing/.dotnet/store/|arch|/|tfm|",
       "/Users/steffensiltamiesgiessing/.nuget/packages"
@@ -53,6 +54,10 @@
       "C:\\Users\\Andrei\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
 >>>>>>> Fixed the User Controllers
+=======
+      "C:\\Users\\jfd\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jfd\\.nuget\\packages"
+>>>>>>> added title_search
     ]
   }
 }

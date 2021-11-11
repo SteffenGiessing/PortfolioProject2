@@ -301,4 +301,34 @@ D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProje
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.IO.Pipelines.dll
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+<<<<<<< refs/remotes/origin/main
 >>>>>>> Fixed the User Controllers
+=======
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Http.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.Net.Http.Headers.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.csproj.CopyComplete
+>>>>>>> added title_search

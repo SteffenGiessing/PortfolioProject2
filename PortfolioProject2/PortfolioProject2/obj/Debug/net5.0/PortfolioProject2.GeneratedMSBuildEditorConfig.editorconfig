@@ -15,6 +15,7 @@ build_property.RootNamespace = PortfolioProject2
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 build_property.ProjectDir = /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/
 =======
@@ -44,3 +45,6 @@ build_property.ProjectDir = C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolio
 =======
 build_property.ProjectDir = D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\
 >>>>>>> Fixed the User Controllers
+=======
+build_property.ProjectDir = C:\Users\jfd\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\
+>>>>>>> added title_search

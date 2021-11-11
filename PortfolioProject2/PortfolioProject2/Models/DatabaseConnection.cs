@@ -27,7 +27,8 @@ namespace PortfolioProject2.Models
         public DbSet<User_User> User_User { get; set; }
         public DbSet<Wi> Wi { get; set; }
         public DbSet<NameSearch> NameSearches { get; set; }
-
+        
+        public DbSet<TitleSearch> TitleSearch { get; set; }
 
         private readonly string connectionString =
             "host=rawdata.ruc.dk;port=5432;database=raw8;username=raw8;password=utuBOPUw";
@@ -333,6 +334,16 @@ namespace PortfolioProject2.Models
                 entity.HasNoKey();
                 entity.Property(x => x.Pid).HasColumnName("pid");
                 entity.Property(x => x.PrimaryName).HasColumnName("primaryname");
+            });
+            
+            modelBuilder.Entity<TitleSearch>(entity =>
+            {
+                entity.ToTable("title_search");
+
+                entity.HasNoKey();
+                entity.Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+
             });
         }
     }
