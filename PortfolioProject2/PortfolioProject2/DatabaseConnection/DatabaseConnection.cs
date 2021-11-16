@@ -355,7 +355,8 @@ namespace PortfolioProject2.Models
                 entity.HasNoKey();
                 entity.Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
                 entity.Property(x => x.Poster).HasColumnName("poster");
-
+                entity.Property(x => x.Plot).HasColumnName("plot");
+                entity.Property(x => x.Awards).HasColumnName("awards");
             });
 
         }
