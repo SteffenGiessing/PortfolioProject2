@@ -7,4 +7,8 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = WebApplication
+<<<<<<< refs/remotes/origin/NewMain
 build_property.ProjectDir = C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\
+=======
+build_property.ProjectDir = /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/
+>>>>>>> just some useless user stuff i dont want to get lost
