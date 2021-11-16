@@ -13,6 +13,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
       "/Users/steffensiltamiesgiessing/.dotnet/store/|arch|/|tfm|",
       "/Users/steffensiltamiesgiessing/.nuget/packages"
@@ -75,6 +76,10 @@
 >>>>>>> Added GetPopularTitles
 =======
 >>>>>>> added GetInfo
+=======
+      "C:\\Users\\jonas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jonas\\.nuget\\packages"
+>>>>>>> small change to GetInfoSpecificTitle
     ]
   }
 }

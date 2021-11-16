@@ -13,6 +13,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
   "dgSpecHash": "0QwoEFbbIa4Ewpzdg7VTx84ee0Hcj8aGgsGDdqc/UG1MiOhdnDG+uANkWcWDcfth15f+Ne2DPWqOEwf8Qu31Hg==",
 =======
@@ -54,9 +55,13 @@
 =======
   "dgSpecHash": "JXfuZ6IqCU+WOKIY+AgXNBSDyUHH2qMLIlmGdwnDCQcMvn+uB2eopZ0Ffs6uhPuqA15uPg0Nrn1QqiGby0Okig==",
 >>>>>>> added GetInfo
+=======
+  "dgSpecHash": "dK5uZNOMMUJXOaAHcSBEaMR2L33K833TYXhviNT57iD+v7QTP2zKtNIMxjLiPPtHv4pGm9QOH9JG7G2/LJcKpA==",
+>>>>>>> small change to GetInfoSpecificTitle
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
+  "projectFilePath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
   "expectedPackageFiles": [
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -209,6 +214,8 @@
     "C:\\Users\\jonas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
 =======
+=======
+>>>>>>> small change to GetInfoSpecificTitle
     "C:\\Users\\jonas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -231,7 +238,10 @@
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.1.0\\microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
+<<<<<<< refs/remotes/origin/main
 >>>>>>> Added GetPopularTitles
+=======
+>>>>>>> small change to GetInfoSpecificTitle
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.11\\microsoft.entityframeworkcore.5.0.11.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.11\\microsoft.entityframeworkcore.abstractions.5.0.11.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.11\\microsoft.entityframeworkcore.analyzers.5.0.11.nupkg.sha512",
@@ -241,6 +251,7 @@
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
@@ -525,6 +536,8 @@
 <<<<<<< refs/remotes/origin/main
 >>>>>>> rework of the structure
 =======
+=======
+>>>>>>> small change to GetInfoSpecificTitle
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.extensions.dependencymodel\\2.1.0\\microsoft.extensions.dependencymodel.2.1.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.2.0\\microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
@@ -576,9 +589,12 @@
     "C:\\Users\\jonas\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512"
+<<<<<<< refs/remotes/origin/main
 >>>>>>> Added GetPopularTitles
 =======
 >>>>>>> added GetInfo
+=======
+>>>>>>> small change to GetInfoSpecificTitle
   ],
   "logs": []
 }

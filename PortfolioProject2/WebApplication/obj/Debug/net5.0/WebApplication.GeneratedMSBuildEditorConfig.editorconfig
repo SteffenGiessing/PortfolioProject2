@@ -19,6 +19,7 @@ build_property.RootNamespace = WebApplication
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 build_property.ProjectDir = /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/
 =======
@@ -60,3 +61,6 @@ build_property.ProjectDir = C:\Users\jonas\RiderProjects\PortfolioProject2\Portf
 =======
 build_property.ProjectDir = C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolioProject2.1\PortfolioProject2\PortfolioProject2\WebApplication\
 >>>>>>> added GetInfo
+=======
+build_property.ProjectDir = C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\
+>>>>>>> small change to GetInfoSpecificTitle

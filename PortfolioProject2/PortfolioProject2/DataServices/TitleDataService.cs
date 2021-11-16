@@ -85,7 +85,7 @@ namespace PortfolioProject2.Models.DataServices
         public async Task<List<Titles>> GetInfoSpecificTitle(string id)
         {
             var ctx = new DatabaseConnection();
-            return await ctx.Titles. FromSqlRaw("SELECT titleid, primarytitle, titletype, originaltitle, isadult, startyear, endyear, runtime, genres from titles WHERE titleid = {0}", id).ToListAsync();
+            return await ctx.Titles. FromSqlRaw("SELECT titleid, primarytitle, titletype, originaltitle, isadult, startyear, endyear, runtime, genres, poster from titles natural join omdb_data WHERE titleid = {0}", id).ToListAsync();
         }
         
     }
