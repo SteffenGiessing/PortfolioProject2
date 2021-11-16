@@ -70,7 +70,14 @@ namespace WebApplication.Controllers
             return Ok(titleName);
         }
         
-        [HttpGet("populartitles")]
+        [HttpGet("populartitlesfrontpage")]
+        public async Task<ActionResult<PopularTitles>> getPopularTitlesForFrontPage()
+        {
+            var result = _iDataServices.GetPopularTitlesForFrontPage().Result;
+            return Ok(result);
+        }
+        
+        [HttpGet("populartitles/")]
         public async Task<ActionResult<PopularTitles>> getPopularTitles()
         {
             var result = _iDataServices.GetPopularTitles().Result;
