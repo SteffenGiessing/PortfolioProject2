@@ -15,6 +15,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 =======
 >>>>>>> Title by id
@@ -186,6 +187,8 @@
 >>>>>>> small change to GetInfoSpecificTitle
 =======
 =======
+=======
+>>>>>>> Creating test folders
     "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {}
   },
   "projects": {
@@ -200,8 +203,11 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
+<<<<<<< refs/remotes/origin/main
 >>>>>>> just some useless user stuff i dont want to get lost
 >>>>>>> just some useless user stuff i dont want to get lost
+=======
+>>>>>>> Creating test folders
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -284,6 +290,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
 =======
@@ -326,6 +333,9 @@
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
 >>>>>>> just some useless user stuff i dont want to get lost
 >>>>>>> just some useless user stuff i dont want to get lost
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+>>>>>>> Creating test folders
         }
       }
     }

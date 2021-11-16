@@ -14,6 +14,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 =======
 >>>>>>> Title by id
@@ -563,6 +564,8 @@
 >>>>>>> small change to GetInfoSpecificTitle
 =======
 =======
+=======
+>>>>>>> Creating test folders
   "dgSpecHash": "8/jKMuteBkAQnHyzWJ5ruEQTz8ZnLa25oVdYTJ7kuquqQlMr87r9qZ/rs4LkhQ89GJXFzOCs27V1wTY/BLp72Q==",
   "success": true,
   "projectFilePath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
@@ -666,8 +669,18 @@
     "/Users/steffensiltamiesgiessing/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/Users/steffensiltamiesgiessing/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/Users/steffensiltamiesgiessing/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512"
+<<<<<<< refs/remotes/origin/main
 >>>>>>> just some useless user stuff i dont want to get lost
 >>>>>>> just some useless user stuff i dont want to get lost
+=======
+>>>>>>> Creating test folders
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

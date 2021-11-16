@@ -15,6 +15,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 =======
 >>>>>>> Title by id
@@ -154,6 +155,8 @@
 >>>>>>> small change to GetInfoSpecificTitle
 =======
 =======
+=======
+>>>>>>> Creating test folders
     "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/WebApplication.csproj": {}
   },
   "projects": {
@@ -168,8 +171,11 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
+<<<<<<< refs/remotes/origin/main
 >>>>>>> just some useless user stuff i dont want to get lost
 >>>>>>> just some useless user stuff i dont want to get lost
+=======
+>>>>>>> Creating test folders
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -241,6 +247,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -384,6 +391,8 @@
 >>>>>>> small change to GetInfoSpecificTitle
 =======
 =======
+=======
+>>>>>>> Creating test folders
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
         }
       }
@@ -399,8 +408,11 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
+<<<<<<< refs/remotes/origin/main
 >>>>>>> just some useless user stuff i dont want to get lost
 >>>>>>> just some useless user stuff i dont want to get lost
+=======
+>>>>>>> Creating test folders
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -412,6 +424,7 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -494,6 +507,10 @@
                 "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj"
 >>>>>>> just some useless user stuff i dont want to get lost
 >>>>>>> just some useless user stuff i dont want to get lost
+=======
+              "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {
+                "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj"
+>>>>>>> Creating test folders
               }
             }
           }
@@ -545,7 +562,18 @@
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
               "version": "[5.0.11, )"
+<<<<<<< refs/remotes/origin/main
 >>>>>>> Fixed small issue that didnt let server run
+=======
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+>>>>>>> Creating test folders
             }
           },
           "imports": [
@@ -566,6 +594,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -619,6 +648,9 @@
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
 >>>>>>> just some useless user stuff i dont want to get lost
 >>>>>>> just some useless user stuff i dont want to get lost
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+>>>>>>> Creating test folders
         }
       }
     }
