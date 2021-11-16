@@ -143,7 +143,6 @@ C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\staticwebassets\WebApplication.StaticWebAssets.xml
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\scopedcss\bundle\WebApplication.styles.css
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.RazorTargetAssemblyInfo.cache
-C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.csproj.CopyComplete
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.dll
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\ref\WebApplication.dll
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.pdb

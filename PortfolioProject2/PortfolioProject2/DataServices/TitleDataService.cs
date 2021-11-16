@@ -62,13 +62,24 @@ namespace PortfolioProject2.Models.DataServices
         public async Task<List<TitleSearch>> TitleSearch(string searchWord)
         {
             var ctx = new DatabaseConnection();
-            return await ctx.TitleSearch.FromSqlRaw("SELECT primarytitle, titleid from title_search({0})", searchWord).ToListAsync();
+            return await ctx.TitleSearch.FromSqlRaw("SELECT primarytitle, titleid from title_search3({0})", searchWord).ToListAsync();
         }
         
+        public async Task<List<PopularTitles>> GetPopularTitlesForFrontPage()
+        {
+            var ctx = new DatabaseConnection();
+            return await ctx.PopularTitles. FromSqlRaw
+                ("SELECT primarytitle, poster from titles natural join omdb_data natural join ratings where numvotes > 100000 and startyear = '2019' and averagerating > 8 order by numvotes limit (10)").
+                ToListAsync();
+            
+        }
+
         public async Task<List<PopularTitles>> GetPopularTitles()
         {
             var ctx = new DatabaseConnection();
-            return await ctx.PopularTitles. FromSqlRaw("SELECT primarytitle, poster from titles natural join omdb_data natural join ratings where numvotes > 100000and startyear = '2019' and averagerating > 8 order by numvotes limit (10)").ToListAsync();
+            return await ctx.PopularTitles.FromSqlRaw
+                    ("SELECT primarytitle, poster, plot, awards from titles natural join omdb_data natural join ratings where numvotes > 100000 and averagerating > 8 order by numvotes limit (100)")
+                .ToListAsync();
         }
         
         public async Task<List<Titles>> GetInfoSpecificTitle(string id)
