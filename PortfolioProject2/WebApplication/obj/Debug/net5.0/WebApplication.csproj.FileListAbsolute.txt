@@ -267,3 +267,4 @@ C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\System.IO.Pipelines.dll
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.csproj.CopyComplete

@@ -222,7 +222,8 @@ namespace PortfolioProject2.Models
                 entity.Property(x => x.EndYear).HasColumnName("endyear");
                 entity.Property(x => x.RunTime).HasColumnName("runtime");
                 entity.Property(x => x.Genres).HasColumnName("genres");
-                
+                entity.Property(x => x.Poster).HasColumnName("poster");
+
             });
 
             
