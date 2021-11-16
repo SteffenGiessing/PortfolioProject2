@@ -37,6 +37,7 @@ namespace WebApplication
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseAuthentication();
             app.UseRouting();
             
             app.UseCors(x => x

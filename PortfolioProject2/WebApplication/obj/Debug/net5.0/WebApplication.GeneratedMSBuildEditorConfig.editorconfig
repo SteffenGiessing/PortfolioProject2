@@ -20,6 +20,7 @@ build_property.RootNamespace = WebApplication
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 build_property.ProjectDir = /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/
 =======
@@ -64,3 +65,10 @@ build_property.ProjectDir = C:\Users\Bruger\Desktop\UNI\Rider projects\PortFolio
 =======
 build_property.ProjectDir = C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\
 >>>>>>> small change to GetInfoSpecificTitle
+=======
+<<<<<<< refs/remotes/origin/NewMain
+build_property.ProjectDir = C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\
+=======
+build_property.ProjectDir = /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/
+>>>>>>> just some useless user stuff i dont want to get lost
+>>>>>>> just some useless user stuff i dont want to get lost

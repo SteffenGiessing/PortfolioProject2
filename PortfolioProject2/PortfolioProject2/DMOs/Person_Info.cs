@@ -12,8 +12,8 @@ namespace PortfolioProject2.Models.DMOs
         
         public string PrimaryName { get; set; }
         
-        public string BirthYear { get; set; }
+        public string? BirthYear { get; set; }
         
-        public string DeathYear { get; set; }
+        public string? DeathYear { get; set; }
     }
 }

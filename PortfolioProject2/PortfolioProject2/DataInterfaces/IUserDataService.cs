@@ -11,5 +11,7 @@ namespace PortfolioProject2.Models.DataInterfaces
         Task<List<User_Comments>> GetAllCommentsFromOneUser(string userid);
 
         Task<List<User_Comments>> GetAllCommentsFromOneTitle(string titleid);
+
+        User_User CreateUser(User_User user);
     }
 }

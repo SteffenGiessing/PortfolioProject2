@@ -14,6 +14,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
 =======
 >>>>>>> Title by id
@@ -25,6 +26,9 @@
     "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
 >>>>>>> Fixed small issue that didnt let server run
 =======
+=======
+<<<<<<< refs/remotes/origin/NewMain
+>>>>>>> just some useless user stuff i dont want to get lost
     "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
 >>>>>>> Added GetPersonProfessionByActorID
 =======
@@ -108,6 +112,7 @@
 >>>>>>> Fixed small issue that didnt let server run
 =======
           "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+<<<<<<< refs/remotes/origin/main
 >>>>>>> Added GetPersonProfessionByActorID
 =======
           "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -147,6 +152,24 @@
 =======
           "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> small change to GetInfoSpecificTitle
+=======
+=======
+    "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/WebApplication.csproj": {}
+  },
+  "projects": {
+    "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
+        "projectName": "PortfolioProject2",
+        "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
+        "packagesPath": "/Users/steffensiltamiesgiessing/.nuget/packages/",
+        "outputPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
+>>>>>>> just some useless user stuff i dont want to get lost
+>>>>>>> just some useless user stuff i dont want to get lost
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -197,6 +220,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
             }
           },
           "imports": [
@@ -214,6 +241,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -271,6 +299,9 @@
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
 >>>>>>> added title_search
 =======
+=======
+<<<<<<< refs/remotes/origin/NewMain
+>>>>>>> just some useless user stuff i dont want to get lost
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
 >>>>>>> rework of the structure
         }
@@ -311,6 +342,7 @@
 >>>>>>> Fixed small issue that didnt let server run
 =======
           "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+<<<<<<< refs/remotes/origin/main
 >>>>>>> Added GetPersonProfessionByActorID
 =======
           "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -350,6 +382,25 @@
 =======
           "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> small change to GetInfoSpecificTitle
+=======
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/WebApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/WebApplication.csproj",
+        "projectName": "WebApplication",
+        "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/WebApplication.csproj",
+        "packagesPath": "/Users/steffensiltamiesgiessing/.nuget/packages/",
+        "outputPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
+>>>>>>> just some useless user stuff i dont want to get lost
+>>>>>>> just some useless user stuff i dont want to get lost
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -361,6 +412,7 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+<<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -433,6 +485,15 @@
               "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
                 "projectPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
 >>>>>>> small change to GetInfoSpecificTitle
+=======
+<<<<<<< refs/remotes/origin/NewMain
+              "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
+                "projectPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
+=======
+              "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {
+                "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj"
+>>>>>>> just some useless user stuff i dont want to get lost
+>>>>>>> just some useless user stuff i dont want to get lost
               }
             }
           }
@@ -515,6 +576,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
 =======
@@ -550,6 +612,13 @@
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
 >>>>>>> rework of the structure
+=======
+<<<<<<< refs/remotes/origin/NewMain
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+>>>>>>> just some useless user stuff i dont want to get lost
+>>>>>>> just some useless user stuff i dont want to get lost
         }
       }
     }
