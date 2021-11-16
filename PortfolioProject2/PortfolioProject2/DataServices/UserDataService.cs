@@ -32,6 +32,10 @@ namespace PortfolioProject2.Models.DataServices
                 .ToListAsync();
         }
 
+        public User_User CreateUser(User_User user)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
 

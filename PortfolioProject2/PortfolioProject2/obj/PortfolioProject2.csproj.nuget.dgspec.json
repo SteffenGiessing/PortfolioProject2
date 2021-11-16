@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< refs/remotes/origin/NewMain
     "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {}
+  },
+  "projects": {
+    "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
+        "projectName": "PortfolioProject2",
+        "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj",
+        "packagesPath": "/Users/steffensiltamiesgiessing/.nuget/packages/",
+        "outputPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
+>>>>>>> just some useless user stuff i dont want to get lost
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -65,6 +82,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
             }
           },
           "imports": [
@@ -82,7 +103,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< refs/remotes/origin/NewMain
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+>>>>>>> just some useless user stuff i dont want to get lost
         }
       }
     }
