@@ -587,5 +587,8 @@ C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProjec
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+<<<<<<< refs/remotes/origin/main
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.csproj.CopyComplete
 >>>>>>> added DTO
+=======
+>>>>>>> moved DTO's to webapplication
