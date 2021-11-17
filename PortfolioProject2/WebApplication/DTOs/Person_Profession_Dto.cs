@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PortfolioProject2.DTOs
+namespace WebApplication.DTOs
 {
     public class Person_Profession_Dto
     {

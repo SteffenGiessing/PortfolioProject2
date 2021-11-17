@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PortfolioProject2.DTOs
+namespace WebApplication.DTOs
 {
     public class User_Comments_Dto
     {
