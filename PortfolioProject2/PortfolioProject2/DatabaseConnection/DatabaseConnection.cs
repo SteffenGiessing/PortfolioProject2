@@ -31,6 +31,8 @@ namespace PortfolioProject2.Models
         public DbSet<TitleSearch> TitleSearch { get; set; }
         
         public DbSet<PopularTitles> PopularTitles { get; set; }
+        
+        public DbSet<Title_Info> Title_Info { get; set; }
 
         private readonly string connectionString =
             "host=rawdata.ruc.dk;port=5432;database=raw8;username=raw8;password=utuBOPUw";
@@ -222,7 +224,6 @@ namespace PortfolioProject2.Models
                 entity.Property(x => x.EndYear).HasColumnName("endyear");
                 entity.Property(x => x.RunTime).HasColumnName("runtime");
                 entity.Property(x => x.Genres).HasColumnName("genres");
-                entity.Property(x => x.Poster).HasColumnName("poster");
 
             });
 
@@ -339,6 +340,8 @@ namespace PortfolioProject2.Models
                 entity.Property(x => x.PrimaryName).HasColumnName("primaryname");
             });
             
+            
+            // DMO necesseary for Searching for Titles
             modelBuilder.Entity<TitleSearch>(entity =>
             {
                 entity.ToTable("title_search");
@@ -349,16 +352,42 @@ namespace PortfolioProject2.Models
 
             });
             
+            
+            // DMO necesseary for GetPopulartitles
             modelBuilder.Entity<PopularTitles>(entity =>
             {
+                // Points to created table in DB when query is executed
                 entity.ToTable("populartitles");
-
+                // Sets properties
                 entity.HasNoKey();
                 entity.Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
                 entity.Property(x => x.Poster).HasColumnName("poster");
                 entity.Property(x => x.Plot).HasColumnName("plot");
                 entity.Property(x => x.Awards).HasColumnName("awards");
             });
+            
+            // DMO necesseary for GetTitleInfo
+            modelBuilder.Entity<Title_Info>(entity =>
+            {
+                // Points to Database titles
+                entity.ToTable("title_info");
+
+                // Sets properties
+                entity.HasNoKey();
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.TitleType).HasColumnName("titletype");
+                entity.Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
+                entity.Property(x => x.OriginalTitle).HasColumnName("originaltitle");
+                entity.Property(x => x.IsAdult).HasColumnName("isadult");
+                entity.Property(x => x.StartYear).HasColumnName("startyear");
+                entity.Property(x => x.EndYear).HasColumnName("endyear");
+                entity.Property(x => x.RunTime).HasColumnName("runtime");
+                entity.Property(x => x.Genres).HasColumnName("genres");
+                entity.Property(x => x.Poster).HasColumnName("poster");
+                entity.Property(x => x.Plot).HasColumnName("plot");
+
+            });
+            
 
         }
     }

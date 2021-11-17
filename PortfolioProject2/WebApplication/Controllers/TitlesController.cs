@@ -85,7 +85,7 @@ namespace WebApplication.Controllers
         }
         
         [HttpGet("titleinfo/{titleid?}")]
-        public async Task<ActionResult<Titles>> GetInfoSpecificTitle(string? titleid)
+        public async Task<ActionResult<Title_Info>> GetInfoSpecificTitle(string? titleid)
         {
             var titleInfo =  _iDataServices.GetInfoSpecificTitle(titleid).Result;
             return Ok(titleInfo);
