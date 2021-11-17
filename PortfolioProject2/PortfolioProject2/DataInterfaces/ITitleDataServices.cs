@@ -21,7 +21,7 @@ namespace PortfolioProject2.Models.DataInterfaces
         
         Task<List<PopularTitles>> GetPopularTitles();
 
-        Task<List<Titles>> GetInfoSpecificTitle(string id);
+        Task<List<Title_Info>> GetInfoSpecificTitle(string id);
 
     }
     

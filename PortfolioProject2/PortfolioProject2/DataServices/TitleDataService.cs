@@ -82,10 +82,10 @@ namespace PortfolioProject2.Models.DataServices
                 .ToListAsync();
         }
         
-        public async Task<List<Titles>> GetInfoSpecificTitle(string id)
+        public async Task<List<Title_Info>> GetInfoSpecificTitle(string id)
         {
             var ctx = new DatabaseConnection();
-            return await ctx.Titles. FromSqlRaw("SELECT titleid, primarytitle, titletype, originaltitle, isadult, startyear, endyear, runtime, genres, poster from titles natural join omdb_data WHERE titleid = {0}", id).ToListAsync();
+            return await ctx.Title_Info. FromSqlRaw("SELECT titleid, primarytitle, titletype, originaltitle, isadult, startyear, endyear, runtime, genres, poster, plot from titles natural join omdb_data WHERE titleid = {0}", id).ToListAsync();
         }
         
     }
