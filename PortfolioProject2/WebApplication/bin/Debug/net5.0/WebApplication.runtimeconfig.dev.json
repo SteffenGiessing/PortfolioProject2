@@ -1,13 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-<<<<<<< refs/remotes/origin/NewMain
       "C:\\Users\\jonas\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\jonas\\.nuget\\packages"
-=======
-      "/Users/steffensiltamiesgiessing/.dotnet/store/|arch|/|tfm|",
-      "/Users/steffensiltamiesgiessing/.nuget/packages"
->>>>>>> just some useless user stuff i dont want to get lost
     ]
   }
 }

@@ -363,38 +363,6 @@ C:/Users/jfd/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2
 C:/Users/jfd/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/ref/PortfolioProject2.dll
 C:/Users/jfd/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.pdb
 C:/Users/jfd/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.genruntimeconfig.cache
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.exe
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.deps.json
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.runtimeconfig.json
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.runtimeconfig.dev.json
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/ref/PortfolioProject2.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.pdb
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/AutoMapper.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Caching.Abstractions.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Caching.Memory.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Abstractions.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Logging.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Logging.Abstractions.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Options.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Npgsql.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.csproj.AssemblyReference.cache
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.GeneratedMSBuildEditorConfig.editorconfig
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.AssemblyInfoInputs.cache
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.AssemblyInfo.cs
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.csproj.CoreCompileInputs.cache
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/ref/PortfolioProject2.dll
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.pdb
-C:/Users/jonas/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.genruntimeconfig.cache
 C:/Users/Steffen Giessing/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.exe
 C:/Users/Steffen Giessing/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.deps.json
 C:/Users/Steffen Giessing/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.runtimeconfig.json
@@ -543,3 +511,8 @@ D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProje
 /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/System.IO.Pipelines.dll
 /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
 >>>>>>> just some useless user stuff i dont want to get lost
+C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\obj\Debug\net5.0\PortfolioProject2.csproj.CopyComplete
