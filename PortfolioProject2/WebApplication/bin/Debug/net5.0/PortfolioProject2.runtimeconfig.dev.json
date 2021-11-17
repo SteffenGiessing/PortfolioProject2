@@ -15,6 +15,7 @@
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 <<<<<<< HEAD
       "/Users/steffensiltamiesgiessing/.dotnet/store/|arch|/|tfm|",
       "/Users/steffensiltamiesgiessing/.nuget/packages"
@@ -90,6 +91,10 @@
       "/Users/steffensiltamiesgiessing/.nuget/packages"
 >>>>>>> just some useless user stuff i dont want to get lost
 >>>>>>> just some useless user stuff i dont want to get lost
+=======
+      "C:\\Users\\jonas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jonas\\.nuget\\packages"
+>>>>>>> added DTO
     ]
   }
 }
