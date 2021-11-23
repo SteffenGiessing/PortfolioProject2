@@ -1,4 +1,4 @@
-/*
+
 using AutoMapper;
 using PortfolioProject2.Models.DMOs;
 
@@ -13,4 +13,3 @@ namespace PortfolioProject2.Profiles
         }
     }
 }
-*/

@@ -8,6 +8,7 @@ namespace PortfolioProject2.Models.DMOs
         public string UserName { get; set; }
         public string EmailAddress { get; set; }
         public string PasswordSalt { get; set; }
+        
         public string PasswordHash { get; set; }
         
         public string TokenJWT { get; set; }

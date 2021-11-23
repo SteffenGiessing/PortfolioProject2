@@ -1,4 +1,4 @@
-/*
+
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -11,7 +11,7 @@ namespace PortfolioProject2.Token
 {
     public static class TokenCreator
     {
-        public static string TokenCreater(Users user, IConfiguration configuration)
+        public static string TokenCreater(User_User user, IConfiguration configuration)
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -32,4 +32,3 @@ namespace PortfolioProject2.Token
         }
     }
 }
-*/
