@@ -1,199 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< HEAD
-=======
->>>>>>> Title by id
-    "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/WebApplication.csproj": {}
-=======
-    "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> Added Actor Dataservice, IDataservice and controller
-=======
-    "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> Fixed small issue that didnt let server run
-=======
-=======
-<<<<<<< refs/remotes/origin/NewMain
->>>>>>> just some useless user stuff i dont want to get lost
-    "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> Added GetPersonProfessionByActorID
-=======
-    "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> omdb & ratings
-=======
-    "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> Made the pagination
-=======
-    "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> added User (interface, dataservice and controller)
-=======
-    "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> Fixed the User Controllers
-=======
-    "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> added title_search
-=======
-    "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> rework of the structure
-=======
-    "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> Added GetPopularTitles
-=======
-    "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> added GetInfo
-=======
-    "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> small change to GetInfoSpecificTitle
-  },
-  "projects": {
-    "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
-        "projectName": "PortfolioProject2",
-        "projectPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
-        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-          "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
-<<<<<<< refs/remotes/origin/main
-=======
-    "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
-        "projectName": "PortfolioProject2",
-        "projectPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
-        "packagesPath": "C:\\Users\\jfd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\jfd\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> main
-=======
->>>>>>> Title by id
-=======
-          "C:\\Users\\jfd\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> Added Actor Dataservice, IDataservice and controller
-=======
-          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> Fixed small issue that didnt let server run
-=======
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
-<<<<<<< refs/remotes/origin/main
->>>>>>> Added GetPersonProfessionByActorID
-=======
-          "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> omdb & ratings
-=======
-          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> Made the pagination
-=======
-=======
->>>>>>> rework of the structure
-=======
->>>>>>> added GetInfo
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
->>>>>>> added User (interface, dataservice and controller)
-=======
-          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> Fixed the User Controllers
-=======
-          "C:\\Users\\jfd\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> added title_search
-=======
->>>>>>> rework of the structure
-=======
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> Added GetPopularTitles
-=======
->>>>>>> added GetInfo
-=======
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> small change to GetInfoSpecificTitle
-=======
-=======
-=======
->>>>>>> Creating test folders
-    "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/WebApplication/WebApplication.csproj": {}
-=======
-    "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> added DTO
-=======
-    "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
->>>>>>> Init
-  },
-  "projects": {
-    "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
-        "projectName": "PortfolioProject2",
-        "projectPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
-        "packagesPath": "C:\\Users\\Steffen Giessing\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-          "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
-<<<<<<< refs/remotes/origin/main
->>>>>>> just some useless user stuff i dont want to get lost
->>>>>>> just some useless user stuff i dont want to get lost
-=======
->>>>>>> Creating test folders
-=======
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> added DTO
-=======
-          "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> Init
-=======
     "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
   },
   "projects": {
@@ -208,7 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> NewMain
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -280,190 +86,6 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< HEAD
-=======
->>>>>>> Title by id
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> Added Actor Dataservice, IDataservice and controller
-        }
-      }
-    },
-    "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
-        "projectName": "WebApplication",
-        "projectPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
-        "packagesPath": "C:\\Users\\jfd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-<<<<<<< refs/remotes/origin/main
-          "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
-<<<<<<< refs/remotes/origin/main
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
->>>>>>> Fixed small issue that didnt let server run
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> Added GetPersonProfessionByActorID
-=======
-          "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> omdb & ratings
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
->>>>>>> Made the pagination
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> added User (interface, dataservice and controller)
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
->>>>>>> Fixed the User Controllers
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
->>>>>>> added title_search
-=======
-=======
-<<<<<<< refs/remotes/origin/NewMain
->>>>>>> just some useless user stuff i dont want to get lost
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> rework of the structure
-        }
-      }
-    },
-    "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
-        "projectName": "WebApplication",
-        "projectPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
-        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-          "C:\\Users\\jfd\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> main
-=======
->>>>>>> Title by id
-=======
-          "C:\\Users\\jfd\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> Added Actor Dataservice, IDataservice and controller
-=======
-          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> Fixed small issue that didnt let server run
-=======
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
-<<<<<<< refs/remotes/origin/main
->>>>>>> Added GetPersonProfessionByActorID
-=======
-          "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> omdb & ratings
-=======
-          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> Made the pagination
-=======
-=======
->>>>>>> rework of the structure
-=======
->>>>>>> added GetInfo
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
->>>>>>> added User (interface, dataservice and controller)
-=======
-          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> Fixed the User Controllers
-=======
-          "C:\\Users\\jfd\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> added title_search
-=======
->>>>>>> rework of the structure
-=======
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> Added GetPopularTitles
-=======
->>>>>>> added GetInfo
-=======
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> small change to GetInfoSpecificTitle
-=======
-=======
-=======
->>>>>>> Creating test folders
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> added DTO
-=======
-          "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> Init
-        }
-      }
-    },
-    "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
-        "projectName": "WebApplication",
-        "projectPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
-        "packagesPath": "C:\\Users\\Steffen Giessing\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-          "/Users/steffensiltamiesgiessing/.nuget/NuGet/NuGet.Config"
-<<<<<<< refs/remotes/origin/main
->>>>>>> just some useless user stuff i dont want to get lost
->>>>>>> just some useless user stuff i dont want to get lost
-=======
->>>>>>> Creating test folders
-=======
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> added DTO
-=======
-          "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> Init
-=======
           "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
@@ -479,7 +101,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> NewMain
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -491,108 +112,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< HEAD
-              "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {
-                "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj"
-=======
-              "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> main
-=======
-              "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {
-                "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj"
->>>>>>> Title by id
-=======
-              "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> Added Actor Dataservice, IDataservice and controller
-=======
-              "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> Fixed small issue that didnt let server run
-=======
-              "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> Added GetPersonProfessionByActorID
-=======
               "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
                 "projectPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> omdb & ratings
-=======
-              "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> Made the pagination
-=======
-              "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> added User (interface, dataservice and controller)
-=======
-              "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "D:\\RUC\\Second Semester\\Computer Science\\C#\\git\\ProjectPortofolio2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> Fixed the User Controllers
-=======
-              "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\jfd\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> added title_search
-=======
-              "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> rework of the structure
-=======
-              "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> Added GetPopularTitles
-=======
-              "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Desktop\\UNI\\Rider projects\\PortFolioProject2.1\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> added GetInfo
-=======
-              "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> small change to GetInfoSpecificTitle
-=======
-<<<<<<< refs/remotes/origin/NewMain
-              "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
-=======
-              "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {
-                "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj"
->>>>>>> just some useless user stuff i dont want to get lost
->>>>>>> just some useless user stuff i dont want to get lost
-=======
-              "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj": {
-                "projectPath": "/Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2.csproj"
->>>>>>> Creating test folders
-=======
-              "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> added DTO
-=======
-              "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> Init
-=======
-              "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
-                "projectPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
->>>>>>> NewMain
               }
             }
           }
@@ -611,26 +132,10 @@
               "target": "Package",
               "version": "[10.1.1, )"
             },
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[5.0.10, )"
-=======
-=======
-=======
->>>>>>> NewMain
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[8.1.1, )"
             },
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/main
->>>>>>> Made the pagination
-=======
-=======
->>>>>>> NewMain
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[6.0.0-preview.4.21253.5, )"
@@ -639,29 +144,13 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/main
->>>>>>> added User (interface, dataservice and controller)
-=======
-=======
->>>>>>> NewMain
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[5.0.12, )"
             },
-<<<<<<< HEAD
->>>>>>> Search by Name
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
               "version": "[5.0.11, )"
-<<<<<<< refs/remotes/origin/main
->>>>>>> Fixed small issue that didnt let server run
-=======
-=======
-            "Microsoft.EntityFrameworkCore.Analyzers": {
-              "target": "Package",
-              "version": "[5.0.11, )"
->>>>>>> NewMain
             },
             "Moq": {
               "target": "Package",
@@ -670,10 +159,6 @@
             "xunit.extensibility.core": {
               "target": "Package",
               "version": "[2.4.1, )"
-<<<<<<< HEAD
->>>>>>> Creating test folders
-=======
->>>>>>> NewMain
             }
           },
           "imports": [
@@ -694,75 +179,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> main
-=======
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
->>>>>>> Title by id
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> Added Actor Dataservice, IDataservice and controller
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
->>>>>>> Fixed small issue that didnt let server run
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> Added GetPersonProfessionByActorID
-=======
           "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> omdb & ratings
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
->>>>>>> Made the pagination
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> added User (interface, dataservice and controller)
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
->>>>>>> Fixed the User Controllers
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
->>>>>>> added title_search
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> rework of the structure
-=======
-<<<<<<< refs/remotes/origin/NewMain
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
->>>>>>> just some useless user stuff i dont want to get lost
->>>>>>> just some useless user stuff i dont want to get lost
-=======
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
->>>>>>> Creating test folders
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> added DTO
-=======
-          "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> Init
-=======
-          "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> NewMain
         }
       }
     }

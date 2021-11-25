@@ -6,31 +6,6 @@
 
     <ItemGroup>
       <PackageReference Include="AutoMapper" Version="10.1.1" />
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/main
-<<<<<<< refs/remotes/origin/main
-      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
-=======
-=======
-      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
-<<<<<<< refs/remotes/origin/main
->>>>>>> Made the pagination
-=======
-      <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="6.0.0-preview.4.21253.5" />
-      <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
-<<<<<<< refs/remotes/origin/main
->>>>>>> added User (interface, dataservice and controller)
-=======
-      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.12" />
->>>>>>> Search by Name
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="5.0.11" />
-<<<<<<< refs/remotes/origin/main
->>>>>>> Fixed small issue that didnt let server run
-=======
-      <PackageReference Include="Moq" Version="4.16.1" />
-      <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
->>>>>>> Creating test folders
-=======
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
       <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="6.0.0-preview.4.21253.5" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
@@ -38,7 +13,6 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="5.0.11" />
       <PackageReference Include="Moq" Version="4.16.1" />
       <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
->>>>>>> NewMain
     </ItemGroup>
 
     <ItemGroup>

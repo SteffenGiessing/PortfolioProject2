@@ -32,16 +32,7 @@ namespace PortfolioProject2.Models.DataServices
                 .ToListAsync();
         }
 
-        public async Task<List<User_User>> CreateUser(User_User user)
-        {
-            var ctx = new DatabaseConnection();
-            return await ctx.User_User.FromSqlRaw("INSERT INTO user_user(firstname,lastname,username,emailaddress,token,password) VALUE ({0},{1},{2},{3},{4},{5})",
-                user.FirstName, user.LastName,user.UserName,user.EmailAddress,user.TokenJWT,user.PasswordHash)
-                .ToListAsync();
-            
-        }
-
-        public async Task<List<User_User>> GetUserByEmail(Users user)
+        public User_User CreateUser(User_User user)
         {
             throw new System.NotImplementedException();
         }

@@ -7,10 +7,6 @@ namespace PortfolioProject2.Models.DMOs
     
     public class Person_Info
     {
-<<<<<<< HEAD
-        [Key]
-=======
->>>>>>> NewMain
         public string Pid { get; set; }
         
         public string PrimaryName { get; set; }
