@@ -7,6 +7,7 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = PortfolioProject2
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -84,3 +85,6 @@ build_property.ProjectDir = C:\Users\jonas\RiderProjects\PortfolioProject2\Portf
 =======
 build_property.ProjectDir = C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\
 >>>>>>> Init
+=======
+build_property.ProjectDir = C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\
+>>>>>>> NewMain

@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -907,6 +908,12 @@
     "C:\\Users\\jonas\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512"
 >>>>>>> added DTO
 =======
+=======
+  "dgSpecHash": "Y3iEwZ8ZFMotBB6CBJk8ZHJSbhooF41vFhouv8j8iqPNTT9WRXENqs5FA/hZvjM9Go8/v6kP3ZoU5xgKjBeWUg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
+  "expectedPackageFiles": [
+>>>>>>> NewMain
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
@@ -1045,7 +1052,10 @@
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512"
+<<<<<<< HEAD
 >>>>>>> Init
+=======
+>>>>>>> NewMain
   ],
   "logs": []
 }

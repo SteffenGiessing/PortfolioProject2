@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -224,6 +225,22 @@
 =======
           "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> Init
+=======
+    "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+        "projectName": "PortfolioProject2",
+        "projectPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+        "packagesPath": "C:\\Users\\Steffen Giessing\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> NewMain
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -295,6 +312,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -360,6 +378,9 @@
 =======
           "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
 >>>>>>> Init
+=======
+          "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+>>>>>>> NewMain
         }
       }
     }

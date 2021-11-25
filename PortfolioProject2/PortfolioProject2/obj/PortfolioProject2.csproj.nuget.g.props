@@ -17,6 +17,7 @@
 <<<<<<< refs/remotes/origin/NewMain
 >>>>>>> just some useless user stuff i dont want to get lost
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -90,10 +91,14 @@
 =======
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Steffen Giessing\.nuget\packages\</NuGetPackageFolders>
 >>>>>>> Init
+=======
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Steffen Giessing\.nuget\packages\</NuGetPackageFolders>
+>>>>>>> NewMain
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.10.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -180,6 +185,9 @@
 =======
     <SourceRoot Include="C:\Users\Steffen Giessing\.nuget\packages\" />
 >>>>>>> Init
+=======
+    <SourceRoot Include="C:\Users\Steffen Giessing\.nuget\packages\" />
+>>>>>>> NewMain
   </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>

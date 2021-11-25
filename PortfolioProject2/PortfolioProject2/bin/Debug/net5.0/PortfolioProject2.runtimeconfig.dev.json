@@ -1,6 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -95,6 +96,10 @@
       "C:\\Users\\jonas\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\jonas\\.nuget\\packages"
 >>>>>>> added DTO
+=======
+      "C:\\Users\\jonas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jonas\\.nuget\\packages"
+>>>>>>> NewMain
     ]
   }
 }

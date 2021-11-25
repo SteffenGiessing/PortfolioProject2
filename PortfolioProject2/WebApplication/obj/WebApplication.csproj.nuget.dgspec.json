@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -192,6 +193,22 @@
 =======
           "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> Init
+=======
+    "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+        "projectName": "PortfolioProject2",
+        "projectPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+        "packagesPath": "C:\\Users\\Steffen Giessing\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> NewMain
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -263,6 +280,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -445,6 +463,23 @@
 =======
           "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> Init
+=======
+          "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
+        "projectName": "WebApplication",
+        "projectPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
+        "packagesPath": "C:\\Users\\Steffen Giessing\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Steffen Giessing\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> NewMain
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -456,6 +491,7 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -553,6 +589,10 @@
               "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
                 "projectPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
 >>>>>>> Init
+=======
+              "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj": {
+                "projectPath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj"
+>>>>>>> NewMain
               }
             }
           }
@@ -571,6 +611,7 @@
               "target": "Package",
               "version": "[10.1.1, )"
             },
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
@@ -578,13 +619,18 @@
               "version": "[5.0.10, )"
 =======
 =======
+=======
+>>>>>>> NewMain
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[8.1.1, )"
             },
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 >>>>>>> Made the pagination
 =======
+=======
+>>>>>>> NewMain
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[6.0.0-preview.4.21253.5, )"
@@ -593,13 +639,17 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 >>>>>>> added User (interface, dataservice and controller)
 =======
+=======
+>>>>>>> NewMain
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[5.0.12, )"
             },
+<<<<<<< HEAD
 >>>>>>> Search by Name
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
@@ -607,6 +657,11 @@
 <<<<<<< refs/remotes/origin/main
 >>>>>>> Fixed small issue that didnt let server run
 =======
+=======
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+>>>>>>> NewMain
             },
             "Moq": {
               "target": "Package",
@@ -615,7 +670,10 @@
             "xunit.extensibility.core": {
               "target": "Package",
               "version": "[2.4.1, )"
+<<<<<<< HEAD
 >>>>>>> Creating test folders
+=======
+>>>>>>> NewMain
             }
           },
           "imports": [
@@ -636,6 +694,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -701,6 +760,9 @@
 =======
           "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
 >>>>>>> Init
+=======
+          "runtimeIdentifierGraphPath": "C:\\Users\\Steffen Giessing\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+>>>>>>> NewMain
         }
       }
     }

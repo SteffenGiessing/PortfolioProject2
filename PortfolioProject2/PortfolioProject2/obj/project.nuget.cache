@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
@@ -786,6 +787,12 @@
     "C:\\Users\\jonas\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
 >>>>>>> added DTO
 =======
+=======
+  "dgSpecHash": "ylFgTvP68e0ZWbjX87gM7uU/zX9ex2AIz5NXDcWOlq/qiiYmEYuZOt1qcu0YfjQK4vOsPmw1q9GUdMueF0gA5Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Steffen Giessing\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2\\PortfolioProject2.csproj",
+  "expectedPackageFiles": [
+>>>>>>> NewMain
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -885,7 +892,10 @@
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Steffen Giessing\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
+<<<<<<< HEAD
 >>>>>>> Init
+=======
+>>>>>>> NewMain
   ],
   "logs": []
 }

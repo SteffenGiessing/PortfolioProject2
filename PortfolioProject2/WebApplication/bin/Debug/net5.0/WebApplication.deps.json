@@ -34,6 +34,7 @@
       "WebApplication/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.1.1",
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/main
 <<<<<<< refs/remotes/origin/main
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10",
@@ -56,6 +57,14 @@
 =======
           "Moq": "4.16.1",
 >>>>>>> added DTO
+=======
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
+          "Microsoft.AspNetCore.Http.Features": "6.0.0-preview.4.21253.5",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "5.0.12",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.11",
+          "Moq": "4.16.1",
+>>>>>>> NewMain
           "PortfolioProject2": "1.0.0",
           "xunit.extensibility.core": "2.4.1",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
