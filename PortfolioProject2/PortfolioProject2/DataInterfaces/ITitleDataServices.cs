@@ -26,6 +26,8 @@ namespace PortfolioProject2.Models.DataInterfaces
         Title_Bookmark CreateTitleBookmark(string userid, string titleid);
 
         Title_Bookmark GetTitleBookmark(string userid, string titleid);
+
+        IList <Title_Bookmark> GetTitleBookmarks(string userid);
         
         bool DeleteTitleBookmark(string userid, string titleid);
     }

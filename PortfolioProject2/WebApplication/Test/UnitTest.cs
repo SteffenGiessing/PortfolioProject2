@@ -25,11 +25,27 @@ namespace WebApplication.Test
         public void CreateTitleBookmark()
         {
             var service = new TitleDataService();
-            var newBookmark = service.CreateTitleBookmark("6", "tt11827694");
-            //Assert.NotNull(newBookmark);
-            //Assert.Equal(newBookmark, service.GetTitleBookmark("4", "tt11827694"));
-            //service.DeleteTitleBookmark("3", "tt11827694");
-           // Assert.Null(service.GetTitleBookmark("3", "tt11827694"));
+            var newBookmark = service.CreateTitleBookmark("7", "tt11827694");
+            /*Assert.NotNull(newBookmark);
+            Assert.Equal(newBookmark, service.GetTitleBookmark("7", "tt11827694"));
+            service.DeleteTitleBookmark("7", "tt11827694");
+            Assert.Null(service.GetTitleBookmark("3", "tt11827694"));*/
+        }
+        
+        [Fact]
+        public void GetTitleBookmarks()
+        {
+            var service = new TitleDataService();
+            var bookmarks = service.GetTitleBookmarks("1");
+            Assert.Equal(1, bookmarks.Count);
+        }
+        
+        [Fact]
+        public void GetNameBookmarks()
+        {
+            var service = new ActorDataService();
+            var bookmarks = service.GetNameBookmarks("1");
+            Assert.Equal(1, bookmarks.Count);
         }
         
     }

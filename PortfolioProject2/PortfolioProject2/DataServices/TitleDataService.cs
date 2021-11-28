@@ -90,25 +90,28 @@ namespace PortfolioProject2.Models.DataServices
             return await ctx.Title_Info. FromSqlRaw("SELECT titleid, primarytitle, titletype, originaltitle, isadult, startyear, endyear, runtime, genres, poster, plot from titles natural join omdb_data WHERE titleid = {0}", id).ToListAsync();
         }
         
-        //Bookmarks
+        //Title Bookmarks-------------------------------------------
         
         public Title_Bookmark GetTitleBookmark(string userid, string titleid)
         {
             return ctx.Title_Bookmark.Find(userid, titleid);
         }
         
-        public bool DeleteTitleBookmark(string userid, string titleid)
+        public IList<Title_Bookmark> GetTitleBookmarks(string userid)
         {
-            var titleBookmark = ctx.Title_Bookmark.Find(userid, titleid);
-            if (titleBookmark == null)
+            IList<Title_Bookmark> result = new List<Title_Bookmark>();
+            using var ctx = new DatabaseConnection();
+            
+            foreach (var bk in ctx.Title_Bookmark)
             {
-                return false;
+                if (bk.UserId.Trim() == userid)
+                {
+                    result.Add(bk);
+                }
             }
-            ctx.Title_Bookmark.Remove(titleBookmark);
-            ctx.SaveChanges();
-            return true;
+            return result;
         }
-
+        
         public Title_Bookmark CreateTitleBookmark(string userid, string titleid)
         {
             //need a way to validate user
@@ -124,5 +127,16 @@ namespace PortfolioProject2.Models.DataServices
             return result;
         }
         
+        public bool DeleteTitleBookmark(string userid, string titleid)
+        {
+            var titleBookmark = ctx.Title_Bookmark.Find(userid, titleid);
+            if (titleBookmark == null)
+            {
+                return false;
+            }
+            ctx.Title_Bookmark.Remove(titleBookmark);
+            ctx.SaveChanges();
+            return true;
+        }
     }
 } 

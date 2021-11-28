@@ -15,6 +15,9 @@ namespace PortfolioProject2.Models.DataInterfaces
         Task<List<Person_Info>> GetActorsByName(string name);
         Task<List<Person_Profession>> GetPersonProfessionByActorId(string pid);
         Task<List<NameSearch>> GetBestMatchPersonName(string searchName);
+        Name_Bookmark GetNameBookmark(string userid, string titleid);
+        IList<Name_Bookmark> GetNameBookmarks (string userid);
+        Name_Bookmark CreateNameBookmark(string userid, string pid);
 
     }
 }

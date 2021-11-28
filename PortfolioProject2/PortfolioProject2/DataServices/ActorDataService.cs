@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -11,6 +12,8 @@ namespace PortfolioProject2.Models.DataServices
 {
     public class ActorDataService : IActorDataService
     {
+        public DatabaseConnection ctx { get; set; }
+
         public IList<Person_Info> GetAllActors()
         {
             using var ctx = new DatabaseConnection();
@@ -61,5 +64,41 @@ namespace PortfolioProject2.Models.DataServices
             var ctx = new DatabaseConnection();
             return await ctx.NameSearches.FromSqlRaw("SELECT pid, primaryname from actor_search({0})", searchWord).ToListAsync();
         }
+        
+        //actorbookmarks------------------------------------------------------
+        public Name_Bookmark GetNameBookmark(string userid, string pid)
+        {
+            return ctx.Name_Bookmark.Find(userid, pid);
+        }
+        public IList<Name_Bookmark> GetNameBookmarks(string userid)
+        {
+            IList<Name_Bookmark> result = new List<Name_Bookmark>();
+            using var ctx = new DatabaseConnection();
+            
+            foreach (var bk in ctx.Name_Bookmark)
+            {
+                if (bk.UserId.Trim() == userid)
+                {
+                    result.Add(bk);
+                }
+            }
+            return result;
+        }
+        
+        public Name_Bookmark CreateNameBookmark(string userid, string pid)
+        {
+            using var ctx = new DatabaseConnection();
+            var result = new Name_Bookmark()
+            {
+                UserId = userid,
+                Pid = pid,
+                BookMarkTime = DateTime.Now
+            };
+            ctx.Name_Bookmark.Add(result);
+            ctx.SaveChanges();
+            return result;
+        }
+        
+        
     }
 }

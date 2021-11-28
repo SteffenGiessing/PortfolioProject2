@@ -34,6 +34,8 @@ namespace PortfolioProject2.Models
         
         public DbSet<Title_Info> Title_Info { get; set; }
         public DbSet<Title_Bookmark> Title_Bookmark { get; set; }
+        
+        public DbSet<Name_Bookmark> Name_Bookmark { get; set; }
 
 
         private readonly string connectionString =
@@ -402,6 +404,21 @@ namespace PortfolioProject2.Models
                 // Sets properties
                 entity.Property(x => x.UserId).HasColumnName("userid");
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.BookMarkTime).HasColumnName("bookmarktime");
+            });
+            
+            modelBuilder.Entity<Name_Bookmark>(entity =>
+            {
+                // Points to Database titles
+                entity.ToTable("name_bookmark");
+
+                // Sets Primary Key
+                entity.HasKey(x => new { pid = x.Pid, userid = x.UserId});
+
+                
+                // Sets properties
+                entity.Property(x => x.UserId).HasColumnName("userid");
+                entity.Property(x => x.Pid).HasColumnName("pid");
                 entity.Property(x => x.BookMarkTime).HasColumnName("bookmarktime");
             });
             

@@ -1,6 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=ACE336AF_002D12A2_002D48F8_002DB7E9_002D228AD8B539D5_002Fd_003AControllers_002Ff_003ATitlesController_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=74d714cf_002D0e2d_002D4f9f_002Da2c1_002D42c67ae025bc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateTitleBookmark #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=74d714cf_002D0e2d_002D4f9f_002Da2c1_002D42c67ae025bc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateTitleBookmark #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
@@ -10,8 +10,10 @@
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.CreateTitleBookmark&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=955e8736_002D0fd0_002D4b84_002D8504_002D6603adb3785a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateTitleBookmark #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=955e8736_002D0fd0_002D4b84_002D8504_002D6603adb3785a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateTitleBookmark #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.CreateTitleBookmark&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.GetTitleBookmarks&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.GetNameBookmarks&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
