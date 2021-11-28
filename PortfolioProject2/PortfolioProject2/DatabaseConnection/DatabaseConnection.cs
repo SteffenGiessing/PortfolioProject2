@@ -396,8 +396,8 @@ namespace PortfolioProject2.Models
                 entity.ToTable("title_bookmark");
 
                 // Sets Primary Key
-                entity.HasKey(x => x.UserId).HasName("userid");
-                entity.HasKey(x => x.TitleId).HasName("titleid");
+                entity.HasKey(x => new { titleid = x.TitleId, userid = x.UserId});
+
                 
                 // Sets properties
                 entity.Property(x => x.UserId).HasColumnName("userid");
