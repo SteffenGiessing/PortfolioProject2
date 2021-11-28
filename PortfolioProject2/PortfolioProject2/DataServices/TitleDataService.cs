@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -10,6 +11,7 @@ namespace PortfolioProject2.Models.DataServices
 {
     public class TitleDataService : ITitlesDataService
     {
+        public DatabaseConnection ctx { get; set; }
         /*public IList<Titles> GetAllTitles()
         {
             using var ctx = new DatabaseConnection();
@@ -88,5 +90,39 @@ namespace PortfolioProject2.Models.DataServices
             return await ctx.Title_Info. FromSqlRaw("SELECT titleid, primarytitle, titletype, originaltitle, isadult, startyear, endyear, runtime, genres, poster, plot from titles natural join omdb_data WHERE titleid = {0}", id).ToListAsync();
         }
         
+        //Bookmarks
+        
+        public Title_Bookmark GetTitleBookmark(string userid, string titleid)
+        {
+            return ctx.Title_Bookmark.Find(userid, titleid);
+        }
+        
+        public bool DeleteTitleBookmark(string userid, string titleid)
+        {
+            var titleBookmark = ctx.Title_Bookmark.Find(userid, titleid);
+            if (titleBookmark == null)
+            {
+                return false;
+            }
+            ctx.Title_Bookmark.Remove(titleBookmark);
+            ctx.SaveChanges();
+            return true;
+        }
+
+        public Title_Bookmark CreateTitleBookmark(string userid, string titleid)
+        {
+            //need a way to validate user
+            using var ctx = new DatabaseConnection();
+            var result = new Title_Bookmark
+            {
+                UserId = userid,
+                TitleId = titleid,
+                BookMarkTime = DateTime.Now
+            };
+            ctx.Title_Bookmark.Add(result);
+            ctx.SaveChanges();
+            return result;
+        }
+        
     }
-}
+} 

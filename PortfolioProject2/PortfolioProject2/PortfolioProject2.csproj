@@ -3,6 +3,7 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
+	<GenerateProgramFile>false</GenerateProgramFile>
     </PropertyGroup>
 
     <ItemGroup>
@@ -14,6 +15,8 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="5.0.11" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
       <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.6.0" />
+      <PackageReference Include="xunit" Version="2.4.2-pre.12" />
+      <PackageReference Include="xunit.assert" Version="2.4.2-pre.12" />
     </ItemGroup>
 
 </Project>

@@ -22,7 +22,12 @@ namespace PortfolioProject2.Models.DataInterfaces
         Task<List<PopularTitles>> GetPopularTitles();
 
         Task<List<Title_Info>> GetInfoSpecificTitle(string id);
+        
+        Title_Bookmark CreateTitleBookmark(string userid, string titleid);
 
+        Title_Bookmark GetTitleBookmark(string userid, string titleid);
+        
+        bool DeleteTitleBookmark(string userid, string titleid);
     }
     
 }

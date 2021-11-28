@@ -33,6 +33,8 @@ namespace PortfolioProject2.Models
         public DbSet<PopularTitles> PopularTitles { get; set; }
         
         public DbSet<Title_Info> Title_Info { get; set; }
+        public DbSet<Title_Bookmark> Title_Bookmark { get; set; }
+
 
         private readonly string connectionString =
             "host=rawdata.ruc.dk;port=5432;database=raw8;username=raw8;password=utuBOPUw";
@@ -386,6 +388,21 @@ namespace PortfolioProject2.Models
                 entity.Property(x => x.Poster).HasColumnName("poster");
                 entity.Property(x => x.Plot).HasColumnName("plot");
 
+            });
+            
+            modelBuilder.Entity<Title_Bookmark>(entity =>
+            {
+                // Points to Database titles
+                entity.ToTable("title_bookmark");
+
+                // Sets Primary Key
+                entity.HasKey(x => x.UserId).HasName("userid");
+                entity.HasKey(x => x.TitleId).HasName("titleid");
+                
+                // Sets properties
+                entity.Property(x => x.UserId).HasColumnName("userid");
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.BookMarkTime).HasColumnName("bookmarktime");
             });
             
 
