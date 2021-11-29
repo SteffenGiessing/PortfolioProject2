@@ -37,7 +37,7 @@ namespace WebApplication.Test
         {
             var service = new TitleDataService();
             var bookmarks = service.GetTitleBookmarks("1");
-            Assert.Equal(1, bookmarks.Count);
+            Assert.Equal(2, bookmarks.Count);
         }
         
         [Fact]
