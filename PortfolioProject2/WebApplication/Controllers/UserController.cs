@@ -5,7 +5,13 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using PortfolioProject2.DMOs;
 using PortfolioProject2.Models.DataInterfaces;
+using PortfolioProject2.Token;
+using WebApplication.DTOs;
+using IUserDataService = WebApplication.DataInterfaces.IUserDataService;
+using TokenCreator = WebApplication.Token.TokenCreator;
+using User_User = WebApplication.DMOs.User_User;
 //using PortfolioProject2.Token;
 #nullable enable
 using System.Collections.Generic;
@@ -49,19 +55,58 @@ namespace WebApplication.Controllers
                 var created = _iDataServices.CreateUser(mapUser);
                 var token = TokenCreator.TokenCreater(created, _config);
                 var userToStore = _mapper.Map<User_User>(created);
-                userToStore.TokenJWT = token;
+                userToStore.TokenJwt = token;
 
 
-                return Created("", userToStore);
+                return Ok(userToStore);
+            }
+
+         
+/*
+            [AllowAnonymous]
+            [HttpPost]
+            public IActionResult LoginUser(Users users)
+            {
+                var user = _iDataServices.GetUserByEmail(UserCreateOrUpdate.Email).Result;
+
+                if (user == null)
+                {
+                    return NotFound();
+                }
+
+                string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+                    password: userForCreateOrUpdateDto.Password,
+                    salt: user.Salt,
+                    prf: KeyDerivationPrf.HMACSHA1,
+                    iterationCount: 10000,
+                    numBytesRequested: 256 / 8));
+
+                var validatedUser = _IdataService.ValidateUserByPassword(user.Email, hashed).Result;
+
+                if (validatedUser == null)
+                {
+                    return Unauthorized();
+                }
+
+                var jwtToken = TokenCreator.TokenCreater(validatedUser, _config);
+                var userToReturn = _mapper.Map<User_User_Dto>(validatedUser);
+                userToReturn.JwtToken = jwtToken;
+                return Ok(userToReturn);
             }
             
-            */
-            [HttpGet]
-            public ActionResult<IEnumerable<User_Comments>> GetAllComments()
-            {
-                var comments = _iDataServices.GetAllComments();
-                return Ok(comments);
-            }
+       */     
+        [HttpGet("{email}")]
+        public ActionResult<User_User> GetCurrentUser(string email)
+        {
+            var setCurrentUser = _iDataServices.GetUserByEmail(email).Result;
+            return Ok(setCurrentUser);
+        }
+        [HttpGet]
+        public ActionResult<IEnumerable<User_Comments>> GetAllComments()
+        {
+            var comments = _iDataServices.GetAllComments();
+            return Ok(comments); 
+        }
 
         [HttpGet("userComment/{userid}")]
         public ActionResult<User_Comments> GetAllCommentsFromOneUser(string? userid)

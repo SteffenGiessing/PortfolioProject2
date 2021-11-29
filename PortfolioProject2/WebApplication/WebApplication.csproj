@@ -21,5 +21,4 @@
     <ItemGroup>
       <ProjectReference Include="..\PortfolioProject2\PortfolioProject2.csproj" />
     </ItemGroup>
-
 </Project>

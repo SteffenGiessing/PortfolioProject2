@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using PortfolioProject2.DMOs;
 using PortfolioProject2.Models.DMOs;
+using User_User = WebApplication.DMOs.User_User;
 
 
 namespace PortfolioProject2.Models
@@ -315,7 +317,9 @@ namespace PortfolioProject2.Models
                 entity.Property(x => x.UserName).HasColumnName("username");
                 entity.Property(x => x.EmailAddress).HasColumnName("emailaddress");
                 entity.Property(x => x.PasswordSalt).HasColumnName("password");
-                entity.Property(x => x.TokenJWT).HasColumnName("token");
+                entity.Property(x => x.PasswordHash).HasColumnName("passwordhash");
+                entity.Property(x => x.LastAccess).HasColumnName("lastaccess");
+                entity.Property(x => x.TokenJwt).HasColumnName("token");
             });
            
 

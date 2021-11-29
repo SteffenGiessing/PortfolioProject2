@@ -14,7 +14,7 @@ using WebApplication.ViewModels;
 namespace WebApplication.Controllers
 {
     [ApiController]
-        [Route("api/titles")]
+    [Route("api/titles")]
     public class TitlesController : Controller
     {
         private readonly ITitlesDataService _iDataServices;

@@ -1,4 +1,6 @@
-namespace PortfolioProject2.Models.DMOs
+using System;
+
+namespace WebApplication.DMOs
 {
     public class User_User
     {
@@ -10,7 +12,8 @@ namespace PortfolioProject2.Models.DMOs
         public string PasswordSalt { get; set; }
         public string PasswordHash { get; set; }
         
-        public string TokenJWT { get; set; }
+        public DateTime LastAccess { get; set; }
+        public string TokenJwt { get; set; }
 
     }
 }
