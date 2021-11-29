@@ -76,6 +76,21 @@ namespace WebApplication.Controllers
                 var allCommentsFromOneTitle = _iDataServices.GetAllCommentsFromOneTitle(titleid).Result;
                 return Ok(allCommentsFromOneTitle);
             }
+            
+            
+            [HttpGet("userSearch/{userid}")]
+            public IActionResult GetAllSearchHistoryFromOneUser(string? userid)
+            {
+                var searchHistoryUser = _iDataServices.GetAllSearchHistoryFromOneUser(userid);
+                return Ok(searchHistoryUser);
+            }
+
+            [HttpPost("postSearchHistory/{userid}")]
+            public async Task<ActionResult<User_History>> PostNewSearchHistory(string userid, string searchtext)
+            {
+                var newSearchHistory = _iDataServices.PostNewSearchHistory(userid, searchtext);
+                return Ok(newSearchHistory);
+            }
         }
 }
 

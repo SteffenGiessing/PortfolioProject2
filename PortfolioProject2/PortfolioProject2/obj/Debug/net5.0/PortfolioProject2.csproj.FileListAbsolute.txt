@@ -298,39 +298,6 @@ C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProjec
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.IO.Pipelines.dll
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 =======
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.exe
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.deps.json
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.runtimeconfig.json
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.runtimeconfig.dev.json
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/ref/PortfolioProject2.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.pdb
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/AutoMapper.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Caching.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Caching.Memory.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Logging.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Logging.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Options.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Npgsql.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.csproj.AssemblyReference.cache
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.GeneratedMSBuildEditorConfig.editorconfig
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.AssemblyInfoInputs.cache
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.AssemblyInfo.cs
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.csproj.CoreCompileInputs.cache
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.csproj.CopyComplete
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/ref/PortfolioProject2.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.pdb
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.genruntimeconfig.cache
 C:/Users/Steffen Giessing/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.exe
 C:/Users/Steffen Giessing/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.deps.json
 C:/Users/Steffen Giessing/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.runtimeconfig.json
@@ -363,7 +330,6 @@ C:/Users/Steffen Giessing/RiderProjects/PortfolioProject2/PortfolioProject2/Port
 C:/Users/Steffen Giessing/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/ref/PortfolioProject2.dll
 C:/Users/Steffen Giessing/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.pdb
 C:/Users/Steffen Giessing/RiderProjects/PortfolioProject2/PortfolioProject2/PortfolioProject2/obj/Debug/net5.0/PortfolioProject2.genruntimeconfig.cache
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:/Users/Bruger/Desktop/UNI/Rider projects/PortFolioProject2.1/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.exe
 C:/Users/Bruger/Desktop/UNI/Rider projects/PortFolioProject2.1/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.deps.json
 C:/Users/Bruger/Desktop/UNI/Rider projects/PortFolioProject2.1/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/PortfolioProject2.runtimeconfig.json
@@ -423,31 +389,6 @@ C:/Users/Bruger/Desktop/UNI/Rider projects/PortFolioProject2.1/PortfolioProject2
 C:/Users/Bruger/Desktop/UNI/Rider projects/PortFolioProject2.1/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Newtonsoft.Json.dll
 C:/Users/Bruger/Desktop/UNI/Rider projects/PortFolioProject2.1/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/System.IO.Pipelines.dll
 C:/Users/Bruger/Desktop/UNI/Rider projects/PortFolioProject2.1/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.Core.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Authorization.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Authorization.Policy.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Hosting.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Http.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Extensions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Features.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.Core.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Routing.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Routing.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.WebUtilities.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.DotNet.PlatformAbstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.DependencyModel.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.FileProviders.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.Hosting.Abstractions.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Extensions.ObjectPool.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.Net.Http.Headers.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Newtonsoft.Json.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/System.IO.Pipelines.dll
-D:/RUC/Second Semester/Computer Science/C#/git/ProjectPortofolio2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
 /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.Abstractions.dll
 /Users/steffensiltamiesgiessing/PortFolioProject2/PortfolioProject2/PortfolioProject2/PortfolioProject2/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.Core.dll
@@ -495,3 +436,11 @@ C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProjec
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\xunit.assert.dll
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\xunit.core.dll
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\xunit.execution.dotnet.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\xunit.abstractions.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\xunit.assert.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\xunit.core.dll
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\PortfolioProject2\bin\Debug\net5.0\xunit.execution.dotnet.dll

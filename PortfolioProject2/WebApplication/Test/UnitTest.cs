@@ -1,11 +1,7 @@
-using System;
-using System.Linq;
+using System.Net.Sockets;
 using AutoMapper;
-using Microsoft.EntityFrameworkCore;
 using Xunit;
-using Xunit.Abstractions;
 using Moq;
-using PortfolioProject2;
 using PortfolioProject2.Models.DataServices;
 
 namespace WebApplication.Test
@@ -18,7 +14,8 @@ namespace WebApplication.Test
         [Fact]
         public void CheckConnection()
         {
-            
+            var client = Connect();
+            Assert.True(client.Connected);
         }
         
         [Fact]
@@ -46,6 +43,30 @@ namespace WebApplication.Test
             var service = new ActorDataService();
             var bookmarks = service.GetNameBookmarks("1");
             Assert.Equal(1, bookmarks.Count);
+        }
+        
+        [Fact]
+        public void TestingUserSearchHistorybyUserId()
+        {
+            //Arrange
+            var service = new UserDataService();
+            var newHistorySearch = service.PostNewSearchHistory("1", "some random movie again new test");
+        }
+        
+        [Fact]
+        public void ShowUserSearchHistoryById()
+        {
+            var service = new UserDataService();
+            var searching = service.GetAllSearchHistoryFromOneUser("1");
+            Assert.Equal(3, searching.Count);
+        }
+        
+        // Helper Methods
+        private static TcpClient Connect()
+        {
+            var client = new TcpClient();
+            client.Connect("localhost", Port);
+            return client;
         }
         
     }
