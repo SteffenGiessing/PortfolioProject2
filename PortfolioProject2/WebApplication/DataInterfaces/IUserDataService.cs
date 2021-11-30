@@ -8,14 +8,16 @@ namespace PortfolioProject2.Models.DataInterfaces
     {
         IList<User_Comments> GetAllComments();
 
-        Task<List<User_Comments>> GetAllCommentsFromOneUser(string userid);
+        IList <User_Comments> GetUserComments(string userid);
 
-        Task<List<User_Comments>> GetAllCommentsFromOneTitle(string titleid);
+        IList <User_Comments> GetCommentsFromTitle(string titleid);
         
         IList<User_History> GetAllSearchHistoryFromOneUser(string userid);
         
         User_History PostNewSearchHistory(string userid, string searchtext);
 
         User_User CreateUser(User_User user);
+
+        User_Comments CreateTitleComments(string userid, string titleid, string commenttext);
     }
 }

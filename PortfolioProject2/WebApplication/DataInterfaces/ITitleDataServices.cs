@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -29,7 +30,7 @@ namespace PortfolioProject2.Models.DataInterfaces
 
         IList <Title_Bookmark> GetTitleBookmarks(string userid);
         
-        bool DeleteTitleBookmark(string userid, string titleid);
+        bool DeleteTitleBookmark (string userid, string titleid);
     }
     
 }

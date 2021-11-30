@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
@@ -10,6 +11,9 @@ namespace PortfolioProject2.Models.DataServices
 {
     public class UserDataService : IUserDataService
     {
+        public DatabaseConnection ctx { get; set; }
+        
+        //User Comments
         public IList<User_Comments> GetAllComments()
         {
             using var ctx = new DatabaseConnection();
@@ -17,22 +21,58 @@ namespace PortfolioProject2.Models.DataServices
             return list;
         }
 
-        public async Task<List<User_Comments>> GetAllCommentsFromOneUser(string userid)
+        public IList<User_Comments> GetUserComments(string userid)
         {
-            var ctx = new DatabaseConnection();
-            return await ctx.User_Comments
-                .FromSqlRaw("SELECT * FROM user_comments WHERE userid = {0}", userid)
-                .ToListAsync();
+            IList<User_Comments> result = new List<User_Comments>();
+            using var ctx = new DatabaseConnection();
+            
+            foreach (var uc in ctx.User_Comments)
+            {
+                if (uc.UserId.Trim() == userid)
+                {
+                    result.Add(uc);
+                }
+            }
+            return result;
         }
 
-        public async Task<List<User_Comments>> GetAllCommentsFromOneTitle(string titleid)
+        public IList<User_Comments> GetCommentsFromTitle(string titleid)
         {
+            List<User_Comments> result = new List<User_Comments>();
             var ctx = new DatabaseConnection();
-            return await ctx.User_Comments
-                .FromSqlRaw("SELECT * FROM user_comments WHERE titleid = {0}", titleid)
-                .ToListAsync();
+            foreach (var uc in ctx.User_Comments)
+            {
+                if (uc.TitleId.Trim() == titleid)
+                {
+                    result.Add(uc);
+                }
+            }
+            return result;
+        }
+
+        public User_Comments CreateTitleComments(string userid, string titleid, string commenttext)
+        {
+            using var ctx = new DatabaseConnection();
+            var result = new User_Comments
+            {
+                UserId = userid,
+                TitleId = titleid,
+                CommentText = commenttext,
+                CommentTime = DateTime.Now,
+                //CommentId = NewSearchId()
+            };
+            ctx.User_Comments.Add(result);
+            //check for connection to database
+            int a = ctx.SaveChanges();
+            if (a == 0)
+            {
+                return null;
+            }
+            return result;
         }
         
+        
+        //User searchhistory--------------------------
         public IList<User_History> GetAllSearchHistoryFromOneUser(string userid)
         {
             List<User_History> result = new List<User_History>();
@@ -58,7 +98,12 @@ namespace PortfolioProject2.Models.DataServices
                 SearchId = NewSearchId()
             };
             ctx.User_History.Add(result);
-            ctx.SaveChanges();
+            //check for connection to database
+            int a = ctx.SaveChanges();
+            if (a == 0)
+            {
+                return null;
+            }
             return result;
         }
 

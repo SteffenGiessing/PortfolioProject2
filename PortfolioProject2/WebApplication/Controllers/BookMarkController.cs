@@ -44,9 +44,9 @@ namespace WebApplication.Controllers
         }
         
         [HttpGet("{userid}/titlebookmarks")]
-        public IActionResult GetTitleBookmarks(string uconst)
+        public IActionResult GetTitleBookmarks(string userid)
         {
-            var titleBookmarks = _iTitleDataServices.GetTitleBookmarks(uconst);
+            var titleBookmarks = _iTitleDataServices.GetTitleBookmarks(userid);
             if (titleBookmarks == null)
             {
                 return NotFound();

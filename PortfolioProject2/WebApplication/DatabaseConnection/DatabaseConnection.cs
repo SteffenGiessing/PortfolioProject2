@@ -253,16 +253,17 @@ namespace PortfolioProject2.Models
             {
                 // Points to Database user_comments
                 entity.ToTable("user_comments");
+
+                // Sets Primary Key -> Composite Key
+                entity.HasKey(x => new { userid = x.UserId, titleid = x.TitleId, commenttime = x.CommentTime});
                 
-                // Sets Primary Key
-                entity.HasKey(x => x.CommentId).HasName("commentid");
-                
+                //entity.HasKey(x => x.CommentId).HasName("commentid");
                 // Sets properties
                 entity.Property(x => x.CommentText).HasColumnName("commenttext");
                 entity.Property(x => x.UserId).HasColumnName("userid");
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
                 entity.Property(x => x.CommentTime).HasColumnName("commenttime");
-                entity.Property(x => x.CommentId).HasColumnName("commentid");
+                //entity.Property(x => x.CommentId).HasColumnName("commentid");
 
             });
           
@@ -398,7 +399,7 @@ namespace PortfolioProject2.Models
                 entity.ToTable("title_bookmark");
 
                 // Sets Primary Key
-                entity.HasKey(x => new { titleid = x.TitleId, userid = x.UserId});
+                entity.HasKey(x => new { userid = x.UserId, titleid = x.TitleId, });
 
                 
                 // Sets properties

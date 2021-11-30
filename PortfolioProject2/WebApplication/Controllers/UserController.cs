@@ -55,7 +55,10 @@ namespace WebApplication.Controllers
                 return Created("", userToStore);
             }
             
-            */
+            */ 
+            
+            //User comments
+
             [HttpGet]
             public ActionResult<IEnumerable<User_Comments>> GetAllComments()
             {
@@ -63,20 +66,36 @@ namespace WebApplication.Controllers
                 return Ok(comments);
             }
 
-        [HttpGet("userComment/{userid}")]
-        public ActionResult<User_Comments> GetAllCommentsFromOneUser(string? userid)
-        {
-            var allCommentsFromOneUser = _iDataServices.GetAllCommentsFromOneUser(userid).Result;
-            return Ok(allCommentsFromOneUser);
-        }
-
-            [HttpGet("movieComment/{titleid}")]
-            public async Task<ActionResult<User_Comments>> GetAllCommentsFromOneTitle(string? titleid)
+            [HttpGet("comments/{userid}")]
+            public IActionResult GetUserComments(string userid)
             {
-                var allCommentsFromOneTitle = _iDataServices.GetAllCommentsFromOneTitle(titleid).Result;
+                var userComments = _iDataServices.GetUserComments(userid);
+                if (userComments == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(userComments);
+            }
+
+            [HttpGet("comments/{titleid}")]
+            public IActionResult GetCommentsFromTitle(string? titleid)
+            {
+                var allCommentsFromOneTitle = _iDataServices.GetCommentsFromTitle(titleid);
                 return Ok(allCommentsFromOneTitle);
             }
             
+            [HttpPost("{userid}/usercomment/{titleid}")]
+            
+            public IActionResult CreateTitleComments(string userid, string titleid, string commenttext)
+            {
+                var createComment = _iDataServices.CreateTitleComments(userid, titleid, commenttext);
+                return Ok(createComment);
+            }
+            
+            
+            
+            //Search History
             
             [HttpGet("userSearch/{userid}")]
             public IActionResult GetAllSearchHistoryFromOneUser(string? userid)
@@ -84,7 +103,7 @@ namespace WebApplication.Controllers
                 var searchHistoryUser = _iDataServices.GetAllSearchHistoryFromOneUser(userid);
                 return Ok(searchHistoryUser);
             }
-
+            
             [HttpPost("postSearchHistory/{userid}")]
             public async Task<ActionResult<User_History>> PostNewSearchHistory(string userid, string searchtext)
             {

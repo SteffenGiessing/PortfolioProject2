@@ -12,6 +12,7 @@ namespace PortfolioProject2.Models.DataServices
     public class TitleDataService : ITitlesDataService
     {
         public DatabaseConnection ctx { get; set; }
+
         /*public IList<Titles> GetAllTitles()
         {
             using var ctx = new DatabaseConnection();
@@ -123,7 +124,11 @@ namespace PortfolioProject2.Models.DataServices
                 BookMarkTime = DateTime.Now
             };
             ctx.Title_Bookmark.Add(result);
-            ctx.SaveChanges();
+            int a = ctx.SaveChanges();
+            if (a == 0)
+            {
+                return null;
+            }
             return result;
         }
         

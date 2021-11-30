@@ -46,13 +46,36 @@ namespace WebApplication.Test
         }
         
         [Fact]
+        public void GetCommentsFromTitle()
+        {
+            var service = new UserDataService();
+            var comments = service.GetCommentsFromTitle("tt10850402");
+            Assert.Equal(3, comments.Count);
+        }
+        
+        [Fact]
+        public void GetUserComments()
+        {
+            var service = new UserDataService();
+            var comments = service.GetUserComments("1");
+            Assert.Equal(3, comments.Count);
+        }
+        
+        [Fact]
+        public void CreateTitleComments()
+        {
+            var service = new UserDataService();
+            var newComment = service.CreateTitleComments("1", "tt11827694", "meh");
+        }
+
+        [Fact]
         public void TestingUserSearchHistorybyUserId()
         {
             //Arrange
             var service = new UserDataService();
             var newHistorySearch = service.PostNewSearchHistory("1", "some random movie again new test");
         }
-        
+
         [Fact]
         public void ShowUserSearchHistoryById()
         {
