@@ -123,8 +123,13 @@ namespace PortfolioProject2.Models.DataServices
                 BookMarkTime = DateTime.Now
             };
             ctx.Title_Bookmark.Add(result);
-            ctx.SaveChanges();
+            int a = ctx.SaveChanges();
+            if (a == 0)
+            {
+                return null;
+            }
             return result;
+            
         }
         
         public bool DeleteTitleBookmark(string userid, string titleid)

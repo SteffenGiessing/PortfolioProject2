@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using PortfolioProject2.Models.DataInterfaces;
+using PortfolioProject2.Token;
 //using PortfolioProject2.Token;
 #nullable enable
 using System.Collections.Generic;
@@ -54,14 +55,13 @@ namespace WebApplication.Controllers
 
                 return Created("", userToStore);
             }
-            
-            */
-            [HttpGet]
-            public ActionResult<IEnumerable<User_Comments>> GetAllComments()
-            {
-                var comments = _iDataServices.GetAllComments();
-                return Ok(comments);
-            }
+*/
+        [HttpGet]
+        public ActionResult<IEnumerable<User_Comments>> GetAllComments()
+        {
+            var comments = _iDataServices.GetAllComments();
+            return Ok(comments);
+        }
 
         [HttpGet("userComment/{userid}")]
         public ActionResult<User_Comments> GetAllCommentsFromOneUser(string? userid)

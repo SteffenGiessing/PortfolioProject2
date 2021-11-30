@@ -314,7 +314,7 @@ namespace PortfolioProject2.Models
                 entity.Property(x => x.LastName).HasColumnName("lastname");
                 entity.Property(x => x.UserName).HasColumnName("username");
                 entity.Property(x => x.EmailAddress).HasColumnName("emailaddress");
-                entity.Property(x => x.PasswordSalt).HasColumnName("password");
+                entity.Property(x => x.Password).HasColumnName("password");
                 entity.Property(x => x.TokenJWT).HasColumnName("token");
             });
            
