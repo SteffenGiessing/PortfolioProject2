@@ -7,6 +7,8 @@ using Microsoft.Extensions.Hosting;
 using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
 using PortfolioProject2.Models;
+using ActorDataService = WebApplication.DataServices.ActorDataService;
+using IActorDataService = WebApplication.DataInterfaces.IActorDataService;
 using RatingsDataService = WebApplication.DataServices.RatingsDataService;
 using UserDataService = WebApplication.DataServices.UserDataService;
 

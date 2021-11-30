@@ -9,6 +9,7 @@ using PortfolioProject2;
 using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
 using WebApplication.ViewModels;
+using IActorDataService = WebApplication.DataInterfaces.IActorDataService;
 
 namespace WebApplication.Controllers
 {
