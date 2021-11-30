@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using PortfolioProject2.Models.DataInterfaces;
-using PortfolioProject2.Token;
 //using PortfolioProject2.Token;
 #nullable enable
 using System.Collections.Generic;
@@ -87,9 +86,13 @@ namespace WebApplication.Controllers
 
             [HttpPost("postSearchHistory/{userid}")]
             public async Task<ActionResult<User_History>> PostNewSearchHistory(string userid, string searchtext)
+            
             {
+                
                 var newSearchHistory = _iDataServices.PostNewSearchHistory(userid, searchtext);
                 return Ok(newSearchHistory);
+                
+                
             }
         }
 }

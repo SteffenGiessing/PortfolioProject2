@@ -1,7 +1,9 @@
+using System;
 using System.Net.Sockets;
 using AutoMapper;
 using Xunit;
 using Moq;
+using Newtonsoft.Json;
 using PortfolioProject2.Models.DataServices;
 using ActorDataService = WebApplication.DataServices.ActorDataService;
 using UserDataService = WebApplication.DataServices.UserDataService;
@@ -70,6 +72,17 @@ namespace WebApplication.Test
             client.Connect("localhost", Port);
             return client;
         }
-        
+
+        [Fact]
+        public void ShouldSeeAllCommentsFromOneUser()
+        {
+            var service = new UserDataService();
+            var getAllComments = service.GetAllCommentsFromOneUser("1");
+            Assert.NotNull(getAllComments);
+            Assert.Equal(1, getAllComments.Id);
+            
+
+        }
+       // Assert.Equal(2, bookmarks.Count);
     }
 }

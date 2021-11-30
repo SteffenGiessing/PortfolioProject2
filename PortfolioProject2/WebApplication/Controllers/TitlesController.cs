@@ -153,7 +153,9 @@ namespace WebApplication.Controllers
         {
             var model = _mapper.Map<TitleListViewModel>(titles);
             model.Url = GetTitleUrl(titles);
+            
             return model;
+            
         }
 
         private string? GetTitleUrl(Titles titles)

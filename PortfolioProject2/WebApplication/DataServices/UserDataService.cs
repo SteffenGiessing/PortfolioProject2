@@ -72,6 +72,7 @@ namespace WebApplication.DataServices
                 "INSERT INTO user_user(firstname, lastname, username, emailaddress,password,passwordhash,lastaccess,token) VALUES ({0},{1},{2},{4},{5},{6},{7})",
                 user.FirstName, user.LastName, user.UserName, user.EmailAddress, user.Password, user.PasswordHash,
                 user.lastaccess, user.TokenJWT).FirstOrDefault();
+            
             return user;
         }
         
