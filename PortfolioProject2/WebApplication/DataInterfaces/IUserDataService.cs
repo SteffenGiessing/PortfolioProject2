@@ -14,7 +14,7 @@ namespace PortfolioProject2.Models.DataInterfaces
         
         IList<User_History> GetAllSearchHistoryFromOneUser(string userid);
         
-        User_History PostNewSearchHistory(string userid, string searchtext);
+        User_History PostNewSearchHistory(User_History history);
 
         User_User CreateUser(User_User user);
 

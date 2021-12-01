@@ -3,6 +3,7 @@ using AutoMapper;
 using Xunit;
 using Moq;
 using PortfolioProject2.Models.DataServices;
+using UserDataService = WebApplication.DataServices.UserDataService;
 
 namespace WebApplication.Test
 {
@@ -68,13 +69,13 @@ namespace WebApplication.Test
             var newComment = service.CreateTitleComments("1", "tt11827694", "meh");
         }
 
-        [Fact]
+        /*[Fact]
         public void TestingUserSearchHistorybyUserId()
         {
             //Arrange
             var service = new UserDataService();
-            var newHistorySearch = service.PostNewSearchHistory("1", "some random movie again new test");
-        }
+            var newHistorySearch = service.PostNewSearchHistory("1", "some random movie again new test3");
+        }*/
 
         [Fact]
         public void ShowUserSearchHistoryById()

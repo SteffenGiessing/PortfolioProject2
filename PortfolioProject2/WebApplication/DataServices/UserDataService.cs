@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using PortfolioProject2.Models;
 using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
 
-namespace PortfolioProject2.Models.DataServices
+namespace WebApplication.DataServices
 {
     public class UserDataService : IUserDataService
     {
@@ -88,6 +87,7 @@ namespace PortfolioProject2.Models.DataServices
             return result;
         }
         
+        /*
         public User_History PostNewSearchHistory(string userid, string searchtext)
         {
             using var ctx = new DatabaseConnection();
@@ -95,16 +95,21 @@ namespace PortfolioProject2.Models.DataServices
             {
                 UserId = userid,
                 SearchText = searchtext,
-                SearchId = NewSearchId()
             };
             ctx.User_History.Add(result);
-            //check for connection to database
-            int a = ctx.SaveChanges();
-            if (a == 0)
-            {
-                return null;
-            }
+            ctx.SaveChanges();
             return result;
+        }
+        */
+        
+        public User_History PostNewSearchHistory(User_History history)
+        {
+            using var ctx = new DatabaseConnection();
+            ctx.User_History.FromSqlRaw(
+                "INSERT INTO user_history(searchtext, userid) VALUES ({0}, {1})", 
+                history.SearchText, history.UserId).FirstOrDefault();
+        
+            return history;
         }
 
         public User_User CreateUser(User_User user)
@@ -116,7 +121,7 @@ namespace PortfolioProject2.Models.DataServices
         
         // Utils
         
-        public string NewSearchId()
+        /*public string NewSearchId()
         {
             using var ctx = new DatabaseConnection();
             var maxSearchId = 0;
@@ -125,7 +130,7 @@ namespace PortfolioProject2.Models.DataServices
             foreach (var user_history in ctx.User_History )
             {
                 var searchid = user_history.SearchId;
-                var trimmedUconst = searchid.Remove(0, 2);
+                var trimmedUconst = searchid;
                 int intSearchId = Int32.Parse(trimmedUconst);
 
                 if (intSearchId > maxSearchId)
@@ -134,10 +139,10 @@ namespace PortfolioProject2.Models.DataServices
                 }
             }
             maxSearchId++;
-            var stringSearchId = "smth" + maxSearchId.ToString();
+            var stringSearchId = maxSearchId.ToString();
 
             return stringSearchId;
-        }
+        }*/
     }
 }
 

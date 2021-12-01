@@ -104,10 +104,10 @@ namespace WebApplication.Controllers
                 return Ok(searchHistoryUser);
             }
             
-            [HttpPost("postSearchHistory/{userid}")]
-            public async Task<ActionResult<User_History>> PostNewSearchHistory(string userid, string searchtext)
+            [HttpPost("postSearchHistory")]
+            public IActionResult PostNewSearchHistory(User_History history)
             {
-                var newSearchHistory = _iDataServices.PostNewSearchHistory(userid, searchtext);
+                var newSearchHistory = _iDataServices.PostNewSearchHistory(history);
                 return Ok(newSearchHistory);
             }
         }
