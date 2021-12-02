@@ -74,14 +74,14 @@ namespace WebApplication.Test
         {
             //Arrange
             var service = new UserDataService();
-            var newHistorySearch = service.PostNewSearchHistory("some","1");
+            var newHistorySearch = service.PostNewSearchHistory("somdde",1);
         }
 
         [Fact]
         public void ShowUserSearchHistoryById()
         {
             var service = new UserDataService();
-            var searching = service.GetAllSearchHistoryFromOneUser("1");
+            var searching = service.GetAllSearchHistoryFromOneUser(1);
             Assert.Equal(3, searching.Count);
         }
         

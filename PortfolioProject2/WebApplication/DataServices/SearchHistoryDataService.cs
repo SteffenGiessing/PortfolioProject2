@@ -9,13 +9,13 @@ namespace WebApplication.DataServices
     public class SearchHistoryDataService : ISearchHistoryDataService
     {
         //User searchhistory--------------------------
-        public IList<User_History> GetAllSearchHistoryFromOneUser(string userid)
+        public IList<User_History> GetAllSearchHistoryFromOneUser(int userid)
         {
             List<User_History> result = new List<User_History>();
             var ctx = new DatabaseConnection();
             foreach (var sh in ctx.User_History)
             {
-                if (sh.UserId.Trim() == userid)
+                if (sh.UserId == userid)
                 {
                     result.Add(sh);
                 }
@@ -23,8 +23,13 @@ namespace WebApplication.DataServices
 
             return result;
         }
-        
-        public User_History PostNewSearchHistory(string searchtext, string userid)
+
+        public IList<User_History> GetAllSearchHistoryFromOneUser(string userid)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public User_History PostNewSearchHistory(string searchtext, int userid)
         {
             using var ctx = new DatabaseConnection();
             var result = new User_History
