@@ -49,61 +49,7 @@ namespace WebApplication.Controllers
                 return Created("", userToStore);
             }
             
-            */ 
-            
-            //User comments
-
-            [HttpGet]
-            public ActionResult<IEnumerable<User_Comments>> GetAllComments()
-            {
-                var comments = _iDataServices.GetAllComments();
-                return Ok(comments);
-            }
-
-            [HttpGet("comments/{userid}")]
-            public IActionResult GetUserComments(string userid)
-            {
-                var userComments = _iDataServices.GetUserComments(userid);
-                if (userComments == null)
-                {
-                    return NotFound();
-                }
-
-                return Ok(userComments);
-            }
-
-            [HttpGet("comments/{titleid}")]
-            public IActionResult GetCommentsFromTitle(string? titleid)
-            {
-                var allCommentsFromOneTitle = _iDataServices.GetCommentsFromTitle(titleid);
-                return Ok(allCommentsFromOneTitle);
-            }
-            
-            [HttpPost("{userid}/usercomment/{titleid}")]
-            
-            public IActionResult CreateTitleComments(string userid, string titleid, string commenttext)
-            {
-                var createComment = _iDataServices.CreateTitleComments(userid, titleid, commenttext);
-                return Ok(createComment);
-            }
-            
-            
-            
-            //Search History
-            
-            /*[HttpGet("userSearch/{userid}")]
-            public IActionResult GetAllSearchHistoryFromOneUser(string? userid)
-            {
-                var searchHistoryUser = _iDataServices.GetAllSearchHistoryFromOneUser(userid);
-                return Ok(searchHistoryUser);
-            }
-            
-            [HttpPost("postSearchHistory")]
-            public IActionResult PostNewSearchHistory(string searchtext, string userid)
-            {
-                var newSearchHistory = _iDataServices.PostNewSearchHistory(searchtext, userid);
-                return Ok(newSearchHistory);
-            }*/
+            */
         }
 }
 

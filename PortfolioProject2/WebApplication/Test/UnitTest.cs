@@ -3,6 +3,7 @@ using AutoMapper;
 using Xunit;
 using Moq;
 using PortfolioProject2.Models.DataServices;
+using WebApplication.DataServices;
 using UserDataService = WebApplication.DataServices.UserDataService;
 
 namespace WebApplication.Test
@@ -23,7 +24,7 @@ namespace WebApplication.Test
         public void CreateTitleBookmark()
         {
             var service = new BookMarkDataService();
-            var newBookmark = service.CreateTitleBookmark("7", "tt11827694");
+            var newBookmark = service.CreateTitleBookmark("20", "tt11827694");
             /*Assert.NotNull(newBookmark);
             Assert.Equal(newBookmark, service.GetTitleBookmark("7", "tt11827694"));
             service.DeleteTitleBookmark("7", "tt11827694");
@@ -35,7 +36,7 @@ namespace WebApplication.Test
         {
             var service = new BookMarkDataService();
             var bookmarks = service.GetTitleBookmarks("1");
-            Assert.Equal(2, bookmarks.Count);
+            Assert.Equal(3, bookmarks.Count);
         }
         
         [Fact]
@@ -58,7 +59,7 @@ namespace WebApplication.Test
         public void GetUserComments()
         {
             var service = new UserDataService();
-            var comments = service.GetUserComments("1");
+            var comments = service.GetUserComments(1);
             Assert.Equal(3, comments.Count);
         }
         
@@ -66,23 +67,23 @@ namespace WebApplication.Test
         public void CreateTitleComments()
         {
             var service = new UserDataService();
-            var newComment = service.CreateTitleComments("1", "tt11827694", "meh");
+            var newComment = service.CreateTitleComments(1, "tt10850402", "meh 2");
         }
 
         [Fact]
         public void TestingUserSearchHistorybyUserId()
         {
             //Arrange
-            var service = new UserDataService();
-            var newHistorySearch = service.PostNewSearchHistory("something","1");
+            var service = new SearchHistoryDataService();
+            var newHistorySearch = service.PostNewSearchHistory("something",1);
         }
 
         [Fact]
         public void ShowUserSearchHistoryById()
         {
-            var service = new UserDataService();
-            var searching = service.GetAllSearchHistoryFromOneUser("1");
-            Assert.Equal(3, searching.Count);
+            var service = new SearchHistoryDataService();
+            var searching = service.GetAllSearchHistoryFromOneUser(1);
+            Assert.Equal(6, searching.Count);
         }
         
         // Helper Methods

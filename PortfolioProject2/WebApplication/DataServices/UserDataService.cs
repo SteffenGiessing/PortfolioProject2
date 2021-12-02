@@ -4,15 +4,12 @@ using System.Linq;
 using PortfolioProject2.Models;
 using PortfolioProject2.Models.DMOs;
 using IUserDataService = WebApplication.DataInterfaces.IUserDataService;
-using User_History = WebApplication.DMOs.User_History;
 
 namespace WebApplication.DataServices
 {
     public class UserDataService : IUserDataService
     {
-        public DatabaseConnection ctx { get; set; }
-        
-        //User Comments
+        //User GET
         public IList<User_Comments> GetAllComments()
         {
             using var ctx = new DatabaseConnection();
@@ -20,14 +17,14 @@ namespace WebApplication.DataServices
             return list;
         }
 
-        public IList<User_Comments> GetUserComments(string userid)
+        public IList<User_Comments> GetUserComments(int userid)
         {
             IList<User_Comments> result = new List<User_Comments>();
             using var ctx = new DatabaseConnection();
             
             foreach (var uc in ctx.User_Comments)
             {
-                if (uc.UserId.Trim() == userid)
+                if (uc.UserId == userid)
                 {
                     result.Add(uc);
                 }
@@ -49,7 +46,8 @@ namespace WebApplication.DataServices
             return result;
         }
 
-        public User_Comments CreateTitleComments(string userid, string titleid, string commenttext)
+        // USER POST
+        public User_Comments CreateTitleComments(int userid, string titleid, string commenttext)
         {
             using var ctx = new DatabaseConnection();
             var result = new User_Comments
@@ -58,7 +56,6 @@ namespace WebApplication.DataServices
                 TitleId = titleid,
                 CommentText = commenttext,
                 CommentTime = DateTime.Now,
-                //CommentId = NewSearchId()
             };
             ctx.User_Comments.Add(result);
             //check for connection to database
@@ -69,78 +66,11 @@ namespace WebApplication.DataServices
             }
             return result;
         }
-        
-        
-        //User searchhistory--------------------------
-        public IList<User_History> GetAllSearchHistoryFromOneUser(int userid)
-        {
-            List<User_History> result = new List<User_History>();
-            var ctx = new DatabaseConnection();
-            foreach (var sh in ctx.User_History)
-            {
-                if (sh.UserId == userid)
-                {
-                    result.Add(sh);
-                }
-            }
-
-            return result;
-        }
-        
-        public User_History PostNewSearchHistory(string searchtext, int userid)
-        {
-            using var ctx = new DatabaseConnection();
-            var result = new User_History
-            {
-                SearchText = searchtext,
-                UserId = userid
-            };
-            ctx.User_History.Add(result);
-            ctx.SaveChanges();
-            return result;
-        }
-        
-        /*public User_History PostNewSearchHistory(User_History history)
-        {
-            using var ctx = new DatabaseConnection();
-            ctx.User_History.FromSqlRaw(
-                "INSERT INTO user_history(searchtext, userid) VALUES ({0}, {1})", 
-                history.SearchText, history.UserId).FirstOrDefault();
-        
-            return history;
-        }*/
 
         public User_User CreateUser(User_User user)
         {
             throw new System.NotImplementedException();
         }
-        
-        
-        
-        // Utils
-        
-        /*public string NewSearchId()
-        {
-            using var ctx = new DatabaseConnection();
-            var maxSearchId = 0;
-            
-            
-            foreach (var user_history in ctx.User_History )
-            {
-                var searchid = user_history.SearchId;
-                var trimmedUconst = searchid;
-                int intSearchId = Int32.Parse(trimmedUconst);
-
-                if (intSearchId > maxSearchId)
-                {
-                    maxSearchId = intSearchId;
-                }
-            }
-            maxSearchId++;
-            var stringSearchId = maxSearchId.ToString();
-
-            return stringSearchId;
-        }*/
     }
 }
 

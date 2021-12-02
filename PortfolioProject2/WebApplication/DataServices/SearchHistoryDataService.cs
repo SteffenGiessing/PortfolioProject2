@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using PortfolioProject2.Models;
-using PortfolioProject2.Models.DMOs;
 using User_History = WebApplication.DMOs.User_History;
 using ISearchHistoryDataService = WebApplication.DataInterfaces.ISearchHistoryDataService;
 
@@ -8,7 +7,7 @@ namespace WebApplication.DataServices
 {
     public class SearchHistoryDataService : ISearchHistoryDataService
     {
-        //User searchhistory--------------------------
+        // GET Search History
         public IList<User_History> GetAllSearchHistoryFromOneUser(int userid)
         {
             List<User_History> result = new List<User_History>();
@@ -29,6 +28,7 @@ namespace WebApplication.DataServices
             throw new System.NotImplementedException();
         }
 
+        // Post Search History
         public User_History PostNewSearchHistory(string searchtext, int userid)
         {
             using var ctx = new DatabaseConnection();

@@ -10,10 +10,5 @@ namespace WebApplication.DMOs
         public int SearchId { get; set; }
         public string SearchText { get; set; }
         public int UserId { get; set; }
-        
-        /*public override string ToString()
-        {
-            return $"SearchId = {SearchId}";
-        }*/
     }
 }
