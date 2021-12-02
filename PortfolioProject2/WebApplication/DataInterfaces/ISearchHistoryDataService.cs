@@ -8,7 +8,7 @@ namespace WebApplication.DataInterfaces
     {
         IList<User_History> GetAllSearchHistoryFromOneUser(string userid);
         
-        User_History PostNewSearchHistory(string searchtext, string userid);
+        User_History PostNewSearchHistory(string searchtext, int userid);
 
     }
 }

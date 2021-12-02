@@ -7,9 +7,9 @@ namespace WebApplication.DMOs
     public class User_History
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string SearchId { get; set; }
+        public int SearchId { get; set; }
         public string SearchText { get; set; }
-        public string UserId { get; set; }
+        public int UserId { get; set; }
         
         /*public override string ToString()
         {

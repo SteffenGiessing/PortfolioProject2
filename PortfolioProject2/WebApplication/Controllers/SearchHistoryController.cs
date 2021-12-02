@@ -32,7 +32,7 @@ namespace WebApplication.Controllers
         }
             
         [HttpPost("postSearchHistory")]
-        public IActionResult PostNewSearchHistory(string searchtext, string userid)
+        public IActionResult PostNewSearchHistory(string searchtext, int userid)
         {
             var newSearchHistory = _iDataServices.PostNewSearchHistory(searchtext, userid);
             return Ok(newSearchHistory);
