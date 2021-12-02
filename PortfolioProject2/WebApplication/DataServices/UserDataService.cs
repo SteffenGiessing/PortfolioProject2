@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models;
 using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
+using User_History = WebApplication.DMOs.User_History;
 
 namespace WebApplication.DataServices
 {
@@ -87,22 +88,20 @@ namespace WebApplication.DataServices
             return result;
         }
         
-        /*
-        public User_History PostNewSearchHistory(string userid, string searchtext)
+        public User_History PostNewSearchHistory(string searchtext, string userid)
         {
             using var ctx = new DatabaseConnection();
             var result = new User_History
             {
-                UserId = userid,
                 SearchText = searchtext,
+                UserId = userid
             };
             ctx.User_History.Add(result);
             ctx.SaveChanges();
             return result;
         }
-        */
         
-        public User_History PostNewSearchHistory(User_History history)
+        /*public User_History PostNewSearchHistory(User_History history)
         {
             using var ctx = new DatabaseConnection();
             ctx.User_History.FromSqlRaw(
@@ -110,7 +109,7 @@ namespace WebApplication.DataServices
                 history.SearchText, history.UserId).FirstOrDefault();
         
             return history;
-        }
+        }*/
 
         public User_User CreateUser(User_User user)
         {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models.DMOs;
+using User_History = WebApplication.DMOs.User_History;
 
 
 namespace PortfolioProject2.Models
@@ -278,7 +279,7 @@ namespace PortfolioProject2.Models
                 entity.HasKey(x => x.SearchId).HasName("searchid");
 
                 // Sets properties
-                entity.Property(x => x.SearchId).HasColumnName("searchid");
+                entity.Property(x => x.SearchId).ValueGeneratedOnAdd().HasColumnName("searchid");
                 entity.Property(x => x.SearchText).HasColumnName("searchtext");
                 entity.Property(x => x.UserId).HasColumnName("userid");
             });

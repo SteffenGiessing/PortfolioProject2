@@ -69,13 +69,13 @@ namespace WebApplication.Test
             var newComment = service.CreateTitleComments("1", "tt11827694", "meh");
         }
 
-        /*[Fact]
+        [Fact]
         public void TestingUserSearchHistorybyUserId()
         {
             //Arrange
             var service = new UserDataService();
-            var newHistorySearch = service.PostNewSearchHistory("1", "some random movie again new test3");
-        }*/
+            var newHistorySearch = service.PostNewSearchHistory("some","1");
+        }
 
         [Fact]
         public void ShowUserSearchHistoryById()

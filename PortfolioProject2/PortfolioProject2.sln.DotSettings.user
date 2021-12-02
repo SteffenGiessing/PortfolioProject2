@@ -1,5 +1,10 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=ACE336AF_002D12A2_002D48F8_002DB7E9_002D228AD8B539D5_002Fd_003AControllers_002Ff_003ATitlesController_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=039d1fb1_002D3cef_002D4f05_002Da4c9_002D1f07ce00611a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateTitleBookmark #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.CreateTitleBookmark&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0baff559_002D99cc_002D4db5_002Da6be_002Dd471af46bb76/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateTitleComments" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.CreateTitleComments&lt;/TestId&gt;&#xD;
@@ -48,5 +53,10 @@
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.CreateTitleBookmark&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.GetTitleBookmarks&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.GetNameBookmarks&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ecde8de8_002Dd8d2_002D44df_002D830d_002D21e3c6382c11/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestingUserSearchHistorybyUserId #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.TestingUserSearchHistorybyUserId&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

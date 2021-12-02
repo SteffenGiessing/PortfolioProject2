@@ -1,14 +1,19 @@
-namespace PortfolioProject2.Models.DMOs
+using System.ComponentModel.DataAnnotations.Schema;
+using System;
+
+namespace WebApplication.DMOs
 {
+   
     public class User_History
     {
-        public int SearchId { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public string SearchId { get; set; }
         public string SearchText { get; set; }
         public string UserId { get; set; }
         
-        public override string ToString()
+        /*public override string ToString()
         {
             return $"SearchId = {SearchId}";
-        }
+        }*/
     }
 }
