@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using WebApplication.DataInterfaces;
 using IUserDataService = WebApplication.DataInterfaces.IUserDataService;
 #nullable enable
 using System.Collections.Generic;
@@ -9,15 +10,15 @@ using PortfolioProject2.Models.DMOs;
 namespace WebApplication.Controllers
 {
     [ApiController]
-    [Route("api/user")]
+    [Route("api/comments")]
     
         public class CommentsController : Controller
         {
-            private readonly IUserDataService _iDataServices;
+            private readonly ICommentsDataService _iDataServices;
             private readonly IMapper _mapper;
             private readonly IConfiguration _config;
 
-            public CommentsController(IUserDataService dataServices, IMapper mapper, IConfiguration configuration)
+            public CommentsController(ICommentsDataService dataServices, IMapper mapper, IConfiguration configuration)
             {
                 _iDataServices = dataServices;
                 _mapper = mapper;
@@ -32,7 +33,7 @@ namespace WebApplication.Controllers
                 return Ok(comments);
             }
 
-            [HttpGet("comments/{userid}")]
+            [HttpGet("{userid}/allcomments")]
             public IActionResult GetUserComments(int userid)
             {
                 var userComments = _iDataServices.GetUserComments(userid);
@@ -44,7 +45,7 @@ namespace WebApplication.Controllers
                 return Ok(userComments);
             }
 
-            [HttpGet("comments/{titleid}")]
+            [HttpGet("{titleid}")]
             public IActionResult GetCommentsFromTitle(string? titleid)
             {
                 var allCommentsFromOneTitle = _iDataServices.GetCommentsFromTitle(titleid);

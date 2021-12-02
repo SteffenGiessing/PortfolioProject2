@@ -38,7 +38,11 @@ namespace WebApplication.DataServices
                 UserId = userid
             };
             ctx.User_History.Add(result);
-            ctx.SaveChanges();
+            int a = ctx.SaveChanges();
+            if (a == 0)
+            {
+                return null;
+            }
             return result;
         }
         

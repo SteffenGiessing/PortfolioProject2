@@ -50,7 +50,7 @@ namespace WebApplication.Test
         [Fact]
         public void GetCommentsFromTitle()
         {
-            var service = new UserDataService();
+            var service = new CommentsDataService();
             var comments = service.GetCommentsFromTitle("tt10850402");
             Assert.Equal(3, comments.Count);
         }
@@ -58,7 +58,7 @@ namespace WebApplication.Test
         [Fact]
         public void GetUserComments()
         {
-            var service = new UserDataService();
+            var service = new CommentsDataService();
             var comments = service.GetUserComments(1);
             Assert.Equal(3, comments.Count);
         }
@@ -66,7 +66,7 @@ namespace WebApplication.Test
         [Fact]
         public void CreateTitleComments()
         {
-            var service = new UserDataService();
+            var service = new CommentsDataService();
             var newComment = service.CreateTitleComments(1, "tt10850402", "meh 2");
         }
 
