@@ -1,22 +1,12 @@
-﻿define(["knockout"], function (ko) {
+﻿define(["knockout", "postman"], function (ko, postman) {
 
-    let firstName = ko.observable("Peter");
-    let lastName = ko.observable("Smith");
-    let names = ko.observableArray([]);
+    let currentView = ko.observable("list-categories");
 
-    let fullName = ko.computed(function () {
-        return firstName() + " " + lastName();
+    postman.subscribe("changeView", function (data) {
+        currentView(data);
     });
-
-    let addName = function (data) {
-        names.push({ firstName: data.firstName(), lastName: data.lastName() });
-    }
-
+    
     return {
-        firstName,
-        lastName,
-        fullName,
-        names,
-        addName
+        currentView
     }
 });
