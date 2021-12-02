@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
 using PortfolioProject2.Models.DMOs;
-using User_History = WebApplication.DMOs.User_History;
 
-namespace PortfolioProject2.Models.DataInterfaces
+namespace WebApplication.DataInterfaces
 {
     public interface IUserDataService
     {
@@ -13,9 +11,9 @@ namespace PortfolioProject2.Models.DataInterfaces
 
         IList <User_Comments> GetCommentsFromTitle(string titleid);
         
-        IList<User_History> GetAllSearchHistoryFromOneUser(string userid);
+        /*IList<User_History> GetAllSearchHistoryFromOneUser(string userid);
         
-        User_History PostNewSearchHistory(string searchtext, string userid);
+        User_History PostNewSearchHistory(string searchtext, string userid);*/
 
         User_User CreateUser(User_User user);
 

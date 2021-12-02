@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models;
-using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
+using IUserDataService = WebApplication.DataInterfaces.IUserDataService;
 using User_History = WebApplication.DMOs.User_History;
 
 namespace WebApplication.DataServices

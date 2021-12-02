@@ -1,16 +1,9 @@
-﻿using System;
-using System.Security.Cryptography;
-using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using PortfolioProject2.Models.DataInterfaces;
-using User_History = WebApplication.DMOs.User_History;
-//using PortfolioProject2.Token;
+using IUserDataService = WebApplication.DataInterfaces.IUserDataService;
 #nullable enable
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using PortfolioProject2.Models.DMOs;
 
 namespace WebApplication.Controllers
@@ -98,7 +91,7 @@ namespace WebApplication.Controllers
             
             //Search History
             
-            [HttpGet("userSearch/{userid}")]
+            /*[HttpGet("userSearch/{userid}")]
             public IActionResult GetAllSearchHistoryFromOneUser(string? userid)
             {
                 var searchHistoryUser = _iDataServices.GetAllSearchHistoryFromOneUser(userid);
@@ -110,7 +103,7 @@ namespace WebApplication.Controllers
             {
                 var newSearchHistory = _iDataServices.PostNewSearchHistory(searchtext, userid);
                 return Ok(newSearchHistory);
-            }
+            }*/
         }
 }
 
