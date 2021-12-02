@@ -5,9 +5,10 @@
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.CreateTitleBookmark&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0baff559_002D99cc_002D4db5_002Da6be_002Dd471af46bb76/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateTitleComments" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0baff559_002D99cc_002D4db5_002Da6be_002Dd471af46bb76/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateTitleComments" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.CreateTitleComments&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.TestingUserSearchHistorybyUserId&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=274832ec_002D9737_002D45cb_002D8c7e_002D8e8bf74dcdef/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShowUserSearchHistoryById" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -17,7 +18,7 @@
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.TestingUserSearchHistorybyUserId&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=39a67abd_002Dce09_002D4490_002D9c33_002Dd0174ea2c21d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CheckConnection" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=39a67abd_002Dce09_002D4490_002D9c33_002Dd0174ea2c21d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CheckConnection" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
@@ -32,7 +33,7 @@
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7665f575_002D5e35_002D40ec_002Dbbcb_002Df92525f042d8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateTitleBookmark" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7665f575_002D5e35_002D40ec_002Dbbcb_002Df92525f042d8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateTitleBookmark" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.CreateTitleBookmark&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.GetTitleBookmarks&lt;/TestId&gt;&#xD;
@@ -53,6 +54,11 @@
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.CreateTitleBookmark&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.GetTitleBookmarks&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.GetNameBookmarks&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d7a05a5d_002D0fc8_002D4bf8_002D8111_002D8b16ec65ed12/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateTitleBookmark #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.CreateTitleBookmark&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ecde8de8_002Dd8d2_002D44df_002D830d_002D21e3c6382c11/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestingUserSearchHistorybyUserId #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

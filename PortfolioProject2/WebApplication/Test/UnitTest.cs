@@ -22,7 +22,7 @@ namespace WebApplication.Test
         [Fact]
         public void CreateTitleBookmark()
         {
-            var service = new TitleDataService();
+            var service = new BookMarkDataService();
             var newBookmark = service.CreateTitleBookmark("7", "tt11827694");
             /*Assert.NotNull(newBookmark);
             Assert.Equal(newBookmark, service.GetTitleBookmark("7", "tt11827694"));
@@ -33,7 +33,7 @@ namespace WebApplication.Test
         [Fact]
         public void GetTitleBookmarks()
         {
-            var service = new TitleDataService();
+            var service = new BookMarkDataService();
             var bookmarks = service.GetTitleBookmarks("1");
             Assert.Equal(2, bookmarks.Count);
         }
@@ -41,7 +41,7 @@ namespace WebApplication.Test
         [Fact]
         public void GetNameBookmarks()
         {
-            var service = new ActorDataService();
+            var service = new BookMarkDataService();
             var bookmarks = service.GetNameBookmarks("1");
             Assert.Equal(1, bookmarks.Count);
         }
@@ -74,7 +74,7 @@ namespace WebApplication.Test
         {
             //Arrange
             var service = new UserDataService();
-            var newHistorySearch = service.PostNewSearchHistory("some","1");
+            var newHistorySearch = service.PostNewSearchHistory("something","1");
         }
 
         [Fact]
