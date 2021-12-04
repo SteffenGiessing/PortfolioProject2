@@ -32,7 +32,7 @@ namespace WebApplication.Controllers
         //for titles bookmark
         
         [HttpGet("{userid}/titlebookmarks/{titleid}")]
-        public IActionResult GetTitleBookmark(string userid, string titleid)
+        public IActionResult GetTitleBookmark(int userid, string titleid)
         {
             var titleBookmark = _iBookMarkDataService.GetTitleBookmark(userid, titleid);
             if (titleBookmark == null)
@@ -44,7 +44,7 @@ namespace WebApplication.Controllers
         }
         
         [HttpGet("{userid}/titlebookmarks")]
-        public IActionResult GetTitleBookmarks(string userid)
+        public IActionResult GetTitleBookmarks(int userid)
         {
             var titleBookmarks = _iBookMarkDataService.GetTitleBookmarks(userid);
             if (titleBookmarks == null)
@@ -56,14 +56,14 @@ namespace WebApplication.Controllers
         }
         
         [HttpPost("{userid}/titlebookmarks/{titleid}")]
-        public IActionResult CreateTitleBookmark(string userid, string titleid)
+        public IActionResult CreateTitleBookmark(int userid, string titleid)
         {
             var titleBookmark = _iBookMarkDataService.CreateTitleBookmark(userid, titleid);
             return Ok(titleBookmark);
         }
         
         [HttpDelete("{userid}/titlebookmarks/{titleid}")]
-        public IActionResult DeleteTitleBookmark(string userid, string titleid)
+        public IActionResult DeleteTitleBookmark(int userid, string titleid)
         {
             var titleBookmark = _iBookMarkDataService.DeleteTitleBookmark(userid, titleid);
             if (titleBookmark)
@@ -77,7 +77,7 @@ namespace WebApplication.Controllers
         //for actor bookmark
         
         [HttpGet("{userid}/namebookmarks/{pid}")]
-        public IActionResult GetNameBookmark(string userid, string pid)
+        public IActionResult GetNameBookmark(int userid, string pid)
         {
             var nameBookmark = _iBookMarkDataService.GetNameBookmark(userid, pid);
             if (nameBookmark == null)
@@ -89,7 +89,7 @@ namespace WebApplication.Controllers
         }
         
         [HttpGet("{userid}/namebookmarks")]
-        public IActionResult GetNameBookmarks(string userid)
+        public IActionResult GetNameBookmarks(int userid)
         {
             var nameBookmarks = _iBookMarkDataService.GetNameBookmarks(userid);
             if (nameBookmarks == null)

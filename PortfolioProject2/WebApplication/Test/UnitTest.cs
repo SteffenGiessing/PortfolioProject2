@@ -65,7 +65,9 @@ namespace WebApplication.Test
         public void CreateTitleBookmark()
         {
             var service = new BookMarkDataService();
-            var newBookmark = service.CreateTitleBookmark("20", "tt11827694");
+            var newBookmark = service.CreateTitleBookmark(99, "tt11827694");
+            /*Assert.Equal(newBookmark, service.GetTitleBookmark(3, "tt11827694"));
+            service.DeleteTitleBookmark(3, "tt11827694");
             /*Assert.NotNull(newBookmark);
             Assert.Equal(newBookmark, service.GetTitleBookmark("7", "tt11827694"));
             service.DeleteTitleBookmark("7", "tt11827694");
@@ -76,7 +78,7 @@ namespace WebApplication.Test
         public void GetTitleBookmarks()
         {
             var service = new BookMarkDataService();
-            var bookmarks = service.GetTitleBookmarks("1");
+            var bookmarks = service.GetTitleBookmarks(1);
             Assert.Equal(3, bookmarks.Count);
         }
         
@@ -84,7 +86,7 @@ namespace WebApplication.Test
         public void GetNameBookmarks()
         {
             var service = new BookMarkDataService();
-            var bookmarks = service.GetNameBookmarks("1");
+            var bookmarks = service.GetNameBookmarks(1);
             Assert.Equal(1, bookmarks.Count);
         }
         

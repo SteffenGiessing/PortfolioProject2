@@ -14,20 +14,20 @@ namespace PortfolioProject2.Models.DataServices
     {
         public DatabaseConnection ctx { get; set; }
 
-        public Title_Bookmark GetTitleBookmark(string userid, string titleid)
+        public Title_Bookmark GetTitleBookmark(int userid, string titleid)
         {
             return ctx.Title_Bookmark.Find(userid, titleid);
         }
 
         //titlebookmarks
-        public IList<Title_Bookmark> GetTitleBookmarks(string userid)
+        public IList<Title_Bookmark> GetTitleBookmarks(int userid)
         {
             IList<Title_Bookmark> result = new List<Title_Bookmark>();
             using var ctx = new DatabaseConnection();
 
             foreach (var bk in ctx.Title_Bookmark)
             {
-                if (bk.UserId.Trim() == userid)
+                if (bk.UserId == userid)
                 {
                     result.Add(bk);
                 }
@@ -36,7 +36,7 @@ namespace PortfolioProject2.Models.DataServices
             return result;
         }
 
-        public Title_Bookmark CreateTitleBookmark(string userid, string titleid)
+        public Title_Bookmark CreateTitleBookmark(int userid, string titleid)
         {
             //need a way to validate user
             using var ctx = new DatabaseConnection();
@@ -56,7 +56,7 @@ namespace PortfolioProject2.Models.DataServices
             return result;
         }
 
-        public bool DeleteTitleBookmark(string userid, string titleid)
+        public bool DeleteTitleBookmark(int userid, string titleid)
         {
             var titleBookmark = ctx.Title_Bookmark.Find(userid, titleid);
             if (titleBookmark == null)
@@ -70,19 +70,19 @@ namespace PortfolioProject2.Models.DataServices
         }
 
         //actorbookmarks------------------------------------------------------
-        public Name_Bookmark GetNameBookmark(string userid, string pid)
+        public Name_Bookmark GetNameBookmark(int userid, string pid)
         {
             return ctx.Name_Bookmark.Find(userid, pid);
         }
 
-        public IList<Name_Bookmark> GetNameBookmarks(string userid)
+        public IList<Name_Bookmark> GetNameBookmarks(int userid)
         {
             IList<Name_Bookmark> result = new List<Name_Bookmark>();
             using var ctx = new DatabaseConnection();
 
             foreach (var bk in ctx.Name_Bookmark)
             {
-                if (bk.UserId.Trim() == userid)
+                if (bk.UserId == userid)
                 {
                     result.Add(bk);
                 }
@@ -91,7 +91,7 @@ namespace PortfolioProject2.Models.DataServices
             return result;
         }
 
-        public Name_Bookmark CreateNameBookmark(string userid, string pid)
+        public Name_Bookmark CreateNameBookmark(int userid, string pid)
         {
             using var ctx = new DatabaseConnection();
             var result = new Name_Bookmark()
