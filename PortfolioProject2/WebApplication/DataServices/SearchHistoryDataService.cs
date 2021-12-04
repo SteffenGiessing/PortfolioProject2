@@ -11,7 +11,7 @@ namespace WebApplication.DataServices
         public IList<User_History> GetAllSearchHistoryFromOneUser(int userid)
         {
             List<User_History> result = new List<User_History>();
-            var ctx = new DatabaseConnection();
+            var ctx = new DatabaseConnection.DatabaseConnection();
             foreach (var sh in ctx.User_History)
             {
                 if (sh.UserId == userid)
@@ -31,7 +31,7 @@ namespace WebApplication.DataServices
         // Post Search History
         public User_History PostNewSearchHistory(string searchtext, int userid)
         {
-            using var ctx = new DatabaseConnection();
+            using var ctx = new DatabaseConnection.DatabaseConnection();
             var result = new User_History
             {
                 SearchText = searchtext,

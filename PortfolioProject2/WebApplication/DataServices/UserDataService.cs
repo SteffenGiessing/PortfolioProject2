@@ -15,7 +15,7 @@ namespace WebApplication.DataServices
         public async Task<User_User> CreateUser(User_User user)
         { 
          //   resultat.LastAccess = Convert.ToDateTime(DateTime.Now);
-            var ctx = new DatabaseConnection();
+            var ctx = new DatabaseConnection.DatabaseConnection();
             
             var resultat = new User_User { }; 
             //var regexItem = new Regex("^[a-zA-Z0-9 ]*$");
@@ -75,13 +75,13 @@ namespace WebApplication.DataServices
 
         public Task<User_User> GetUserByEmail(string email)
         {
-            var ctx = new DatabaseConnection();
+            var ctx = new DatabaseConnection.DatabaseConnection();
             return ctx.User_User.FromSqlRaw("SELECT * FROM user_user WHERE emailaddress = {0}", email).FirstOrDefaultAsync();
         }
 
         public Task<User_User> ValidatePassword(string email, string hashed)
         {
-            var ctx = new DatabaseConnection();
+            var ctx = new DatabaseConnection.DatabaseConnection();
             return ctx.User_User
                 .FromSqlRaw("SELECT * FROM user_user WHERE emailaddress = {0} AND password = {1}", email, hashed)
                 .FirstOrDefaultAsync();
@@ -90,7 +90,7 @@ namespace WebApplication.DataServices
         public async Task<User_User> DeleteUser(User_User user)
         {
             
-            var ctx = new DatabaseConnection();
+            var ctx = new DatabaseConnection.DatabaseConnection();
             var result = GetUserByEmail(user.EmailAddress).Result;
             ctx.User_User.Remove(ctx.User_User.Single(a => a.UserId == result.UserId));
             verify = ctx.SaveChanges();

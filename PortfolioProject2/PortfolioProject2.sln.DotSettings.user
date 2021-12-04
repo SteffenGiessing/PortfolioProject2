@@ -71,4 +71,6 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::ACE336AF-12A2-48F8-B7E9-228AD8B539D5::net5.0::WebApplication.Test.UnitTest.TestingUserSearchHistorybyUserId&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	
+	</wpf:ResourceDictionary>

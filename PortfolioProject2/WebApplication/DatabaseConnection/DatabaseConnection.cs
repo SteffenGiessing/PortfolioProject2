@@ -1,12 +1,11 @@
 using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using Microsoft.EntityFramework.Analyzers;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models.DMOs;
 using User_History = WebApplication.DMOs.User_History;
 
 
-namespace PortfolioProject2.Models
+namespace WebApplication.DatabaseConnection
 {
     public class DatabaseConnection : DbContext
     {
