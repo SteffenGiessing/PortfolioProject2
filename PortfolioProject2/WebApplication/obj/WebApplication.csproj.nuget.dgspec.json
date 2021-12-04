@@ -58,13 +58,9 @@
               "target": "Package",
               "version": "[5.0.12, )"
             },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
-              "version": "[5.0.11, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
@@ -77,6 +73,10 @@
             "Moq": {
               "target": "Package",
               "version": "[4.16.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.10, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

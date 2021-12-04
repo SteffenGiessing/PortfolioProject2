@@ -1,6 +1,6 @@
 using System;
-using Microsoft.EntityFramework.Analyzers;
 using Microsoft.EntityFrameworkCore;
+//using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models.DMOs;
 using User_History = WebApplication.DMOs.User_History;
 
