@@ -17,21 +17,13 @@ require.config({
 // component registration
 require(['knockout'], (ko) => {
     ko.components.register("get-titles", {
-        viewModel: { require: "components/categories/getTitles" },
-        template: { require: "text!components/categories/getTitles.html" }
-    });
-    ko.components.register("add-category", {
-        viewModel: { require: "components/categories/addCategory" },
-        template: { require: "text!components/categories/addCategory.html" }
-    });
-    ko.components.register("list-categories", {
-        viewModel: { require: "components/categories/listCategories" },
-        template: { require: "text!components/categories/listCategories.html" }
+        viewModel: { require: "components/titles/getTitles" },
+        template: { require: "text!components/titles/getTitles.html" }
     });
 });
 
 require(["knockout", "viewmodel"], function (ko, vm) {
-    //console.log(vm.firstName);
+    console.log(vm.currentView);
 
     ko.applyBindings(vm);
 
