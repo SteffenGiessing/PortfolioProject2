@@ -1,8 +1,12 @@
+using System;
 using System.Net.Sockets;
+using System.Security.Cryptography;
 using AutoMapper;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Xunit;
 using Moq;
 using PortfolioProject2.Models.DataServices;
+using PortfolioProject2.Models.DMOs;
 using WebApplication.DataServices;
 using UserDataService = WebApplication.DataServices.UserDataService;
 
@@ -20,6 +24,43 @@ namespace WebApplication.Test
             Assert.True(client.Connected);
         }
         
+        //createuser and login 
+        [Fact]
+        public void CreateUser()
+        {
+            var service = new UserDataService();
+            var dataProvider = UserCreatorHelper();
+            
+            //act
+            var create = service.CreateUser(dataProvider).Result;
+            
+            //Assertion
+            Assert.Equal(dataProvider.EmailAddress, create.EmailAddress);
+            
+            //Clean up
+            var deleteCreatedUser = service.DeleteUser(create).Result;
+        }
+
+        [Fact]
+        public void LoginUser()
+        {
+            var service = new UserDataService();
+            var dataProvider = UserCreatorHelper();
+
+            //Act
+            var create = service.CreateUser(dataProvider).Result;
+            //Assertion
+            Assert.Equal(dataProvider.EmailAddress, create.EmailAddress);
+
+            var validatePassword = service.ValidatePassword(dataProvider.EmailAddress, dataProvider.Password).Result;
+            Assert.NotNull(validatePassword);
+            
+            //Clean up
+            var deleteCreatedUser = service.DeleteUser(create).Result;
+
+        }
+        
+        //bookmarks
         [Fact]
         public void CreateTitleBookmark()
         {
@@ -47,6 +88,7 @@ namespace WebApplication.Test
             Assert.Equal(1, bookmarks.Count);
         }
         
+        //comments
         [Fact]
         public void GetCommentsFromTitle()
         {
@@ -70,6 +112,7 @@ namespace WebApplication.Test
             var newComment = service.CreateTitleComments(1, "tt10850402", "meh 2");
         }
 
+        //searchhistory
         [Fact]
         public void TestingUserSearchHistorybyUserId()
         {
@@ -86,6 +129,10 @@ namespace WebApplication.Test
             Assert.Equal(6, searching.Count);
         }
         
+        
+        
+        
+        
         // Helper Methods
         private static TcpClient Connect()
         {
@@ -93,6 +140,35 @@ namespace WebApplication.Test
             client.Connect("localhost", Port);
             return client;
         }
-        
+        private static User_User UserCreatorHelper()
+        {
+            var dataProvider = new User_User
+            {
+                FirstName = "Bob",
+                LastName = "Jensen",
+                EmailAddress = "Jensen@gmail.com",
+                UserName = "Bobben",
+                Password = "Rasputin",
+                LastAccess =  Convert.ToDateTime(DateTime.Now),
+                TokenJwt = "null"
+            };
+               
+            byte[] getsalt = new byte[128 / 8];
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(getsalt);
+            }
+                
+            string getHash = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+                password: dataProvider.Password,
+                salt: getsalt,
+                prf: KeyDerivationPrf.HMACSHA1, 
+                iterationCount: 10000, 
+                numBytesRequested: 256 / 8));
+            
+            dataProvider.Password = getHash;
+            dataProvider.PasswordSalt = getsalt;
+            return dataProvider;
+        }
     }
 }

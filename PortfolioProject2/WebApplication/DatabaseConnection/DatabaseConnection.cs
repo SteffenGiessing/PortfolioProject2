@@ -300,8 +300,7 @@ namespace PortfolioProject2.Models
                 entity.Property(x => x.RateNumber).HasColumnName("ratenumber");
             });
             
-
-            // User_User
+            //User_user
             modelBuilder.Entity<User_User>(entity =>
             {
                 // Points to Database user_user
@@ -311,13 +310,15 @@ namespace PortfolioProject2.Models
                 entity.HasKey(x => x.UserId).HasName("userid");
 
                 // Sets properties
-                entity.Property(x => x.UserId).HasColumnName("userid");
+                entity.Property(x => x.UserId).ValueGeneratedOnAdd().HasColumnName("userid");
                 entity.Property(x => x.FirstName).HasColumnName("firstname");
                 entity.Property(x => x.LastName).HasColumnName("lastname");
                 entity.Property(x => x.UserName).HasColumnName("username");
                 entity.Property(x => x.EmailAddress).HasColumnName("emailaddress");
-                entity.Property(x => x.PasswordSalt).HasColumnName("password");
-                entity.Property(x => x.TokenJWT).HasColumnName("token");
+                entity.Property(x => x.Password).HasColumnName("password");
+                entity.Property(x => x.PasswordSalt).HasColumnName("passwordsalt");
+                entity.Property(x => x.LastAccess).HasColumnName("lastaccess");
+                entity.Property(x => x.TokenJwt).HasColumnName("token");
             });
            
 
