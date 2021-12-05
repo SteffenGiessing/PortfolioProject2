@@ -1,19 +1,8 @@
-﻿<h1>Titltes</h1>
-
-<button class="btn btn-primary" data-bind="click: create">Add Category</button>
-
-
-<table class="table">
-    <thead>
-    <tr><th>Url</th><th>primarytitle</th><th>Description</th><th></th></tr>
-    </thead>
-    <tbody data-bind="foreach: categories">
-    <tr>
-        <td data-bind="text: primarytitle"></td>
-        <td data-bind="text: name"></td>
-        <td data-bind="text: description"></td>
-    </tr>
-    </tbody>
-</table>
-
-<!--<add-category></add-category>-->
+﻿<div>
+    <ul data-bind="foreach: titleId">
+        <li data-bind="text: primaryTitle"></li>
+        <li data-bind="text: genres"></li>
+        <li data-bind="text: titleId"></li>
+        <li data-bind="text: startYear"></li>
+    </ul>
+</div>

@@ -1,9 +1,10 @@
 ﻿define([], () => {
     
     let getTitleById = (titleId, callback) => {
-        fetch("api/titles/" + titleId)
+        fetch("http://localhost:5000/api/titles/tt10260014", {method: 'GET'})
             .then(response => response.json())
-            .then(callback)
+            .then(json => {
+                callback(json)})
     }
     
     let  getTitles = (callback) => {
@@ -13,7 +14,7 @@
                 callback(json);
             });
     };
-
+   
     return {
         getTitleById,
         getTitles

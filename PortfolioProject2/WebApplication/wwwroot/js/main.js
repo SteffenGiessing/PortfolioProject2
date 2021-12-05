@@ -23,7 +23,9 @@ require(['knockout'], (ko) => {
 });
 
 require(["knockout", "viewmodel"], function (ko, vm) {
+/*
     console.log(vm.currentView);
+*/
 
     ko.applyBindings(vm);
 
