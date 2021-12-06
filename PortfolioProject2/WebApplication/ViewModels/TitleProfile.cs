@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using PortfolioProject2.Models.DMOs;
+using WebApplication.DMOs;
 
 namespace WebApplication.ViewModels
 {

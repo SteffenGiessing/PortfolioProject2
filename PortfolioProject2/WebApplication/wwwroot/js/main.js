@@ -9,6 +9,7 @@ require.config({
         text: "lib/requirejs/text",
         jquery: "lib/jquery/dist/jquery.min",
         knockout: "lib/knockout/build/output/knockout-latest.debug",
+        bootstrap: "../css/lib/bootstrap/dist/js/bootstrap.bundle.min",
         dataService: "services/dataService",
         postman: "services/postman"
     }
@@ -33,7 +34,7 @@ require(['knockout'], (ko) => {
 
 });
 
-require(["knockout", "viewmodel"], function (ko, vm) {
+require(["knockout", "viewmodel", "bootstrap"], function (ko, vm) {
 
     ko.applyBindings(vm);
 

@@ -7,6 +7,13 @@
                 callback(json)})
     }
     
+    /*let getTitles = (url, searchString, callback) => {
+        if (url === undefined) {
+            url = titleApiUrl + "search-title/" + searchString;
+        }
+        
+    }*/
+    
     let  getTitles = (callback) => {
         fetch("https://localhost:5001/api/titles", { method: 'GET' })
             .then(response => response.json())
