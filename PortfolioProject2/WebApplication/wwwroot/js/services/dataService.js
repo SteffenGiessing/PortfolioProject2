@@ -14,9 +14,18 @@
                 callback(json);
             });
     };
+    
+    let getActors = (callback) => {
+        fetch("https://localhost:5001/api/actor", { method: 'GET'})
+        .then(response => response.json())
+            .then(json => {
+                callback(json);
+            });
+    };
    
     return {
         getTitleById,
-        getTitles
+        getTitles,
+        getActors
     }
 });

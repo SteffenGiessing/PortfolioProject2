@@ -16,16 +16,24 @@ require.config({
 
 // component registration
 require(['knockout'], (ko) => {
+    ko.components.register("get-home", {
+        viewModel: { require: "components/home/getHome" },
+        template: { require: "text!components/home/getHome.html" }
+    });
+    
     ko.components.register("get-titles", {
         viewModel: { require: "components/titles/getTitles" },
         template: { require: "text!components/titles/getTitles.html" }
     });
+
+    ko.components.register("get-actors", {
+        viewModel: { require: "components/actors/getActors" },
+        template: { require: "text!components/actors/getActors.html" }
+    });
+
 });
 
 require(["knockout", "viewmodel"], function (ko, vm) {
-/*
-    console.log(vm.currentView);
-*/
 
     ko.applyBindings(vm);
 

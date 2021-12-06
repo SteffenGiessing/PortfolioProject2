@@ -1,12 +1,30 @@
 ﻿define(["knockout", "postman"], function (ko, postman) {
-
-    let currentView = ko.observable("get-titles");
-
-    postman.subscribe("changeView", function (data) {
-        currentView(data);
-    });
     
+    let selectedComponent = ko.observable("get-home");
+    let menuElements = ["get-Home", "get-titles", "get-actors"];
+
+    let isActive = element => {
+        return element.toLowerCase() === selectedComponent() ? "active" : "";
+    }
+    
+    postman.subscribe("changeContent", component => {
+        changeContent(component);
+    });
+
+    postman.subscribe("getHome", component => {
+        changeContent('get-Home');
+    });
+
+    
+    let changeContent = element => {
+        selectedComponent(element.toLowerCase());
+    }
+
+
     return {
-        currentView
+        selectedComponent,
+        menuElements,
+        isActive,
+        changeContent
     }
 });
