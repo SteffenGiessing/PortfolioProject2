@@ -42,11 +42,7 @@
             method: 'POST',
             body: JSON.stringify(data),
             }
-        )
-            .then(response => response.json())
-            .then(json => {
-                callback(json)
-            });
+        ).then(response => response.json().then(response => localStorage.setItem("jwtToken", response.tokenJwt)));
     };
    
     return {
