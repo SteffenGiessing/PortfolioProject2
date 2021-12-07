@@ -42,8 +42,8 @@
         getJSON(url, callback);
     };*/
   
-    let search = (callback, searchWord) => {
-        fetch("https://localhost:5001/api/titles/searchresult/" + searchWord)
+    let searchForTitles = (callback, searchString) => {
+        fetch("https://localhost:5001/api/titles/searchresult/" + searchString, { method: 'GET'})
             .then(response => response.json())
             .then(json => {
                     callback(json);
@@ -54,6 +54,6 @@
         getTitleById,
         getTitles,
         getActors,
-        search
+        searchForTitles
     }
 });
