@@ -42,11 +42,11 @@
         getJSON(url, callback);
     };*/
   
-   let searchForTitles = (callback, searchString) => {
-        fetch("https://localhost:5001/api/titles/searchresult/" + searchString)
+   let searchForTitles = (callback) => {
+        fetch("http://localhost:5000/api/titles/searchresult/" + callback, { method: 'GET'})
             .then(response => response.json())
             .then(json => {
-                callback(json);
+                console.log(json);
             });
    };
 
