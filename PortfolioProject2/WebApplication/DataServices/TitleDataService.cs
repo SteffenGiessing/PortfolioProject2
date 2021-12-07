@@ -58,7 +58,7 @@ namespace WebApplication.DataServices
         public async Task<List<TitleSearch>> TitleSearch(string searchWord)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
-            return await ctx.TitleSearch.FromSqlRaw("SELECT primarytitle, titleid from title_search3({0})", searchWord).ToListAsync();
+            return await ctx.TitleSearch.FromSqlRaw("SELECT primarytitle, titleid, poster from title_search3({0})", searchWord).ToListAsync();
         }
         
         public async Task<List<PopularTitles>> GetPopularTitlesForFrontPage()
