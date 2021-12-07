@@ -32,6 +32,11 @@ require(['knockout'], (ko) => {
         template: { require: "text!components/actors/getActors.html" }
     });
 
+    ko.components.register("loginUser", {
+        viewModel: {require: "components/users/userLogin"},
+        template:  {require: "text!components/users/userLogin.html"}
+    });
+
 });
 
 require(["knockout", "viewmodel", "bootstrap"], function (ko, vm) {
