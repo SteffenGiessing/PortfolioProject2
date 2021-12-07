@@ -10,7 +10,6 @@
         let primaryTitle = ko.observable();
         let averagerating = ko.observable();
         let poster = ko.observable();
-        let imageUrl = ko.observable('http://lorempixel.com/300/200');
 
 
         ds.searchForTitles(searchString(), function (data) {

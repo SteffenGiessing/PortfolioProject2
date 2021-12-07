@@ -10,14 +10,39 @@
 <header>
     <!-- Navigation Bar -->
     <navbar>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <img id="logo" src="resources/final.gif" alt="Bad Mafia">
+
+            <form class="form-inline">
+                <input data-bind="value: searchWord" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search...">
+                <button data-bind="click:searchBtn" class="btn btn-secondary my-2 my-sm-0" type="submit"
+                        data-toggle="button" aria-pressed="false" autocomplete="off"> Search</button>
+            </form>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" data-bind="foreach: menuElements">
+                    <li class="nav-item" data-bind="css: $parent.isActive($data)">
+                        <a class="nav-item" data-bind="click: $parent.changeContent">
+                            <span class="nav-link" data-bind="text: $data"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--
         <ul class="nav-list">
-            <li class="nav-link"><img id="logo" src="resources/final.gif" alt="Bad Mafia"></li>
-            <li class="nav-item">
+            <li class="nav-link"><img id="logo" src="resources/final.gif" alt="Bad Mafia">
                 <form class="form-inline">
                     <input data-bind="value: searchWord" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search...">
                     <button data-bind="click:searchBtn" class="btn btn-secondary my-2 my-sm-0" type="submit"
                             data-toggle="button" aria-pressed="false" autocomplete="off"> Search</button>
-                </form>
+                </form></li>
+            <li class="nav-item">
                 <ul class="navbar-nav" data-bind="foreach: menuElements">
                     <li class="nav-item" data-bind="css: $parent.isActive($data)">
                         <a class="nav-item" data-bind="click: $parent.changeContent">
@@ -26,9 +51,8 @@
                     </li>
                 </ul>
             </li>
-
-           
-        </ul>
+        </ul>-->
+        
     </navbar>
 </header>
     
