@@ -2,6 +2,17 @@
     let selectedComponent = ko.observable("home");
     let menuElements = ["Home", "get-titles", "get-actors", "Login"];
 
+    let searchWord = ko.observable().extend({
+        validation: {
+            message: "Please add a longer search string for better search results",
+            validator: function(value) {
+                return value > 2
+            }
+        }
+    });
+
+    let currentParams = ko.observable({searchWord});
+
     let isActive = element => {
         return element.toLowerCase() === selectedComponent() ? "active" : "";
     }
@@ -36,12 +47,21 @@
     let loginBtw = () => {
         console.log("loginButton Clicked");
     }
+
+    let searchBtn = () => {
+        console.log("Search button clicked");
+        currentParams({searchWord});
+        selectedComponent("search");
+    }
     
     return {
+        searchBtn,
         loginBtw,
+        searchWord,
         selectedComponent,
         menuElements,
         isActive,
-        changeContent
+        changeContent,
+        currentParams
     }
 });

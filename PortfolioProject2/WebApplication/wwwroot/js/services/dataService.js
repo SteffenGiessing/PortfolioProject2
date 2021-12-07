@@ -42,13 +42,23 @@
             method: 'POST',
             body: JSON.stringify(data),
             }
-        ).then(response => response.json().then(response => localStorage.setItem("jwtToken", response.tokenJwt)));
+        ).then(response => response.json().then(response => localStorage.setItem("jwtToken", response.tokenJwt))
+            .then(json => { console.log(json)}));
+    };
+
+    let searchForTitles = (searchWord, callback ) => {
+        fetch("http://localhost:5000/api/titles/searchresult/" + searchWord, { method: 'GET'})
+            .then(response => response.json())
+            .then(json => {
+                callback(json);
+            });
     };
    
     return {
         getTitleById,
         getTitles,
         getActors,
-        loginUser
+        loginUser,
+        searchForTitles
     }
 });
