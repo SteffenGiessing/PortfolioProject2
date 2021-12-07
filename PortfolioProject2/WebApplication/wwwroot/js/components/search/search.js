@@ -48,7 +48,6 @@
             showPrev,
             showNext,
             poster,
-            imageUrl
         };
     };
 });
