@@ -42,6 +42,11 @@ require(['knockout'], (ko) => {
         template: { require: "text!components/search/search.html" }
     });
 
+    ko.components.register("comments", {
+        viewModel: { require: "components/createComment/createComment" },
+        template: { require: "text!components/search/search.html" }
+    });
+
 });
 
 require(["knockout", "viewmodel", "bootstrap"], function (ko, vm) {

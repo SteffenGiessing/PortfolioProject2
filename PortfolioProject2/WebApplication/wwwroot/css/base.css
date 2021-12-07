@@ -8,6 +8,11 @@ body {
     background: #f9f9f9;
 }
 
+#commentField #post {
+    border: none;
+    border-radius: 5px;
+}
+
 /* Navigation Bar */
 #logo{
     width: 100%;
