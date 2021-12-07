@@ -1,8 +1,8 @@
 ﻿define([], () => {
 
-    const titleApiUrl = "api/titles";
+    const titleApiUrl = "https://localhost:5000/api/titles";
 
-    /*let getJSON = (url, callback) => {
+   /* let getJSON = (url, callback) => {
         fetch(url, {
             headers : {
                 'Content-Type': 'application/json',
@@ -42,13 +42,20 @@
         getJSON(url, callback);
     };*/
   
-    let searchForTitles = (callback, searchString) => {
-        fetch("https://localhost:5001/api/titles/searchresult/" + searchString, { method: 'GET'})
+   let searchForTitles = (callback, searchString) => {
+        fetch("https://localhost:5001/api/titles/searchresult/" + searchString)
             .then(response => response.json())
             .then(json => {
-                    callback(json);
-                });
+                callback(json);
+            });
+   };
+
+    /*let searchForTitles = (url, searchString, callback) => {
+        if (url === undefined) {
+            url = titleApiUrl + "/searchresult/" + searchString;
         }
+        getJSON(url, callback);
+    };*/
    
     return {
         getTitleById,

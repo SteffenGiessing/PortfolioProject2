@@ -4,7 +4,7 @@
         let searchString = params.searchWord;
         
         ds.searchForTitles(searchString(), function (data) {
-                titles(data);
+                titles(data.items);
                 console.log(titles());
             });
         
