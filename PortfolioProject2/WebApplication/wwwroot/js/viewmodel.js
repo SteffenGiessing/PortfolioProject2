@@ -1,6 +1,6 @@
 ﻿define(["knockout", "postman"], function (ko, postman) {
-    let selectedComponent = ko.observable("loginUser");
-    let menuElements = ["get-Home", "get-titles", "get-actors", "loginUser"];
+    let selectedComponent = ko.observable("home");
+    let menuElements = ["Home", "get-titles", "get-actors", "Login"];
 
     let isActive = element => {
         return element.toLowerCase() === selectedComponent() ? "active" : "";
@@ -19,7 +19,7 @@
 
     postman.subscribe("changeView", function (data) {
         loginUser(data);
-    });
+    });q
     */
     
 /*

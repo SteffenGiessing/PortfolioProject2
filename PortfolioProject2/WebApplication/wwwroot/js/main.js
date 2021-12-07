@@ -17,7 +17,7 @@ require.config({
 
 // component registration
 require(['knockout'], (ko) => {
-    ko.components.register("get-home", {
+    ko.components.register("home", {
         viewModel: { require: "components/home/getHome" },
         template: { require: "text!components/home/getHome.html" }
     });
@@ -32,7 +32,7 @@ require(['knockout'], (ko) => {
         template: { require: "text!components/actors/getActors.html" }
     });
 
-    ko.components.register("loginUser", {
+    ko.components.register("login", {
         viewModel: {require: "components/users/userLogin"},
         template:  {require: "text!components/users/userLogin.html"}
     });
