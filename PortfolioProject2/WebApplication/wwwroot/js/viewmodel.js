@@ -1,31 +1,47 @@
 ﻿define(["knockout", "postman"], function (ko, postman) {
-    let selectedComponent = ko.observable("users");
-    let currentView = ko.observable("get-titles");
-    let loginUser = ko.observable("loginUser");
-    let menuElements = ["users"]
+    let selectedComponent = ko.observable("home");
+    let menuElements = ["Home", "get-titles", "get-actors", "Login"];
 
-    postman.subscribe("changeView", function (data) {
+    let isActive = element => {
+        return element.toLowerCase() === selectedComponent() ? "active" : "";
+    }
+
+    postman.subscribe("changeContent", component => {
+        changeContent(component);
+    });
+
+
+    /*    let loginUser = ko.observable("loginUser");*/
+    
+/*    postman.subscribe("changeView", function(data) {
         currentView(data);
     });
+
     postman.subscribe("changeView", function (data) {
         loginUser(data);
+    });q
+    */
+    
+/*
+    postman.subscribe("userLogin", component => {
+        changeContent('loginUser');
     });
-    postman.subscribe("changeContent", component => {
-       changeContent(component);
-    });
+
+    */
     
     let changeContent = element => {
         selectedComponent(element.toLowerCase());
     }
-    let loginBtw = () =>{
+    
+    let loginBtw = () => {
         console.log("loginButton Clicked");
     }
+    
     return {
         loginBtw,
         selectedComponent,
-        currentView,
         menuElements,
-        loginUser,
+        isActive,
         changeContent
     }
 });

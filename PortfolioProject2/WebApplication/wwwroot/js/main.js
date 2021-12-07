@@ -9,6 +9,7 @@ require.config({
         text: "lib/requirejs/text",
         jquery: "lib/jquery/dist/jquery.min",
         knockout: "lib/knockout/build/output/knockout-latest.debug",
+        bootstrap: "../css/lib/bootstrap/dist/js/bootstrap.bundle.min",
         dataService: "services/dataService",
         postman: "services/postman"
     }
@@ -16,22 +17,29 @@ require.config({
 
 // component registration
 require(['knockout'], (ko) => {
+    ko.components.register("home", {
+        viewModel: { require: "components/home/getHome" },
+        template: { require: "text!components/home/getHome.html" }
+    });
     
     ko.components.register("get-titles", {
         viewModel: { require: "components/titles/getTitles" },
         template: { require: "text!components/titles/getTitles.html" }
     });
-    
-    ko.components.register("loginUser", {
+
+    ko.components.register("get-actors", {
+        viewModel: { require: "components/actors/getActors" },
+        template: { require: "text!components/actors/getActors.html" }
+    });
+
+    ko.components.register("login", {
         viewModel: {require: "components/users/userLogin"},
         template:  {require: "text!components/users/userLogin.html"}
     });
+
 });
 
-require(["knockout", "viewmodel"], function (ko, vm) {
-/*
-    console.log(vm.currentView);
-*/
+require(["knockout", "viewmodel", "bootstrap"], function (ko, vm) {
 
     ko.applyBindings(vm);
 

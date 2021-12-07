@@ -25,6 +25,13 @@
       <Folder Include="wwwroot\resources" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\js\components\categories\addCategory.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\components\categories\addCategory.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\components\categories\listCategories.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\components\categories\listCategories.js" />
+    </ItemGroup>
+
    
 
 </Project>

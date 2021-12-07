@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Routing;
 using PortfolioProject2;
 using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
+using WebApplication.DMOs;
 using WebApplication.ViewModels;
 
 namespace WebApplication.Controllers
