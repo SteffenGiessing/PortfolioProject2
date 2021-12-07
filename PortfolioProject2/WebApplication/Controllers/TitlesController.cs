@@ -78,7 +78,7 @@ namespace WebApplication.Controllers
             return Ok(result);
         }
         
-        [HttpGet("populartitles/")]
+        [HttpGet("populartitles")]
         public async Task<ActionResult<PopularTitles>> getPopularTitles()
         {
             var result = _iDataServices.GetPopularTitles().Result;

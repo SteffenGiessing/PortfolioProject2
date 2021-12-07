@@ -5,21 +5,21 @@
         let selectedPageSize = ko.observableArray([10]);
         let prev = ko.observable();
         let next = ko.observable();
-        let titleId = ko.observableArray([]);
+        //let titleId = ko.observableArray([]);
         let primaryTitle = ko.observable();
         let poster = ko.observable();
         let genres = ko.observable()
         let startYear = ko.observable();
         
-        ds.getTitleById(titleId, function(data) {
+        /*ds.getTitleById(titleId, function(data) {
             titleId(data);
             console.log(titleId());
-        });
+        });*/
         
         ds.getTitles(function(data) {
             prev(data.prev || undefined);
             next(data.next || undefined);
-            titles(data.items);
+            titles(data);
             console.log(titles())
         });
 
@@ -44,7 +44,7 @@
         
         
         return {
-            titleId,
+            //titleId,
             titles,
             primaryTitle,
             startYear,

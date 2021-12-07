@@ -15,7 +15,7 @@
     }*/
     
     let  getTitles = (callback) => {
-        fetch("https://localhost:5001/api/titles", { method: 'GET' })
+        fetch("http://localhost:5000/api/titles/populartitles", { method: 'GET' })
             .then(response => response.json())
             .then(json => {
                 callback(json);
@@ -55,7 +55,7 @@
     };
    
     return {
-        getTitleById,
+        //getTitleById,
         getTitles,
         getActors,
         loginUser,

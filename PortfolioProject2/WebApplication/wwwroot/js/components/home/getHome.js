@@ -5,7 +5,7 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
         let titleId = ko.observableArray([]);
         let startYear = ko.observable();
 
-        ds.getTitleById(titleId, function(data) {
+        /*ds.getTitleById(titleId, function(data) {
             titleId(data);
             console.log(titleId());
         });
