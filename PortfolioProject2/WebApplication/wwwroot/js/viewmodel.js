@@ -2,7 +2,7 @@
     
     let selectedComponent = ko.observable('get-home');
     
-    let titlesearch = ko.observable().extend({
+    let searchWord = ko.observable().extend({
         validation: {
             message: "Please add a longer search string for better search results",
             validator: function(value) {
@@ -11,7 +11,7 @@
         }
     });
     
-    let currentParams = ko.observable({titlesearch});
+    let currentParams = ko.observable({searchWord});
     let menuElements = ["get-Home", "get-titles", "get-actors"];
      
 
@@ -29,7 +29,7 @@
     
     let searchBtn = () => {
         console.log("Search button clicked");
-        currentParams({titlesearch});
+        currentParams({searchWord});
         selectedComponent('search');
     }
     
@@ -40,7 +40,7 @@
 
     return {
         searchBtn,
-        titlesearch,
+        searchWord,
         selectedComponent,
         menuElements,
         isActive,

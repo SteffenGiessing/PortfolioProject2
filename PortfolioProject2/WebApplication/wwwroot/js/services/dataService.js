@@ -42,8 +42,8 @@
         getJSON(url, callback);
     };*/
   
-    let search = (titlesearch, callback) => {
-        fetch("https://localhost:5001/api/titles/searchresult/" + titlesearch, { method: 'GET'})
+    let search = (callback, searchWord) => {
+        fetch("https://localhost:5001/api/titles/searchresult/" + searchWord)
             .then(response => response.json())
             .then(json => {
                     callback(json);
