@@ -30,6 +30,11 @@ require(['knockout'], (ko) => {
         viewModel: { require: "components/actors/getActors" },
         template: { require: "text!components/actors/getActors.html" }
     });
+    
+    ko.components.register("search", {
+        viewModel: { require: "components/search/search" },
+        template: { require: "text!components/search/search.html" }
+    });
 
 });
 

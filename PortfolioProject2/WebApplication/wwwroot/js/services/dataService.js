@@ -1,4 +1,16 @@
 ﻿define([], () => {
+
+    const titleApiUrl = "api/titles";
+
+    /*let getJSON = (url, callback) => {
+        fetch(url, {
+            headers : {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('jwtToken')
+            }
+        }).then(response => response.json().then(callback));
+    }*/
     
     let getTitleById = (titleId, callback) => {
         fetch("http://localhost:5000/api/titles/tt10260014", {method: 'GET'})
@@ -22,10 +34,26 @@
                 callback(json);
             });
     };
+
+   /*let searchForTitles = (url, searchWord, callback) => {
+        if (url === undefined) {
+            url = titleApiUrl + "/searchresult/" + searchWord;
+        }
+        getJSON(url, callback);
+    };*/
+  
+    let searchForTitles = (searchString, callback) => {
+        fetch("https://localhost:5000/api/title/searchresult/" + searchString, { method: 'GET'}) 
+            .then(response => response.json())
+            .then(json => {
+                    callback(json);
+                });
+        }
    
     return {
         getTitleById,
         getTitles,
-        getActors
+        getActors,
+        searchForTitles
     }
 });
