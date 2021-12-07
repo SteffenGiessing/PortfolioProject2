@@ -16,9 +16,15 @@ require.config({
 
 // component registration
 require(['knockout'], (ko) => {
+    
     ko.components.register("get-titles", {
         viewModel: { require: "components/titles/getTitles" },
         template: { require: "text!components/titles/getTitles.html" }
+    });
+    
+    ko.components.register("loginUser", {
+        viewModel: {require: "components/users/userLogin"},
+        template:  {require: "text!components/users/userLogin.html"}
     });
 });
 

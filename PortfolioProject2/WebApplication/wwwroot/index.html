@@ -15,13 +15,16 @@
             <li class="nav-link"><a href="#legends">Movie</a></li>
             <li class="nav-link"><a href="#slide">Actors</a></li>
             <li class="nav-link"><a href="#yt">Genres</a></li>
+                
+            </div>
+            <li class="nav-link"><a href="User.html">Login</a></li>
         </ul>
     </navbar>
 </header>
-    
-    <div data-bind="component: {name: currentView}"></div>
 
-   
+
+    <div data-bind="component: {name: loginUser}"></div>
+    <div data-bind="component: {name: currentView}"></div>
     <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>
 </body>
 </html>
