@@ -38,12 +38,11 @@
             headers: {
                 "Content-Type": "application/json",
                 "Accept":"application/json",
-                //      "Authorization": "Bearer" + localStorage.getItem(tokenJwt)
+              //  "Authorization": "Bearer" + localStorage.getItem(tokenJwt)
             },
             method: 'POST',
             body: JSON.stringify(data),
-        }).then(response => response.json().then(json => console.log(json)).then(callback => json)
-            .then(response => localStorage.setItem("tokenJwt", response.tokenJwt)));
+        }).then(response => response.json().then(callback)).then(response => localStorage.setItem("tokenJwt", response.tokenJwt));
     };
 
     let searchForTitles = (searchWord, callback ) => {

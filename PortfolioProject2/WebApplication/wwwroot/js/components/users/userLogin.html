@@ -1,10 +1,12 @@
-﻿<div>
-    <input type="text" id="email" data-bind="value: email">
+﻿    <input type="text" id="email" data-bind="value: email">
     <input type="text" id="password" data-bind="value: password">
     <button type="button" data-bind="click:loginUser" data-toggle="button">LOGIN</button>
 
-    <div data-bind="for each: userInfo">
+    <div data-bind="foreach: userDetails">
         <h5>FirstName: <span data-bind="text: firstName"></span></h5>
         <h5>LastName: <span data-bind="text: lastName"></span> </h5>
+        <h5>Username: <span data-bind="text: userName"></span></h5>
+        <h5>Email: <span data-bind="text: emailAddress"></span></h5>
     </div>
-</div>
+    
+    

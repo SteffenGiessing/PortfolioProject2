@@ -15,17 +15,18 @@
             
         }
 */
-        let loginUser = (callback) => {
+        let loginUser = () => {
             /*   postman.publish("loginUser", {EmailAddress: email(), Password: password()});*/
-            ds.loginUser(email(), password());
-            userInfo(callback.items)
+            ds.loginUser(email(), password(), function(data) {
+                userDetails(data)
+            });
             /*  console.log(data, "COPY SOMTHING");
               userDetails(data);
               email(email());
               password(password());*/
 
         };
-
+        
 
         let signInUserBtn = () =>{
             console.log("sign in button clicked");
@@ -37,6 +38,7 @@
             titleId,
             email,
             password,
+            userDetails,
             signInUserBtn,
             loginUser
         };
