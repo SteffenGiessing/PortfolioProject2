@@ -8,7 +8,7 @@
         let titleId = ko.observableArray([]);
         
         console.log(email, password);
-        console.log(email(), password());
+      //  console.log(email(), password());
 
 /*
         ds.loginUser(function(data) {
