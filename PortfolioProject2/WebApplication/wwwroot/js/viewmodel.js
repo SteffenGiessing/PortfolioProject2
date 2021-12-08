@@ -10,6 +10,7 @@
             }
         }
     });
+    
 
     let currentParams = ko.observable({searchWord});
 

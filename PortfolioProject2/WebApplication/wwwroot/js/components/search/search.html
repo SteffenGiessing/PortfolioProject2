@@ -1,9 +1,9 @@
-﻿<div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-bind="foreach: titles">
-        <div class="col">
+﻿<div class="container-lg">
+    <div class="row" data-bind="foreach: titles">
+        <div class="col-sm-6">
             <div class="card shadow-sm">
-                <img data-bind="attr: { src: poster }"/>
-                <div class="card-body">
+                    <img class="img-fluid" width="100%" height="400" data-bind="attr: { src: poster }" onerror="this.onerror=null;this.src='https://i.redd.it/yprohh8wtdd21.png';"/></svg>
+                <div class="card-body" width="100%" height="100">
                     <p class="card-text" data-bind="text: primaryTitle"></p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
@@ -21,13 +21,17 @@
 <div>
     Page size: <select data-bind="options: pageSizes, selectedOptions: selectedPageSize"></select>
 </div>
+
+<!--
 <div class="row" data-bind="for each: titles">
     <div  class="col-sm-10 col-md-5 col-lg-4" data-bind="click: $parent.selectTitle">
         <div class="primary_title" data-bind="text: primaryTitle"></div>
-        <div  class="poster-container">
+        <div class="poster-container">
         </div>
     </div>
 </div>
+-->
+
 <div>
     <br>
     <button class="btn btn-primary" data-bind="click: showPrev, enable: enablePrev">Prev</button>
