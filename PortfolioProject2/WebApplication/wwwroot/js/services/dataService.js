@@ -33,17 +33,17 @@
     let loginUser = (email, password, callback) => {
         let data = {"EmailAddress": email, "Password": password};
         console.log(data);
-        console.log(email(),password());
+        console.log(email,password);
         fetch("http://localhost:5000/api/user/login", {
-                headers: {
-                    "Content-Type": "application/json",
-                    "Accept":"application/json"
-                },
+            headers: {
+                "Content-Type": "application/json",
+                "Accept":"application/json",
+                //      "Authorization": "Bearer" + localStorage.getItem(tokenJwt)
+            },
             method: 'POST',
             body: JSON.stringify(data),
-            }
-        ).then(response => response.json()).then(json => { console.log(json)}).then(response => localStorage.setItem("jwtToken", response.tokenJwt))
-            .then(json => { console.log(json)});
+        }).then(response => response.json().then(json => console.log(json)).then(callback => json)
+            .then(response => localStorage.setItem("tokenJwt", response.tokenJwt)));
     };
 
     let searchForTitles = (searchWord, callback ) => {

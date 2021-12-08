@@ -15,25 +15,22 @@
             
         }
 */
+        let loginUser = (callback) => {
+            /*   postman.publish("loginUser", {EmailAddress: email(), Password: password()});*/
+            ds.loginUser(email(), password());
+            userInfo(callback.items)
+            /*  console.log(data, "COPY SOMTHING");
+              userDetails(data);
+              email(email());
+              password(password());*/
 
-        let loginUser = () => {
-         /*   postman.publish("loginUser", {EmailAddress: email(), Password: password()});*/
-            ds.loginUser(email(), password()); 
-              /*  console.log(data, "COPY SOMTHING");
-                userDetails(data);
-                email(email());
-                password(password());*/
-            
         };
-        
+
+
         let signInUserBtn = () =>{
             console.log("sign in button clicked");
         }
 
-        ds.getTitleById(titleId, function(data) {
-            titleId(data);
-            console.log(titleId());
-        });
         
         return {
             // currentTemplate,
