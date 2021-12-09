@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PortfolioProject2.Models.DMOs
+namespace WebApplication.DMOs
 {
     public class User_User
         {

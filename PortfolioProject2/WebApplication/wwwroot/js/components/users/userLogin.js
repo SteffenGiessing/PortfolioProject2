@@ -18,7 +18,7 @@
         let loginUser = () => {
             /*   postman.publish("loginUser", {EmailAddress: email(), Password: password()});*/
             ds.loginUser(email(), password(), function(data) {
-                userDetails(data)
+                getUser(email())
             });
             /*  console.log(data, "COPY SOMTHING");
               userDetails(data);
@@ -26,7 +26,11 @@
               password(password());*/
 
         };
-        
+        let getUser = (email) => {
+            ds.getUser(email, function (data) {
+              userDetails(data)  
+            });
+        }
 
         let signInUserBtn = () =>{
             console.log("sign in button clicked");

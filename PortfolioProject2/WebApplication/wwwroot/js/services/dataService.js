@@ -29,7 +29,18 @@
                 callback(json);
             });
     };
-
+    let getUser = (email, callback) => {
+        fetch("http://localhost:5000/api/user/"+email, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Authorization': 'Bearer' + localStorage.getItem('jwtToken'),
+            },
+            method: 'GET'})
+            .then(response => response.json()).then(json => {
+            callback(json);
+        });
+    }
     let loginUser = (email, password, callback) => {
         let data = {"EmailAddress": email, "Password": password};
         console.log(data);
@@ -37,12 +48,12 @@
         fetch("http://localhost:5000/api/user/login", {
             headers: {
                 "Content-Type": "application/json",
-                "Accept":"application/json",
-              //  "Authorization": "Bearer" + localStorage.getItem(tokenJwt)
+                "Accept": "application/json",
+               // "Authorization": "Bearer" + localStorage.getItem('jwtToken')
             },
             method: 'POST',
-            body: JSON.stringify(data),
-        }).then(response => response.json().then(callback)).then(response => localStorage.setItem("tokenJwt", response.tokenJwt));
+            body: JSON.stringify(data)
+        }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))).then(callback)
     };
 
     let searchForTitles = (searchWord, callback ) => {
@@ -58,6 +69,7 @@
         getTitles,
         getActors,
         loginUser,
-        searchForTitles
+        searchForTitles,
+        getUser
     }
 });

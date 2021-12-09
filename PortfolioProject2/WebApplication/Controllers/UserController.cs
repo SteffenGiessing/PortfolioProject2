@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using WebApplication.DMOs;
 using WebApplication.DTOs;
 using IUserDataService = WebApplication.DataInterfaces.IUserDataService;
 #nullable enable
@@ -96,6 +97,13 @@ namespace WebApplication.Controllers
                 var userToReturn = _mapper.Map<User_User>(validatedUser);
                 userToReturn.TokenJwt = token;
                 return Ok(userToReturn);
+            }
+
+            [HttpGet("{email}")]
+            public IActionResult getUserByEmail(string email)
+            {
+                var getUserByEmail = _iDataServices.GetUserByEmail(email).Result;
+                return Ok(getUserByEmail);
             }
 
             [HttpDelete("deleteuser")]

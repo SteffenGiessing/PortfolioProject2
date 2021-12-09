@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models;
 using PortfolioProject2.Models.DMOs;
+using WebApplication.DMOs;
 using IUserDataService = WebApplication.DataInterfaces.IUserDataService;
 
 namespace WebApplication.DataServices
