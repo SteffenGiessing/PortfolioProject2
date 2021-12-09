@@ -53,11 +53,29 @@
             });
     };
    
+    let getInfoSpecificTitle = (titleId, callback) => {
+        fetch("http://localhost:5000/api/titles/titleinfo" + titleId, { method: 'GET'})
+            .then(response => response.json())
+            .then(json => {
+                callback(json);
+            });
+    };
+
+    let getStartYear = (titleId, callback) => {
+        fetch("http://localhost:5000/api/titles/titleinfo" + titleId, { method: 'GET'})
+            .then(response => response.json())
+            .then(json => {
+                callback(json);
+            });
+    };
+    
     return {
         //getTitleById,
         getTitles,
         getActors,
         loginUser,
-        searchForTitles
+        searchForTitles,
+        getInfoSpecificTitle,
+        getStartYear
     }
 });

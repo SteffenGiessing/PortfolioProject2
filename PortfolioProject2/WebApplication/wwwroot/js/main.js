@@ -47,6 +47,11 @@ require(['knockout'], (ko) => {
         template: { require: "text!components/search/search.html" }
     });
 
+    ko.components.register("title-info", {
+        viewModel: { require: "components/titleInfo/titleInfo" },
+        template: { require: "text!components/titleInfo/titleInfo.html" }
+    });
+
 });
 
 require(["knockout", "viewmodel", "bootstrap"], function (ko, vm) {

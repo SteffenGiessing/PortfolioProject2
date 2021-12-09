@@ -41,6 +41,11 @@
 
     */
     
+
+    postman.subscribe("changeTitle", component => {
+        changeContent('title-info');
+    });
+    
     let changeContent = element => {
         selectedComponent(element.toLowerCase());
     }
@@ -54,6 +59,8 @@
         currentParams({searchWord});
         selectedComponent("search");
     }
+    
+    
     
     return {
         searchBtn,
