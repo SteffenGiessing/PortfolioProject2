@@ -9,5 +9,6 @@ namespace PortfolioProject2.Models.DMOs
         public string TitleId { get; set; }
         
         public string Poster { get; set; }
+        public string StartYear { get; set; }
     }
 }

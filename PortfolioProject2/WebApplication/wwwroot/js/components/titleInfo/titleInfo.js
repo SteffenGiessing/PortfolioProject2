@@ -19,13 +19,9 @@
         postman.subscribe('changeTitle', title => {
             titles(title);
             titleId(titles().titleId);
-            ds.getInfoSpecificTitle(titleId, function (data) {
-                titleInfo(data);
-                console.log(titleInfo());
             console.log(titles());
             console.log(titleId());
             });
-        });
             
         
 

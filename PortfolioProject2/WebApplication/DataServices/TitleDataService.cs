@@ -58,7 +58,7 @@ namespace WebApplication.DataServices
         public async Task<List<TitleSearch>> TitleSearch(string searchWord)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
-            return await ctx.TitleSearch.FromSqlRaw("SELECT primarytitle, titleid, poster from title_search3({0})", searchWord).ToListAsync();
+            return await ctx.TitleSearch.FromSqlRaw("SELECT primarytitle, titleid, poster, startyear from title_search3({0})", searchWord).ToListAsync();
         }
         
         public async Task<List<PopularTitles>> GetPopularTitlesForFrontPage()
@@ -81,7 +81,7 @@ namespace WebApplication.DataServices
         public async Task<List<Title_Info>> GetInfoSpecificTitle(string id)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
-            return await ctx.Title_Info. FromSqlRaw("SELECT titleid, primarytitle, titletype, originaltitle, isadult, startyear, endyear, runtime, genres, poster, plot from titles natural join omdb_data WHERE titleid = {0}", id).ToListAsync();
+            return await ctx.Title_Info.FromSqlRaw("SELECT titleid, primarytitle, titletype, originaltitle, isadult, startyear, endyear, runtime, genres, poster, plot from titles natural join omdb_data WHERE titleid = {0}", id).ToListAsync();
         }
     }
 } 
