@@ -112,33 +112,6 @@ namespace WebApplication.Controllers
                 var deleteUser = _iDataServices.DeleteUser(user).Result;
                 return Ok(deleteUser);
             }
-/*
-            [AllowAnonymous]
-            [HttpPost]
-            public IActionResult CreateUser(UserToCreate user)
-            {
-                byte[] getsalt = new byte[128 / 8];
-                var randomNum = RandomNumberGenerator.Create();
-                randomNum.GetBytes(getsalt);
-
-                string getHash = Convert.ToBase64String(KeyDerivation.Pbkdf2(password: user.Password, salt: getsalt,
-                    prf: KeyDerivationPrf.HMACSHA256, iterationCount: 10000, numBytesRequested: 256 / 8));
-
-                user.Password = getHash;
-                user.Salt = getsalt;
-
-                var mapUser = _mapper.Map<Users>(user);
-                
-                var created = _iDataServices.CreateUser(mapUser);
-                var token = TokenCreator.TokenCreater(created, _config);
-                var userToStore = _mapper.Map<User_User>(created);
-                userToStore.TokenJWT = token;
-
-
-                return Created("", userToStore);
-            }
-            
-            */
         }
 }
 

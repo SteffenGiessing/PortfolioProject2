@@ -55,10 +55,21 @@
             body: JSON.stringify(data)
         }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))).then(callback)
     };
-
+    let getUserComments = (callback) => {
+        fetch("http://localhost:5000/api/comments/"+ 77 + "/comments", {
+            headers: {
+            'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Authorization': localStorage.getItem('jwtToken'),
+        },
+        method: 'GET'})
+        .then(response => response.json()).then(json => {
+        callback(json);
+    });
+    };
     let searchForTitles = (searchWord, callback ) => {
         fetch("http://localhost:5000/api/titles/searchresult/" + searchWord, { method: 'GET'})
-            .then(response => response.json())
+            .then(response => response.json()).then(response => {console.log(json)})
             .then(json => {
                 callback(json);
             });
@@ -70,6 +81,7 @@
         getActors,
         loginUser,
         searchForTitles,
-        getUser
+        getUser,
+        getUserComments
     }
 });

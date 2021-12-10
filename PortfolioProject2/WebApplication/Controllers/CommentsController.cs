@@ -2,8 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using WebApplication.DataInterfaces;
-using IUserDataService = WebApplication.DataInterfaces.IUserDataService;
+using WebApplication.DTOs;
+using WebApplication.Token;
+using ICommentsDataService = WebApplication.DataInterfaces.ICommentsDataService;
 #nullable enable
+using System;
 using System.Collections.Generic;
 using PortfolioProject2.Models.DMOs;
 
@@ -14,15 +17,14 @@ namespace WebApplication.Controllers
     
         public class CommentsController : Controller
         {
-            private readonly ICommentsDataService _iDataServices;
-            private readonly IMapper _mapper;
             private readonly IConfiguration _config;
+            private readonly ICommentsDataService _iDataServices;
 
-            public CommentsController(ICommentsDataService dataServices, IMapper mapper, IConfiguration configuration)
+            public CommentsController(ICommentsDataService dataServices, IConfiguration configuration)
             {
                 _iDataServices = dataServices;
-                _mapper = mapper;
                 _config = configuration;
+
             }
 
             // Get Comments
@@ -33,15 +35,18 @@ namespace WebApplication.Controllers
                 return Ok(comments);
             }
 
-            [HttpGet("{userid}/allcomments")]
-            public IActionResult GetUserComments(int userid)
+            [HttpGet("{userid?}/comments")]
+            public IActionResult GetUserComments(string userid,[FromHeader] TokenChecker getHeaders)
             {
-                var userComments = _iDataServices.GetUserComments(userid);
+                var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+
+                var userComments = _iDataServices.GetUserComments(userid).Result;
+                /*
                 if (userComments == null)
                 {
                     return NotFound();
                 }
-
+                */
                 return Ok(userComments);
             }
 

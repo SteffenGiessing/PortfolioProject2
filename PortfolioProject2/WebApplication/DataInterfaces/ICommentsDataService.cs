@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using PortfolioProject2.Models.DMOs;
 
 namespace WebApplication.DataInterfaces
@@ -7,7 +8,7 @@ namespace WebApplication.DataInterfaces
     {
         IList<User_Comments> GetAllComments();
 
-        IList <User_Comments> GetUserComments(int userid);
+        Task <User_Comments> GetUserComments(string userid);
 
         IList <User_Comments> GetCommentsFromTitle(string titleid);
         

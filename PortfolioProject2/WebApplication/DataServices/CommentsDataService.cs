@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using PortfolioProject2.Models;
 using PortfolioProject2.Models.DMOs;
 using WebApplication.DataInterfaces;
+using WebApplication.DMOs;
 
 namespace WebApplication.DataServices
 {
@@ -17,19 +19,18 @@ namespace WebApplication.DataServices
             return list;
         }
 
-        public IList<User_Comments> GetUserComments(int userid)
+        public async Task<User_Comments> GetUserComments(string userid)
         {
-            IList<User_Comments> result = new List<User_Comments>();
+            var result = new User_Comments {};
             using var ctx = new DatabaseConnection.DatabaseConnection();
-            
             foreach (var uc in ctx.User_Comments)
             {
-                if (uc.UserId == userid)
-                {
-                    result.Add(uc);
-                }
+                
+                    result.CommentText = uc.CommentText;
+                    result.TitleId = uc.TitleId;
+                
             }
-            return result;
+            return  result;
         }
 
         public IList<User_Comments> GetCommentsFromTitle(string titleid)
