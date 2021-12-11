@@ -127,7 +127,6 @@ C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\WebA
 C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\ref\WebApplication.dll
 C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.pdb
 C:\Users\Steffen Giessing\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.genruntimeconfig.cache
-D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\testhost.exe
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\appsettings.Development.json
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\appsettings.json
 D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\testhost.dll
@@ -514,3 +513,5 @@ C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\ref\WebApplication.dll
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.pdb
 C:\Users\jonas\RiderProjects\PortfolioProject2\PortfolioProject2\WebApplication\obj\Debug\net5.0\WebApplication.genruntimeconfig.cache
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\testhost.x86.exe
+D:\RUC\Second Semester\Computer Science\C#\git\ProjectPortofolio2\PortfolioProject2\WebApplication\bin\Debug\net5.0\testhost.x86.dll

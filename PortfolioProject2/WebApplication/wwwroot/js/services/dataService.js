@@ -1,5 +1,22 @@
 ﻿define([], () => {
-    
+    const titleApi = "http://localhost:5001/api/titles";
+
+    let getJson = (url, callback) => {
+        fetch(url).then(response => response.json()).then(callback);
+/*    fetch(url).then(res => res.text())          // convert to plain text
+            .then(text => console.log(text)).then(callback);*/
+    };
+
+
+    let getTitles = (url, callback) => {
+    if (url === undefined) {
+        url = titleApi;
+    }
+    getJson(url, callback);
+}
+
+    let getTitlesUrlWithPageSize = size => titleApi + "?pageSize=" + size;
+
     let getTitleById = (titleId, callback) => {
         fetch("http://localhost:5000/api/titles/tt10260014", {method: 'GET'})
             .then(response => response.json())
@@ -7,21 +24,15 @@
                 callback(json)})
     }
     
-    /*let getTitles = (url, searchString, callback) => {
-        if (url === undefined) {
-            url = titleApiUrl + "search-title/" + searchString;
-        }
-        
-    }*/
-    
-    let  getTitles = (callback) => {
+
+/*    let  getTitles = (callback) => {
         fetch("http://localhost:5000/api/titles/populartitles", { method: 'GET' })
             .then(response => response.json())
             .then(json => {
                 callback(json);
             });
     };
-    
+    */
     let getActors = (callback) => {
         fetch("https://localhost:5001/api/actor", { method: 'GET'})
         .then(response => response.json())
@@ -81,6 +92,8 @@
     return {
         //getTitleById,
         getTitles,
+        getTitle: getJson,
+        getTitlesUrlWithPageSize,
         getActors,
         loginUser,
         searchForTitles,

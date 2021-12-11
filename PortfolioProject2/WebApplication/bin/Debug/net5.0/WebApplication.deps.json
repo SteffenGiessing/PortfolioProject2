@@ -20,7 +20,7 @@
       "NETCOREAPP3_1_OR_GREATER"
     ],
     "languageVersion": "9.0",
-    "platform": "",
+    "platform": "x86",
     "allowUnsafe": false,
     "warningsAsErrors": false,
     "optimize": false,
@@ -35,6 +35,7 @@
         "dependencies": {
           "AutoMapper": "10.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
+          "Knockout-Validation": "1.0.2",
           "Microsoft.AspNetCore.Http.Features": "6.0.0-preview.4.21253.5",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "5.0.12",
@@ -385,6 +386,12 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
+      "Knockout-Validation/1.0.2": {
+        "dependencies": {
+          "knockoutjs": "2.2.1"
+        }
+      },
+      "knockoutjs/2.2.1": {},
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -1249,7 +1256,11 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Collections.Immutable/5.0.0": {},
+      "System.Collections.Immutable/5.0.0": {
+        "compile": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+        }
+      },
       "System.Collections.NonGeneric/4.3.0": {
         "dependencies": {
           "System.Diagnostics.Debug": "4.3.0",
@@ -1276,7 +1287,11 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.ComponentModel.Annotations/5.0.0": {},
+      "System.ComponentModel.Annotations/5.0.0": {
+        "compile": {
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+        }
+      },
       "System.ComponentModel.Primitives/4.3.0": {
         "dependencies": {
           "System.ComponentModel": "4.3.0",
@@ -3647,6 +3662,20 @@
       "sha512": "sha512-b5rRL5zeaau1y/5hIbI+6mGw3cwun16YjkHZnV9RRT5UyUIFsgLmNXJ0YnIN9p8Hw7K7AbG1q1UclQVU3DinAQ==",
       "path": "castle.core/4.4.0",
       "hashPath": "castle.core.4.4.0.nupkg.sha512"
+    },
+    "Knockout-Validation/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jO09UoLutmNjJl9t3cq9OYUCNx4wvmt8Zrm81Tf+CPnPNsbbVSEszE1RcjVYeqttiToV4TaSf1plgKugADQCFA==",
+      "path": "knockout-validation/1.0.2",
+      "hashPath": "knockout-validation.1.0.2.nupkg.sha512"
+    },
+    "knockoutjs/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+EJyE1DT7WApO0HnQr1TDuIJy8jqWOTlteJyB2CQTK6XU11naJhAwu8I35bP8oxS8kCuIry9S4jIpPMULw3xvw==",
+      "path": "knockoutjs/2.2.1",
+      "hashPath": "knockoutjs.2.2.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
       "type": "package",
