@@ -14,6 +14,12 @@
         let titleInfo = ko.observableArray();
         
         let startYear = ko.observable();
+
+        let endYear = ko.observable();
+
+        let genres =  ko.observable();
+        
+        let plot =  ko.observable();
         
 
         postman.subscribe('changeTitle', title => {
@@ -31,10 +37,10 @@
         });*/
         
 
-        ds.getStartYear(startYear, function (data) {
+        /*ds.getStartYear(startYear, function (data) {
             startYear(data);
             console.log(startYear());
-        });
+        });*/
         
         ds.getInfoSpecificTitle(titleId, function (data) {
             titleId(data);
@@ -51,7 +57,10 @@
             primaryTitle,
             titleInfo,
             titleId,
-            startYear
+            startYear,
+            endYear,
+            genres,
+            plot
             //addToBookmarks
         }
     }

@@ -12,7 +12,7 @@ namespace WebApplication.DMOs
         public bool IsAdult { get; set; }
         public string StartYear { get; set; }
         public string EndYear { get; set; }
-        public int? RunTime { get; set; }
+        public string RunTime { get; set; }
         public string Genres { get; set; }
         
 
