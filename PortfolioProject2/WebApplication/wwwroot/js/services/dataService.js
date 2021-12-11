@@ -49,17 +49,20 @@
             headers: {
                 "Content-Type": "application/json",
                 "Accept": "application/json",
-               // "Authorization": "Bearer" + localStorage.getItem('jwtToken')
             },
             method: 'POST',
             body: JSON.stringify(data)
-        }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))).then(callback)
+        }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))
+            .then(callback));
     };
     let getUserComments = (callback) => {
-        fetch("http://localhost:5000/api/comments/"+ 77 + "/comments", {
+        let userid = sessionStorage.getItem("userId").toString();
+        console.log(userid)
+        fetch("http://localhost:5000/api/comments/"+userid +"/comments", {
             headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json', 
                 'Accept': 'application/json',
+                //THIS LINE IS NEEDED TO BE AUTHENTICATED BY THE BACKEND! ONLY WORKS WHEN YOU ARE LOGGED IN
                 'Authorization': localStorage.getItem('jwtToken'),
         },
         method: 'GET'})

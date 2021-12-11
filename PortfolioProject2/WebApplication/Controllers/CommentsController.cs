@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using WebApplication.DataInterfaces;
+using WebApplication.DMOs;
 using WebApplication.DTOs;
 using WebApplication.Token;
 using ICommentsDataService = WebApplication.DataInterfaces.ICommentsDataService;
@@ -27,7 +28,7 @@ namespace WebApplication.Controllers
 
             }
 
-            // Get Comments
+            // Get Comments6
             [HttpGet]
             public ActionResult<IEnumerable<User_Comments>> GetAllComments()
             {
@@ -35,19 +36,24 @@ namespace WebApplication.Controllers
                 return Ok(comments);
             }
 
-            [HttpGet("{userid?}/comments")]
-            public IActionResult GetUserComments(string userid,[FromHeader] TokenChecker getHeaders)
+            [HttpGet("{userid}/comments")]
+            public IActionResult GetUserComments(int userid, [FromHeader] TokenChecker getHeaders)
             {
+                //THIS STEP AUTHENTICATES THE FRONT END IT IS NEEDED EVERYTIME USER HAS TO INTERACT WITH THE SYSTEM
                 var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-
-                var userComments = _iDataServices.GetUserComments(userid).Result;
-                /*
-                if (userComments == null)
+                if (token == true)
                 {
-                    return NotFound();
+                    var userComments = _iDataServices.GetUserComments(userid).Result;
+                    
+                    if (userComments == null)
+                    {
+                        return NotFound();
+                    }
+                    
+                    return Ok(userComments);
                 }
-                */
-                return Ok(userComments);
+
+                return Unauthorized();
             }
 
             [HttpGet("{titleid}")]

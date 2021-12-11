@@ -11,6 +11,7 @@
  
         let loginUser = () => {
             ds.loginUser(email(), password(), function(data) {
+              
                 getUser(email())
             });
             
@@ -18,13 +19,16 @@
         };
         let getUser = (email) => {
             ds.getUser(email, function (data) {
+                console.log(data["userId"])
+                //SAVES THE USER ID
+                sessionStorage.setItem('userId', data["userId"] )
               userDetails(data);
-             // getUserComments(data.index("userId").valueOf);
             });
         };
         
         let getComments = () => {
-            ds.getUserComments( function(data) {
+            
+            ds.getUserComments(function(data) {
                showComments(data) 
             });
         }
