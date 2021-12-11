@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "rIAXZKqd/DZfQrOSQf8PMneSRXj4V0QaLFS1gOpOpzcqFm046PjMWGc6IhlzzZNzthRtHPfbUBx302pydDT5hA==",
+  "dgSpecHash": "XCT7ZODjMjlPbbj9J9Pme+FmNJxb3FLBzgPvvhsa7y3zAh0q5zdnG47WWhJzrfErTyf0YAPEV1j50xS7mzIRNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\jonas\\RiderProjects\\PortfolioProject2\\PortfolioProject2\\WebApplication\\WebApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jonas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\knockout-validation\\1.0.2\\knockout-validation.1.0.2.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\knockoutjs\\2.2.1\\knockoutjs.2.2.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",

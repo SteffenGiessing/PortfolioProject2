@@ -356,6 +356,11 @@ namespace WebApplication.DatabaseConnection
                 entity.HasNoKey();
                 entity.Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
                 entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.Poster).HasColumnName("poster");
+                entity.Property(x => x.StartYear).HasColumnName("startyear");
+                entity.Property(x => x.EndYear).HasColumnName("endyear");
+                entity.Property(x => x.Genres).HasColumnName("genres");
+                entity.Property(x => x.Plot).HasColumnName("plot");
 
             });
             

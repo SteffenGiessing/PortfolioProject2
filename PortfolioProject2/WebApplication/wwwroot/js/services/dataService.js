@@ -70,9 +70,18 @@
         callback(json);
     });
     };
+
+    let getInfoSpecificTitle = (titleId, callback) => {
+        fetch("http://localhost:5000/api/titles/titleinfo" + titleId, { method: 'GET'})
+            .then(response => response.json())
+            .then(json => {
+                callback(json);
+            });
+    };
+
     let searchForTitles = (searchWord, callback ) => {
         fetch("http://localhost:5000/api/titles/searchresult/" + searchWord, { method: 'GET'})
-            .then(response => response.json()).then(response => {console.log(json)})
+            .then(response => response.json())
             .then(json => {
                 callback(json);
             });
@@ -85,6 +94,7 @@
         loginUser,
         searchForTitles,
         getUser,
-        getUserComments
+        getUserComments,
+        getInfoSpecificTitle
     }
 });

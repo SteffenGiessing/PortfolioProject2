@@ -40,6 +40,9 @@
     });
 
     */
+    postman.subscribe("changeTitle", component => {
+        changeContent('title-info');
+    });
     
     let changeContent = element => {
         selectedComponent(element.toLowerCase());
