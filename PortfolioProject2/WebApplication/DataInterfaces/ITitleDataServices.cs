@@ -1,17 +1,15 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
+using PortfolioProject2;
 using PortfolioProject2.Models.DMOs;
 using WebApplication.DMOs;
 
-namespace PortfolioProject2.Models.DataInterfaces
+namespace WebApplication.DataInterfaces
 {
     public interface ITitlesDataService
     {
         IList<Titles> GetAllTitles(QueryString queryString);
-
-        int NumberOffProducts();
+        IList<PopularTitles> GetPopularTitles(QueryString queryString);
 
         Task<List<Titles>> GetTitleById(string id);
         
@@ -21,10 +19,11 @@ namespace PortfolioProject2.Models.DataInterfaces
         
         Task<List<PopularTitles>> GetPopularTitlesForFrontPage();
         
-        Task<List<PopularTitles>> GetPopularTitles();
 
         Task<List<Title_Info>> GetInfoSpecificTitle(string id);
         
+        int NumberOffProducts();
+        int NumberOfPopular();
     }
     
 }

@@ -1,6 +1,6 @@
 ﻿namespace WebApplication.ViewModels
 {
-    public class TitleListViewModel
+    public class PopularListViewModel
     {
         public string Url { get; set; }
         public string PrimaryTitle { get; set; }
