@@ -37,6 +37,8 @@ namespace WebApplication.DatabaseConnection
         public DbSet<Title_Bookmark> Title_Bookmark { get; set; }
         
         public DbSet<Name_Bookmark> Name_Bookmark { get; set; }
+        
+        public DbSet<Actors_In_Title> Actors_In_Title{ get; set; }
 
 
         private readonly string connectionString =
@@ -439,6 +441,20 @@ namespace WebApplication.DatabaseConnection
                 entity.Property(x => x.UserId).HasColumnName("userid");
                 entity.Property(x => x.Pid).HasColumnName("pid");
                 entity.Property(x => x.BookMarkTime).HasColumnName("bookmarktime");
+            });
+            
+            modelBuilder.Entity<Actors_In_Title>(entity =>
+            {
+                // Points to Database titles
+                entity.ToTable("actors_in_title");
+
+                // Sets properties
+                entity.HasNoKey();
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
+                entity.Property(x => x.Pid).HasColumnName("pid");
+                entity.Property(x => x.PrimaryName).HasColumnName("primaryname");
+                entity.Property(x => x.Role).HasColumnName("role");
+                
             });
             
 

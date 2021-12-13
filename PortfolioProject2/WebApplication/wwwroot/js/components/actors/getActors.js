@@ -1,5 +1,6 @@
 define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
     return function (params) {
+            titleId = ko.observable();
             actors = ko.observableArray([]);
             primaryName = ko.observable()
 
@@ -9,6 +10,7 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
         });
         
         return {
+            titleId,
             actors,
             primaryName
         };

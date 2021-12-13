@@ -29,6 +29,16 @@
                 callback(json);
             });
     };
+    
+    
+    let getActorsInTitle = (titleId, callback) => {
+        fetch("api/actor" + titleId, { method: 'GET'})
+            .then(response => response.json())
+            .then(json => {
+                callback(json);
+            });
+    };
+    
     let getUser = (email, callback) => {
         fetch("http://localhost:5000/api/user/"+email, {
             headers: {
@@ -111,6 +121,7 @@
         //getTitleById,
         getTitles,
         getActors,
+        getActorsInTitle,
         loginUser,
         searchForTitles,
         getUser,

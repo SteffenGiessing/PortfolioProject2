@@ -54,5 +54,12 @@ namespace WebApplication.Controllers
             var actorName = _iDataServices.GetBestMatchPersonName(namessearch).Result;
             return Ok(actorName);
         }
+        
+        [HttpGet("{titleId}")]
+        public async Task<ActionResult<Actors_In_Title>> getActorsInTitle(string? titleId)
+        {
+            var actor = _iDataServices.GetActorsInTitle(titleId).Result;
+            return Ok(actor);
+        }
     }
 }

@@ -65,5 +65,11 @@ namespace PortfolioProject2.Models.DataServices
             return await ctx.NameSearches.FromSqlRaw("SELECT pid, primaryname from actor_search({0})", searchWord).ToListAsync();
         }
         
+        public async Task<List<Actors_In_Title>> GetActorsInTitle(string titleId)
+        {
+            var ctx = new DatabaseConnection();
+            return await ctx.Actors_In_Title.FromSqlRaw("SELECT titleid, pid, primaryname, role from titles natural join person_in_title natural join person_info where titleid ({0})", titleId).ToListAsync();
+        }
+        
     }
 }

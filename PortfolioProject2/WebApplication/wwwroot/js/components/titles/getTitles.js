@@ -14,7 +14,7 @@
         let awards = ko.observable();
         let averageRating = ko.observable();
         let numVotes = ko.observable();
-
+        let actors = ko.observableArray([]);
         /*ds.getTitleById(titleId, function(data) {
             titleId(data);
             console.log(titleId());
@@ -30,6 +30,11 @@
             next(data.next || undefined);
             titles(data);
             console.log(titles())
+        });
+
+        ds.getActorsInTitle(titleId,function(data) {
+            actors(data);
+            console.log(actors());
         });
 
         let showPrev = title => {
@@ -55,6 +60,7 @@
         return {
             //titleId,
             titleId,
+            actors,
             titles,
             primaryTitle,
             startYear,

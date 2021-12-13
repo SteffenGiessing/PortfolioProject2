@@ -12,6 +12,8 @@
 
         let titleInfo = ko.observableArray();
 
+        let actors = ko.observableArray([]);
+
         let startYear = ko.observable();
 
         let endYear = ko.observable();
@@ -35,7 +37,19 @@
             console.log(titles());
             console.log(titleId());
         });
+        
+        
+        /*let getActorsInTitle = (function(data) {
+            ds.getActorsInTitle(titleId());
+        });*/
 
+
+        let getActorsInTitle =
+            ds.getActorsInTitle(titleId, function(data) {
+            actors(data);
+            console.log(actors())
+        });
+        
         ds.getInfoSpecificTitle(titleId, function (data) {
             titleInfo(data);
             console.log(titleInfo());
@@ -54,6 +68,7 @@
             bookMark,
             primaryTitle,
             titleInfo,
+            actors,
             titleId,
             startYear,
             endYear,
@@ -62,7 +77,8 @@
             awards,
             averageRating,
             numVotes,
-            addToBookmarks
+            addToBookmarks,
+            getActorsInTitle
         }
     }
 });

@@ -15,6 +15,7 @@ namespace PortfolioProject2.Models.DataInterfaces
         Task<List<Person_Info>> GetActorsByName(string name);
         Task<List<Person_Profession>> GetPersonProfessionByActorId(string pid);
         Task<List<NameSearch>> GetBestMatchPersonName(string searchName);
+        Task<List<Actors_In_Title>> GetActorsInTitle(string titleid);
 
     }
 }
