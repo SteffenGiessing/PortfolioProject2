@@ -58,7 +58,7 @@ namespace WebApplication.DataServices
         public async Task<List<TitleSearch>> TitleSearch(string searchWord)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
-            return await ctx.TitleSearch.FromSqlRaw("SELECT primarytitle, titleid, poster, startyear, endyear, genres, plot from title_search3({0})", searchWord).ToListAsync();
+            return await ctx.TitleSearch.FromSqlRaw("SELECT primarytitle, titleid, poster, startyear, endyear, genres, plot, awards, averagerating, numvotes from title_search3({0})", searchWord).ToListAsync();
         }
         
         public async Task<List<PopularTitles>> GetPopularTitlesForFrontPage()
@@ -74,7 +74,7 @@ namespace WebApplication.DataServices
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
             return await ctx.PopularTitles.FromSqlRaw
-                    ("SELECT primarytitle, poster, plot, awards from titles natural join omdb_data natural join ratings where numvotes > 100000 and averagerating > 8 order by numvotes limit (100)")
+                    ("SELECT primarytitle, poster, titleid, startyear, endyear, genres, plot, awards, averagerating, numvotes from titles natural join omdb_data natural join ratings where numvotes > 100000 and averagerating > 8 order by numvotes limit (100)")
                 .ToListAsync();
         }
         

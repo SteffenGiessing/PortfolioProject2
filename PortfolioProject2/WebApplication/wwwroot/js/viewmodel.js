@@ -10,7 +10,7 @@
             }
         }
     });
-    
+
 
     let currentParams = ko.observable({searchWord});
 
@@ -24,30 +24,28 @@
 
 
     /*    let loginUser = ko.observable("loginUser");*/
-    
-/*    postman.subscribe("changeView", function(data) {
-        currentView(data);
-    });
 
-    postman.subscribe("changeView", function (data) {
-        loginUser(data);
-    });q
-    */
-    
-/*
-    postman.subscribe("userLogin", component => {
-        changeContent('loginUser');
-    });
+    /*    postman.subscribe("changeView", function(data) {
+            currentView(data);
+        });
+        postman.subscribe("changeView", function (data) {
+            loginUser(data);
+        });q
+        */
 
-    */
+    /*
+        postman.subscribe("userLogin", component => {
+            changeContent('loginUser');
+        });
+        */
     postman.subscribe("changeTitle", component => {
         changeContent('title-info');
     });
-    
+
     let changeContent = element => {
         selectedComponent(element.toLowerCase());
     }
-    
+
     let loginBtw = () => {
         console.log("loginButton Clicked");
     }
@@ -57,7 +55,7 @@
         currentParams({searchWord});
         selectedComponent("search");
     }
-    
+
     return {
         searchBtn,
         loginBtw,

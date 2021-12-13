@@ -1,19 +1,19 @@
 ﻿define([], () => {
-    
+
     let getTitleById = (titleId, callback) => {
         fetch("http://localhost:5000/api/titles/tt10260014", {method: 'GET'})
             .then(response => response.json())
             .then(json => {
                 callback(json)})
     }
-    
+
     /*let getTitles = (url, searchString, callback) => {
         if (url === undefined) {
             url = titleApiUrl + "search-title/" + searchString;
         }
         
     }*/
-    
+
     let  getTitles = (callback) => {
         fetch("http://localhost:5000/api/titles/populartitles", { method: 'GET' })
             .then(response => response.json())
@@ -21,10 +21,10 @@
                 callback(json);
             });
     };
-    
+
     let getActors = (callback) => {
         fetch("https://localhost:5001/api/actor", { method: 'GET'})
-        .then(response => response.json())
+            .then(response => response.json())
             .then(json => {
                 callback(json);
             });
@@ -60,15 +60,15 @@
         console.log(userid)
         fetch("http://localhost:5000/api/comments/"+userid +"/comments", {
             headers: {
-            'Content-Type': 'application/json', 
+                'Content-Type': 'application/json',
                 'Accept': 'application/json',
                 //THIS LINE IS NEEDED TO BE AUTHENTICATED BY THE BACKEND! ONLY WORKS WHEN YOU ARE LOGGED IN
                 'Authorization': localStorage.getItem('jwtToken'),
-        },
-        method: 'GET'})
-        .then(response => response.json()).then(json => {
-        callback(json);
-    });
+            },
+            method: 'GET'})
+            .then(response => response.json()).then(json => {
+            callback(json);
+        });
     };
 
     let getInfoSpecificTitle = (titleId, callback) => {
@@ -86,7 +86,27 @@
                 callback(json);
             });
     };
-   
+
+    let addToBookmarks = (callback) => {
+        let data = new Object;
+        data.userid = 77; //sessionStorage.getItem("userId").toString();
+        data.titleid = 'tt13016896';
+        fetch("http://localhost:5000/api/bookmarks/", { //+userid + "/titlebookmarks/"+ titleid, {
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                'Authorization': localStorage.getItem('jwtToken'),
+            },
+            method: 'POST',
+            body: JSON.stringify(data)
+        }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))
+            .then(callback));
+    };
+
+
+
+
+
     return {
         //getTitleById,
         getTitles,
@@ -95,6 +115,7 @@
         searchForTitles,
         getUser,
         getUserComments,
-        getInfoSpecificTitle
+        getInfoSpecificTitle,
+        addToBookmarks
     }
 });

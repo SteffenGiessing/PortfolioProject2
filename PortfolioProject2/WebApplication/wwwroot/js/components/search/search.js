@@ -10,8 +10,11 @@
         let primaryTitle = ko.observable();
         let averagerating = ko.observable();
         let poster = ko.observable();
+        let awards =  ko.observable();
         let log = ko.observable("bob")
         let selectedTitle = ko.observable();
+        let averageRating = ko.observable();
+        let numVotes = ko.observable();
 
         ko.bindingHandlers.img = {
             update: function(element, valueAccessor) {
@@ -45,7 +48,7 @@
             selectedTitle(title);
             postman.publish('changeTitle', selectedTitle());
         }
-        
+
         ds.searchForTitles(searchString(), function (data) {
             titles(data);
             console.log( titles())
@@ -85,6 +88,9 @@
             showPrev,
             showNext,
             poster,
+            awards,
+            averageRating,
+            numVotes,
         };
     };
 });
