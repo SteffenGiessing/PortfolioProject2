@@ -1,4 +1,12 @@
 ﻿define([], () => {
+    const popularTitlesUrl = "https://localhost:5001/api/titles/populartitles";
+    const titlesUrl = "http://localhost:5000/api/titles";
+    
+    let getJson = (url, callback) => {
+        fetch(url).then(response => response.json()).then(callback);
+         /*   fetch(url).then(res => res.text())          // convert to plain text
+                    .then(text => console.log(text)).then(callback);*/
+    };
     
     let getTitleById = (titleId, callback) => {
         fetch("http://localhost:5000/api/titles/tt10260014", {method: 'GET'})
@@ -6,21 +14,35 @@
             .then(json => {
                 callback(json)})
     }
-    
-    /*let getTitles = (url, searchString, callback) => {
+
+    // Popular Titles 
+    let getPopularTitles = (url, callback) => {
         if (url === undefined) {
-            url = titleApiUrl + "search-title/" + searchString;
+            url = popularTitlesUrl;
         }
-        
-    }*/
+        getJson(url, callback);
+    }
+
+    let getPopularUrlWithPageSize = size => popularTitlesUrl + "?pageSize=" + size;
     
-    let  getTitles = (callback) => {
-        fetch("http://localhost:5000/api/titles/populartitles", { method: 'GET' })
-            .then(response => response.json())
-            .then(json => {
-                callback(json);
-            });
-    };
+    // All Titles
+    let getTitles = (url, callback) => {
+        if (url === undefined) {
+            url = titlesUrl;
+        }
+        getJson(url, callback);
+    }
+
+    let getTitlesUrlWithPageSize = size => titlesUrl + "?pageSize=" + size;
+
+
+    /*    let  getTitles = (callback) => {
+            fetch("http://localhost:5000/api/titles/populartitles", { method: 'GET' })
+                .then(response => response.json())
+                .then(json => {
+                    callback(json);
+                });
+        };*/
     
     let getActors = (callback) => {
         fetch("https://localhost:5001/api/actor", { method: 'GET'})
@@ -89,7 +111,10 @@
    
     return {
         //getTitleById,
+        getPopularUrlWithPageSize,
         getTitles,
+        getPopularTitles,
+        getTitlesUrlWithPageSize,
         getActors,
         loginUser,
         searchForTitles,

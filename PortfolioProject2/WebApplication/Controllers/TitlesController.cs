@@ -44,7 +44,7 @@ namespace WebApplication.Controllers
         
         
         [HttpGet("populartitles", Name = nameof(GetPopularTitles))]
-        public IActionResult GetPopularTitles(QueryString queryString)
+        public IActionResult GetPopularTitles([FromQuery] QueryString queryString)
         {
             var popularTitles = _iDataServices.GetPopularTitles(queryString);
             var items = popularTitles.Select(CreatePopularListViewModel);

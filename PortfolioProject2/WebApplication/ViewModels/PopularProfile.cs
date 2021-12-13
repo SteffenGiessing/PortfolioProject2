@@ -3,11 +3,11 @@ using WebApplication.DMOs;
 
 namespace WebApplication.ViewModels
 {
-    public class PopularProfile : Profile
+    public class SomeProfile : Profile
     {
-        public PopularProfile()
+        public SomeProfile()
         {
-            CreateMap<PopularTitles, PopularProfile>();
+            CreateMap<PopularTitles, PopularViewModel>();
             CreateMap<PopularTitles, PopularListViewModel>();
         }
     }

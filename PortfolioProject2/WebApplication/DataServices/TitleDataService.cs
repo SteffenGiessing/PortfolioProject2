@@ -20,7 +20,7 @@ namespace WebApplication.DataServices
 
             switch (queryString.OrderBy)
             {
-                case "populartitle":
+                case "title":
                     result = result.OrderBy(x => x.PrimaryTitle).AsEnumerable();
                     break;
             }
@@ -36,12 +36,12 @@ namespace WebApplication.DataServices
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
             var result = ctx.PopularTitles.FromSqlRaw
-                    ("SELECT primarytitle, poster, plot, awards from titles natural join omdb_data natural join ratings where numvotes > 100000 and averagerating > 8 order by numvotes limit (100)")
+                    ("SELECT titleid, primarytitle, poster, plot, awards from titles natural join omdb_data natural join ratings where numvotes > 100000 and averagerating > 8 order by numvotes limit (100)")
                 .AsEnumerable();
             
             switch (queryString.OrderBy)
             {
-                case "title":
+                case "populartitle":
                     result = result.OrderBy(x => x.PrimaryTitle).AsEnumerable();
                     break;
             }
@@ -99,8 +99,8 @@ namespace WebApplication.DataServices
         public int NumberOfPopular()
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
-            
-            return ctx.PopularTitles.Count();
+
+            return ctx.Titles.Count();
         }
         
     }
