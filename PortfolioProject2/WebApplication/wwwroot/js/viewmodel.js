@@ -1,6 +1,6 @@
 ﻿define(["knockout", "postman"], function (ko, postman) {
     let selectedComponent = ko.observable("home");
-    let menuElements = ["Home", "get-titles", "get-actors", "Login"];
+    let menuElements = ["Home", "Popular Titles", "Login"];
 
     let searchWord = ko.observable().extend({
         validation: {

@@ -22,7 +22,7 @@ require(['knockout'], (ko) => {
         template: { require: "text!components/home/getHome.html" }
     });
     
-    ko.components.register("get-titles", {
+    ko.components.register("popular titles", {
         viewModel: { require: "components/titles/getTitles" },
         template: { require: "text!components/titles/getTitles.html" }
     });

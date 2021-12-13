@@ -2,6 +2,7 @@
 <html lang="">
 <head>
     <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/base.css">
 </head>
@@ -36,16 +37,29 @@
     </navbar>
 </header>
     
-<div class="container">
+<div class="container-fluid">
     <div data-bind="component: {name: selectedComponent, params: currentParams}">
-        
-        
-        
-        
     </div>
 </div>
 
    
     <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>
+
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    var prevButton = document.getElementById("prevBtn");
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.documentElement.scrollTop = 0;
+    }
+
+    function bottomFunction() {
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 </body>
 </html>

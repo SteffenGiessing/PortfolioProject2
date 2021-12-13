@@ -2,7 +2,7 @@
 {
     public class QueryString
     {
-        private int _pageSize = 15;
+        private int _pageSize = 12;
 
         public const int MaxPageSize = 25;
 

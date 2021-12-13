@@ -43,10 +43,7 @@
             ds.addToBookmarks(userId(), titleId());
         });
 
-
-
-
-
+        
         return {
             titles,
             bookMark,

@@ -2,8 +2,8 @@
     return function (params) {
         let titles = ko.observableArray([]);
         let popularTitles = ko.observableArray([]);
-        let pageSizes = [5, 10, 15, 20];
-        let selectedPageSize = ko.observableArray([15]);
+        let pageSizes = [8, 12, 20, 24];
+        let selectedPageSize = ko.observableArray([12]);
         let prev = ko.observable();
         let next = ko.observable();
         let primaryTitle = ko.observable();
@@ -68,8 +68,7 @@
             let size = selectedPageSize()[0];
             getPopularTitlesData(ds.getPopularUrlWithPageSize(size));
         });
-
-
+        
         return {
             popularTitles,
             //titleId,
