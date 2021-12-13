@@ -8,7 +8,7 @@ namespace PortfolioProject2
 {
     public class QueryString
     {
-        private int _pageSize = 10;
+        private int _pageSize = 15;
 
         public const int MaxPageSize = 25;
 

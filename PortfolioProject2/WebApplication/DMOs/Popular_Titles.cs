@@ -1,5 +1,8 @@
-﻿namespace PortfolioProject2.Models.DMOs
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace WebApplication.DMOs
 {
+    [Table("popularTitles")]
     public class PopularTitles
     {
         public string PrimaryTitle { get; set; }

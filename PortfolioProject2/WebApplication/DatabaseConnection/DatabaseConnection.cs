@@ -386,7 +386,6 @@ namespace WebApplication.DatabaseConnection
                 entity.Property(x => x.Awards).HasColumnName("awards");
                 entity.Property(x => x.AverageRating).HasColumnName("averagerating");
                 entity.Property(x => x.NumVotes).HasColumnName("numvotes");
-
             });
             
             // DMO necesseary for GetTitleInfo
