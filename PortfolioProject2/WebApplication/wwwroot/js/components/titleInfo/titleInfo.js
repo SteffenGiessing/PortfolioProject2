@@ -5,6 +5,8 @@
         let titles = ko.observable();
 
         let titleId = ko.observable();
+        
+        let userId = ko.observable();
 
         let primaryTitle = ko.observable();
 
@@ -18,6 +20,14 @@
 
         let plot =  ko.observable();
 
+        let awards =  ko.observable();
+
+        let bookMark = ko.observable();
+        
+        let averageRating = ko.observable();
+        
+        let numVotes = ko.observable();
+
 
         postman.subscribe('changeTitle', title => {
             titles(title);
@@ -27,20 +37,32 @@
         });
 
         ds.getInfoSpecificTitle(titleId, function (data) {
-            titleId(data);
-            console.log(titleId());
+            titleInfo(data);
+            console.log(titleInfo());
         });
+        
+        let addToBookmarks = (function(data) {
+            ds.addToBookmarks(userId(), titleId());
+        });
+
+        
+        
         
 
         return {
             titles,
+            bookMark,
             primaryTitle,
             titleInfo,
             titleId,
             startYear,
             endYear,
             genres,
-            plot
+            plot,
+            awards,
+            averageRating,
+            numVotes,
+            addToBookmarks
         }
     }
 });

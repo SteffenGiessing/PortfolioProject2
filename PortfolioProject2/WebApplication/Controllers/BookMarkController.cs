@@ -55,7 +55,7 @@ namespace WebApplication.Controllers
             return Ok(titleBookmarks);
         }
         
-        [HttpPost("{userid}/titlebookmarks/{titleid}")]
+        [HttpPost]//("{userid}/titlebookmarks/{titleid}")]
         public IActionResult CreateTitleBookmark(int userid, string titleid)
         {
             var titleBookmark = _iBookMarkDataService.CreateTitleBookmark(userid, titleid);

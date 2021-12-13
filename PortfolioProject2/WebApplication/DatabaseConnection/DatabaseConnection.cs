@@ -361,6 +361,10 @@ namespace WebApplication.DatabaseConnection
                 entity.Property(x => x.EndYear).HasColumnName("endyear");
                 entity.Property(x => x.Genres).HasColumnName("genres");
                 entity.Property(x => x.Plot).HasColumnName("plot");
+                entity.Property(x => x.Awards).HasColumnName("awards");
+                entity.Property(x => x.AverageRating).HasColumnName("averagerating");
+                entity.Property(x => x.NumVotes).HasColumnName("numvotes");
+
 
             });
             
@@ -373,9 +377,16 @@ namespace WebApplication.DatabaseConnection
                 // Sets properties
                 entity.HasNoKey();
                 entity.Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
+                entity.Property(x => x.TitleId).HasColumnName("titleid");
                 entity.Property(x => x.Poster).HasColumnName("poster");
+                entity.Property(x => x.StartYear).HasColumnName("startyear");
+                entity.Property(x => x.EndYear).HasColumnName("endyear");
+                entity.Property(x => x.Genres).HasColumnName("genres");
                 entity.Property(x => x.Plot).HasColumnName("plot");
                 entity.Property(x => x.Awards).HasColumnName("awards");
+                entity.Property(x => x.AverageRating).HasColumnName("averagerating");
+                entity.Property(x => x.NumVotes).HasColumnName("numvotes");
+
             });
             
             // DMO necesseary for GetTitleInfo

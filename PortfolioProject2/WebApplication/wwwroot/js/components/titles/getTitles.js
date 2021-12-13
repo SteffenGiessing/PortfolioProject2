@@ -5,16 +5,25 @@
         let selectedPageSize = ko.observableArray([10]);
         let prev = ko.observable();
         let next = ko.observable();
-        //let titleId = ko.observableArray([]);
         let primaryTitle = ko.observable();
         let poster = ko.observable();
         let genres = ko.observable()
         let startYear = ko.observable();
+        let titleId = ko.observableArray([]);
+        let selectedTitle = ko.observable();
+        let awards = ko.observable();
+        let averageRating = ko.observable();
+        let numVotes = ko.observable();
         
         /*ds.getTitleById(titleId, function(data) {
             titleId(data);
             console.log(titleId());
         });*/
+
+        let selectTitle = title => {
+            selectedTitle(title);
+            postman.publish('changeTitle', selectedTitle());
+        }
         
         ds.getTitles(function(data) {
             prev(data.prev || undefined);
@@ -22,7 +31,7 @@
             titles(data);
             console.log(titles())
         });
-
+        
         let showPrev = title => {
             console.log(prev());
             getTitles(prev());
@@ -45,17 +54,23 @@
         
         return {
             //titleId,
+            titleId,
             titles,
             primaryTitle,
             startYear,
             genres,
+            awards,
+            averageRating,
+            numVotes,
             pageSizes,
             selectedPageSize,
             enableNext,
             enablePrev,
             showPrev,
             showNext,
-            poster
+            poster,
+            selectedTitle,
+            selectTitle
         };
     };
 });

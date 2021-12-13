@@ -86,6 +86,26 @@
                 callback(json);
             });
     };
+
+    let addToBookmarks = (callback) => {
+        let data = new Object;
+        data.userid = 77; //sessionStorage.getItem("userId").toString();
+        data.titleid = 'tt13016896';
+        fetch("http://localhost:5000/api/bookmarks/", { //+userid + "/titlebookmarks/"+ titleid, {
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                'Authorization': localStorage.getItem('jwtToken'),
+            },
+            method: 'POST',
+            body: JSON.stringify(data)
+        }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))
+            .then(callback));
+    };
+
+   
+        
+    
    
     return {
         //getTitleById,
@@ -95,6 +115,7 @@
         searchForTitles,
         getUser,
         getUserComments,
-        getInfoSpecificTitle
+        getInfoSpecificTitle,
+        addToBookmarks
     }
 });
