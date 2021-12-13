@@ -26,15 +26,18 @@
             postman.publish('changeTitle', selectedTitle());
         }
 
+/*
         let getTitlesData = url => {
             ds.getTitles(url, data => {
-
                 prev(data.prev || undefined);
                 next(data.next || undefined);
                 titles(data.items);
                 console.log(titles());
             })
         }
+
+        getTitlesData();
+*/
 
         let getPopularTitlesData = url => {
             ds.getPopularTitles(url, data => {

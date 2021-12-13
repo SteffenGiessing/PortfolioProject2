@@ -33,12 +33,10 @@
             titles(title);
             titleId(titles().titleId);
             console.log(titles());
-            console.log(titleId());
         });
 
         ds.getInfoSpecificTitle(titleId, function (data) {
             titleInfo(data);
-            console.log(titleInfo());
         });
 
         let addToBookmarks = (function(data) {
