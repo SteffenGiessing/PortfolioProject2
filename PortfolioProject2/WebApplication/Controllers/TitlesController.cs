@@ -51,6 +51,24 @@ namespace WebApplication.Controllers
             return Ok(result);
         }
         
+        [HttpGet("searchresult/{titlesearch}", Name = nameof(TitleSearch))]
+        public IActionResult TitleSearch([FromQuery] QueryString queryString, string titleSearch)
+        {
+            var searchedItems = _iDataServices.TitleSearch(queryString, titleSearch);
+            var items = searchedItems.Select(CreateSearchListViewModel);
+            var result = CreateResultModelForSearch(queryString, _iDataServices.NumberOffProducts(), items);
+            return Ok(result);
+        }
+        /*
+        [HttpGet("searchresult/{titlesearch}")]
+        public async Task<ActionResult<TitleSearch>> TitleSearch(string titlesearch)
+        {
+            Console.WriteLine("HERE" + titlesearch);
+            var titleName = _iDataServices.TitleSearch(titlesearch).Result;
+            return Ok(titleName);
+        }
+        */
+        
         [HttpGet("{titleId?}")]
         public async Task<ActionResult<Titles>> getTitleById(string? titleId)
         {
@@ -65,13 +83,6 @@ namespace WebApplication.Controllers
             return Ok(nameTitles);
         }
         
-        [HttpGet("searchresult/{titlesearch}")]
-        public async Task<ActionResult<TitleSearch>> TitleSearch(string titlesearch)
-        {
-            Console.WriteLine("HERE" + titlesearch);
-            var titleName = _iDataServices.TitleSearch(titlesearch).Result;
-            return Ok(titleName);
-        }
 
         [HttpGet("titleinfo/{titleid?}")]
         public async Task<ActionResult<Title_Info>> GetInfoSpecificTitle(string? titleid)
@@ -88,7 +99,7 @@ namespace WebApplication.Controllers
         }
          */
         
-        // Helper Methods
+        // Helper Methods // 
         private static int GetLastPage(int pageSize, int total)
         {
             return (int)Math.Ceiling(total / (double)pageSize) - 1;
@@ -150,6 +161,64 @@ namespace WebApplication.Controllers
             return _linkGenerator.GetUriByName(HttpContext, nameof(GetPopularTitles), new { popularTitles.TitleId });
         }
 
+           // For Searched Titles
+        private object CreateResultModelForSearch(QueryString queryString, int total, IEnumerable<SearchListViewModel> model)
+        {
+            return new
+            {
+                total,
+                prev = CreatePrevPageLinkForSearch(queryString),
+                cur = CreateCurrentPageLinkForSearch(queryString),
+                next = CreateNextPageLinkForSearch(queryString, total),
+                items = model
+            };
+        }
+        
+        private string? CreateNextPageLinkForSearch(QueryString queryString, int total)
+        {
+            var lastPage = GetLastPage(queryString.PageSize, total);
+            return queryString.Page >= lastPage ? null : GetSearchTitleUrl(queryString.Page + 1, queryString.PageSize, queryString.OrderBy);
+        }
+
+        private string? CreateCurrentPageLinkForSearch(QueryString queryString)
+        {
+            return GetSearchTitleUrl(queryString.Page, queryString.PageSize, queryString.OrderBy);
+        }
+        
+        private string? CreatePrevPageLinkForSearch(QueryString queryString)
+        {
+            return queryString.Page <= 0 ? null : GetSearchTitleUrl(queryString.Page - 1, queryString.PageSize, queryString.OrderBy);
+        }
+
+        private string? GetSearchTitleUrl(int page, int pageSize, string orderBy)
+        {
+            return _linkGenerator.GetUriByName(
+                HttpContext,
+                nameof(TitleSearch),
+                new { page, pageSize, orderBy });
+        }
+        
+        
+        /*
+        private TitleViewModel CreateSearchViewModel(TitleSearch titleSearch)
+        {
+            var model = _mapper.Map<SearchViewModel>(titleSearch);
+            model.Url = GetSearcheUrl(titleSearch);
+            return model;
+        }
+        */
+
+        private TitleListViewModel CreateSearchListViewModel(TitleSearch titleSearch)
+        {
+            var model = _mapper.Map<TitleListViewModel>(titleSearch);
+            model.Url = GetSearchTitleUrl(titleSearch);
+            return model;
+        }
+
+        /*private string? GetSearcheUrl(TitleSearch titleSearch)
+        {
+            return _linkGenerator.GetUriByName(HttpContext, nameof(TitleSearch), new { titleSearch.TitleId });
+        }*/
         
         // For all Titles
         private object CreateResultModel(QueryString queryString, int total, IEnumerable<TitleListViewModel> model)

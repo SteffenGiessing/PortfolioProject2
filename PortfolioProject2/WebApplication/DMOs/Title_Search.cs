@@ -1,7 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PortfolioProject2.Models.DMOs
+namespace WebApplication.DMOs
 {
+    [Table("searchedTitles")]
     public class TitleSearch
     {
         public string PrimaryTitle { get; set; }
