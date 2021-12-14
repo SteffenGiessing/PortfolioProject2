@@ -51,15 +51,15 @@ namespace WebApplication.Controllers
             return Ok(result);
         }
         
-        [HttpGet("searchresult/{titlesearch}", Name = nameof(TitleSearch))]
+        /*[HttpGet("searchresult/{titlesearch}", Name = nameof(TitleSearch))]
         public IActionResult TitleSearch([FromQuery] QueryString queryString, string titleSearch)
         {
             var searchedItems = _iDataServices.TitleSearch(queryString, titleSearch);
             var items = searchedItems.Select(CreateSearchListViewModel);
             var result = CreateResultModelForSearch(queryString, _iDataServices.NumberOffProducts(), items);
             return Ok(result);
-        }
-        /*
+        }*/
+        
         [HttpGet("searchresult/{titlesearch}")]
         public async Task<ActionResult<TitleSearch>> TitleSearch(string titlesearch)
         {
@@ -67,7 +67,6 @@ namespace WebApplication.Controllers
             var titleName = _iDataServices.TitleSearch(titlesearch).Result;
             return Ok(titleName);
         }
-        */
         
         [HttpGet("{titleId?}")]
         public async Task<ActionResult<Titles>> getTitleById(string? titleId)

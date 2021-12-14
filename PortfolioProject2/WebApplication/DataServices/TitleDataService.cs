@@ -53,7 +53,7 @@ namespace WebApplication.DataServices
             return result.ToList();
         }
         
-        public IList <TitleSearch> TitleSearch(QueryString queryString, string searchWord)
+        /*public IList <TitleSearch> TitleSearch(QueryString queryString, string searchWord)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
             var result = ctx.TitleSearch.FromSqlRaw
@@ -72,13 +72,13 @@ namespace WebApplication.DataServices
                 .Take(queryString.PageSize);
 
             return result.ToList();
-        }
+        }*/
         
-        /*public async Task<List<TitleSearch>> TitleSearch(string searchWord)
+        public async Task<List<TitleSearch>> TitleSearch(string searchWord)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
             return await ctx.TitleSearch.FromSqlRaw("SELECT primarytitle, titleid, poster, startyear, endyear, genres, plot, awards, averagerating, numvotes from title_search3({0})", searchWord).ToListAsync();
-        }*/
+        }
 
         public async Task<List<Titles>> GetTitleById(string id)
         {

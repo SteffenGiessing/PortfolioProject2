@@ -3,54 +3,56 @@
 <head>
     <title>index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 
 <body>
 <header>
     <!-- Navigation Bar -->
-    <navbar>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <img id="logo" src="resources/final.gif" alt="Bad Mafia">
-
-            <form class="form-inline">
-                <input data-bind="value: searchWord" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search...">
-                <button data-bind="click:searchBtn" class="btn btn-secondary my-2 my-sm-0" type="submit"
-                        data-toggle="button" aria-pressed="false" autocomplete="off"> Search</button>
-            </form>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+            <img id="logo" src="resources/cinemax2.png" alt="Website Logo">
             
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100 order-1 order-md-0 dual-collapse2" data-bind="foreach: menuElements">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+                <ul class="navbar-nav nav-fill mr-auto mt-2 mt-lg-0 w-100 order-1 order-md-0 dual-collapse2" data-bind="foreach: menuElements">
                     <li class="nav-item" data-bind="css: $parent.isActive($data)">
                         <a class="nav-item" data-bind="click: $parent.changeContent">
                             <span class="nav-link" data-bind="text: $data"></span>
                         </a>
                     </li>
                 </ul>
-            </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <form id="searchForm" class="form-inline my-2 my-lg-2">
+                    <label id="labelSearch" for="search">Search for stuff</label>
+                    <input data-bind="value: searchWord" id="search" type="search" placeholder="Search..." autofocus required />
+                    <button id="goButton" data-bind="click:searchBtn" type="submit">Go</button>
+                </form>
+
+            <!--    <form class="form-inline my-2 my-lg-2">
+                    <input data-bind="value: searchWord" class="form-control mr-sm-2" type="text" placeholder="Search..." aria-label="Search...">
+                    <button data-bind="click:searchBtn" class="btn btn-secondary my-2 my-sm-0" type="submit"> Search</button>
+                </form>-->
+                
+              
+            </div>
+            
         </nav>
-    </navbar>
 </header>
     
 <div class="container-fluid">
-    <div data-bind="component: {name: selectedComponent, params: currentParams}">
-    </div>
+        <div data-bind="component: {name: selectedComponent, params: currentParams}"></div>
 </div>
 
-   
-    <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>
-
-
-<script>
+<script type="text/javascript">
     //Get the button
     var mybutton = document.getElementById("myBtn");
     var prevButton = document.getElementById("prevBtn");
-    
+
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
         document.documentElement.scrollTop = 0;
@@ -61,5 +63,6 @@
     }
 </script>
 
+    <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>
 </body>
 </html>

@@ -10,9 +10,9 @@ namespace WebApplication.DataInterfaces
     {
         IList<Titles> GetAllTitles(QueryString queryString);
         IList<PopularTitles> GetPopularTitles(QueryString queryString);
-        IList<TitleSearch> TitleSearch(QueryString queryString, string titleSearch);
+        /*IList<TitleSearch> TitleSearch(QueryString queryString, string titleSearch);*/
         
-        /*Task<List<TitleSearch>> TitleSearch(string titleSearch);*/
+        Task<List<TitleSearch>> TitleSearch(string titleSearch);
 
         int NumberOffProducts();
 
