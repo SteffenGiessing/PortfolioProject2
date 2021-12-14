@@ -199,26 +199,24 @@ namespace WebApplication.Controllers
         }
         
         
-        /*
-        private TitleViewModel CreateSearchViewModel(TitleSearch titleSearch)
+        private SearchViewModel CreateSearchViewModel(TitleSearch titleSearch)
         {
             var model = _mapper.Map<SearchViewModel>(titleSearch);
             model.Url = GetSearcheUrl(titleSearch);
             return model;
         }
-        */
 
-        private TitleListViewModel CreateSearchListViewModel(TitleSearch titleSearch)
+        private SearchListViewModel CreateSearchListViewModel(TitleSearch titleSearch)
         {
-            var model = _mapper.Map<TitleListViewModel>(titleSearch);
-            model.Url = GetSearchTitleUrl(titleSearch);
+            var model = _mapper.Map<SearchListViewModel>(titleSearch);
+            model.Url = GetSearcheUrl(titleSearch);
             return model;
         }
 
-        /*private string? GetSearcheUrl(TitleSearch titleSearch)
+        private string? GetSearcheUrl(TitleSearch titleSearch)
         {
             return _linkGenerator.GetUriByName(HttpContext, nameof(TitleSearch), new { titleSearch.TitleId });
-        }*/
+        }
         
         // For all Titles
         private object CreateResultModel(QueryString queryString, int total, IEnumerable<TitleListViewModel> model)

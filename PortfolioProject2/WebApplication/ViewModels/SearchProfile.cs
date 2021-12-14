@@ -7,8 +7,8 @@ namespace WebApplication.ViewModels
     {
         public AnotherProfile()
         {
-            CreateMap<PopularTitles, SearchViewModel>();
-            CreateMap<PopularTitles, SearchListViewModel>();
+            CreateMap<TitleSearch, SearchViewModel>();
+            CreateMap<TitleSearch, SearchListViewModel>();
         }
     }
 }
