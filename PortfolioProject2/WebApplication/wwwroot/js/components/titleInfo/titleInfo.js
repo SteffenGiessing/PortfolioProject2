@@ -21,13 +21,13 @@
         let plot =  ko.observable();
 
         let awards =  ko.observable();
-
-        let bookMark = ko.observable();
         
         let averageRating = ko.observable();
         
         let numVotes = ko.observable();
 
+        let bookMark = ko.observable();
+        
 
         postman.subscribe('changeTitle', title => {
             titles(title);
@@ -41,9 +41,16 @@
             console.log(titleInfo());
         });
         
-        let addToBookmarks = (function(data) {
-            ds.addToBookmarks(userId(), titleId());
+       let addToBookmarks = (function(data) {
+           ds.addToBookmarks(userId(), titleId());
+           bookMark(data);
+           console.log(bookMark());
         });
+       
+       /*let addToBookmarks = () => ds.addToBookmarks(userId, titleId, function (data) {
+           bookMark(data);
+           console.log(bookMark());
+       });*/
 
         
         
@@ -52,6 +59,7 @@
         return {
             titles,
             bookMark,
+            addToBookmarks,
             primaryTitle,
             titleInfo,
             titleId,
@@ -61,8 +69,7 @@
             plot,
             awards,
             averageRating,
-            numVotes,
-            addToBookmarks
+            numVotes
         }
     }
 });

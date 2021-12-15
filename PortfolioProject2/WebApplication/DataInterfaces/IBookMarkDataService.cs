@@ -10,7 +10,7 @@ namespace WebApplication.DataInterfaces
     public interface IBookMarkDataService
     {
         //for titlebookmark
-        Title_Bookmark CreateTitleBookmark(int userid, string titleid);
+        Title_Bookmark CreateTitleBookmark(int userId, string titleId);
 
         Title_Bookmark GetTitleBookmark(int userid, string titleid);
 

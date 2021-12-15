@@ -37,14 +37,14 @@ namespace PortfolioProject2.Models.DataServices
             return result;
         }
 
-        public Title_Bookmark CreateTitleBookmark(int userid, string titleid)
+        public Title_Bookmark CreateTitleBookmark(int userId, string titleId)
         {
             //need a way to validate user
             using var ctx = new DatabaseConnection();
             var result = new Title_Bookmark
             {
-                UserId = userid,
-                TitleId = titleid,
+                UserId = userId,
+                TitleId = titleId,
                 BookMarkTime = DateTime.Now
             };
             ctx.Title_Bookmark.Add(result);

@@ -32,6 +32,8 @@ namespace WebApplication
             services.AddSingleton<IRatings, RatingsDataService>();
             services.AddSingleton<IUserDataService, UserDataService>();
             services.AddSingleton<ICommentsDataService, CommentsDataService>();
+            services.AddSingleton<IBookMarkDataService, BookMarkDataService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

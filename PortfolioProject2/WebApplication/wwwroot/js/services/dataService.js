@@ -1,11 +1,28 @@
 ﻿define([], () => {
     
+    const bookmarkApiUrl = "api/bookmarks";
+    
+    let postJSON = (url, data, callback) => {
+        fetch(url, {
+            headers : {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                //'Authorization': 'Bearer ' + localStorage.getItem('jwtToken')
+            },
+            body: data,
+            method: "POST"
+        }).then(response => response.json().then(callback));
+    }
+
+    
+    
     let getTitleById = (titleId, callback) => {
         fetch("http://localhost:5000/api/titles/tt10260014", {method: 'GET'})
             .then(response => response.json())
             .then(json => {
                 callback(json)})
     }
+    
     
     /*let getTitles = (url, searchString, callback) => {
         if (url === undefined) {
@@ -55,6 +72,8 @@
         }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))
             .then(callback));
     };
+    
+    
     let getUserComments = (callback) => {
         let userid = sessionStorage.getItem("userId").toString();
         console.log(userid)
@@ -87,21 +106,37 @@
             });
     };
 
-    let addToBookmarks = (callback) => {
-        let data = new Object;
-        data.userid = 77; //sessionStorage.getItem("userId").toString();
-        data.titleid = 'tt13016896';
-        fetch("http://localhost:5000/api/bookmarks/", { //+userid + "/titlebookmarks/"+ titleid, {
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json",
-                'Authorization': localStorage.getItem('jwtToken'),
+    /*let addToBookmarks = (userId, titleId, callback) => {
+        userId =  77 //sessionStorage.getItem("userId").toString();
+        titleId = "tt2631186"
+        console.log(userId);
+        console.log(titleId)
+        fetch("http://localhost:5000/api/bookmarks/" + userId + "/titlebookmarks/"+ titleId, {method: 'POST',  body: JSON.stringify(data)})
+            .then(response => response.json())
+            .then(json => {
+                callback(json);
+            });
+    }; */
+    
+    
+    let addToBookmarks = (userId, titleId, callback) => {
+        let data = {"userId": userId, "titleId":titleId};
+        userId =  99 //sessionStorage.getItem("userId").toString();
+        //titleId = 'tt5813916'
+        console.log(userId);
+        console.log(titleId);
+        fetch("http://localhost:5000/api/bookmarks/" + userId + "/titlebookmarks/"+ titleId, {
+            headers : {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
             },
             method: 'POST',
             body: JSON.stringify(data)
-        }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))
-            .then(callback));
+            }).then(response => response.json())
+            .then(json => {console.log(json);
+            });
     };
+    
 
    
         
