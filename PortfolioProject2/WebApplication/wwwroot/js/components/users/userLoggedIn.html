@@ -1,0 +1,11 @@
+
+<div data-bind="foreach: userDetails">
+    <h5>FirstName: <span data-bind="text: firstName"></span></h5>
+    <h5>LastName: <span data-bind="text: lastName"></span> </h5>
+    <h5>Username: <span data-bind="text: userName"></span></h5>
+    <h5>Email: <span data-bind="text: emailAddress"></span></h5>
+</div>
+<button type="button" data-bind="click:getComments" data-toggle="button">GetComments</button>
+<div data-bind="foreach: showComments">
+    <h5>CommentText: <span data-bind="text: commentText"></span> </h5>
+</div>

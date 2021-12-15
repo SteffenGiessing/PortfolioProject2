@@ -26,6 +26,8 @@
                         </a>
                     </li>
                 </ul>
+                
+                <div data-bind="value: menuElements"></div>
 
                 <form id="searchForm" class="form-inline my-2 my-lg-2">
                     <label id="labelSearch" for="search">Search for stuff</label>
@@ -38,14 +40,14 @@
                     <button data-bind="click:searchBtn" class="btn btn-secondary my-2 my-sm-0" type="submit"> Search</button>
                 </form>-->
                 
-              
             </div>
-            
         </nav>
 </header>
     
 <div class="container-fluid">
         <div data-bind="component: {name: selectedComponent, params: currentParams}"></div>
+
+    <div data-bind="value: menuElements"></div>
 </div>
 
 <script type="text/javascript">
@@ -55,12 +57,24 @@
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
-        document.documentElement.scrollTop = 0;
+        document.documentElement.scrollTop = 500;
     }
 
     function bottomFunction() {
-        document.documentElement.scrollTop = 0;
+        document.documentElement.scrollTop = 500;
     }
+
+
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    
 </script>
 
     <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>

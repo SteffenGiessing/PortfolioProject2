@@ -25,7 +25,6 @@
             selectedTitle(title);
             postman.publish('changeTitle', selectedTitle());
         }
-
 /*
         let getTitlesData = url => {
             ds.getTitles(url, data => {
