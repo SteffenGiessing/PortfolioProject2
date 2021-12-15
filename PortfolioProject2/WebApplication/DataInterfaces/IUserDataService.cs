@@ -14,6 +14,7 @@ namespace WebApplication.DataInterfaces
         Task<User_User> ValidatePassword(string email, string hashed);
 
         Task<User_User> DeleteUser(User_User user);
-      
+        Task<User_User> UpdateUser(User_User user);
+
     }
 }

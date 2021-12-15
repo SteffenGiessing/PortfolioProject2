@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models;
 using PortfolioProject2.Models.DMOs;
@@ -105,6 +107,23 @@ namespace WebApplication.DataServices
                 return result;
             }
             return null;
+        }
+
+        public async Task<User_User> UpdateUser(User_User user)
+        {
+            var ctx = new DatabaseConnection.DatabaseConnection();
+            var result = ctx.User_User.FirstOrDefault(id => id.UserId == user.UserId);
+            if (result != null)
+            {
+                result.FirstName = user.FirstName;
+                result.LastName = user.LastName;
+                result.UserName = user.UserName;
+                result.EmailAddress = user.EmailAddress;
+                await ctx.SaveChangesAsync();
+                return await GetUserByEmail(user.EmailAddress);
+            }
+
+            return WrongData(user.FirstName);
         }
 
 

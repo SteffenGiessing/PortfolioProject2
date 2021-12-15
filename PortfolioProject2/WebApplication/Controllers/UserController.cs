@@ -100,7 +100,7 @@ namespace WebApplication.Controllers
             }
 
             [HttpGet("{email}")]
-            public IActionResult getUserByEmail(string email)
+            public IActionResult GetUserByEmail(string email)
             {
                 var getUserByEmail = _iDataServices.GetUserByEmail(email).Result;
                 return Ok(getUserByEmail);
@@ -111,6 +111,13 @@ namespace WebApplication.Controllers
             {
                 var deleteUser = _iDataServices.DeleteUser(user).Result;
                 return Ok(deleteUser);
+            }
+
+            [HttpPost("update")]
+            public IActionResult UpdateUser(User_User user)
+            {
+                var updateUser = _iDataServices.UpdateUser(user).Result;
+                return Ok(updateUser);
             }
         }
 }
