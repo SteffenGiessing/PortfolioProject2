@@ -67,9 +67,9 @@ namespace WebApplication.Controllers
             // Get Post Comments
             [HttpPost("{userid}/usercomment/{titleid}")]
             
-            public IActionResult CreateTitleComments(int userid, string titleid, string commenttext)
+            public IActionResult CreateTitleComments(int userId, string titleId, string commentText)
             {
-                var createComment = _iDataServices.CreateTitleComments(userid, titleid, commenttext);
+                var createComment = _iDataServices.CreateTitleComments(userId, titleId, commentText);
                 return Ok(createComment);
             }
         }

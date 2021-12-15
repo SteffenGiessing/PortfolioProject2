@@ -136,6 +136,25 @@
             .then(json => {console.log(json);
             });
     };
+
+    let addTitleReview = (userId, titleId, commentText, callback) => {
+        let data = {"userId": userId, "titleId":titleId, "review":commentText};
+        userId =  99 //sessionStorage.getItem("userId").toString();
+        //titleId = 'tt5813916'
+        console.log(userId);
+        console.log(titleId);
+        console.log(commentText);
+        fetch("http://localhost:5000/api/comments/" + userId + "/usercomment/"+ titleId, {
+            headers : {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            },
+            method: 'POST',
+            body: JSON.stringify(data)
+            }).then(response => response.json())
+            .then(json => {console.log(json);
+            });
+    };
     
 
    
@@ -151,6 +170,7 @@
         getUser,
         getUserComments,
         getInfoSpecificTitle,
-        addToBookmarks
+        addToBookmarks,
+        addTitleReview
     }
 });

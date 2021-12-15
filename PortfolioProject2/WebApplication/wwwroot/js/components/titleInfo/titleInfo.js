@@ -28,6 +28,10 @@
 
         let bookMark = ko.observable();
         
+        let titleReview = ko.observable();
+        
+        let commentText = ko.observable();
+        
 
         postman.subscribe('changeTitle', title => {
             titles(title);
@@ -46,6 +50,12 @@
            bookMark(data);
            console.log(bookMark());
         });
+
+        let addTitleReview = (function(data) {
+            ds.addTitleReview(userId(), titleId(), commentText());
+            titleReview(data);
+            console.log(titleReview());
+        });
        
        /*let addToBookmarks = () => ds.addToBookmarks(userId, titleId, function (data) {
            bookMark(data);
@@ -59,7 +69,10 @@
         return {
             titles,
             bookMark,
+            titleReview,
+            commentText,
             addToBookmarks,
+            addTitleReview,
             primaryTitle,
             titleInfo,
             titleId,

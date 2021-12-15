@@ -49,14 +49,14 @@ namespace WebApplication.DataServices
         }
 
         // Comment POST
-        public User_Comments CreateTitleComments(int userid, string titleid, string commenttext)
+        public User_Comments CreateTitleComments(int userId, string titleId, string commentText)
         {
             using var ctx = new DatabaseConnection.DatabaseConnection();
             var result = new User_Comments
             {
-                UserId = userid,
-                TitleId = titleid,
-                CommentText = commenttext,
+                UserId = userId,
+                TitleId = titleId,
+                CommentText = commentText,
                 CommentTime = DateTime.Now,
             };
             ctx.User_Comments.Add(result);
