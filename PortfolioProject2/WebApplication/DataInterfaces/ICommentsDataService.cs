@@ -13,6 +13,6 @@ namespace WebApplication.DataInterfaces
 
         IList <User_Comments> GetCommentsFromTitle(string titleid);
         
-        User_Comments CreateTitleComments(int userid, string titleid, string commenttext);
+        Task <User_Comments> CreateTitleComments(User_Comments userComments);
     }
 }

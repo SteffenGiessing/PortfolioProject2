@@ -66,21 +66,21 @@ namespace WebApplication.Controllers
             
             
             // Get Post Comments
-            [HttpPost("{userid}/usercomment/{titleid}")]
+            [HttpPost("add/usercomment/")]
             
-            public IActionResult CreateTitleComments(int userid, string titleid, string commenttext, [FromHeader] TokenChecker getHeaders)
+            public IActionResult CreateTitleComments(User_Comments userComments, [FromHeader] TokenChecker getHeaders)
             {
-                var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-                if (token == true)
-                {
-                    var createComment = _iDataServices.CreateTitleComments(userid, titleid, commenttext);
-                    if (createComment == null)
-                    {
-                        return NotFound();
-                    }
+               // var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+                //if (token == true)
+               // {
+                    var createComment = _iDataServices.CreateTitleComments(userComments).Result;
+                    //if (createComment == null)
+                   // {
+                      //  return NotFound();
+                  //  }
                     return Ok(createComment);
-                }
-                return Unauthorized();
+                //}
+            //    return Unauthorized();
             }
         }
 }

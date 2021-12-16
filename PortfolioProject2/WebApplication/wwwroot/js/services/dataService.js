@@ -1,6 +1,6 @@
 ﻿define([], () => {
     // UTILS
-    const popularTitlesUrl = "https://localhost:5000/api/titles/populartitles";
+    const popularTitlesUrl = "http://localhost:5000/api/titles/populartitles";
     const titlesUrl = "http://localhost:5000/api/titles";
 
     let getJson = (url, callback) => {
@@ -57,7 +57,7 @@
     // METHOD GET FOR ACTORS //
     
     let getActors = (callback) => {
-        fetch("https://localhost:5001/api/actor", { method: 'GET'})
+        fetch("http://localhost:5001/api/actor", { method: 'GET'})
             .then(response => response.json())
             .then(json => {
                 callback(json);
@@ -130,13 +130,12 @@
     };
 
     let addTitleReview = (userId, titleId, commentText, callback) => {
-        let data = {"userId": userId, "titleId":titleId, "commentText":commentText};
         userId =  sessionStorage.getItem("userId");
-        //titleId = 'tt5813916'
+        let data = {"UserId": userId, "TitleId":titleId, "CommentText":commentText};
         console.log(userId);
         console.log(titleId);
         console.log(commentText);
-        fetch("http://localhost:5000/api/comments/" + userId + "/usercomment/"+ titleId, {
+        fetch("http://localhost:5000/api/comments/add/usercomment/", {
             headers : {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',

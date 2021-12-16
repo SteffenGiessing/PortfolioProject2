@@ -49,19 +49,19 @@ namespace WebApplication.DataServices
         }
 
         // Comment POST
-        public User_Comments CreateTitleComments(int userid, string titleid, string commenttext)
+        public async Task<User_Comments> CreateTitleComments(User_Comments userComments)
         {
             using var ctx = new DatabaseConnection.DatabaseConnection();
             var result = new User_Comments
             {
-                UserId = userid,
-                TitleId = titleid,
-                CommentText = commenttext,
+                UserId = userComments.UserId,
+                TitleId = userComments.TitleId,
+                CommentText = userComments.CommentText,
                 CommentTime = DateTime.Now,
             };
             ctx.User_Comments.Add(result);
             //check for connection to database
-            int a = ctx.SaveChanges();
+            int a = await ctx.SaveChangesAsync();
             if (a == 0)
             {
                 return null;
