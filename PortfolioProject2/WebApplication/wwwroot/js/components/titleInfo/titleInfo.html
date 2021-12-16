@@ -24,16 +24,18 @@
                     <div class="col-12">
                         <form>
                             <div class="form-group">
-                                <h3>Write a Review:</h3>
-                                <label for="exampleFormControlTextarea1">Title review:</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" data-bind="value: $parent.commentText"></textarea>
+                                <h3>Rate the movie:</h3>
+                                <label for="exampleFormControlTextarea1">Title rating:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" data-bind="value: $parent.ratingNumber"></textarea>
+                                <button type="button" class="btn btn-primary" data-bind="click: $parent.addRating">Submit Rating</button>
+                                <h4>Write a Review:</h4>
+                                <label for="exampleFormControlTextarea2">Title review:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" data-bind="value: $parent.commentText"></textarea>
+                                <button type="button" class="btn btn-primary" data-bind="click: $parent.addTitleReview">Submit Review</button>
                             </div>
                         </form>
                     </div>
                     <br>
-                    <div class="col-12">
-                        <button type="button" class="btn btn-primary" data-bind="click: $parent.addTitleReview">Submit Review</button>
-                    </div>
                 </div>'
             </div>
         </div>

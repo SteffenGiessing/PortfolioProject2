@@ -289,7 +289,7 @@ namespace WebApplication.DatabaseConnection
             modelBuilder.Entity<User_Ratings>(entity =>
             {
                 // Points to Database user_ratings
-                entity.ToTable("user_ratings");
+                entity.ToTable("user_rating");
                 
                 // Sets Primary Key -> Composite Key
                 entity.HasKey(x => new { titleid = x.TitleId, userid = x.UserId});
