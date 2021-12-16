@@ -1,6 +1,6 @@
 ﻿define(["knockout", "postman"], function (ko, postman) {
     let selectedComponent = ko.observable("home");
-    let menuElements = ["Home", "Popular Titles", "Login"];
+    let menuElements = ["Home", "Popular Titles", "Login", "ActorSearch"];
 
     let searchWord = ko.observable().extend({
         validation: {
@@ -48,7 +48,7 @@
         */
     
     postman.subscribe("changeUserView", component => {
-        changeContent('userLoggedIn');
+        changeContent('loggedin');
     });
 
     postman.subscribe("changeTitle", component => {

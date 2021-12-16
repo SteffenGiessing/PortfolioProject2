@@ -15,22 +15,22 @@
     
     -->
 <div class="loginBody">
-<div class="loginBox" data-bind="click: $parent.loggedInUser"> 
-    <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
-    <h3>Sign in here</h3>
-    <form method="post">
-        <div class="inputBox"> 
-            <input id="email" data-bind="value: email" type="text" name="Email" placeholder="Enter your email"> 
-            <input id="password" data-bind="value: password" type="password" name="Password" placeholder="Password"> 
-        </div> 
-        
-        <input data-bind="click:loginUser" type="submit" name="" value="Login" >
-    </form>
-    <a href="#">Forget Password<br> </a>
-    
-    <div class="text-center">
-        <p style="color: #59238F;">Sign-Up</p>
+    <div class="loginBox">
+        <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+        <h3>Sign in here</h3>
+        <form method="post">
+            <div class="inputBox">
+                <input id="email" data-bind="value: email" type="text" name="Email" placeholder="Enter your email">
+                <input id="password" data-bind="value: password" type="password" name="Password" placeholder="Password">
+            </div>
+
+            <input data-bind="click:loginUser" type="submit" name="" value="Login" >
+        </form>
+        <a href="#">Forget Password<br> </a>
+
+        <div class="text-center">
+            <p style="color: #59238F;">Sign-Up</p>
+        </div>
+
     </div>
-    
-</div>
 </div>
