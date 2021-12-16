@@ -2,6 +2,30 @@
     margin: 0px;
     padding: 0px;
 }
+.img {
+    height:90vh;
+    min-height:400px;
+    background-size:cover;
+    background-image:url("../resources/1.jpg");
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.navbar-nav a {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Oswald', sans-serif;
@@ -20,40 +44,216 @@ body {
     max-width: 150px;
 }
 
-.nav-list{
-    background: #f9f9f9;
-    box-shadow: 0px 0px 10px grey;
+
+
+/*SEARCH BAR*/
+  :root {
+      --rad: .7rem;
+      --dur: .3s;
+      --color-dark: #2f2f2f;
+      --color-light: #fff;
+      --color-brand: #57bd84;
+      --font-fam: 'Lato', sans-serif;
+      --height: 3rem;
+      --btn-width: 3.5rem;
+      --bez: cubic-bezier(0, 0, 0.43, 1.49);
+  }
+
+#searchForm {
+       position: relative;
+       width: 20rem;
+       background: var(--color-brand);
+       border-radius: var(--rad);
+   }
+   
+#search, #goButton {
+    height: 2rem;
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+    font-size: 1rem;
+}
+
+#search[type="search"] {
+    outline: 0; 
+width: 100%;
+    background: var(--color-light);
+    padding: 0 1.6rem;
+    border-radius: var(--rad);
+    appearance: none; 
+
+//for iOS input[type="search"] roundedness issue. border-radius alone doesn't work
+transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+}
+
+#goButton {
+    display: none; // prevent being able to tab to it
+position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    font-weight: bold;
+    background: var(--color-brand);
+    border-radius: 0 var(--rad) var(--rad) 0;
+}
+
+#search:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));}
++ #goButton {
+    display: block;
+}
+
+#labelSearch {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+/* Login */
+
+.loginBody {
     margin: 0;
-    border-radius: 0px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    padding: 0;
+    background: url(https://i.ibb.co/VQmtgjh/6845078.png) no-repeat;
+    height: 100vh;
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden
 }
-
-.nav-link{
-    list-style: none;
-    margin-right: 2rem;
-}
-
-.nav-link a{
-    text-decoration: none;
-    color: black;
-}
-
-.nav-link:first-child{
-    margin-right:auto;
-    margin-left: 1rem;
-}
-
-/* a:hover{
-  background-color: #e6e6e6;
-} */
 
 @media screen and (max-width: 600px) {
-    .nav-list{
-        font-size: 12px;
+    .loginBody {
+        background-size: cover;
+    : fixed
     }
+}
+
+#particles-js {
+    height: 100%
+}
+
+.loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    min-height: 200px;
+    background: #000000;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box
+}
+
+.user {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px
+}
+
+h3 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #59238F;
+    text-align: center
+}
+
+.loginBox input {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box
+}
+
+.loginBox input[type="text"]:hover,
+.loginBox input[type="password"]:hover {
+    color: #42F3FA;
+    border: 1px solid #42F3FA;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .3), 0 0 10px rgba(0, 255, 0, .2), 0 0 15px rgba(0, 255, 0, .1), 0 2px 0 black
+}
+
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus {
+    border-bottom: 2px solid #42F3FA
+}
+
+.inputBox {
+    position: relative
+}
+
+.inputBox span {
+    position: absolute;
+    top: 10px;
+    color: #262626
+}
+
+.loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background: #59238F;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer
+}
+
+.loginBox a {
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block
+}
+
+a:hover {
+    color: #00ffff
+}
+
+p {
+    color: #0000ff
+}
+
+/*smth else*/
+@media screen and (max-width: 600px) {
     #logo {
         max-width: 100px;
     }
+
+    #searchForm {
+        width: 15rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #search, #goButton {
+        height: 1.5rem;
+        font-family: var(--font-fam);
+        border: 0;
+        color: var(--color-dark);
+        font-size: 1rem;
+    }
 }
+

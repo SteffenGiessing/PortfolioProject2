@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PortfolioProject2
+﻿namespace WebApplication
 {
     public class QueryString
     {
-        private int _pageSize = 10;
+        private int _pageSize = 12;
 
         public const int MaxPageSize = 25;
 

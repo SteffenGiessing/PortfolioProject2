@@ -3,6 +3,7 @@
      
         let email = ko.observable();
         let password = ko.observable();
+        let userLogged = ko.observable();
         let userDetails = ko.observableArray([]);
         let titleId = ko.observableArray([]);
         let showComments = ko.observableArray([]);
@@ -11,12 +12,19 @@
  
         let loginUser = () => {
             ds.loginUser(email(), password(), function(data) {
-              
                 getUser(email())
             });
-            
 
         };
+           
+        let loggedInUser = userLog => {
+                userLogged(userLog);
+                postman.publish('changeUserView', userLogged());
+            }
+
+            
+
+ 
         let getUser = (email) => {
             ds.getUser(email, function (data) {
                 console.log(data["userId"])
@@ -34,13 +42,14 @@
         }
         
         
-
-        let signInUserBtn = () =>{
+       let signInUserBtn = () =>{
             console.log("sign in button clicked");
         }
 
         
         return {
+            userLogged,
+            loggedInUser,
             titleId,
             email,
             password,

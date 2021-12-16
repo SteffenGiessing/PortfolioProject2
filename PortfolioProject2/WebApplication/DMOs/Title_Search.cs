@@ -1,7 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PortfolioProject2.Models.DMOs
+namespace WebApplication.DMOs
 {
+    [Table("searchedTitles")]
     public class TitleSearch
     {
         public string PrimaryTitle { get; set; }
@@ -9,5 +10,19 @@ namespace PortfolioProject2.Models.DMOs
         public string TitleId { get; set; }
         
         public string Poster { get; set; }
+        
+        public string StartYear { get; set; }
+        
+        public string EndYear { get; set; }
+
+        public string Genres { get; set; }
+        
+        public string Plot { get; set; }
+        
+        public string Awards { get; set; }
+
+        public int AverageRating { get; set; }
+        
+        public int NumVotes { get; set; }
     }
 }

@@ -22,7 +22,7 @@ require(['knockout'], (ko) => {
         template: { require: "text!components/home/getHome.html" }
     });
     
-    ko.components.register("get-titles", {
+    ko.components.register("popular titles", {
         viewModel: { require: "components/titles/getTitles" },
         template: { require: "text!components/titles/getTitles.html" }
     });
@@ -30,6 +30,11 @@ require(['knockout'], (ko) => {
     ko.components.register("get-actors", {
         viewModel: { require: "components/actors/getActors" },
         template: { require: "text!components/actors/getActors.html" }
+    });
+
+    ko.components.register("loggedIn", {
+        viewModel: {require: "components/users/userLoggedIn"},
+        template:  {require: "text!components/users/userLoggedIn.html"}
     });
 
     ko.components.register("login", {
@@ -46,6 +51,12 @@ require(['knockout'], (ko) => {
         viewModel: { require: "components/createComment/createComment" },
         template: { require: "text!components/search/search.html" }
     });
+
+    ko.components.register("title-info", {
+        viewModel: { require: "components/titleInfo/titleInfo" },
+        template: { require: "text!components/titleInfo/titleInfo.html" }
+    });
+
 
 });
 
