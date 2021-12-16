@@ -22,15 +22,11 @@
 
         let awards =  ko.observable();
 
-        let bookMark = ko.observable();
-
         let averageRating = ko.observable();
 
         let numVotes = ko.observable();
         
         let commentText = ko.observable();
-        
-        let titleReview = ko.observable();
 
 
         postman.subscribe('changeTitle', title => {
@@ -45,20 +41,15 @@
 
         let addToBookmarks = (function(data) {
             ds.addToBookmarks(userId(), titleId());
-            bookMark(data);
-            console.log(bookMark());
         });
 
         let addTitleReview = (function(data) {
             ds.addTitleReview(userId(), titleId(), commentText());
-            titleReview(data);
-            console.log(titleReview());
         });
 
         
         return {
             titles,
-            bookMark,
             primaryTitle,
             titleInfo,
             titleId,
@@ -71,7 +62,6 @@
             numVotes,
             addToBookmarks,
             addTitleReview,
-            titleReview,
             commentText
         }
     }
