@@ -79,7 +79,7 @@
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-                'Authorization': 'Bearer' + localStorage.getItem('jwtToken'),
+                'Authorization': localStorage.getItem('jwtToken'),
             },
             method: 'GET'})
             .then(response => response.json()).then(json => {
@@ -103,26 +103,23 @@
     };
     
     let getUserComments = (callback) => {
-        let userid = sessionStorage.getItem("userId").toString();
-        console.log(userid)
-        fetch("http://localhost:5000/api/comments/"+userid +"/comments", {
+        let userid = sessionStorage.getItem("userId");
+        fetch("http://localhost:5000/api/comments/" +userid +"/comments", {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-                //THIS LINE IS NEEDED TO BE AUTHENTICATED BY THE BACKEND! ONLY WORKS WHEN YOU ARE LOGGED IN
                 'Authorization': localStorage.getItem('jwtToken'),
             },
             method: 'GET'})
             .then(response => response.json()).then(json => {
             callback(json);
         });
-    };
+    }
     
     // METHOD POST
     let addToBookmarks = (userId, titleId, callback) => {
         let data = {"userId": userId, "titleId":titleId};
         userId =  sessionStorage.getItem("userId");
-        //titleId = 'tt5813916'
         console.log(userId);
         console.log(titleId);
         fetch("http://localhost:5000/api/bookmarks/" + userId + "/titlebookmarks/"+ titleId, {
@@ -175,6 +172,21 @@
             .then(json => {console.log(json);
             });
     };
+    
+    let updateUser = (userId,firstname, lastname, email, username, callback) => {
+        let data = {"Userid": userId, "FirstName": firstname, "LastName": lastname, "EmailAddress": email, "UserName": username };
+        fetch("http://localhost:5000/api/user/update", {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Authorization': localStorage.getItem('jwtToken'),
+            },
+            method: 'POST',
+            body: JSON.stringify(data)
+        }).then(response => response.json()).then(json => {console.log(json);
+        });
+    }
+    
 
     
     return {
@@ -192,6 +204,7 @@
         addToBookmarks,
         addTitleReview,
         addRating,
-        searchForActor
+        searchForActor,
+        updateUser
     }
 });

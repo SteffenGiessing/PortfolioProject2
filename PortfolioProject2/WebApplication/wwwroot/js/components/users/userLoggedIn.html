@@ -1,10 +1,53 @@
 <h1> JUST WAT EVER </h1>
 
+
+
+
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br><br>
+<br>
+<br>
+
+
 <button data-bind="click: getUserData" class="btn btn-primary my-2 my-sm-0"
         data-toggle="button" aria-pressed="false" autocomplete="off" type="submit">Search</button>
 
+<div class="row" data-bind="foreach: userDetails">
+    <h1>FIRSTNAME: <span data-bind="text: firstName"></span></h1>
+</div>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
 
-<!--
+<button data-bind="click: getUserComments" class="btn btn-primary my-2 my-sm-0" 
+        data-toggle="button" aria-pressed="false" autocomplete="off" type="submit">Get Comments</button>
+<div class="row" data-bind="foreach: showComments">
+    <h1>CommentText: <span data-bind="text: commentText"></span></h1>
+</div>
+
+
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<form method="post">
+    <input id="firstname" data-bind="value: changeFirstname" type="text">
+    <input id="lastname" data-bind="value: changeLastname" type="text">
+    <input id="email" data-bind="value: changeEmail" type="text">
+    <input id="username" data-bind="value: changeUsername" type="text">
+    <input data-bind="click: updateUser" 
+       type="submit">
+</form>
+    <!--
 <div data-bind="value: getUserData">
     <div class="row" data-bind="foreach: userDetails">
         <div class="col-lg-4">

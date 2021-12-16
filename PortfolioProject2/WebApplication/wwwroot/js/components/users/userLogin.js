@@ -13,6 +13,7 @@
                 console.log(data["userId"])
                 //SAVES THE USER ID
                 sessionStorage.setItem('userId', data["userId"] )
+                sessionStorage.setItem('email', data["emailAddress"])
                 userDetails(data);
             });
         };

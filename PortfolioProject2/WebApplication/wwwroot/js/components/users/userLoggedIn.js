@@ -3,19 +3,41 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
         let firstName = ko.observable();
         let email = ko.observable();
         let password = ko.observable();
+        let userId = ko.observable();
+        let commentText = ko.observable();
+        
+        let changeFirstname = ko.observable();
+        let changeLastname = ko.observable();
+        let changeEmail = ko.observable();
+        let changeUsername = ko.observable();
+        
         let userDetails = ko.observableArray([]);
         let titleId = ko.observableArray([]);
         let showComments = ko.observableArray([]);
-        let userId = ko.observable();
-
 
         let getUserData = () => {
+            email = sessionStorage.getItem("email")
             ds.getUser(email, function (data) {
-                userId =  sessionStorage.getItem("userId");
                userDetails(data);
                console.log(userDetails());
             });
         };
+        
+        let getUserComments = () => {
+            ds.getUserComments(function (data) {
+                showComments(data)
+                console.log(showComments() + "THIS DATA");
+            });
+        }
+        
+        let updateUser = () => {
+            userId = sessionStorage.getItem("userId")
+            ds.updateUser(userId, changeFirstname(), changeLastname(), changeEmail(), changeUsername() ,function(data){
+                
+            });
+        }
+        
+        
         
 
 
@@ -60,6 +82,14 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
             password,
             userDetails,
             showComments,
+            getUserComments,
+            firstName,
+            commentText,
+            updateUser,
+            changeFirstname,
+            changeLastname,
+            changeEmail,
+            changeUsername
             /*            getComments*/
         };
     };
