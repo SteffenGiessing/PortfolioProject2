@@ -130,7 +130,7 @@
     };
 
     let addTitleReview = (userId, titleId, commentText, callback) => {
-        let data = {"userId": userId, "titleId":titleId, "review":commentText};
+        let data = {"userId": userId, "titleId":titleId, "commentText":commentText};
         userId =  99 //sessionStorage.getItem("userId").toString();
         //titleId = 'tt5813916'
         console.log(userId);

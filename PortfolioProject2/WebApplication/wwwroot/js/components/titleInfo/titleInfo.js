@@ -71,7 +71,8 @@
             numVotes,
             addToBookmarks,
             addTitleReview,
-            titleReview
+            titleReview,
+            commentText
         }
     }
 });
