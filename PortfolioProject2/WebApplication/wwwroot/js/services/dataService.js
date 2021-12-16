@@ -2,11 +2,12 @@
     // UTILS
     const popularTitlesUrl = "http://localhost:5000/api/titles/populartitles";
     const titlesUrl = "http://localhost:5000/api/titles";
-
+    const actor = "http://localhost:5000/api/actor/namesearch/";
+    
     let getJson = (url, callback) => {
-        fetch(url).then(response => response.json()).then(callback);
-        /*   fetch(url).then(res => res.text())          // convert to plain text
-                   .then(text => console.log(text)).then(callback);*/
+   /*     fetch(url).then(response => response.json()).then(callback);*/
+           fetch(url).then(res => res.text())          // convert to plain text
+                   .then(text => console.log(text)).then(callback);
     };
     
     
@@ -55,11 +56,18 @@
                 callback(json);
             });
     };
+
+
+/*    let searchForActor = (url, actorSearchWord, callback) => {
+        url = actor + actorSearchWord;
+        getJson(url, callback);
+    };
+    */
     
     let searchForActor = (actorSearchWord, callback) =>  {
       console.log(actorSearchWord + "SEARCHWORD");
       fetch("http://localhost:5000/api/actor/namesearch/" + actorSearchWord)
-          .then(response => response.json()).then(json => {console.log(json)})
+          .then(response => response.json())
           .then(json => {callback(json);
           });
     };

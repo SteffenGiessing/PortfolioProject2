@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
 using WebApplication.DatabaseConnection;
+using WebApplication.DMOs;
 
 
 namespace PortfolioProject2.Models.DataServices

@@ -26,8 +26,6 @@
                         </a>
                     </li>
                 </ul>
-                
-                <div data-bind="value: menuElements"></div>
 
                 <form id="searchForm" class="form-inline my-2 my-lg-2">
                     <label id="labelSearch" for="search">Search for stuff</label>
@@ -35,11 +33,11 @@
                     <button id="goButton" data-bind="click:searchBtn" type="submit">Go</button>
                 </form>
                 
-                <form id="actorForm" class="form-inline my-2 my-lg-2">
+              <!--  <form id="actorForm" class="form-inline my-2 my-lg-2">
                     <label id="actorLabelSearch" for="search">Search for stuff</label>
                     <input data-bind="value: actorSearchWord" id="actorSearch" type="search" placeholder="Search..." autofocus required />
                     <button id="actorGoButton" data-bind="click:actorSearchBtn" type="submit">Go</button>
-                </form>
+                </form>-->
 
             <!--    <form class="form-inline my-2 my-lg-2">
                     <input data-bind="value: searchWord" class="form-control mr-sm-2" type="text" placeholder="Search..." aria-label="Search...">
@@ -52,9 +50,7 @@
     
 <div class="container-fluid">
         <div data-bind="component: {name: selectedComponent, params: currentParams}"></div>
-        <div data-bind="component: {name: selectedComponent, params: actorParam}"></div>
-
-    <div data-bind="value: menuElements"></div>
+   <!--     <div data-bind="component: {name: selectedComponent, params: actorParam}"></div>-->
 </div>
 
 <script type="text/javascript">

@@ -16,7 +16,16 @@
             });
 
         };
-           
+
+        let getUser = (email) => {
+            ds.getUser(email, function (data) {
+                console.log(data["userId"])
+                //SAVES THE USER ID
+                sessionStorage.setItem('userId', data["userId"] )
+                userDetails(data);
+            });
+        };
+        
         let loggedInUser = userLog => {
                 userLogged(userLog);
                 postman.publish('changeUserView', userLogged());
@@ -25,14 +34,7 @@
             
 
  
-        let getUser = (email) => {
-            ds.getUser(email, function (data) {
-                console.log(data["userId"])
-                //SAVES THE USER ID
-                sessionStorage.setItem('userId', data["userId"] )
-              userDetails(data);
-            });
-        };
+
         
         let getComments = () => {
             

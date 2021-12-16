@@ -2,6 +2,12 @@
     margin: 0px;
     padding: 0px;
 }
+
+.actor{
+    height:90vh;
+    margin-top: 100px;
+}
+
 .img {
     height:90vh;
     min-height:400px;

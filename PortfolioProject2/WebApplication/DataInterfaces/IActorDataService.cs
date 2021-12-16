@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using PortfolioProject2.Models.DMOs;
+using WebApplication.DMOs;
 
 //why wont this crap work
 

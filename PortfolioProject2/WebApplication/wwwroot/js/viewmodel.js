@@ -1,6 +1,6 @@
 ﻿define(["knockout", "postman"], function (ko, postman) {
     let selectedComponent = ko.observable("home");
-    let menuElements = ["Home", "Popular Titles", "Login"];
+    let menuElements = ["Home", "Popular Titles", "Login", "ActorSearch"];
 
     let searchWord = ko.observable().extend({
         validation: {
@@ -10,18 +10,18 @@
             }
         }
     });
-    let actorSearchWord = ko.observable().extend({
+/*    let actorSearchWord = ko.observable().extend({
        validation: {
            message: "Please add a longer search string for better search results",
            validator: function(value) {
                return value > 2
            }
        } 
-    });
+    });*/
 
 
     let currentParams = ko.observable({searchWord});
-    let actorParam = ko.observable({actorSearchWord});
+/*    let actorParam = ko.observable({actorSearchWord});*/
     
     let isActive = element => {
         return element.toLowerCase() === selectedComponent() ? "active" : "";
@@ -71,20 +71,26 @@
         selectedComponent("search");
     }
     
-    let actorSearchBtn = () => {
+/*    let actorSearchBtn = () => {
         console.log("Actor search clicked");
         actorParam({actorSearchWord});
         selectedComponent("actorSearch");
-    }
+    }*/
 
     return {
         searchBtn,
+/*
         actorSearchBtn,
+*/
         loginBtw,
         searchWord,
+/*
         actorSearchWord,
+*/
         selectedComponent,
+/*
         actorParam,
+*/
         menuElements,
         isActive,
         changeContent,

@@ -46,7 +46,7 @@ require(['knockout'], (ko) => {
         viewModel: { require: "components/search/search" },
         template: { require: "text!components/search/search.html" }
     });
-    ko.components.register("actorSearch", {
+    ko.components.register("actorsearch", {
         viewModel: { require: "components/actorSearch/actorSearch" },
         template: { require: "text!components/actorSearch/actorSearch.html" }
     });
