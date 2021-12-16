@@ -112,7 +112,7 @@
     // METHOD POST
     let addToBookmarks = (userId, titleId, callback) => {
         let data = {"userId": userId, "titleId":titleId};
-        userId =  100 //sessionStorage.getItem("userId").toString();
+        userId =  sessionStorage.getItem("userId");
         //titleId = 'tt5813916'
         console.log(userId);
         console.log(titleId);
