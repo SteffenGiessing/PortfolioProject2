@@ -120,7 +120,7 @@
             headers : {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-                //'Authorization': localStorage.getItem('jwtToken'),
+                'Authorization': localStorage.getItem('jwtToken'),
             },
             method: 'POST',
             body: JSON.stringify(data)
@@ -131,7 +131,7 @@
 
     let addTitleReview = (userId, titleId, commentText, callback) => {
         let data = {"userId": userId, "titleId":titleId, "commentText":commentText};
-        userId =  99 //sessionStorage.getItem("userId").toString();
+        userId =  sessionStorage.getItem("userId");
         //titleId = 'tt5813916'
         console.log(userId);
         console.log(titleId);

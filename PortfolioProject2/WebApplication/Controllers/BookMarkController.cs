@@ -5,10 +5,13 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Configuration;
 using PortfolioProject2;
 using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
 using WebApplication.DataInterfaces;
+using WebApplication.DTOs;
+using WebApplication.Token;
 using WebApplication.ViewModels;
 
 namespace WebApplication.Controllers
@@ -17,16 +20,18 @@ namespace WebApplication.Controllers
     [Route("api/bookmarks")]
     public class BookMarkController : Controller
     {
+        private readonly IConfiguration _config;
         private readonly IBookMarkDataService _iBookMarkDataService;
         private readonly IActorDataService _iActorDataServices;
         private readonly LinkGenerator _linkGenerator;
         private readonly IMapper _mapper;
 
-        public BookMarkController(IBookMarkDataService bookmarkdataservice, LinkGenerator linkGenerator, IMapper mapper)
+        public BookMarkController(IBookMarkDataService bookmarkdataservice, LinkGenerator linkGenerator, IMapper mapper, IConfiguration config)
         {
             _iBookMarkDataService = bookmarkdataservice;
             _linkGenerator = linkGenerator;
             _mapper = mapper;
+            _config = config;
         }
         
         //for titles bookmark
@@ -56,11 +61,23 @@ namespace WebApplication.Controllers
         }
         
         [HttpPost("{userid}/titlebookmarks/{titleid}")]
-        public IActionResult CreateTitleBookmark(int userid, string titleid)
+        public IActionResult CreateTitleBookmark(int userid, string titleid, [FromHeader] TokenChecker getHeaders)
         {
-            var titleBookmark = _iBookMarkDataService.CreateTitleBookmark(userid, titleid);
-            return Ok(titleBookmark);
+            var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+            if (token == true)
+            {
+                var titleBookmark = _iBookMarkDataService.CreateTitleBookmark(userid, titleid);
+                if (titleBookmark == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(titleBookmark);
+            }
+
+            return Unauthorized();
         }
+        
         
         [HttpDelete("{userid}/titlebookmarks/{titleid}")]
         public IActionResult DeleteTitleBookmark(int userid, string titleid)
