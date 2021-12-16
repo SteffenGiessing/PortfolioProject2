@@ -12,6 +12,7 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
                 console.log(data["userId"])
                 //SAVES THE USER ID
                 sessionStorage.setItem('userId', data["userId"] )
+                
                 userDetails(data);
             });
         };

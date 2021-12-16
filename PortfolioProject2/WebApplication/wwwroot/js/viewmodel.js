@@ -10,10 +10,18 @@
             }
         }
     });
+    let actorSearchWord = ko.observable().extend({
+       validation: {
+           message: "Please add a longer search string for better search results",
+           validator: function(value) {
+               return value > 2
+           }
+       } 
+    });
 
 
     let currentParams = ko.observable({searchWord});
-
+    let actorParam = ko.observable({actorSearchWord});
     let isActive = element => {
         return element.toLowerCase() === selectedComponent() ? "active" : "";
     }
@@ -61,11 +69,18 @@
         currentParams({searchWord});
         selectedComponent("search");
     }
+    let actorSearchBtn = () => {
+        console.log("Actor search clicked");
+        actorParam({actorSearchWord});
+        selectedComponent("actorSearch");
+    }
 
     return {
         searchBtn,
+        actorSearchBtn,
         loginBtw,
         searchWord,
+        actorSearchWord,
         selectedComponent,
         menuElements,
         isActive,

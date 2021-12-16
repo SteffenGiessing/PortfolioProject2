@@ -54,6 +54,13 @@
                 callback(json);
             });
     };
+    
+    let searchForActor = (searchWord, callback) =>  {
+      fetch("http://localhost:5000/api/actor/namesearch/"+ searchWord)
+          .then(response => response.json())
+          .then(json => { callback(json);
+          });
+    };
     // METHOD GET FOR ACTORS //
     
     let getActors = (callback) => {
@@ -158,6 +165,7 @@
         getActors,
         loginUser,
         searchForTitles,
+        searchForActor,
         getUser,
         getUserComments,
         getInfoSpecificTitle,
