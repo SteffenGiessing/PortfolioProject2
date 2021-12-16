@@ -9,6 +9,15 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
         let userId = ko.observable();
 
 
+        let getUserData = () => {
+            ds.getUser(email, function (data) {
+                userId =  sessionStorage.getItem("userId");
+               userDetails(data);
+               console.log(userDetails());
+            });
+        };
+        
+
 
         /*postman.subscribe('changeUserView', function(data){
             data;
@@ -45,6 +54,7 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
               getComments();*/
 
         return {
+            getUserData,
             titleId,
             email,
             password,

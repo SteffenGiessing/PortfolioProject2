@@ -24,8 +24,9 @@
             });
         };
         
-        /*      let loginUser = () => {
+/*              let loginUser = () => {
                   ds.loginUser(email(), password())
+                  postman.publish('changeUserView');
               };*/
         /*
         
