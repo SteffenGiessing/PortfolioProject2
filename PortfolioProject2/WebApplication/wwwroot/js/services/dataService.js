@@ -48,6 +48,7 @@
     };
 
     let searchForTitles = (searchWord, callback ) => {
+        
         fetch("http://localhost:5000/api/titles/searchresult/" + searchWord, { method: 'GET'})
             .then(response => response.json())
             .then(json => {
@@ -55,14 +56,15 @@
             });
     };
     
-    let searchForActor = (searchWord, callback) =>  {
-      fetch("http://localhost:5000/api/actor/namesearch/"+ searchWord)
-          .then(response => response.json())
-          .then(json => { callback(json);
+    let searchForActor = (actorSearchWord, callback) =>  {
+      console.log(actorSearchWord + "SEARCHWORD");
+      fetch("http://localhost:5000/api/actor/namesearch/" + actorSearchWord)
+          .then(response => response.json()).then(json => {console.log(json)})
+          .then(json => {callback(json);
           });
     };
-    // METHOD GET FOR ACTORS //
     
+    // METHOD GET FOR ACTORS //
     let getActors = (callback) => {
         fetch("http://localhost:5001/api/actor", { method: 'GET'})
             .then(response => response.json())
@@ -80,7 +82,7 @@
                 'Authorization': 'Bearer' + localStorage.getItem('jwtToken'),
             },
             method: 'GET'})
-            .then(response => response.json()).then(json => {
+            .then(response => response.json()).then(response => console.log(callback)).then(json => {
             callback(json);
         });
     }
@@ -173,7 +175,6 @@
             .then(json => {console.log(json);
             });
     };
-
     
     return {
         //getTitleById,

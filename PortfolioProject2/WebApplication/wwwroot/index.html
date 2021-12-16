@@ -34,10 +34,11 @@
                     <input data-bind="value: searchWord" id="search" type="search" placeholder="Search..." autofocus required />
                     <button id="goButton" data-bind="click:searchBtn" type="submit">Go</button>
                 </form>
+                
                 <form id="actorForm" class="form-inline my-2 my-lg-2">
                     <label id="actorLabelSearch" for="search">Search for stuff</label>
                     <input data-bind="value: actorSearchWord" id="actorSearch" type="search" placeholder="Search..." autofocus required />
-                    <button id="actorGoButton" data-bind="click:searchBtn" type="submit">Go</button>
+                    <button id="actorGoButton" data-bind="click:actorSearchBtn" type="submit">Go</button>
                 </form>
 
             <!--    <form class="form-inline my-2 my-lg-2">
@@ -51,6 +52,7 @@
     
 <div class="container-fluid">
         <div data-bind="component: {name: selectedComponent, params: currentParams}"></div>
+        <div data-bind="component: {name: selectedComponent, params: actorParam}"></div>
 
     <div data-bind="value: menuElements"></div>
 </div>

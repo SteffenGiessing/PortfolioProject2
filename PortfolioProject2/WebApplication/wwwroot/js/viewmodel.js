@@ -22,6 +22,7 @@
 
     let currentParams = ko.observable({searchWord});
     let actorParam = ko.observable({actorSearchWord});
+    
     let isActive = element => {
         return element.toLowerCase() === selectedComponent() ? "active" : "";
     }
@@ -69,6 +70,7 @@
         currentParams({searchWord});
         selectedComponent("search");
     }
+    
     let actorSearchBtn = () => {
         console.log("Actor search clicked");
         actorParam({actorSearchWord});
@@ -82,6 +84,7 @@
         searchWord,
         actorSearchWord,
         selectedComponent,
+        actorParam,
         menuElements,
         isActive,
         changeContent,
