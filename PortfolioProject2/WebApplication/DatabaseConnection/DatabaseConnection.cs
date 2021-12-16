@@ -256,7 +256,7 @@ namespace WebApplication.DatabaseConnection
                 entity.ToTable("user_comments");
 
                 // Sets Primary Key
-                entity.HasKey(x => x.CommentId).HasName("searchid");
+                entity.HasKey(x => x.CommentId).HasName("commentid");
                 
                 //entity.HasKey(x => x.CommentId).HasName("commentid");
                 // Sets properties

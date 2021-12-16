@@ -65,7 +65,7 @@ namespace WebApplication.Controllers
             
             
             // Get Post Comments
-            [HttpPost("{userid}/usercomment/{titleid}")]
+            [HttpPost("{userId}/usercomment/{titleId}")]
             
             public IActionResult CreateTitleComments(int userId, string titleId, string commentText)
             {
