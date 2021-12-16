@@ -1,6 +1,6 @@
 ﻿define([], () => {
     // UTILS
-    const popularTitlesUrl = "https://localhost:5001/api/titles/populartitles";
+    const popularTitlesUrl = "https://localhost:5000/api/titles/populartitles";
     const titlesUrl = "http://localhost:5000/api/titles";
 
     let getJson = (url, callback) => {
@@ -110,20 +110,42 @@
     };
     
     // METHOD POST
-    let addToBookmarks = (callback) => {
-        let data = new Object;
-        data.userid = 77; //sessionStorage.getItem("userId").toString();
-        data.titleid = 'tt13016896';
-        fetch("http://localhost:5000/api/bookmarks/", { //+userid + "/titlebookmarks/"+ titleid, {
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json",
-                'Authorization': localStorage.getItem('jwtToken'),
+    let addToBookmarks = (userId, titleId, callback) => {
+        let data = {"userId": userId, "titleId":titleId};
+        userId =  100 //sessionStorage.getItem("userId").toString();
+        //titleId = 'tt5813916'
+        console.log(userId);
+        console.log(titleId);
+        fetch("http://localhost:5000/api/bookmarks/" + userId + "/titlebookmarks/"+ titleId, {
+            headers : {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                //'Authorization': localStorage.getItem('jwtToken'),
             },
             method: 'POST',
             body: JSON.stringify(data)
-        }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))
-            .then(callback));
+        }).then(response => response.json())
+            .then(json => {console.log(json);
+            });
+    };
+
+    let addTitleReview = (userId, titleId, commentText, callback) => {
+        let data = {"userId": userId, "titleId":titleId, "review":commentText};
+        userId =  99 //sessionStorage.getItem("userId").toString();
+        //titleId = 'tt5813916'
+        console.log(userId);
+        console.log(titleId);
+        console.log(commentText);
+        fetch("http://localhost:5000/api/comments/" + userId + "/usercomment/"+ titleId, {
+            headers : {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            },
+            method: 'POST',
+            body: JSON.stringify(data)
+        }).then(response => response.json())
+            .then(json => {console.log(json);
+            });
     };
 
     
@@ -139,6 +161,7 @@
         getUser,
         getUserComments,
         getInfoSpecificTitle,
-        addToBookmarks
+        addToBookmarks,
+        addTitleReview
     }
 });

@@ -4,13 +4,13 @@
             <div class="col-sm-12 col-lg-6">
                 <h2 data-bind="text: primaryTitle"> </h2>
             </div>
-            <div class="col-sm-12 col-lg-6">
-                <button type="button" class="btn btn-primary" data-bind="click: $parent.addToBookmarks">Add to bookmarks +</button>
-            </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-lg-6">
                 <img class="img-fluid poster" data-bind="attr:{src: poster}" onerror=src="resources/image-placeholder.svg" />
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <button type="button" class="btn btn-primary" data-bind="click: $parent.addToBookmarks">Add to bookmarks +</button>
             </div>
             <div class="col-sm-12 col-lg-6">
                 <p>Start Year: <span data-bind="text: startYear"> </span> </p>
@@ -20,6 +20,21 @@
                 <p>Awards: <span data-bind="text: awards"> </span> </p>
                 <p>Rating: <span data-bind="text: averageRating"> </span>  </p>
                 <br>
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <div class="form-group">
+                                <h3>Write a Review:</h3>
+                                <label for="exampleFormControlTextarea1">Title review:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" data-bind="value: $parent.commentText"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary" data-bind="click: $parent.addTitleReview">Submit Review</button>
+                    </div>
+                </div>'
             </div>
         </div>
     </div>
