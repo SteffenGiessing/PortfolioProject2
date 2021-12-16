@@ -148,6 +148,25 @@
             });
     };
 
+    let addRating = (userId, titleId, ratingNumber, callback) => {
+        userId =  80//sessionStorage.getItem("userId");
+        let data = {"UserId": userId, "TitleId":titleId, "ratingNumber":ratingNumber};
+        console.log(userId);
+        console.log(titleId);
+        console.log(ratingNumber);
+        fetch("http://localhost:5000/api/ratings/add/userrating/", {
+            headers : {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Authorization': localStorage.getItem('jwtToken'),
+            },
+            method: 'POST',
+            body: JSON.stringify(data)
+            }).then(response => response.json())
+            .then(json => {console.log(json);
+            });
+    };
+
     
     return {
         //getTitleById,
@@ -162,6 +181,7 @@
         getUserComments,
         getInfoSpecificTitle,
         addToBookmarks,
-        addTitleReview
+        addTitleReview,
+        addRating
     }
 });
