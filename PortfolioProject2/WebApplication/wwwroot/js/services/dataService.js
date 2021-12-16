@@ -54,8 +54,8 @@
                 callback(json);
             });
     };
-    // METHOD GET FOR ACTORS //
     
+    // METHOD GET FOR ACTORS //
     let getActors = (callback) => {
         fetch("http://localhost:5001/api/actor", { method: 'GET'})
             .then(response => response.json())
@@ -63,7 +63,16 @@
                 callback(json);
             });
     };
-    
+
+    let searchForActor = (actorSearchWord, callback) =>  {
+        console.log(actorSearchWord + "SEARCHWORD");
+        fetch("http://localhost:5000/api/actor/namesearch/" + actorSearchWord)
+            .then(response => response.json())
+            .then(json => {callback(json);
+            });
+    };
+
+
     // METHOD GET FOR USER //
     let getUser = (email, callback) => {
         fetch("http://localhost:5000/api/user/"+email, {
@@ -182,6 +191,7 @@
         getInfoSpecificTitle,
         addToBookmarks,
         addTitleReview,
-        addRating
+        addRating,
+        searchForActor
     }
 });

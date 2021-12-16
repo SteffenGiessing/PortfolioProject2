@@ -27,6 +27,11 @@ require(['knockout'], (ko) => {
         template: { require: "text!components/titles/getTitles.html" }
     });
 
+    ko.components.register("actorsearch", {
+        viewModel: { require: "components/actorSearch/actorSearch" },
+        template: { require: "text!components/actorSearch/actorSearch.html" }
+    });
+    
     ko.components.register("get-actors", {
         viewModel: { require: "components/actors/getActors" },
         template: { require: "text!components/actors/getActors.html" }

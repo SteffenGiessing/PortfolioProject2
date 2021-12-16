@@ -1,7 +1,20 @@
-﻿* {
+﻿/* GLOBAL CSS */
+* {
     margin: 0px;
     padding: 0px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*BOOTSTRAP OVERWRITING*/
+.container-fluid {
+    padding: 0;
+}
+
+/* HOME VIEW CSS  */
+
 .img {
     height:90vh;
     min-height:400px;
@@ -9,8 +22,11 @@
     background-image:url("../resources/1.jpg");
 }
 
-.container-fluid {
-    padding: 0px;
+/* NAVBAR CSS */
+#logo{
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
 }
 
 .navbar-nav a {
@@ -23,25 +39,10 @@
 .nav-link {
     color: white;
 }
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Oswald', sans-serif;
-    background: #f9f9f9;
-}
 
 #commentField #post {
     border: none;
     border-radius: 5px;
-}
-
-/* Navigation Bar */
-#logo{
-    width: 100%;
-    height: 100%;
-    max-width: 150px;
 }
 
 
@@ -117,8 +118,7 @@ position: absolute;
     overflow: hidden;
 }
 
-/* Login */
-
+/* LOGIN */
 .loginBody {
     margin: 0;
     padding: 0;
@@ -236,7 +236,17 @@ p {
     color: #0000ff
 }
 
-/*smth else*/
+/* Actor List */
+
+.actor{
+    height:90vh;
+/*    min-height:400px;
+    background-size:cover;
+    background-image:url("../resources/1.jpg");*/
+    margin-top: 100px;
+}
+
+/**/
 @media screen and (max-width: 600px) {
     #logo {
         max-width: 100px;
