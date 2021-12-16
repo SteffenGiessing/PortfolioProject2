@@ -40,7 +40,7 @@
         */
     
     postman.subscribe("changeUserView", component => {
-        changeContent('userLoggedIn');
+        changeContent('loggedin');
     });
 
     postman.subscribe("changeTitle", component => {

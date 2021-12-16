@@ -37,7 +37,7 @@ require(['knockout'], (ko) => {
         template: { require: "text!components/actors/getActors.html" }
     });
 
-    ko.components.register("loggedIn", {
+    ko.components.register("loggedin", {
         viewModel: {require: "components/users/userLoggedIn"},
         template:  {require: "text!components/users/userLoggedIn.html"}
     });
