@@ -59,6 +59,7 @@ namespace WebApplication.Controllers
             [HttpGet("{titleid}")]
             public IActionResult GetCommentsFromTitle(string? titleid)
             {
+                
                 var allCommentsFromOneTitle = _iDataServices.GetCommentsFromTitle(titleid);
                 return Ok(allCommentsFromOneTitle);
             }
@@ -67,10 +68,19 @@ namespace WebApplication.Controllers
             // Get Post Comments
             [HttpPost("{userid}/usercomment/{titleid}")]
             
-            public IActionResult CreateTitleComments(int userid, string titleid, string commenttext)
+            public IActionResult CreateTitleComments(int userid, string titleid, string commenttext, [FromHeader] TokenChecker getHeaders)
             {
-                var createComment = _iDataServices.CreateTitleComments(userid, titleid, commenttext);
-                return Ok(createComment);
+                var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+                if (token == true)
+                {
+                    var createComment = _iDataServices.CreateTitleComments(userid, titleid, commenttext);
+                    if (createComment == null)
+                    {
+                        return NotFound();
+                    }
+                    return Ok(createComment);
+                }
+                return Unauthorized();
             }
         }
 }

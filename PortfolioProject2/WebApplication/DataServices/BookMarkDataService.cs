@@ -1,19 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using PortfolioProject2.Models.DataInterfaces;
 using PortfolioProject2.Models.DMOs;
-using WebApplication.DatabaseConnection;
 using WebApplication.DataInterfaces;
 
-namespace PortfolioProject2.Models.DataServices
+namespace WebApplication.DataServices
 {
     public class BookMarkDataService : IBookMarkDataService
     {
-        public DatabaseConnection ctx { get; set; }
+        public DatabaseConnection.DatabaseConnection ctx { get; set; }
 
         public Title_Bookmark GetTitleBookmark(int userid, string titleid)
         {
@@ -24,7 +18,7 @@ namespace PortfolioProject2.Models.DataServices
         public IList<Title_Bookmark> GetTitleBookmarks(int userid)
         {
             IList<Title_Bookmark> result = new List<Title_Bookmark>();
-            using var ctx = new DatabaseConnection();
+            using var ctx = new DatabaseConnection.DatabaseConnection();
 
             foreach (var bk in ctx.Title_Bookmark)
             {
@@ -40,7 +34,7 @@ namespace PortfolioProject2.Models.DataServices
         public Title_Bookmark CreateTitleBookmark(int userid, string titleid)
         {
             //need a way to validate user
-            using var ctx = new DatabaseConnection();
+            using var ctx = new DatabaseConnection.DatabaseConnection();
             var result = new Title_Bookmark
             {
                 UserId = userid,
@@ -79,7 +73,7 @@ namespace PortfolioProject2.Models.DataServices
         public IList<Name_Bookmark> GetNameBookmarks(int userid)
         {
             IList<Name_Bookmark> result = new List<Name_Bookmark>();
-            using var ctx = new DatabaseConnection();
+            using var ctx = new DatabaseConnection.DatabaseConnection();
 
             foreach (var bk in ctx.Name_Bookmark)
             {
@@ -94,7 +88,7 @@ namespace PortfolioProject2.Models.DataServices
 
         public Name_Bookmark CreateNameBookmark(int userid, string pid)
         {
-            using var ctx = new DatabaseConnection();
+            using var ctx = new DatabaseConnection.DatabaseConnection();
             var result = new Name_Bookmark()
             {
                 UserId = userid,

@@ -140,6 +140,7 @@
             headers : {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
+                'Authorization': localStorage.getItem('jwtToken'),
             },
             method: 'POST',
             body: JSON.stringify(data)
