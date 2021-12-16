@@ -8,8 +8,8 @@
             selectedActor(actors);
             postman.publish('changeActor', selectedActor());
         }
-        ds.searchForActor(searchActorString, function (data) {
-            console.log(data + "ARE WE HERE")
+        ds.searchForActor(searchActorString(), function (data) {
+            console.log(data() + "ARE WE HERE")
             actors(data)
         });
         return {
