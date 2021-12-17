@@ -1,23 +1,7 @@
-﻿<!--    <input type="text" id="email" data-bind="value: email">
-    <input type="text" id="password" data-bind="value: password">
-    <button type="button" data-bind="click:loginUser" data-toggle="button">LOGIN</button>
-
-    <div data-bind="foreach: userDetails">
-        <h5>FirstName: <span data-bind="text: firstName"></span></h5>
-        <h5>LastName: <span data-bind="text: lastName"></span> </h5>
-        <h5>Username: <span data-bind="text: userName"></span></h5>
-        <h5>Email: <span data-bind="text: emailAddress"></span></h5>
-    </div>
-    <button type="button" data-bind="click:getComments" data-toggle="button">GetComments</button>
-    <div data-bind="foreach: showComments">
-        <h5>CommentText: <span data-bind="text: commentText"></span> </h5>
-    </div>
-    
-    -->
-<div class="loginBody">
+﻿<div class="loginBody">
     <div class="loginBox">
         <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
-        <h3>Sign in here</h3>
+        <h3 class="signInUser">Sign in here</h3>
         <form method="post">
             <div class="inputBox">
                 <input id="email" data-bind="value: email" type="text" name="Email" placeholder="Enter your email">
@@ -26,10 +10,10 @@
 
             <input data-bind="click:loginUser" type="submit" name="" value="Login" >
         </form>
-        <a href="#">Forget Password<br> </a>
+        <a class="passwordWord" href="#">Forget Password<br> </a>
 
         <div class="text-center">
-            <p style="color: #59238F;">Sign-Up</p>
+            <p class="sign-up" style="color: #59238F;">Sign-Up</p>
         </div>
 
     </div>

@@ -1,4 +1,25 @@
-﻿<div>
+﻿<div class="titleInfoImg">
+    <div class="overlayTitleInfo">
+       <div class="textMovie" data-bind="with: titles">
+                   <img class="img-fluid poster" data-bind="attr:{src: poster}" onerror=src="resources/image-placeholder.svg" />
+                   <h2 data-bind="text: primaryTitle"> </h2>
+                   <p>Plot: <span data-bind="text: plot"> </span> </p>
+                   <p>Start Year: <span data-bind="text: startYear"> </span> </p>
+                   <p>End Year: <span data-bind="text: endYear"> </span> </p>
+                   <p>Genres: <span data-bind="text: genres"> </span> </p>
+                   <p>Awards: <span data-bind="text: awards"> </span> </p>
+                   <p>Rating: <span data-bind="text: averageRating"> </span>  </p>
+           </div>
+       </div>
+    </div>
+</div>
+
+
+
+
+
+<!--
+<div>
     <div class="container" data-bind="with: titles">
         <div class="row">
             <div class="col-sm-12 col-lg-6">
@@ -40,4 +61,4 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
