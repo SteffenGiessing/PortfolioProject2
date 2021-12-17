@@ -22,6 +22,8 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
                console.log(userDetails());
             });
         };
+
+        getUserData();
         
         let getUserComments = () => {
             ds.getUserComments(function (data) {
@@ -29,6 +31,8 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
                 console.log(showComments() + "THIS DATA");
             });
         }
+
+  /*      getUserComments();*/
         
         let updateUser = () => {
             userId = sessionStorage.getItem("userId")

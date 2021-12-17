@@ -6,12 +6,15 @@
     <link href="css/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <header>
     <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5">
+        <nav class="navbar navbar-custom navbar-expand-sm navbar-light">
             <img id="logo" src="resources/cinemax2.png" alt="Website Logo">
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,17 +37,6 @@
                     <input data-bind="value: searchWord" id="search" type="search" placeholder="Search..." autofocus required />
                     <button id="goButton" data-bind="click:searchBtn" type="submit">Go</button>
                 </form>
-                <form id="actorForm" class="form-inline my-2 my-lg-2">
-                    <label id="actorLabelSearch" for="search">Search for stuff</label>
-                    <input data-bind="value: actorSearchWord" id="actorSearch" type="search" placeholder="Search..." autofocus required />
-                    <button id="actorGoButton" data-bind="click:searchBtn" type="submit">Go</button>
-                </form>
-
-            <!--    <form class="form-inline my-2 my-lg-2">
-                    <input data-bind="value: searchWord" class="form-control mr-sm-2" type="text" placeholder="Search..." aria-label="Search...">
-                    <button data-bind="click:searchBtn" class="btn btn-secondary my-2 my-sm-0" type="submit"> Search</button>
-                </form>-->
-                
             </div>
         </nav>
 </header>
