@@ -17,6 +17,8 @@ html {
     padding: 0;
 }
 
+
+
 /* NAVBAR CSS */
 #logo{
     width: 100%;
@@ -119,10 +121,25 @@ position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     width: auto;
-    height: 80vh;
+    height: 100vh;
     background-image:url("../resources/3.jpg");
 }
 
+.overlay {
+    color: white;
+    width: auto;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    z-index:999
+}
+
+.textMovie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 
 /* POPULAR TITLES CSS*/
 .popularTitlesImg{
@@ -130,10 +147,26 @@ position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     width: auto;
-    height: 80vh;
-    background-image:url("../resources/4.jpg");
+    height: 100vh;
+    background-image:url("../resources/7.jpg");
 }
 
+.overlayPopular {
+    color: white;
+    width: auto;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.55);
+    z-index:999
+}
+
+.card-img-top{
+    height: 375px;
+}
+
+.container-xl mb-5 mt-5 {
+    background-color: red;
+
+}
 /* LOGIN */
 .loginBody {
     margin: 0;
@@ -147,12 +180,6 @@ position: absolute;
     overflow: hidden
 }
 
-@media screen and (max-width: 600px) {
-    .loginBody {
-        background-size: cover;
-    : fixed
-    }
-}
 
 #particles-js {
     height: 100%
@@ -318,10 +345,11 @@ p {
 
 /**/
 @media screen and (max-width: 600px) {
+    /* NAV BAR */
     #logo {
         max-width: 100px;
     }
-
+    
     #searchForm {
         width: 15rem;
         margin-right: auto;
@@ -335,5 +363,36 @@ p {
         color: var(--color-dark);
         font-size: 1rem;
     }
-}
+    
+    /* HOME PAGE */
+    .img {
+        height: 100vh;
+    }
 
+    .overlay {
+        height: 100vh;
+    }
+
+    .textMovie h1, h2 {
+        font-size: 13px;
+    }
+    
+    /* POPULAR TITLES PAGE */
+    .popularTitlesImg
+    {
+        height: 100vh;
+    }
+    .overlayPopular {
+        height: 100vh;
+    }
+    
+    .card-img-top{
+        height: 450px;
+    }
+    
+    /* LOGIN */
+    .loginBody {
+        background-size: cover;
+    : fixed
+    }
+}

@@ -15,29 +15,15 @@
         let awards = ko.observable();
         let averageRating = ko.observable();
         let numVotes = ko.observable();
-
-        /*ds.getTitleById(titleId, function(data) {
-            titleId(data);
-            console.log(titleId());
-        });*/
-
+        
+        
+        /* Switch from Popular Title to Title Informations*/
         let selectTitle = title => {
             selectedTitle(title);
             postman.publish('changeTitle', selectedTitle());
         }
-/*
-        let getTitlesData = url => {
-            ds.getTitles(url, data => {
-                prev(data.prev || undefined);
-                next(data.next || undefined);
-                titles(data.items);
-                console.log(titles());
-            })
-        }
 
-        getTitlesData();
-*/
-
+        /* Retrieve the popular titles + pagination */
         let getPopularTitlesData = url => {
             ds.getPopularTitles(url, data => {
                 prev(data.prev || undefined);
@@ -46,9 +32,11 @@
                 console.log(popularTitles());
             })
         }
-
+        
+        /*Call the popular titles function*/
         getPopularTitlesData();
 
+        /* Pagination Utilities */
         let showPrev = title => {
             console.log(prev());
             getPopularTitlesData(prev());
