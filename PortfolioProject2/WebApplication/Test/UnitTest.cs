@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Net.Sockets;
 using System.Security.Cryptography;
 using AutoMapper;
@@ -17,6 +18,79 @@ namespace WebApplication.Test
     {
         private readonly Mock<IMapper> _mapperMock;
         private const int Port = 5000;
+        
+        [Fact]
+        public void TitleSearch()
+        {
+            var service = new TitleDataService();
+            var search = service.TitleSearch("war").Result;
+            Assert.Equal("Star Wars: Episode VII - The Force Awakens", search.First().PrimaryTitle);
+        }
+        
+        [Fact]
+        public void GetTitleById()
+        {
+            var service = new TitleDataService();
+            var titles = service.GetTitleById("tt8769260").Result;
+            Assert.Equal("Encounter", titles.First().PrimaryTitle);
+        }
+        
+        //dont know why this one is failing
+        [Fact]
+        public void GetTitleByName()
+        {
+            var service = new TitleDataService();
+            var titles = service.GetTitleByName("Encounter").Result;
+            Assert.Equal("tt8769260", titles.First().TitleId);
+        }
+        
+        [Fact]
+        public void GetInfoSpecificTitle()
+        {
+            var service = new TitleDataService();
+            var titles = service.GetInfoSpecificTitle("tt8690890").Result;
+            Assert.Equal("Drama,Romance", titles.First().Genres);
+        }
+        
+        [Fact]
+        public void GetPersonKnownFor()
+        {
+            var service = new ActorDataService();
+            var actor = service.GetPersonKnownFor("nm0000035").Result;
+            Assert.Equal("tt0499549", actor.First().KnownForTitle);
+        }
+        
+        [Fact]
+        public void GetActorOnPid()
+        {
+            var service = new ActorDataService();
+            var actor = service.GetActorOnPid("nm0000001").Result;
+            Assert.Equal("Fred Astaire", actor.First().PrimaryName);
+        }
+
+        [Fact]
+        public void GetPersonProfessionByActorId()
+        {
+            var service = new ActorDataService();
+            var actor = service.GetPersonProfessionByActorId("nm0000001").Result;
+            Assert.Equal("soundtrack", actor.First().Profession);
+        }
+        
+        [Fact]
+        public void GetRatingBy()
+        {
+            var service = new RatingsDataService();
+            var rating = service.GetRatingBy("tt8769260").Result;
+            Assert.Equal(604, rating.First().NumVotes);
+        }
+        
+        [Fact]
+        public void GetBestMatchPersonName()
+        {
+            var service = new ActorDataService();
+            var actor = service.GetBestMatchPersonName("mads").Result;
+            Assert.Equal("Michael Madsen", actor.First().PrimaryName);
+        }
         
         [Fact]
         public void CheckConnection()
