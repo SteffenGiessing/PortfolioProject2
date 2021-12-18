@@ -11,7 +11,7 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
 
         let getUser = (email) => {
             ds.getUser(email, function (data) {
-                console.log(data["userId"])
+                console.log(data)
                 //SAVES THE USER ID
                 sessionStorage.setItem('userId', data["userId"] )
                 sessionStorage.setItem('email', data["emailAddress"])
@@ -21,11 +21,20 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
 
         let loginUser = () => {
             ds.loginUser(email(), password(), function(data) {
-                if(data["error"]){
-                    alert("ERROR")
+                for (let errors in data) {
+                    if(errors === 'status'){
+                        if (data['status'] === 404){
+                            console.log("HittingBreak?");
+                            alert("Email and Password Invalid");
+                        }
+                        if(data['status'] === 200){
+                            console.log(data['status'])
+                            getUser(email())
+                            postman.publish('changeUserView');
+                        }
+                   }
                 }
-                getUser(email())
-                postman.publish('changeUserView');
+          
             });
         };
         

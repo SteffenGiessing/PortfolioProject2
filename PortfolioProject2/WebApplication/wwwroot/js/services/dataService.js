@@ -101,13 +101,16 @@
             },
             method: 'POST',
             body: JSON.stringify(data)
-        }).then(response => response.json()).then(response => localStorage.setItem('jwtToken', response.tokenJwt))
-            .then(response => {
+        }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))
+            .then(data => ({status: response.status})).then(check => {
+               if(!response.ok){
+                   callback(response)
+                   return new Error("Log in failed");
+               }
+            }).then(success => {
+                console.log(response)
                 callback(response)
-            }).catch(error => {
-                return new alert("ERROR")
-                //console.error('ERROR: ', error)
-            });
+            }));
     }
     
 
