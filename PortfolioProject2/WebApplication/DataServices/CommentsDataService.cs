@@ -20,7 +20,7 @@ namespace WebApplication.DataServices
             return list;
         }
 
-        public async Task<User_Comments> GetUserComments(int userid)
+        public async Task<List<User_Comments>> GetUserComments(int userid)
         {
             var result = new User_Comments {};
             using var ctx = new DatabaseConnection.DatabaseConnection();
@@ -31,7 +31,7 @@ namespace WebApplication.DataServices
                     result.TitleId = uc.TitleId;
                 
             }
-            return  ctx.User_Comments.FromSqlRaw("SELECT * FROM user_comments WHERE userid = {0}",userid).FirstOrDefault();
+            return await ctx.User_Comments.FromSqlRaw("SELECT * FROM user_comments WHERE userid = {0}",userid).ToListAsync();
         }
 
         public IList<User_Comments> GetCommentsFromTitle(string titleid)

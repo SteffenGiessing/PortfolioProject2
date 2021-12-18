@@ -40,21 +40,21 @@ namespace WebApplication.Controllers
             public IActionResult GetUserComments(int userid, [FromHeader] TokenChecker getHeaders)
             {
                 //THIS STEP AUTHENTICATES THE FRONT END IT IS NEEDED EVERYTIME USER HAS TO INTERACT WITH THE SYSTEM
-                var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-                if (token == true)
-                {
+              //  var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+              //  if (token == true)
+             //   {
                     var userComments = _iDataServices.GetUserComments(userid).Result;
                     
-                    if (userComments == null)
-                    {
-                        return NotFound();
-                    }
+               //     if (userComments == null)
+              //      {
+                //        return NotFound();
+                //    }
                     
                     return Ok(userComments);
                 }
 
-                return Unauthorized();
-            }
+             //   return Unauthorized();
+           // }
 
             [HttpGet("{titleid}")]
             public IActionResult GetCommentsFromTitle(string? titleid)

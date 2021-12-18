@@ -118,8 +118,8 @@
     
     // METHOD POST
     let addToBookmarks = (userId, titleId, callback) => {
-        let data = {"userId": userId, "titleId":titleId};
         userId =  sessionStorage.getItem("userId");
+        let data = {"userId": userId, "titleId":titleId};
         console.log(userId);
         console.log(titleId);
         fetch("http://localhost:5000/api/bookmarks/" + userId + "/titlebookmarks/"+ titleId, {
@@ -134,6 +134,18 @@
             .then(json => {console.log(json);
             });
     };
+    let getBookMarks = (userId, callback) => {
+        userId = sessionStorage.getItem("userId");
+        fetch("http://localhost:5000/api/bookmarks/"+ userId+ "/titlebookmarks", {
+            headers : {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Authorization': localStorage.getItem('jwtToken'),
+            },
+            method: 'GET',
+        }).then(response => response.json()).then(json => {console.log(json);
+        });
+    }
 
     let addTitleReview = (userId, titleId, commentText, callback) => {
         userId =  sessionStorage.getItem("userId");
@@ -205,6 +217,7 @@
         addTitleReview,
         addRating,
         searchForActor,
-        updateUser
+        updateUser,
+        getBookMarks
     }
 });

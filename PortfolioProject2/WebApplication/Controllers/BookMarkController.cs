@@ -49,34 +49,41 @@ namespace WebApplication.Controllers
         }
         
         [HttpGet("{userid}/titlebookmarks")]
-        public IActionResult GetTitleBookmarks(int userid)
+        public IActionResult GetTitleBookmarks(int userid, [FromHeader] TokenChecker getHeaders)
         {
-            var titleBookmarks = _iBookMarkDataService.GetTitleBookmarks(userid);
-            if (titleBookmarks == null)
-            {
-                return NotFound();
-            }
+            //var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+           // if (token == true)
+           // {
+                var titleBookmarks = _iBookMarkDataService.GetTitleBookmarks(userid);
+              //  if (titleBookmarks == null)
+                //{
+               //     return NotFound();
+              //  }
 
-            return Ok(titleBookmarks);
+                return Ok(titleBookmarks);
+         //   }
+
+         //   return Unauthorized();
         }
+            
         
         [HttpPost("{userid}/titlebookmarks/{titleid}")]
         public IActionResult CreateTitleBookmark(int userid, string titleid, [FromHeader] TokenChecker getHeaders)
         {
-            var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-            if (token == true)
-            {
+        //    var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+          //  if (token == true)
+           // {
                 var titleBookmark = _iBookMarkDataService.CreateTitleBookmark(userid, titleid);
-                if (titleBookmark == null)
-                {
-                    return NotFound();
-                }
+             //   if (titleBookmark == null)
+             //   {
+              //      return NotFound();
+            //    }
 
                 return Ok(titleBookmark);
             }
 
-            return Unauthorized();
-        }
+          //  return Unauthorized();
+        //}
         
         
         [HttpDelete("{userid}/titlebookmarks/{titleid}")]

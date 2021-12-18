@@ -9,7 +9,7 @@ namespace WebApplication.DataInterfaces
     {
         IList<User_Comments> GetAllComments();
 
-        Task <User_Comments> GetUserComments(int userid);
+        Task <List<User_Comments>> GetUserComments(int userid);
 
         IList <User_Comments> GetCommentsFromTitle(string titleid);
         
