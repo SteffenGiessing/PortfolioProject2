@@ -21,12 +21,8 @@ namespace WebApplication.DataServices
             using var ctx = new DatabaseConnection.DatabaseConnection();
 
             foreach (var bk in ctx.Title_Bookmark)
-            {
                 if (bk.UserId == userid)
-                {
                     result.Add(bk);
-                }
-            }
 
             return result;
         }
@@ -42,11 +38,8 @@ namespace WebApplication.DataServices
                 BookMarkTime = DateTime.Now
             };
             ctx.Title_Bookmark.Add(result);
-            int a = ctx.SaveChanges();
-            if (a == 0)
-            {
-                return null;
-            }
+            var a = ctx.SaveChanges();
+            if (a == 0) return null;
 
             return result;
         }
@@ -54,10 +47,7 @@ namespace WebApplication.DataServices
         public bool DeleteTitleBookmark(int userid, string titleid)
         {
             var titleBookmark = ctx.Title_Bookmark.Find(userid, titleid);
-            if (titleBookmark == null)
-            {
-                return false;
-            }
+            if (titleBookmark == null) return false;
 
             ctx.Title_Bookmark.Remove(titleBookmark);
             ctx.SaveChanges();
@@ -76,12 +66,8 @@ namespace WebApplication.DataServices
             using var ctx = new DatabaseConnection.DatabaseConnection();
 
             foreach (var bk in ctx.Name_Bookmark)
-            {
                 if (bk.UserId == userid)
-                {
                     result.Add(bk);
-                }
-            }
 
             return result;
         }
@@ -89,7 +75,7 @@ namespace WebApplication.DataServices
         public Name_Bookmark CreateNameBookmark(int userid, string pid)
         {
             using var ctx = new DatabaseConnection.DatabaseConnection();
-            var result = new Name_Bookmark()
+            var result = new Name_Bookmark
             {
                 UserId = userid,
                 Pid = pid,

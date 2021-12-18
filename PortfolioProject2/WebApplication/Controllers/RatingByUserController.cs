@@ -1,17 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 using WebApplication.DTOs;
 using WebApplication.Token;
-using System.Collections.Generic;
-using WebApplication.DataInterfaces;
-
 
 namespace WebApplication.Controllers
 {
     [ApiController]
     [Route("api/ratings")]
-    
     public class RatingByUserController : Controller
     {
         private readonly IConfiguration _config;
@@ -21,24 +18,20 @@ namespace WebApplication.Controllers
         {
             _iDataServices = dataServices;
             _config = configuration;
-
         }
-        
+
         [HttpPost("add/userrating/")]
         public IActionResult CreateTitleRating(User_Ratings userRating, [FromHeader] TokenChecker getHeaders)
         {
             var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-            if (token == true)
+            if (token)
             {
                 var creatRating = _iDataServices.CreateTitleRating(userRating).Result;
-                if (creatRating == null)
-                {
-                    return NotFound();
-                }
+                if (creatRating == null) return NotFound();
                 return Ok(creatRating);
             }
+
             return Unauthorized();
         }
-
     }
 }

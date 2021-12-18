@@ -16,16 +16,16 @@
 
         let endYear = ko.observable();
 
-        let genres =  ko.observable();
+        let genres = ko.observable();
 
-        let plot =  ko.observable();
+        let plot = ko.observable();
 
-        let awards =  ko.observable();
+        let awards = ko.observable();
 
         let averageRating = ko.observable();
 
         let numVotes = ko.observable();
-        
+
         let commentText = ko.observable();
 
         let ratingNumber = ko.observable();
@@ -41,19 +41,19 @@
             titleInfo(data);
         });
 
-        let addToBookmarks = (function(data) {
+        let addToBookmarks = (function (data) {
             ds.addToBookmarks(userId(), titleId());
         });
 
-        let addTitleReview = (function(data) {
+        let addTitleReview = (function (data) {
             ds.addTitleReview(userId(), titleId(), commentText());
         });
-        
-        let addRating = (function(data) {
+
+        let addRating = (function (data) {
             ds.addRating(userId(), titleId(), ratingNumber());
         });
 
-        
+
         return {
             titles,
             primaryTitle,

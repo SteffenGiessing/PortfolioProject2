@@ -4,6 +4,5 @@ namespace PortfolioProject2.Models.DMOs
     {
         public string Pid { get; set; }
         public string Profession { get; set; }
-
     }
 }

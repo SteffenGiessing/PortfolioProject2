@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using PortfolioProject2.Models;
-using PortfolioProject2.Models.DMOs;
 using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 
@@ -22,29 +20,26 @@ namespace WebApplication.DataServices
 
         public async Task<List<User_Comments>> GetUserComments(int userid)
         {
-            var result = new User_Comments {};
+            var result = new User_Comments();
             using var ctx = new DatabaseConnection.DatabaseConnection();
             foreach (var uc in ctx.User_Comments)
             {
-                    result.UserId = userid;
-                    result.CommentText = uc.CommentText;
-                    result.TitleId = uc.TitleId;
-                
+                result.UserId = userid;
+                result.CommentText = uc.CommentText;
+                result.TitleId = uc.TitleId;
             }
-            return await ctx.User_Comments.FromSqlRaw("SELECT * FROM user_comments WHERE userid = {0}",userid).ToListAsync();
+
+            return await ctx.User_Comments.FromSqlRaw("SELECT * FROM user_comments WHERE userid = {0}", userid)
+                .ToListAsync();
         }
 
         public IList<User_Comments> GetCommentsFromTitle(string titleid)
         {
-            List<User_Comments> result = new List<User_Comments>();
+            var result = new List<User_Comments>();
             var ctx = new DatabaseConnection.DatabaseConnection();
             foreach (var uc in ctx.User_Comments)
-            {
                 if (uc.TitleId.Trim() == titleid)
-                {
                     result.Add(uc);
-                }
-            }
             return result;
         }
 
@@ -57,15 +52,12 @@ namespace WebApplication.DataServices
                 UserId = userComments.UserId,
                 TitleId = userComments.TitleId,
                 CommentText = userComments.CommentText,
-                CommentTime = DateTime.Now,
+                CommentTime = DateTime.Now
             };
             ctx.User_Comments.Add(result);
             //check for connection to database
-            int a = await ctx.SaveChangesAsync();
-            if (a == 0)
-            {
-                return null;
-            }
+            var a = await ctx.SaveChangesAsync();
+            if (a == 0) return null;
             return result;
         }
     }

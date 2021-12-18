@@ -13,6 +13,5 @@ namespace PortfolioProject2.Models.DMOs
         public string Job { get; set; }
 
         public string CharName { get; set; }
-
     }
 }

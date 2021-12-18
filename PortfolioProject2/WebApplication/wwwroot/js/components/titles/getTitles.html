@@ -7,33 +7,39 @@
     </div>
 </div>
 <div class="container-xl mb-5 mt-5">
-<div class="row" data-bind="foreach: popularTitles">
-    <div class="col-12 col-md-6 col-lg-3" data-bind="click: $parent.selectTitle">
-        <div class="card shadow-sm mb-3">
-            <img alt="title" class="card-img-top" data-bind="attr: { src: poster }" height="375" onerror="this.onerror=null;this.src='https://i.redd.it/yprohh8wtdd21.png';" width="100"/>
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                    <small class=".text-dark font-weight-bold mb-0" data-bind="text: primaryTitle"></small>
-                    <small class=".text-dark font-weight-bold mb-0" data-bind="text: startYear"></small>
+    <div class="row" data-bind="foreach: popularTitles">
+        <div class="col-12 col-md-6 col-lg-3" data-bind="click: $parent.selectTitle">
+            <div class="card shadow-sm mb-3">
+                <img alt="title" class="card-img-top" data-bind="attr: { src: poster }" height="375"
+                     onerror="this.onerror=null;this.src='https://i.redd.it/yprohh8wtdd21.png';" width="100"/>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class=".text-dark font-weight-bold mb-0" data-bind="text: primaryTitle"></small>
+                        <small class=".text-dark font-weight-bold mb-0" data-bind="text: startYear"></small>
+                    </div>
+                    <!-- <div class="d-flex justify-content-between align-items-center">
+                         <small class="text-muted" data-bind="text: genres"></small>
+                         <small class="text-muted" data-bind="text: averageRating"></small>
+                     </div>-->
                 </div>
-               <!-- <div class="d-flex justify-content-between align-items-center">
-                    <small class="text-muted" data-bind="text: genres"></small>
-                    <small class="text-muted" data-bind="text: averageRating"></small>
-                </div>-->
             </div>
         </div>
     </div>
-</div>
-    
-    
+
+
     <div class="d-flex justify-content-between align-items-center">
         <div>
-            <button onclick="bottomFunction()" class="btn btn-primary" id="prevBtn" data-bind="click: showPrev, enable: enablePrev">Prev</button>
-            <button onclick="topFunction()" id="myBtn" class="btn btn-primary" data-bind="click: showNext, enable: enableNext">Next</button>
+            <button class="btn btn-primary" data-bind="click: showPrev, enable: enablePrev" id="prevBtn"
+                    onclick="bottomFunction()">Prev
+            </button>
+            <button class="btn btn-primary" data-bind="click: showNext, enable: enableNext" id="myBtn"
+                    onclick="topFunction()">Next
+            </button>
         </div>
-        <div class =".text-dark font-weight-bold">
-            Page size : <select class =".text-dark font-weight-bold" data-bind="options: pageSizes, selectedOptions: selectedPageSize"></select>
+        <div class=".text-dark font-weight-bold">
+            Page size : <select class=".text-dark font-weight-bold"
+                                data-bind="options: pageSizes, selectedOptions: selectedPageSize"></select>
         </div>
     </div>
-    
+
 </div>

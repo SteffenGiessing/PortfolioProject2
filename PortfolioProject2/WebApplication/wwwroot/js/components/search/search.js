@@ -6,13 +6,11 @@
         let primaryTitle = ko.observable();
         let averagerating = ko.observable();
         let poster = ko.observable();
-        let awards =  ko.observable();
-        let log = ko.observable("bob");
-        let searchActorString = params.actorSearchWord;
+        let awards = ko.observable();
         let selectedTitle = ko.observable();
         let averageRating = ko.observable();
         let numVotes = ko.observable();
-        
+
         let selectTitle = title => {
             selectedTitle(title);
             postman.publish('changeTitle', selectedTitle());
@@ -23,14 +21,9 @@
             console.log(titles())
         });
         
-        ds.searchForActor(searchActorString(), function (data) {
-           console.log(data) 
-        });
-
         return {
             selectTitle,
             selectedTitle,
-            log,
             titles,
             titleId,
             primaryTitle,

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using PortfolioProject2.Models.DMOs;
+﻿using System.Threading.Tasks;
 using WebApplication.DMOs;
 
 namespace WebApplication.DataInterfaces
@@ -15,6 +13,5 @@ namespace WebApplication.DataInterfaces
 
         Task<User_User> DeleteUser(User_User user);
         Task<User_User> UpdateUser(User_User user);
-
     }
 }

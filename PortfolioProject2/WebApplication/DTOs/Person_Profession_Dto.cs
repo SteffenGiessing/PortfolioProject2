@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace WebApplication.DTOs
+﻿namespace WebApplication.DTOs
 {
     public class Person_Profession_Dto
     {

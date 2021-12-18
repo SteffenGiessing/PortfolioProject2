@@ -1,14 +1,14 @@
 ﻿<div class="loginBody">
     <div class="loginBox">
-        <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+        <img class="user" height="100px" src="https://i.ibb.co/yVGxFPR/2.png" width="100px">
         <h3 class="signInUser">Sign in here</h3>
         <form method="post">
             <div class="inputBox">
-                <input id="email" data-bind="value: email" type="text" name="Email" placeholder="Enter your email">
-                <input id="password" data-bind="value: password" type="password" name="Password" placeholder="Password">
+                <input data-bind="value: email" id="email" name="Email" placeholder="Enter your email" type="text">
+                <input data-bind="value: password" id="password" name="Password" placeholder="Password" type="password">
             </div>
 
-            <input data-bind="click:loginUser" type="submit" name="" value="Login" >
+            <input data-bind="click:loginUser" name="" type="submit" value="Login">
         </form>
         <a class="passwordWord" href="#">Forget Password<br> </a>
 

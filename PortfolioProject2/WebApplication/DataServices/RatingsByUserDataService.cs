@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using System.Threading.Tasks;
 using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 
@@ -21,11 +17,8 @@ namespace WebApplication.DataServices
             };
             ctx.User_Ratings.Add(result);
             //check for connection to database
-            int a = await ctx.SaveChangesAsync();
-            if (a == 0)
-            {
-                return null;
-            }
+            var a = await ctx.SaveChangesAsync();
+            if (a == 0) return null;
             return result;
         }
     }

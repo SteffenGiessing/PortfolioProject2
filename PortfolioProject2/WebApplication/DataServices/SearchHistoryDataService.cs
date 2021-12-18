@@ -1,31 +1,15 @@
-﻿using System.Collections.Generic;
-using PortfolioProject2.Models;
-using User_History = WebApplication.DMOs.User_History;
-using ISearchHistoryDataService = WebApplication.DataInterfaces.ISearchHistoryDataService;
+﻿using System;
+using System.Collections.Generic;
+using WebApplication.DataInterfaces;
+using WebApplication.DMOs;
 
 namespace WebApplication.DataServices
 {
     public class SearchHistoryDataService : ISearchHistoryDataService
     {
-        // GET Search History
-        public IList<User_History> GetAllSearchHistoryFromOneUser(int userid)
-        {
-            List<User_History> result = new List<User_History>();
-            var ctx = new DatabaseConnection.DatabaseConnection();
-            foreach (var sh in ctx.User_History)
-            {
-                if (sh.UserId == userid)
-                {
-                    result.Add(sh);
-                }
-            }
-
-            return result;
-        }
-
         public IList<User_History> GetAllSearchHistoryFromOneUser(string userid)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         // Post Search History
@@ -38,14 +22,23 @@ namespace WebApplication.DataServices
                 UserId = userid
             };
             ctx.User_History.Add(result);
-            int a = ctx.SaveChanges();
-            if (a == 0)
-            {
-                return null;
-            }
+            var a = ctx.SaveChanges();
+            if (a == 0) return null;
             return result;
         }
-        
+
+        // GET Search History
+        public IList<User_History> GetAllSearchHistoryFromOneUser(int userid)
+        {
+            var result = new List<User_History>();
+            var ctx = new DatabaseConnection.DatabaseConnection();
+            foreach (var sh in ctx.User_History)
+                if (sh.UserId == userid)
+                    result.Add(sh);
+
+            return result;
+        }
+
         /*public User_History PostNewSearchHistory(User_History history)
         {
             using var ctx = new DatabaseConnection();
@@ -55,10 +48,10 @@ namespace WebApplication.DataServices
         
             return history;
         }*/
-        
-        
+
+
         // Utils
-        
+
         /*public string NewSearchId()
         {
             using var ctx = new DatabaseConnection();
@@ -83,4 +76,3 @@ namespace WebApplication.DataServices
         }*/
     }
 }
-

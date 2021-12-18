@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace WebApplication.DTOs
+﻿namespace WebApplication.DTOs
 {
     public class Titles_Dto
     {
@@ -13,7 +11,7 @@ namespace WebApplication.DTOs
         public string EndYear { get; set; }
         public int? RunTime { get; set; }
         public string Genres { get; set; }
-        
+
         public string Poster { get; set; }
     }
 }

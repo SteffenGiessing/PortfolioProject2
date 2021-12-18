@@ -5,18 +5,18 @@
     let searchWord = ko.observable().extend({
         validation: {
             message: "Please add a longer search string for better search results",
-            validator: function(value) {
+            validator: function (value) {
                 return value > 2
             }
         }
     });
     let actorSearchWord = ko.observable().extend({
-       validation: {
-           message: "Please add a longer search string for better search results",
-           validator: function(value) {
-               return value > 2
-           }
-       } 
+        validation: {
+            message: "Please add a longer search string for better search results",
+            validator: function (value) {
+                return value > 2
+            }
+        }
     });
 
 
@@ -46,7 +46,7 @@
             changeContent('loginUser');
         });
         */
-    
+
     postman.subscribe("changeUserView", component => {
         changeContent('loggedin');
     });

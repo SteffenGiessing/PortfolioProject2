@@ -1,12 +1,10 @@
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Security.Principal;
 using System.Text;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using PortfolioProject2.Models.DMOs;
 using WebApplication.DMOs;
-using IConfiguration = Microsoft.Extensions.Configuration.IConfiguration;
 
 namespace WebApplication.Token
 {
@@ -43,19 +41,19 @@ namespace WebApplication.Token
             {
                 tokenHandler.ValidateToken(authToken, new TokenValidationParameters
                 {
-
                     ValidateLifetime = true,
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidIssuer = issuer,
                     ValidAudience = audience,
-                    IssuerSigningKey = key,
-                }, out SecurityToken validatedToken);
+                    IssuerSigningKey = key
+                }, out var validatedToken);
             }
             catch
             {
                 return false;
             }
+
             return true;
         }
     }

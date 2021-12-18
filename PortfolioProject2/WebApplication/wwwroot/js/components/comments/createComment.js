@@ -1,7 +1,7 @@
 ﻿//define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
 
-let post= document.getElementById("post");
-post.addEventListener("click", function() {
+let post = document.getElementById("post");
+post.addEventListener("click", function () {
     let commentBoxValue = document.getElementById("commentField").value;
 
     let li = document.createElement("li");

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace WebApplication.DTOs
+﻿namespace WebApplication.DTOs
 {
     public class Omdb_Data_Dto
     {
