@@ -1,6 +1,7 @@
 using System;
 using System.Net.Sockets;
 using System.Security.Cryptography;
+using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Xunit;
@@ -10,6 +11,7 @@ using PortfolioProject2.Models.DMOs;
 using WebApplication.DataServices;
 using WebApplication.DMOs;
 using UserDataService = WebApplication.DataServices.UserDataService;
+using System.Linq;
 
 namespace WebApplication.Test
 {
@@ -24,7 +26,7 @@ namespace WebApplication.Test
             var client = Connect();
             Assert.True(client.Connected);
         }
-        
+
         //createuser and login 
         [Fact]
         public void CreateUser()
@@ -75,6 +77,79 @@ namespace WebApplication.Test
             Assert.Null(service.GetTitleBookmark("3", "tt11827694"));*/
         }
         
+       [Fact]
+        public void TitleSearch()
+        {
+            var service = new TitleDataService();
+            var search = service.TitleSearch("war").Result;
+            Assert.Equal("Star Wars: Episode VII - The Force Awakens", search.First().PrimaryTitle);
+        }
+        
+        [Fact]
+        public void GetTitleById()
+        {
+            var service = new TitleDataService();
+            var titles = service.GetTitleById("tt8769260").Result;
+            Assert.Equal("Encounter", titles.First().PrimaryTitle);
+        }
+        
+        //dont know why this one is failing
+        [Fact]
+        public void GetTitleByName()
+        {
+            var service = new TitleDataService();
+            var titles = service.GetTitleByName("Encounter").Result;
+            Assert.Equal("tt8769260", titles.First().TitleId);
+        }
+        
+        [Fact]
+        public void GetInfoSpecificTitle()
+        {
+            var service = new TitleDataService();
+            var titles = service.GetInfoSpecificTitle("tt8690890").Result;
+            Assert.Equal("Drama,Romance", titles.First().Genres);
+        }
+        
+        [Fact]
+        public void GetPersonKnownFor()
+        {
+            var service = new ActorDataService();
+            var actor = service.GetPersonKnownFor("nm0000035").Result;
+            Assert.Equal("tt0499549", actor.First().KnownForTitle);
+        }
+        
+        [Fact]
+        public void GetActorOnPid()
+        {
+            var service = new ActorDataService();
+            var actor = service.GetActorOnPid("nm0000001").Result;
+            Assert.Equal("Fred Astaire", actor.First().PrimaryName);
+        }
+
+        [Fact]
+        public void GetPersonProfessionByActorId()
+        {
+            var service = new ActorDataService();
+            var actor = service.GetPersonProfessionByActorId("nm0000001").Result;
+            Assert.Equal("soundtrack", actor.First().Profession);
+        }
+        
+        [Fact]
+        public void GetRatingBy()
+        {
+            var service = new RatingsDataService();
+            var rating = service.GetRatingBy("tt8769260").Result;
+            Assert.Equal(604, rating.First().NumVotes);
+        }
+        
+        [Fact]
+        public void GetBestMatchPersonName()
+        {
+            var service = new ActorDataService();
+            var actor = service.GetBestMatchPersonName("mads").Result;
+            Assert.Equal("Michael Madsen", actor.First().PrimaryName);
+        }
+        
         [Fact]
         public void GetTitleBookmarks()
         {
@@ -82,7 +157,7 @@ namespace WebApplication.Test
             var bookmarks = service.GetTitleBookmarks(1);
             Assert.Equal(3, bookmarks.Count);
         }
-        
+
         [Fact]
         public void GetNameBookmarks()
         {
@@ -106,13 +181,6 @@ namespace WebApplication.Test
             var service = new CommentsDataService();
        //     var comments = service.GetUserComments(1);
         //    Assert.Equal(3, comments.Count);
-        }
-        
-        [Fact]
-        public void CreateTitleComments()
-        {
-            var service = new CommentsDataService();
-        //    var newComment = service.CreateTitleComments(1, "tt10850402", "meh 2");
         }
 
         //searchhistory
@@ -171,6 +239,18 @@ namespace WebApplication.Test
             
             dataProvider.Password = getHash;
             dataProvider.PasswordSalt = getsalt;
+            return dataProvider;
+        }
+
+        private static User_Comments CreateCommetHelper()
+        {
+            var dataProvider = new User_Comments
+            {
+                UserId = 1,
+                TitleId = "tt10850402",
+                CommentText = "Meh",
+                CommentTime = DateTime.Now,
+            };
             return dataProvider;
         }
     }
