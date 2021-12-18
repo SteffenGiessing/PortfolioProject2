@@ -1,59 +1,61 @@
 define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
-    return function (params){
+    return function (params) {
         let firstName = ko.observable();
         let email = ko.observable();
         let password = ko.observable();
         let userId = ko.observable();
         let commentText = ko.observable();
         let titleIdBookMark = ko.observable();
-        
-        
+
+
         let changeFirstname = ko.observable();
         let changeLastname = ko.observable();
         let changeEmail = ko.observable();
         let changeUsername = ko.observable();
-        
+
         let userDetails = ko.observableArray([]);
         let titleId = ko.observableArray([]);
         let showComments = ko.observableArray([]);
         let showBookmarks = ko.observableArray([]);
-        
+
         let getUserData = () => {
             email = sessionStorage.getItem("email")
             ds.getUser(email, function (data) {
-               userDetails(data);
-               console.log(userDetails());
+                userDetails(data);
+                console.log(userDetails());
             });
         };
 
         getUserData();
-        
+
         let getUserComments = () => {
             ds.getUserComments(function (data) {
                 showComments(data)
-                console.log(data["commentText"] + "THIS DATA");
+                console.log(data);
             });
         }
 
-  /*      getUserComments();*/
+        getUserComments();
+
+        let getUserBookmarks = () => {
+            ds.getBookMarks(userId, function (data) {
+                showBookmarks(data)
+                console.log(showBookmarks());
+            });
+        }
+
+        getUserBookmarks();
+
         
+
         let updateUser = () => {
             userId = sessionStorage.getItem("userId")
-            ds.updateUser(userId, changeFirstname(), changeLastname(), changeEmail(), changeUsername() ,function(data){
-                
-            });
-        }
-        let getUserBookmarks = () => {
-            
-            ds.getBookMarks(userId ,function (data){
-                showBookmarks(data)
-            });
-        }
-        getUserBookmarks();
-        
-        
-        
+            ds.updateUser(userId, changeFirstname(), changeLastname(), changeEmail(), changeUsername(), function (data) {
 
+            });
+        }
+
+  
 
         /*postman.subscribe('changeUserView', function(data){
             data;
@@ -107,7 +109,6 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
             titleIdBookMark,
             getUserBookmarks,
             showBookmarks
-            /*            getComments*/
         };
     };
 });

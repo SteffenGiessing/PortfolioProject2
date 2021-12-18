@@ -89,7 +89,7 @@
             callback(json);
         });
     }
-
+    
     let loginUser = (email, password, callback) => {
         let data = {"EmailAddress": email, "Password": password};
         console.log(data);
@@ -103,10 +103,10 @@
             body: JSON.stringify(data)
         }).then(response => response.json()).then(response => localStorage.setItem('jwtToken', response.tokenJwt))
             .then(response => {
+                console.log(response);
+            })
+            .then(response => {
                 callback(response)
-            }).catch(error => {
-                return new alert("ERROR")
-                //console.error('ERROR: ', error)
             });
     }
     
@@ -162,7 +162,7 @@
             },
             method: 'GET',
         }).then(response => response.json()).then(json => {
-            console.log(json);
+            callback(json);
         });
     }
 

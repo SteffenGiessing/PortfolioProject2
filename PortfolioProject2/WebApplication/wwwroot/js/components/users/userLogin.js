@@ -21,9 +21,9 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
 
         let loginUser = () => {
             ds.loginUser(email(), password(), function(data) {
-                if(data["error"]){
-                    alert("ERROR")
-                }
+                // if(data['errors']){
+                //       alert("ERROR")
+                // }
                 getUser(email())
                 postman.publish('changeUserView');
             });
