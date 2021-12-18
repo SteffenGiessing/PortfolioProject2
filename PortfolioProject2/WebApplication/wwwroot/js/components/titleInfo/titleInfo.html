@@ -1,22 +1,130 @@
 ﻿<div class="titleInfoImg">
     <div class="overlayTitleInfo">
-       <div class="textMovie" data-bind="with: titles">
-                   <img class="img-fluid poster" data-bind="attr:{src: poster}" onerror=src="resources/image-placeholder.svg" />
-                   <h2 data-bind="text: primaryTitle"> </h2>
-                   <p>Plot: <span data-bind="text: plot"> </span> </p>
-                   <p>Start Year: <span data-bind="text: startYear"> </span> </p>
-                   <p>End Year: <span data-bind="text: endYear"> </span> </p>
-                   <p>Genres: <span data-bind="text: genres"> </span> </p>
-                   <p>Awards: <span data-bind="text: awards"> </span> </p>
-                   <p>Rating: <span data-bind="text: averageRating"> </span>  </p>
-           </div>
-       </div>
+
+        <div class="container h-100">
+            <div class="textMovie" data-bind="with: titles">
+                <!-- Breadcrumb -->
+                <!--                <nav aria-label="breadcrumb" class="main-breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a data-bind="text: primaryTitle"></a>
+                                            <a data-bind="text: genres"></a>
+                                            <a data-bind="text: averageRating"></a>
+                                        </li>
+                                    </ol>
+                                </nav>-->
+                <!-- /Breadcrumb -->
+                <div class="row gutters-sm">
+                    <div class="col-md-4 mb-3">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img class="img-fluid poster" data-bind="attr:{src: poster}"
+                                 onerror="this.onerror=null;this.src='https://i.redd.it/yprohh8wtdd21.png';">
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <span data-bind="text: primaryTitle"></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <span data-bind="text: plot"></span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 
+<!--
+<div class="titleInfoImg">
+    <div class="overlayTitleInfo">
+        <div class="container h-100">
+            <div class="textMovie" data-bind="with: titles">
+                &lt;!&ndash; Breadcrumb &ndash;&gt;
+                <nav aria-label="breadcrumb" class="main-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a data-bind="text: primaryTitle"></a></li>
+                    </ol>
+                </nav>
+                &lt;!&ndash; /Breadcrumb &ndash;&gt;
+                <div class="row gutters-sm">
+                    <div class="col-md-4 mb-3">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img class="img-fluid poster" data-bind="attr:{src: poster}" onerror=src="resources/image-placeholder.svg" />
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-3">
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <h6 class="mb-0">Plot</h6>
+                                <span data-bind="text: plot"></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Lastname</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <span data-bind="text: lastName"></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Username</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <span data-bind="text: userName"></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Email</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <span data-bind="text: emailAddress"></span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
 
 
+<!--
+<div class="mainThing">
+    <div data-bind="with: titles">
+        <div class="section">
+            <img class="img-fluid poster" data-bind="attr:{src: poster}" onerror=src="resources/image-placeholder.svg" />
+        </div>
+        <div class="textMovie" >
+            <h2 data-bind="text: primaryTitle"> </h2>
+            <p>Plot: <span data-bind="text: plot"> </span> </p>
+            <p>Start Year: <span data-bind="text: startYear"> </span> </p>
+            <p>End Year: <span data-bind="text: endYear"> </span> </p>
+            <p>Genres: <span data-bind="text: genres"> </span> </p>
+            <p>Awards: <span data-bind="text: awards"> </span> </p>
+            <p>Rating: <span data-bind="text: averageRating"> </span>  </p>
+        </div>
+    </div>
+</div>
+-->
 
 <!--
 <div>

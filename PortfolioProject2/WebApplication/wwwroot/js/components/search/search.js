@@ -7,7 +7,6 @@
         let averagerating = ko.observable();
         let poster = ko.observable();
         let awards =  ko.observable();
-        let log = ko.observable("bob");
         let searchActorString = params.actorSearchWord;
         let selectedTitle = ko.observable();
         let averageRating = ko.observable();
@@ -23,14 +22,10 @@
             console.log(titles())
         });
         
-        ds.searchForActor(searchActorString(), function (data) {
-           console.log(data) 
-        });
 
         return {
             selectTitle,
             selectedTitle,
-            log,
             titles,
             titleId,
             primaryTitle,
