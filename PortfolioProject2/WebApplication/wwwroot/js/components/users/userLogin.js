@@ -1,4 +1,5 @@
-﻿define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
+﻿
+define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
     return function (params){
         let email = ko.observable();
         let password = ko.observable();
@@ -20,6 +21,9 @@
 
         let loginUser = () => {
             ds.loginUser(email(), password(), function(data) {
+                if(data["error"]){
+                    alert("ERROR")
+                }
                 getUser(email())
                 postman.publish('changeUserView');
             });
