@@ -1,6 +1,6 @@
-﻿define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
+﻿define(['knockout', 'dataService', 'postman', "lib/knockout/build/output/knockout-latest"], function (ko, ds, postman, selectedPageSize) {
     return function (params) {
-        let titles = ko.observableArray([]);
+        let searchForTitles = ko.observableArray([]);
         let searchString = params.searchWord;
         let titleId = ko.observableArray([]);
         let primaryTitle = ko.observable();
@@ -17,11 +17,38 @@
             postman.publish('changeTitle', selectedTitle());
         }
 
+/*        let searchForTitles = url => {
+            ds.searchForTitles(url, data => {
+                prev(data.prev || undefined);
+                next(data.next || undefined);
+                searchForTitles(data.items);
+                console.log(searchForTitles());
+            })
+        }
+        */
         ds.searchForTitles(searchString(), function (data) {
             titles(data);
             console.log(titles())
         });
 
+        let showPrev = title => {
+            console.log(prev());
+            searchForTitles(prev());
+        }
+
+        let enablePrev = ko.computed(() => prev() !== undefined);
+
+        let showNext = title => {
+            console.log(next());
+            searchForTitles(next());
+        }
+
+        let enableNext = ko.computed(() => next() !== undefined);
+
+        selectedPageSize.subscribe(() => {
+            let size = selectedPageSize()[0];
+            searchForTitles(ds.searchForTitlesWithPageSize(size));
+        });
 
         return {
             selectTitle,

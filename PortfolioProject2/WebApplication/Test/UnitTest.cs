@@ -17,13 +17,13 @@ namespace WebApplication.Test
         private readonly Mock<IMapper> _mapperMock;
         private const int Port = 5000;
 
-        [Fact]
+        /*[Fact]
         public void TitleSearch()
         {
             var service = new TitleDataService();
             var search = service.TitleSearch("war").Result;
             Assert.Equal("Star Wars: Episode VII - The Force Awakens", search.First().PrimaryTitle);
-        }
+        }*/
 
         [Fact]
         public void GetTitleById()
