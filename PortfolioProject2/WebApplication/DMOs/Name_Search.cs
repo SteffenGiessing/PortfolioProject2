@@ -5,5 +5,7 @@
         public string Pid { get; set; }
 
         public string PrimaryName { get; set; }
+        public string Role { get; set; }
+
     }
 }
