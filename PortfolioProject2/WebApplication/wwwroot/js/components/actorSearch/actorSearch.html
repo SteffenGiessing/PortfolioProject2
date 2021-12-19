@@ -19,6 +19,37 @@
     </div>
 </div>-->
 
+<div class="col-lg-12 d-flex flex-column align-items-center">
+    <div class="col-lg-3 d-flex flex-row">
+        <input data-bind="value: searchActorString" class="form-control mr-sm-2" type="text"
+               placeholder="Search"
+               aria-label="Search...">
+        <button data-bind="click: getActorData" class="btn btn-primary my-2 my-sm-0"
+                data-toggle="button" aria-pressed="false" autocomplete="off" type="submit">Search
+        </button>
+    </div>
+    
+    <div class="col-lg-6 card mt-3" data-bind="foreach: actors">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6 class="mb-0 font-weight-bold">Full Name</h6>
+                </div>
+                <div class="col-sm-3 text-secondary">
+                    <span data-bind="text: primaryName"></span>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="mb-0 font-weight-bold">Role</h6>
+                </div>
+                <div class="col-sm-3 text-secondary">
+                    <span data-bind="text: role"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+
 <div class="actor">
     <div class="container" data-bind="">
         <div class="row">
@@ -54,4 +85,4 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->

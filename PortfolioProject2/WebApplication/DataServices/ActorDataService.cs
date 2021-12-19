@@ -58,7 +58,7 @@ namespace WebApplication.DataServices
         public async Task<List<NameSearch>> GetBestMatchPersonName(string searchWord)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
-            return await ctx.NameSearches.FromSqlRaw("SELECT pid, primaryname from actor_search({0})", searchWord)
+            return await ctx.NameSearches.FromSqlRaw("SELECT pid, primaryname, role from actor_search({0})", searchWord)
                 .ToListAsync();
         }
     }

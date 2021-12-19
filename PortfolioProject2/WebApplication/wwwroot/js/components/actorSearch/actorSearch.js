@@ -2,6 +2,7 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
     return function (params) {
         let actors = ko.observableArray([]);
         let primaryName = ko.observable();
+        let role = ko.observable();
         /* let searchActorString = params.actorSearchWord;*/
         let searchActorString = ko.observable();
         let selectedActor = ko.observable();
@@ -32,6 +33,7 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
 
 
         return {
+            role,
             primaryName,
             actors,
             getActorData,

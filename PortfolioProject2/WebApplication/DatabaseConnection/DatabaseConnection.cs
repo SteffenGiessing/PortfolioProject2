@@ -341,6 +341,7 @@ namespace WebApplication.DatabaseConnection
                 entity.HasNoKey();
                 entity.Property(x => x.Pid).HasColumnName("pid");
                 entity.Property(x => x.PrimaryName).HasColumnName("primaryname");
+                entity.Property(x => x.Role).HasColumnName("role");
             });
 
 
