@@ -15,8 +15,8 @@
         let awards = ko.observable();
         let averageRating = ko.observable();
         let numVotes = ko.observable();
-        
-        
+
+
         /* Switch from Popular Title to Title Informations*/
         let selectTitle = title => {
             selectedTitle(title);
@@ -32,7 +32,7 @@
                 console.log(popularTitles());
             })
         }
-        
+
         /*Call the popular titles function*/
         getPopularTitlesData();
 
@@ -55,7 +55,7 @@
             let size = selectedPageSize()[0];
             getPopularTitlesData(ds.getPopularUrlWithPageSize(size));
         });
-        
+
         return {
             popularTitles,
             //titleId,

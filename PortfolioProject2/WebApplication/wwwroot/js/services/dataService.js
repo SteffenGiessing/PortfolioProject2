@@ -113,6 +113,22 @@
             }));
     }
     
+    let createUser =  (firstname, lastname, username,emailaddress,password,callback) => {
+        let data ={"FirstName":firstname,"LastName":lastname,"UserName": username,"EmailAddresse": emailaddress,"Password": password}
+        console.log(data);
+        fetch("http://localhost:5000/api/user/create", {
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+            },
+            method: 'POST',
+            body: JSON.stringify(data)
+        }).then(response => response.Json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))
+            .then(response => {
+                callback(response)
+            }));
+    }
+    
 
     /*
     then(function (response) {
@@ -248,6 +264,7 @@
         addRating,
         searchForActor,
         updateUser,
-        getBookMarks
+        getBookMarks,
+        createUser
     }
 });

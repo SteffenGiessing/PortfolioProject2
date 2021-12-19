@@ -6,12 +6,12 @@
         let primaryTitle = ko.observable();
         let averagerating = ko.observable();
         let poster = ko.observable();
-        let awards =  ko.observable();
+        let awards = ko.observable();
         let searchActorString = params.actorSearchWord;
         let selectedTitle = ko.observable();
         let averageRating = ko.observable();
         let numVotes = ko.observable();
-        
+
         let selectTitle = title => {
             selectedTitle(title);
             postman.publish('changeTitle', selectedTitle());
@@ -21,7 +21,7 @@
             titles(data);
             console.log(titles())
         });
-        
+
 
         return {
             selectTitle,

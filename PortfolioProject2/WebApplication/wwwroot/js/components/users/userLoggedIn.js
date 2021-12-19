@@ -46,7 +46,6 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
 
         getUserBookmarks();
 
-        
 
         let updateUser = () => {
             userId = sessionStorage.getItem("userId")
@@ -55,7 +54,6 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
             });
         }
 
-  
 
         /*postman.subscribe('changeUserView', function(data){
             data;
