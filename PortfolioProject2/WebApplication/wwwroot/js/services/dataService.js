@@ -113,8 +113,8 @@
             }));
     }
     
-    let createUser =  (firstname, lastname, username,emailaddress,password,callback) => {
-        let data ={"FirstName":firstname,"LastName":lastname,"UserName": username,"EmailAddresse": emailaddress,"Password": password}
+    let createUser =  (firstname, lastname, username, emailaddress, password, callback) => {
+        let data ={"FirstName":firstname,"LastName":lastname,"UserName": username,"EmailAddress": emailaddress,"Password": password}
         console.log(data);
         fetch("http://localhost:5000/api/user/create", {
             headers: {
@@ -123,7 +123,7 @@
             },
             method: 'POST',
             body: JSON.stringify(data)
-        }).then(response => response.Json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))
+        }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))
             .then(response => {
                 callback(response)
             }));

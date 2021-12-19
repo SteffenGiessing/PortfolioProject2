@@ -32,7 +32,7 @@
                 
                 <div data-bind="value: menuElements"></div>
 
-                <form id="searchForm" class="form-inline my-2 my-lg-2">
+                <form id="searchForm" class="form-inline my-2 my-lg-2" onsubmit="event.preventDefault();" role="search">
                     <label id="labelSearch" for="search">Search for stuff</label>
                     <input data-bind="value: searchWord" id="search" type="search" placeholder="Search..." autofocus required />
                     <button id="goButton" data-bind="click:searchBtn" type="submit">Go</button>

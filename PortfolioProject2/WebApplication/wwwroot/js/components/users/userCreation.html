@@ -4,12 +4,13 @@
         <h3 class="signInUser">Sign in here</h3>
         <form method="post">
             <div class="inputBox">
-                <input id="email" data-bind="value: email" type="text" name="Email" placeholder="Enter your email">
-                <input id="password" data-bind="value: password" type="password" name="Password" placeholder="Password">
-                <input id="something" data-bind="value: password" type="password" name="Password" placeholder="Password">
-                <input id="else" data-bind="value: password" type="password" name="Password" placeholder="Password">
+                <input id="firstname" data-bind="value: firstname" type="text" name="Email" placeholder="Enter your first name">
+                <input id="lastname" data-bind="value: lastname" type="text" name="lastname" placeholder="Enter your last name">
+                <input id="username" data-bind="value: username" type="text" name="username" placeholder="Enter your username">
+                <input id="emailaddress" data-bind="value: emailaddress" type="text" name="emailaddress" placeholder="Enter your email">
+                <input id="password" data-bind="value: password" type="password" name="password" placeholder="Password">
             </div>
-            <input type="submit" name="" value="Register" >
+            <input data-bind="click: createuser" type="submit" name="" value="Register" >
         </form>
     </div>
 </div>
