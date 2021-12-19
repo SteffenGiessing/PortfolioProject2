@@ -25,7 +25,6 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
                 console.log(userDetails());
             });
         };
-
         getUserData();
 
         let getUserComments = () => {
@@ -34,7 +33,6 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
                 console.log(data);
             });
         }
-
         getUserComments();
 
         let getUserBookmarks = () => {
@@ -43,7 +41,6 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
                 console.log(showBookmarks());
             });
         }
-
         getUserBookmarks();
 
 

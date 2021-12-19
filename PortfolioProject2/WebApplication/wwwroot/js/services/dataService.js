@@ -181,10 +181,10 @@
             },
             method: 'GET',
         }).then(response => response.json()).then(json => {
-            console.log(json);
+            callback(json);
         });
     }
-
+    
     let addTitleReview = (userId, titleId, commentText, callback) => {
         userId = sessionStorage.getItem("userId");
         let data = {"UserId": userId, "TitleId": titleId, "CommentText": commentText};
@@ -205,9 +205,9 @@
             });
     };
 
-    let addRating = (userId, titleId, ratingNumber, callback) => {
-        sessionStorage.getItem("userId");
-        let data = {"UserId": userId, "TitleId": titleId, "ratingNumber": ratingNumber};
+    let addRating = (userId, titleId, ratenumber, callback) => {
+        userId = sessionStorage.getItem("userId");
+        let data = {"userId": userId, "TitleId": titleId, "ratingNumber": ratenumber};
         console.log(userId);
         console.log(titleId);
         console.log(ratingNumber);
