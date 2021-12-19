@@ -51,6 +51,10 @@
         changeContent('loggedin');
     });
 
+    postman.subscribe("userRegister", component => {
+        changeContent('register');
+    });
+    
     postman.subscribe("changeTitle", component => {
         changeContent('title-info');
     });

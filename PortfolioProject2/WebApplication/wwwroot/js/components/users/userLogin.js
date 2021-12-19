@@ -59,6 +59,7 @@
 
         let signInUserBtn = () => {
             console.log("sign in button clicked");
+            postman.publish('userRegister');
         }
 
 
