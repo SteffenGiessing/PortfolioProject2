@@ -373,4 +373,18 @@ html {
     .loginBody {
         background-size: cover;: fixed
     }
+    
+    /* TITLE INFO */
+    .titleInfoImg {
+        height: auto;
+    }
+
+    .overlayTitleInfo {
+        height: auto;
+    }
+    
+    #marginImage{
+        margin-top: 50px;
+    }
+
 }

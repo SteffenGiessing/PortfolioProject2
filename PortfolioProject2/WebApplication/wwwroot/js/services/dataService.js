@@ -206,7 +206,7 @@
     };
 
     let addRating = (userId, titleId, ratingNumber, callback) => {
-        userId = 80//sessionStorage.getItem("userId");
+        sessionStorage.getItem("userId");
         let data = {"UserId": userId, "TitleId": titleId, "ratingNumber": ratingNumber};
         console.log(userId);
         console.log(titleId);

@@ -1,64 +1,46 @@
 ﻿<div class="titleInfoImg">
     <div class="overlayTitleInfo">
-
         <div class="container h-100">
             <div class="textMovie" data-bind="with: titles">
-                <!-- Breadcrumb -->
-                <!--                <nav aria-label="breadcrumb" class="main-breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item">
-                                            <a data-bind="text: primaryTitle"></a>
-                                            <a data-bind="text: genres"></a>
-                                            <a data-bind="text: averageRating"></a>
-                                        </li>
-                                    </ol>
-                                </nav>-->
-                <!-- /Breadcrumb -->
-                <div class="row gutters-sm">
+                <div id="marginImage" class="row gutters-sm">
                     <div class="col-md-4 mb-3">
-                        <div class="d-flex flex-column align-items-center text-center">
+                        <div class="d-flex flex-column align-items-center text-center mb-3">
                             <img class="img-fluid poster" data-bind="attr:{src: poster}"
                                  onerror="this.onerror=null;this.src='https://i.redd.it/yprohh8wtdd21.png';">
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <button type="button" class="btn btn-primary" data-bind="click: $parent.addToBookmarks">Add to bookmarks +</button>
                         </div>
                     </div>
 
                     <div class="col-md-8">
                         <div class="row">
                             <div class="col-sm-9">
-                                <span data-bind="text: primaryTitle"></span>
+                                <h6 data-bind="text: primaryTitle"></h6>
                             </div>
                         </div>
-                        <hr>
                         <div class="row">
                             <div class="col-sm-9">
                                 <span data-bind="text: plot"></span>
                             </div>
                         </div>
+                        
                         <hr>
-                        <div class="row">
-                            <div class="col-sm-9">
-                                <button type="button" class="btn btn-primary" data-bind="click: $parent.addToBookmarks">Add to bookmarks +</button>
-                            </div>
-                        </div>
+                        
                         <div class="row">
                             <div class="col-sm-9">
                                 <form>
                                     <div class="form-group">
-                                        <h3>Rate the movie:</h3>
+                                        <span>Rate the movie:</span>
                                         <label for="rating">Rating (between 1 and 10):</label>
                                         <input id="rating" data-bind="value: $parent.ratingNumber" type="number"  min="1" max="10">
                                         <button type="button" class="btn btn-primary" data-bind="click: $parent.addRating">Submit Rating</button>
-                                        <h4>Write a Review:</h4>
-                                        <label for="exampleFormControlTextarea2">Title review:</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" data-bind="value: $parent.commentText"></textarea>
+                                       <hr>
+                                        <span>Write a Review:</span>
+                                        <textarea class="form-control mb-3" id="exampleFormControlTextarea2" rows="1" data-bind="value: $parent.commentText"></textarea>
                                         <button type="button" class="btn btn-primary" data-bind="click: $parent.addTitleReview">Submit Review</button>
                                     </div>
                                 </form>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-9">
-                                <button type="button" class="btn btn-primary" data-bind="click: $parent.addToBookmarks">Add to bookmarks +</button>
                             </div>
                         </div>
                     </div>
