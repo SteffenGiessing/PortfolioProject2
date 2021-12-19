@@ -28,7 +28,7 @@
 
         let commentText = ko.observable();
 
-        let ratenumber = ko.observable();
+        let rateNumber = ko.observable();
 
 
         postman.subscribe('changeTitle', title => {
@@ -54,7 +54,7 @@
         });*/
 
         let addRating = () => {
-            ds.addRating(userId(), titleId(), ratenumber(), function(data) {
+            ds.addRating(userId(), titleId(), rateNumber(), function(data) {
                 
             });
         }
@@ -75,7 +75,7 @@
             addTitleReview,
             commentText,
             addRating,
-            ratenumber
+            rateNumber
         }
     }
 });

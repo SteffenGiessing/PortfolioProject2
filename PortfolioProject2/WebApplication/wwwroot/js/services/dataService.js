@@ -205,12 +205,12 @@
             });
     };
 
-    let addRating = (userId, titleId, ratenumber, callback) => {
+    let addRating = (userId, titleId, rateNumber, callback) => {
         userId = sessionStorage.getItem("userId");
-        let data = {"userId": userId, "TitleId": titleId, "ratingNumber": ratenumber};
+        let data = {"userId": userId, "TitleId": titleId, "rateNumber": rateNumber};
         console.log(userId);
         console.log(titleId);
-        console.log(ratingNumber);
+        console.log(rateNumber);
         fetch("http://localhost:5000/api/ratings/add/userrating/", {
             headers: {
                 'Content-Type': 'application/json',
