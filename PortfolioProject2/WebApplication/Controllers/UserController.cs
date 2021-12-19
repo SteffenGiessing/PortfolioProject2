@@ -110,7 +110,7 @@ namespace WebApplication.Controllers
             public IActionResult DeleteUser(User_User user)
             {
                 var deleteUser = _iDataServices.DeleteUser(user).Result;
-                return Ok(deleteUser);
+                return Ok();
             }
 
             [HttpPost("update")]
