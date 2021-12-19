@@ -123,10 +123,10 @@
             },
             method: 'POST',
             body: JSON.stringify(data)
-        }).then(response => response.json().then(response => localStorage.setItem('jwtToken', response.tokenJwt))
+        }).then(response => response.json()).then(response => localStorage.setItem('jwtToken', response.tokenJwt))
             .then(response => {
                 callback(response)
-            }));
+            });
     }
     
 
