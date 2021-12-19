@@ -60,6 +60,7 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
 
         let signInUserBtn = () =>{
             console.log("sign in button clicked");
+            postman.publish('userRegister');
         }
 
 

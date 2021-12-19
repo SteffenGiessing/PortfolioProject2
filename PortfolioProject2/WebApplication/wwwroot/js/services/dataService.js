@@ -89,6 +89,12 @@
             callback(json);
         });
     }
+    
+/*
+    letCreateUser = (callback) => {
+        let 
+    }
+*/
 
     let loginUser = (email, password, callback) => {
         let data = {"EmailAddress": email, "Password": password};

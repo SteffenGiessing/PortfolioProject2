@@ -47,6 +47,10 @@
         });
         */
     
+    postman.subscribe("userRegister", component => {
+        changeContent('register');
+    });
+
     postman.subscribe("changeUserView", component => {
         changeContent('loggedin');
     });
