@@ -1,17 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using PortfolioProject2.Models.DataInterfaces;
-using PortfolioProject2.Models.DMOs;
-using WebApplication.DatabaseConnection;
+using WebApplication.DataInterfaces;
+using WebApplication.DMOs;
 
-namespace PortfolioProject2.Models.DataServices
+namespace WebApplication.DataServices
 {
     public class OmdbDataService : IOmdbDataService
     {
         public async Task<List<Omdb_Data>> GetOmdbById(string id)
         {
-            var ctx = new DatabaseConnection();
+            var ctx = new DatabaseConnection.DatabaseConnection();
             return await ctx.Omdb_Data.FromSqlRaw("SELECT * FROM omdb_data WHERE titleid = {0}", id).ToListAsync();
         }
     }

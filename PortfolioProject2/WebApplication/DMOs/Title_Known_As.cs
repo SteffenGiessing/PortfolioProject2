@@ -1,4 +1,4 @@
-namespace PortfolioProject2.Models.DMOs
+namespace WebApplication.DMOs
 {
     public class Title_Known_As
     {
@@ -10,6 +10,5 @@ namespace PortfolioProject2.Models.DMOs
         public string Types { get; set; }
         public string Attributes { get; set; }
         public bool IsOriginalTitle { get; set; }
-
     }
 }

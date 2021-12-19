@@ -9,81 +9,75 @@ using ICommentsDataService = WebApplication.DataInterfaces.ICommentsDataService;
 #nullable enable
 using System;
 using System.Collections.Generic;
-using PortfolioProject2.Models.DMOs;
 
 namespace WebApplication.Controllers
 {
     [ApiController]
     [Route("api/comments")]
-    
-        public class CommentsController : Controller
+    public class CommentsController : Controller
+    {
+        private readonly IConfiguration _config;
+        private readonly ICommentsDataService _iDataServices;
+
+        public CommentsController(ICommentsDataService dataServices, IConfiguration configuration)
         {
-            private readonly IConfiguration _config;
-            private readonly ICommentsDataService _iDataServices;
+            _iDataServices = dataServices;
+            _config = configuration;
+        }
 
-            public CommentsController(ICommentsDataService dataServices, IConfiguration configuration)
+        // Get Comments6
+        [HttpGet]
+        public ActionResult<IEnumerable<User_Comments>> GetAllComments()
+        {
+            var comments = _iDataServices.GetAllComments();
+            return Ok(comments);
+        }
+
+        [HttpGet("{userid}/comments")]
+        public IActionResult GetUserComments(int userid, [FromHeader] TokenChecker getHeaders)
+        {
+            //THIS STEP AUTHENTICATES THE FRONT END IT IS NEEDED EVERYTIME USER HAS TO INTERACT WITH THE SYSTEM
+            //  var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+            //  if (token == true)
+            //   {
+            var userComments = _iDataServices.GetUserComments(userid).Result;
+
+            //     if (userComments == null)
+            //      {
+            //        return NotFound();
+            //    }
+
+            return Ok(userComments);
+        }
+
+        //   return Unauthorized();
+        // }
+
+        [HttpGet("{titleid}")]
+        public IActionResult GetCommentsFromTitle(string? titleid)
+        {
+            var allCommentsFromOneTitle = _iDataServices.GetCommentsFromTitle(titleid);
+            return Ok(allCommentsFromOneTitle);
+        }
+
+
+        // Get Post Comments
+        [HttpPost("add/usercomment/")]
+        public IActionResult CreateTitleComments(User_Comments userComments, [FromHeader] TokenChecker getHeaders)
+        {
+            var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+            if (token == true)
             {
-                _iDataServices = dataServices;
-                _config = configuration;
-
-            }
-
-            // Get Comments6
-            [HttpGet]
-            public ActionResult<IEnumerable<User_Comments>> GetAllComments()
-            {
-                var comments = _iDataServices.GetAllComments();
-                return Ok(comments);
-            }
-
-            [HttpGet("{userid}/comments")]
-            public IActionResult GetUserComments(int userid, [FromHeader] TokenChecker getHeaders)
-            {
-                //THIS STEP AUTHENTICATES THE FRONT END IT IS NEEDED EVERYTIME USER HAS TO INTERACT WITH THE SYSTEM
-              //  var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-              //  if (token == true)
-             //   {
-                    var userComments = _iDataServices.GetUserComments(userid).Result;
-                    
-               //     if (userComments == null)
-              //      {
-                //        return NotFound();
-                //    }
-                    
-                    return Ok(userComments);
+                var createComment = _iDataServices.CreateTitleComments(userComments).Result;
+                if (createComment == null)
+                {
+                    return NotFound();
                 }
 
-             //   return Unauthorized();
-           // }
-
-            [HttpGet("{titleid}")]
-            public IActionResult GetCommentsFromTitle(string? titleid)
-            {
-                
-                var allCommentsFromOneTitle = _iDataServices.GetCommentsFromTitle(titleid);
-                return Ok(allCommentsFromOneTitle);
+                return Ok(createComment);
             }
-            
-            
-            // Get Post Comments
-            [HttpPost("add/usercomment/")]
-            
-            public IActionResult CreateTitleComments(User_Comments userComments, [FromHeader] TokenChecker getHeaders)
-            {
-                var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-                if (token == true)
-                {
-                    var createComment = _iDataServices.CreateTitleComments(userComments).Result;
-                    if (createComment == null)
-                    {
-                        return NotFound();
-                    }
 
-                    return Ok(createComment);
-                } 
-                return Unauthorized();
-            }
+            return Unauthorized();
         }
+    }
 }
-
-

@@ -11,18 +11,19 @@ namespace WebApplication.Controllers
     [ApiController]
     [Route("api/history")]
     public class SearchHistoryController : Controller
-        {
-            private readonly ISearchHistoryDataService _iDataServices;
-            private readonly IMapper _mapper;
-            private readonly IConfiguration _config;
+    {
+        private readonly ISearchHistoryDataService _iDataServices;
+        private readonly IMapper _mapper;
+        private readonly IConfiguration _config;
 
-            public SearchHistoryController(ISearchHistoryDataService dataServices, IMapper mapper, IConfiguration configuration)
-            {
-                _iDataServices = dataServices;
-                _mapper = mapper;
-                _config = configuration;
-            }
-            
+        public SearchHistoryController(ISearchHistoryDataService dataServices, IMapper mapper,
+            IConfiguration configuration)
+        {
+            _iDataServices = dataServices;
+            _mapper = mapper;
+            _config = configuration;
+        }
+
         //Search History
         [HttpGet("historySearch/{userid}")]
         public IActionResult GetAllSearchHistoryFromOneUser(string? userid)
@@ -30,7 +31,7 @@ namespace WebApplication.Controllers
             var searchHistoryUser = _iDataServices.GetAllSearchHistoryFromOneUser(userid);
             return Ok(searchHistoryUser);
         }
-            
+
         [HttpPost("postSearchHistory")]
         public IActionResult PostNewSearchHistory(string searchtext, int userid)
         {

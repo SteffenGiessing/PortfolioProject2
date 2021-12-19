@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using PortfolioProject2.Models.DMOs;
+using WebApplication.DMOs;
 
-namespace PortfolioProject2.Models.DataInterfaces
+namespace WebApplication.DataInterfaces
 {
     public interface IOmdbDataService
     {

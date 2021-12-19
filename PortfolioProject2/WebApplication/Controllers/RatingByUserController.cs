@@ -11,7 +11,6 @@ namespace WebApplication.Controllers
 {
     [ApiController]
     [Route("api/ratings")]
-    
     public class RatingByUserController : Controller
     {
         private readonly IConfiguration _config;
@@ -21,9 +20,8 @@ namespace WebApplication.Controllers
         {
             _iDataServices = dataServices;
             _config = configuration;
-
         }
-        
+
         [HttpPost("add/userrating/")]
         public IActionResult CreateTitleRating(User_Ratings userRating, [FromHeader] TokenChecker getHeaders)
         {
@@ -35,10 +33,11 @@ namespace WebApplication.Controllers
                 {
                     return NotFound();
                 }
+
                 return Ok(creatRating);
             }
+
             return Unauthorized();
         }
-
     }
 }

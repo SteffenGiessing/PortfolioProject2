@@ -1,11 +1,9 @@
 using System;
-using PortfolioProject2.Models.DataServices;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PortfolioProject2.Models.DataInterfaces;
-using PortfolioProject2.Models.DMOs;
 using PortfolioProject2.Models;
 using WebApplication.DataInterfaces;
 using WebApplication.DataServices;

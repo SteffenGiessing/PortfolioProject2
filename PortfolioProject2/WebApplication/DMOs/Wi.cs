@@ -1,4 +1,4 @@
-namespace PortfolioProject2.Models.DMOs
+namespace WebApplication.DMOs
 {
     public class Wi
     {
@@ -6,6 +6,5 @@ namespace PortfolioProject2.Models.DMOs
         public string Word { get; set; }
         public string Field { get; set; }
         public string Lexeme { get; set; }
-
     }
 }

@@ -1,9 +1,8 @@
-namespace PortfolioProject2.Models.DMOs
+namespace WebApplication.DMOs
 {
     public class Genre
     {
-        public string TitleId { get; set;}
-        public string Genres { get; set;}
-
+        public string TitleId { get; set; }
+        public string Genres { get; set; }
     }
 }

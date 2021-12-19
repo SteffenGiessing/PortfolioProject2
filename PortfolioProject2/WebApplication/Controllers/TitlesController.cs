@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using PortfolioProject2;
 using PortfolioProject2.Models.DataInterfaces;
-using PortfolioProject2.Models.DMOs;
 using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 using WebApplication.ViewModels;
@@ -16,7 +15,7 @@ using WebApplication.ViewModels;
 namespace WebApplication.Controllers
 {
     [ApiController]
-        [Route("api/titles")]
+    [Route("api/titles")]
     public class TitlesController : Controller
     {
         private readonly ITitlesDataService _iDataServices;
@@ -29,7 +28,7 @@ namespace WebApplication.Controllers
             _linkGenerator = linkGenerator;
             _mapper = mapper;
         }
-        
+
         [HttpGet(Name = nameof(GetTitles))]
         public IActionResult GetTitles([FromQuery] QueryString queryString)
         {
@@ -41,7 +40,7 @@ namespace WebApplication.Controllers
 
             return Ok(result);
         }
-        
+
         [HttpGet("populartitles", Name = nameof(GetPopularTitles))]
         public IActionResult GetPopularTitles([FromQuery] QueryString queryString)
         {
@@ -50,7 +49,7 @@ namespace WebApplication.Controllers
             var result = CreateResultModelForPopular(queryString, _iDataServices.NumberOffProducts(), items);
             return Ok(result);
         }
-        
+
         /*[HttpGet("searchresult/{titlesearch}", Name = nameof(TitleSearch))]
         public IActionResult TitleSearch([FromQuery] QueryString queryString, string titleSearch)
         {
@@ -59,7 +58,7 @@ namespace WebApplication.Controllers
             var result = CreateResultModelForSearch(queryString, _iDataServices.NumberOffProducts(), items);
             return Ok(result);
         }*/
-        
+
         [HttpGet("searchresult/{titlesearch}")]
         public async Task<ActionResult<TitleSearch>> TitleSearch(string titlesearch)
         {
@@ -67,26 +66,26 @@ namespace WebApplication.Controllers
             var titleName = _iDataServices.TitleSearch(titlesearch).Result;
             return Ok(titleName);
         }
-        
+
         [HttpGet("{titleId?}")]
         public async Task<ActionResult<Titles>> getTitleById(string? titleId)
         {
-            var titles =  _iDataServices.GetTitleById(titleId).Result;
+            var titles = _iDataServices.GetTitleById(titleId).Result;
             return Ok(titles);
         }
-        
+
         [HttpGet("result/{titleName}")]
         public async Task<ActionResult<Titles>> getTitleByName(string? titleName)
         {
-            var nameTitles =  _iDataServices.GetTitleByName(titleName).Result;
+            var nameTitles = _iDataServices.GetTitleByName(titleName).Result;
             return Ok(nameTitles);
         }
-        
+
 
         [HttpGet("titleinfo/{titleid?}")]
         public async Task<ActionResult<Title_Info>> GetInfoSpecificTitle(string? titleid)
         {
-            var titleInfo =  _iDataServices.GetInfoSpecificTitle(titleid).Result;
+            var titleInfo = _iDataServices.GetInfoSpecificTitle(titleid).Result;
             return Ok(titleInfo);
         }
         /*
@@ -97,15 +96,16 @@ namespace WebApplication.Controllers
             return Ok(personKnownFor);
         }
          */
-        
+
         // Helper Methods // 
         private static int GetLastPage(int pageSize, int total)
         {
-            return (int)Math.Ceiling(total / (double)pageSize) - 1;
+            return (int) Math.Ceiling(total / (double) pageSize) - 1;
         }
-        
+
         // For popular Titles
-        private object CreateResultModelForPopular(QueryString queryString, int total, IEnumerable<PopularListViewModel> model)
+        private object CreateResultModelForPopular(QueryString queryString, int total,
+            IEnumerable<PopularListViewModel> model)
         {
             return new
             {
@@ -116,31 +116,35 @@ namespace WebApplication.Controllers
                 items = model
             };
         }
-        
+
         private string? CreateNextPageLinkForPopular(QueryString queryString, int total)
         {
             var lastPage = GetLastPage(queryString.PageSize, total);
-            return queryString.Page >= lastPage ? null : GetPopularTitleUrl(queryString.Page + 1, queryString.PageSize, queryString.OrderBy);
+            return queryString.Page >= lastPage
+                ? null
+                : GetPopularTitleUrl(queryString.Page + 1, queryString.PageSize, queryString.OrderBy);
         }
 
         private string? CreateCurrentPageLinkForPopular(QueryString queryString)
         {
             return GetPopularTitleUrl(queryString.Page, queryString.PageSize, queryString.OrderBy);
         }
-        
+
         private string? CreatePrevPageLinkForPopular(QueryString queryString)
         {
-            return queryString.Page <= 0 ? null : GetPopularTitleUrl(queryString.Page - 1, queryString.PageSize, queryString.OrderBy);
+            return queryString.Page <= 0
+                ? null
+                : GetPopularTitleUrl(queryString.Page - 1, queryString.PageSize, queryString.OrderBy);
         }
-        
+
         private string? GetPopularTitleUrl(int page, int pageSize, string orderBy)
         {
             return _linkGenerator.GetUriByName(
                 HttpContext,
                 nameof(GetPopularTitles),
-                new { page, pageSize, orderBy });
+                new {page, pageSize, orderBy});
         }
-        
+
         private PopularViewModel CreatePopularViewModel(PopularTitles popularTitles)
         {
             var model = _mapper.Map<PopularViewModel>(popularTitles);
@@ -154,14 +158,15 @@ namespace WebApplication.Controllers
             model.Url = PopularTitleUrl(popularTitles);
             return model;
         }
-        
+
         private string? PopularTitleUrl(PopularTitles popularTitles)
         {
-            return _linkGenerator.GetUriByName(HttpContext, nameof(GetPopularTitles), new { popularTitles.TitleId });
+            return _linkGenerator.GetUriByName(HttpContext, nameof(GetPopularTitles), new {popularTitles.TitleId});
         }
 
-           // For Searched Titles
-        private object CreateResultModelForSearch(QueryString queryString, int total, IEnumerable<SearchListViewModel> model)
+        // For Searched Titles
+        private object CreateResultModelForSearch(QueryString queryString, int total,
+            IEnumerable<SearchListViewModel> model)
         {
             return new
             {
@@ -172,21 +177,25 @@ namespace WebApplication.Controllers
                 items = model
             };
         }
-        
+
         private string? CreateNextPageLinkForSearch(QueryString queryString, int total)
         {
             var lastPage = GetLastPage(queryString.PageSize, total);
-            return queryString.Page >= lastPage ? null : GetSearchTitleUrl(queryString.Page + 1, queryString.PageSize, queryString.OrderBy);
+            return queryString.Page >= lastPage
+                ? null
+                : GetSearchTitleUrl(queryString.Page + 1, queryString.PageSize, queryString.OrderBy);
         }
 
         private string? CreateCurrentPageLinkForSearch(QueryString queryString)
         {
             return GetSearchTitleUrl(queryString.Page, queryString.PageSize, queryString.OrderBy);
         }
-        
+
         private string? CreatePrevPageLinkForSearch(QueryString queryString)
         {
-            return queryString.Page <= 0 ? null : GetSearchTitleUrl(queryString.Page - 1, queryString.PageSize, queryString.OrderBy);
+            return queryString.Page <= 0
+                ? null
+                : GetSearchTitleUrl(queryString.Page - 1, queryString.PageSize, queryString.OrderBy);
         }
 
         private string? GetSearchTitleUrl(int page, int pageSize, string orderBy)
@@ -194,10 +203,10 @@ namespace WebApplication.Controllers
             return _linkGenerator.GetUriByName(
                 HttpContext,
                 nameof(TitleSearch),
-                new { page, pageSize, orderBy });
+                new {page, pageSize, orderBy});
         }
-        
-        
+
+
         private SearchViewModel CreateSearchViewModel(TitleSearch titleSearch)
         {
             var model = _mapper.Map<SearchViewModel>(titleSearch);
@@ -214,9 +223,9 @@ namespace WebApplication.Controllers
 
         private string? GetSearcheUrl(TitleSearch titleSearch)
         {
-            return _linkGenerator.GetUriByName(HttpContext, nameof(TitleSearch), new { titleSearch.TitleId });
+            return _linkGenerator.GetUriByName(HttpContext, nameof(TitleSearch), new {titleSearch.TitleId});
         }
-        
+
         // For all Titles
         private object CreateResultModel(QueryString queryString, int total, IEnumerable<TitleListViewModel> model)
         {
@@ -229,21 +238,25 @@ namespace WebApplication.Controllers
                 items = model
             };
         }
-        
+
         private string? CreateNextPageLink(QueryString queryString, int total)
         {
             var lastPage = GetLastPage(queryString.PageSize, total);
-            return queryString.Page >= lastPage ? null : GetTitlesUrl(queryString.Page + 1, queryString.PageSize, queryString.OrderBy);
+            return queryString.Page >= lastPage
+                ? null
+                : GetTitlesUrl(queryString.Page + 1, queryString.PageSize, queryString.OrderBy);
         }
 
         private string? CreateCurrentPageLink(QueryString queryString)
         {
             return GetTitlesUrl(queryString.Page, queryString.PageSize, queryString.OrderBy);
         }
-        
+
         private string? CreatePrevPageLink(QueryString queryString)
         {
-            return queryString.Page <= 0 ? null : GetTitlesUrl(queryString.Page - 1, queryString.PageSize, queryString.OrderBy);
+            return queryString.Page <= 0
+                ? null
+                : GetTitlesUrl(queryString.Page - 1, queryString.PageSize, queryString.OrderBy);
         }
 
         private string? GetTitlesUrl(int page, int pageSize, string orderBy)
@@ -251,10 +264,10 @@ namespace WebApplication.Controllers
             return _linkGenerator.GetUriByName(
                 HttpContext,
                 nameof(GetTitles),
-                new { page, pageSize, orderBy });
+                new {page, pageSize, orderBy});
         }
-        
-        
+
+
         private TitleViewModel CreateTitleViewModel(Titles titles)
         {
             var model = _mapper.Map<TitleViewModel>(titles);
@@ -271,8 +284,7 @@ namespace WebApplication.Controllers
 
         private string? GetTitleUrl(Titles titles)
         {
-            return _linkGenerator.GetUriByName(HttpContext, nameof(GetTitles), new { titles.TitleId });
+            return _linkGenerator.GetUriByName(HttpContext, nameof(GetTitles), new {titles.TitleId});
         }
-        
     }
 }

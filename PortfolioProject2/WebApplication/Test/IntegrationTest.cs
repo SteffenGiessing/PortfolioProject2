@@ -17,10 +17,10 @@ namespace WebApplication.Test
     */
     public class IntegrationTest
     {
-
         private const string UserApi = "http://localhost:5000/api/user";
 
         private const string TitleApi = "http://localhost:5000/api/titles";
+
         /*
          * User specific test
          */
@@ -34,7 +34,7 @@ namespace WebApplication.Test
                 Password = "1"
             };
             var (user, statuscode) = Post(specificUserUrl, newUser);
-            
+
             Assert.Equal(HttpStatusCode.NotFound, statuscode);
         }
 
@@ -48,7 +48,7 @@ namespace WebApplication.Test
                 Password = "1"
             };
             var (user, statuscode) = Post(specificUserUrl, newUser);
-            
+
             Assert.Equal(HttpStatusCode.OK, statuscode);
         }
 
@@ -58,11 +58,11 @@ namespace WebApplication.Test
             string specificUserUrl = UserApi + "/create";
             var newUser = new
             {
-                FirstName= "testfirstname",
-                LastName= "testlastname",
-                UserName= "usernameTest",
-                EmailAddress= "test@test.com",
-                Password= "100"
+                FirstName = "testfirstname",
+                LastName = "testlastname",
+                UserName = "usernameTest",
+                EmailAddress = "test@test.com",
+                Password = "100"
             };
             var (user, statuscode) = Post(specificUserUrl, newUser);
             Assert.Equal(HttpStatusCode.OK, statuscode);
@@ -98,7 +98,7 @@ namespace WebApplication.Test
             var foundTitle = "nothing";
             string specificTitleUrl = TitleApi + "/searchresult/star";
             var (data, statusCode) = Get(specificTitleUrl);
-            
+
             Assert.Equal(HttpStatusCode.OK, statusCode);
             foreach (var findTitle in data)
             {
@@ -108,6 +108,7 @@ namespace WebApplication.Test
                     foundTitle = title;
                 }
             }
+
             Assert.Equal("Star Wars: Episode VII - The Force Awakens", foundTitle);
         }
 
@@ -123,7 +124,7 @@ namespace WebApplication.Test
             return ((JObject) JsonConvert.DeserializeObject(data), response.StatusCode);
         }
 
-       (JObject, HttpStatusCode) Delete(string url, object body)
+        (JObject, HttpStatusCode) Delete(string url, object body)
         {
             var client = new HttpClient();
             var request = new HttpRequestMessage(System.Net.Http.HttpMethod.Delete, url);
@@ -133,13 +134,12 @@ namespace WebApplication.Test
             return ((JObject) JsonConvert.DeserializeObject(data), response.StatusCode);
         }
 
-       (JArray, HttpStatusCode) Get(string url)
-       {
-           var client = new HttpClient();
-           var response = client.GetAsync(url).Result;
-           var data = response.Content.ReadAsStringAsync().Result;
-           return ((JArray) JsonConvert.DeserializeObject(data), response.StatusCode);
-       }
-        
+        (JArray, HttpStatusCode) Get(string url)
+        {
+            var client = new HttpClient();
+            var response = client.GetAsync(url).Result;
+            var data = response.Content.ReadAsStringAsync().Result;
+            return ((JArray) JsonConvert.DeserializeObject(data), response.StatusCode);
+        }
     }
 }

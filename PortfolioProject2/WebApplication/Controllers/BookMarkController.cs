@@ -8,8 +8,8 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using PortfolioProject2;
 using PortfolioProject2.Models.DataInterfaces;
-using PortfolioProject2.Models.DMOs;
 using WebApplication.DataInterfaces;
+using WebApplication.DMOs;
 using WebApplication.DTOs;
 using WebApplication.Token;
 using WebApplication.ViewModels;
@@ -26,16 +26,17 @@ namespace WebApplication.Controllers
         private readonly LinkGenerator _linkGenerator;
         private readonly IMapper _mapper;
 
-        public BookMarkController(IBookMarkDataService bookmarkdataservice, LinkGenerator linkGenerator, IMapper mapper, IConfiguration config)
+        public BookMarkController(IBookMarkDataService bookmarkdataservice, LinkGenerator linkGenerator, IMapper mapper,
+            IConfiguration config)
         {
             _iBookMarkDataService = bookmarkdataservice;
             _linkGenerator = linkGenerator;
             _mapper = mapper;
             _config = config;
         }
-        
+
         //for titles bookmark
-        
+
         [HttpGet("{userid}/titlebookmarks/{titleid}")]
         public IActionResult GetTitleBookmark(int userid, string titleid)
         {
@@ -47,45 +48,45 @@ namespace WebApplication.Controllers
 
             return Ok(titleBookmark);
         }
-        
+
         [HttpGet("{userid}/titlebookmarks")]
         public IActionResult GetTitleBookmarks(int userid, [FromHeader] TokenChecker getHeaders)
         {
             //var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-           // if (token == true)
-           // {
-                var titleBookmarks = _iBookMarkDataService.GetTitleBookmarks(userid);
-              //  if (titleBookmarks == null)
-                //{
-               //     return NotFound();
-              //  }
+            // if (token == true)
+            // {
+            var titleBookmarks = _iBookMarkDataService.GetTitleBookmarks(userid);
+            //  if (titleBookmarks == null)
+            //{
+            //     return NotFound();
+            //  }
 
-                return Ok(titleBookmarks);
-         //   }
+            return Ok(titleBookmarks);
+            //   }
 
-         //   return Unauthorized();
+            //   return Unauthorized();
         }
-            
-        
+
+
         [HttpPost("{userid}/titlebookmarks/{titleid}")]
         public IActionResult CreateTitleBookmark(int userid, string titleid, [FromHeader] TokenChecker getHeaders)
         {
-        //    var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-          //  if (token == true)
-           // {
-                var titleBookmark = _iBookMarkDataService.CreateTitleBookmark(userid, titleid);
-             //   if (titleBookmark == null)
-             //   {
-              //      return NotFound();
+            //    var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+            //  if (token == true)
+            // {
+            var titleBookmark = _iBookMarkDataService.CreateTitleBookmark(userid, titleid);
+            //   if (titleBookmark == null)
+            //   {
+            //      return NotFound();
             //    }
 
-                return Ok(titleBookmark);
-            }
+            return Ok(titleBookmark);
+        }
 
-          //  return Unauthorized();
+        //  return Unauthorized();
         //}
-        
-        
+
+
         [HttpDelete("{userid}/titlebookmarks/{titleid}")]
         public IActionResult DeleteTitleBookmark(int userid, string titleid)
         {
@@ -97,9 +98,9 @@ namespace WebApplication.Controllers
 
             return NotFound();
         }
-        
+
         //for actor bookmark
-        
+
         [HttpGet("{userid}/namebookmarks/{pid}")]
         public IActionResult GetNameBookmark(int userid, string pid)
         {
@@ -111,7 +112,7 @@ namespace WebApplication.Controllers
 
             return Ok(nameBookmark);
         }
-        
+
         [HttpGet("{userid}/namebookmarks")]
         public IActionResult GetNameBookmarks(int userid)
         {
@@ -120,6 +121,7 @@ namespace WebApplication.Controllers
             {
                 return NotFound();
             }
+
             return Ok(nameBookmarks);
         }
 
@@ -129,6 +131,5 @@ namespace WebApplication.Controllers
             var result = _iBookMarkDataService.CreateNameBookmark(nameBookmark.UserId, nameBookmark.Pid);
             return Ok(result);
         }
-        
     }
 }

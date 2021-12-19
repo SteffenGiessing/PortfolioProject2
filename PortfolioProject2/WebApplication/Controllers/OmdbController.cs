@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using PortfolioProject2.Models.DataInterfaces;
-using PortfolioProject2.Models.DMOs;
+using WebApplication.DataInterfaces;
+using WebApplication.DMOs;
 
 namespace WebApplication.Controllers
 {

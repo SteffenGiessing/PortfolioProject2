@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject2.Models;
-using PortfolioProject2.Models.DMOs;
 using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 
@@ -22,16 +21,17 @@ namespace WebApplication.DataServices
 
         public async Task<List<User_Comments>> GetUserComments(int userid)
         {
-            var result = new User_Comments {};
+            var result = new User_Comments { };
             using var ctx = new DatabaseConnection.DatabaseConnection();
             foreach (var uc in ctx.User_Comments)
             {
-                    result.UserId = userid;
-                    result.CommentText = uc.CommentText;
-                    result.TitleId = uc.TitleId;
-                
+                result.UserId = userid;
+                result.CommentText = uc.CommentText;
+                result.TitleId = uc.TitleId;
             }
-            return await ctx.User_Comments.FromSqlRaw("SELECT * FROM user_comments WHERE userid = {0}",userid).ToListAsync();
+
+            return await ctx.User_Comments.FromSqlRaw("SELECT * FROM user_comments WHERE userid = {0}", userid)
+                .ToListAsync();
         }
 
         public IList<User_Comments> GetCommentsFromTitle(string titleid)
@@ -45,6 +45,7 @@ namespace WebApplication.DataServices
                     result.Add(uc);
                 }
             }
+
             return result;
         }
 
@@ -66,6 +67,7 @@ namespace WebApplication.DataServices
             {
                 return null;
             }
+
             return result;
         }
     }

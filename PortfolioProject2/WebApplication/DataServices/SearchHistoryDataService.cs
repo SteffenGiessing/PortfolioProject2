@@ -43,9 +43,10 @@ namespace WebApplication.DataServices
             {
                 return null;
             }
+
             return result;
         }
-        
+
         /*public User_History PostNewSearchHistory(User_History history)
         {
             using var ctx = new DatabaseConnection();
@@ -55,10 +56,10 @@ namespace WebApplication.DataServices
         
             return history;
         }*/
-        
-        
+
+
         // Utils
-        
+
         /*public string NewSearchId()
         {
             using var ctx = new DatabaseConnection();
@@ -83,4 +84,3 @@ namespace WebApplication.DataServices
         }*/
     }
 }
-

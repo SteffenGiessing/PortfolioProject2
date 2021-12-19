@@ -1,4 +1,4 @@
-namespace PortfolioProject2.Models.DMOs
+namespace WebApplication.DMOs
 {
     public class Person_In_Title
     {
@@ -13,6 +13,5 @@ namespace PortfolioProject2.Models.DMOs
         public string Job { get; set; }
 
         public string CharName { get; set; }
-
     }
 }

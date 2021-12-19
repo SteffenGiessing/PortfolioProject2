@@ -6,8 +6,6 @@ using AutoMapper;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Xunit;
 using Moq;
-using PortfolioProject2.Models.DataServices;
-using PortfolioProject2.Models.DMOs;
 using WebApplication.DataServices;
 using WebApplication.DMOs;
 using UserDataService = WebApplication.DataServices.UserDataService;

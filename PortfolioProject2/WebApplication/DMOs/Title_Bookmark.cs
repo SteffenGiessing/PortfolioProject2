@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PortfolioProject2.Models.DMOs
+namespace WebApplication.DMOs
 {
     public class Title_Bookmark
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using PortfolioProject2.Models.DMOs;
 using WebApplication.DataInterfaces;
+using WebApplication.DMOs;
 
 namespace WebApplication.DataServices
 {
