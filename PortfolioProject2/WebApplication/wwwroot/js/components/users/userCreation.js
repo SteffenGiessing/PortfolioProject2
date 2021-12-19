@@ -10,13 +10,13 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
         
         let createeuser = () => {
             ds.createUser(firstname(), lastname(), username(), emailaddress(), password(), function (data){
-                console.log(data);
-                postman.publish('changeUserView');
+                            getUser(emailaddress())
+                            postman.publish('changeUserView');
             })
         }
 
-        let getUser = (email) => {
-            ds.getUser(email, function (data) {
+        let getUser = (emailaddress) => {
+            ds.getUser(emailaddress, function (data) {
                 console.log(data)
                 //SAVES THE USER ID
                 sessionStorage.setItem('userId', data["userId"])
@@ -24,9 +24,9 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
                 userDetails(data);
             });
         };
-
-        getUser();
         
+      /*  getUser();*/
+
         return {
             email,
             firstname,
