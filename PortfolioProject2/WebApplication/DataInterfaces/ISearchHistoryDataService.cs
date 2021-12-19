@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿/*
+ * Search History Interface.
+ */
+
+using System.Collections.Generic;
 using User_History = WebApplication.DMOs.User_History;
 
 namespace WebApplication.DataInterfaces

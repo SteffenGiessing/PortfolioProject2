@@ -3,8 +3,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PortfolioProject2.Models.DataInterfaces;
-using PortfolioProject2.Models;
 using WebApplication.DataInterfaces;
 using WebApplication.DataServices;
 using IUserDataService = WebApplication.DataInterfaces.IUserDataService;

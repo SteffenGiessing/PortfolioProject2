@@ -1,3 +1,6 @@
+/*
+ * Titles table DMO.
+ */
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApplication.DMOs

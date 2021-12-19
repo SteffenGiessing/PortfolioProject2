@@ -1,9 +1,10 @@
+/*
+ * Title Data service this is where we will execute our commands towards the database regarding actors.
+ */
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using PortfolioProject2;
-using PortfolioProject2.Models.DataInterfaces;
 using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 
@@ -11,6 +12,10 @@ namespace WebApplication.DataServices
 {
     public class TitleDataService : ITitlesDataService
     {
+        
+        /*
+         * Get all titles
+         */
         public IList<Titles> GetAllTitles(QueryString queryString)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
@@ -30,7 +35,9 @@ namespace WebApplication.DataServices
 
             return result.ToList();
         }
-
+        /*
+         * Get most popular titles
+         */
         public IList<PopularTitles> GetPopularTitles(QueryString queryString)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
@@ -51,7 +58,9 @@ namespace WebApplication.DataServices
 
             return result.ToList();
         }
-
+        /*
+         * Get titles based on search
+         */
         public async Task<List<TitleSearch>> TitleSearch(string searchWord)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
@@ -60,13 +69,17 @@ namespace WebApplication.DataServices
                     "SELECT primarytitle, titleid, poster, startyear, endyear, genres, plot, awards, averagerating, numvotes from title_search3({0})",
                     searchWord).ToListAsync();
         }
-
+        /*
+         * Getting title by id
+         */
         public async Task<List<Titles>> GetTitleById(string id)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
             return await ctx.Titles.FromSqlRaw("SELECT * FROM titles WHERE titleid = {0}", id).ToListAsync();
         }
-
+        /*
+         * Get title by name.
+         */
         public async Task<List<Titles>> GetTitleByName(string name)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
@@ -74,7 +87,9 @@ namespace WebApplication.DataServices
                 .Where(a => a.PrimaryTitle.Contains(name))
                 .ToListAsync();
         }
-
+        /*
+         * Get Specific info a title based on id.
+         */
         public async Task<List<Title_Info>> GetInfoSpecificTitle(string id)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();

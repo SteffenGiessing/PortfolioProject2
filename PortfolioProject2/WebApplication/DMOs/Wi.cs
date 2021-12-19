@@ -1,3 +1,6 @@
+/*
+ * WI table DMO.
+ */
 namespace WebApplication.DMOs
 {
     public class Wi

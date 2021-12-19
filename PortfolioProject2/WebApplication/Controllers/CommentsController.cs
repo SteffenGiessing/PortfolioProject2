@@ -1,13 +1,16 @@
-﻿using AutoMapper;
+﻿/*
+ * Users in our system shall be able to comment on movies these comments will be stored
+ * so the system users always can see what they have commented on
+ * The Comments Controller is responsible for communication between our frontend and the "backend".
+ */
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 using WebApplication.DTOs;
 using WebApplication.Token;
 using ICommentsDataService = WebApplication.DataInterfaces.ICommentsDataService;
 #nullable enable
-using System;
 using System.Collections.Generic;
 
 namespace WebApplication.Controllers
@@ -25,7 +28,9 @@ namespace WebApplication.Controllers
             _config = configuration;
         }
 
-        // Get Comments6
+        /*
+         * Getting All the comments that have been created by all users.
+         */
         [HttpGet]
         public ActionResult<IEnumerable<User_Comments>> GetAllComments()
         {
@@ -33,26 +38,31 @@ namespace WebApplication.Controllers
             return Ok(comments);
         }
 
+        /*
+         * Getting a specific users comments.
+         */
         [HttpGet("{userid}/comments")]
         public IActionResult GetUserComments(int userid, [FromHeader] TokenChecker getHeaders)
         {
-            //THIS STEP AUTHENTICATES THE FRONT END IT IS NEEDED EVERYTIME USER HAS TO INTERACT WITH THE SYSTEM
-            //  var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-            //  if (token == true)
-            //   {
-            var userComments = _iDataServices.GetUserComments(userid).Result;
+            var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+            if (token == true)
+            {
+                var userComments = _iDataServices.GetUserComments(userid).Result;
 
-            //     if (userComments == null)
-            //      {
-            //        return NotFound();
-            //    }
+                if (userComments == null)
+                {
+                    return NotFound();
+                }
 
-            return Ok(userComments);
+                return Ok(userComments);
+            }
+
+            return Unauthorized();
         }
-
-        //   return Unauthorized();
-        // }
-
+        
+        /*
+         * Getting all comments that have been made to a specific movie. 
+         */
         [HttpGet("{titleid}")]
         public IActionResult GetCommentsFromTitle(string? titleid)
         {
@@ -61,7 +71,9 @@ namespace WebApplication.Controllers
         }
 
 
-        // Get Post Comments
+        /*
+         * Letting a user comment on one specific movie. 
+         */
         [HttpPost("add/usercomment/")]
         public IActionResult CreateTitleComments(User_Comments userComments, [FromHeader] TokenChecker getHeaders)
         {

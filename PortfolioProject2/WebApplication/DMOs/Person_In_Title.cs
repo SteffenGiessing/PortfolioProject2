@@ -1,3 +1,6 @@
+/*
+ * Person_in_title table DMO.
+ */
 namespace WebApplication.DMOs
 {
     public class Person_In_Title

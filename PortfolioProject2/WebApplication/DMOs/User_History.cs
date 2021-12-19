@@ -1,5 +1,8 @@
+/*
+ * User_History table DMO.
+ */
+
 using System.ComponentModel.DataAnnotations.Schema;
-using System;
 
 namespace WebApplication.DMOs
 {

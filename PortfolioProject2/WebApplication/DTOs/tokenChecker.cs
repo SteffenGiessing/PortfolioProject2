@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*
+ * TokenChecker DTO.
+ */
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication.DTOs
 {

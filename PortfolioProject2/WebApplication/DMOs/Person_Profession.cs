@@ -1,3 +1,6 @@
+/*
+ * Person_Profession table DMO.
+ */
 namespace WebApplication.DMOs
 {
     public class Person_Profession

@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿/*
+ * The user shall be able to bookmark movies in the system.
+ * The Bookmark Controller is responsible for communication between our frontend and the "backend".
+ */
+
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
-using PortfolioProject2;
-using PortfolioProject2.Models.DataInterfaces;
 using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 using WebApplication.DTOs;
 using WebApplication.Token;
-using WebApplication.ViewModels;
 
 namespace WebApplication.Controllers
 {
@@ -35,8 +33,10 @@ namespace WebApplication.Controllers
             _config = config;
         }
 
-        //for titles bookmark
-
+        /*
+         * Getting a specific bookmarks created by a user.
+         * Based upon userid and titleid.
+         */
         [HttpGet("{userid}/titlebookmarks/{titleid}")]
         public IActionResult GetTitleBookmark(int userid, string titleid)
         {
@@ -49,44 +49,51 @@ namespace WebApplication.Controllers
             return Ok(titleBookmark);
         }
 
+        /*
+         * Getting all the title bookmarks created by a user.
+         */
         [HttpGet("{userid}/titlebookmarks")]
         public IActionResult GetTitleBookmarks(int userid, [FromHeader] TokenChecker getHeaders)
         {
-            //var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-            // if (token == true)
-            // {
-            var titleBookmarks = _iBookMarkDataService.GetTitleBookmarks(userid);
-            //  if (titleBookmarks == null)
-            //{
-            //     return NotFound();
-            //  }
+            var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+            if (token == true)
+            {
+                var titleBookmarks = _iBookMarkDataService.GetTitleBookmarks(userid);
+                if (titleBookmarks == null)
+                {
+                    return NotFound();
+                }
 
-            return Ok(titleBookmarks);
-            //   }
+                return Ok(titleBookmarks);
+            }
 
-            //   return Unauthorized();
+            return Unauthorized();
         }
 
-
+        /*
+         * Creating a title bookmark on a users request. 
+         */
         [HttpPost("{userid}/titlebookmarks/{titleid}")]
         public IActionResult CreateTitleBookmark(int userid, string titleid, [FromHeader] TokenChecker getHeaders)
         {
-            //    var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
-            //  if (token == true)
-            // {
-            var titleBookmark = _iBookMarkDataService.CreateTitleBookmark(userid, titleid);
-            //   if (titleBookmark == null)
-            //   {
-            //      return NotFound();
-            //    }
+            var token = TokenCreator.ValidateToken(getHeaders.Authorization, _config);
+            if (token == true)
+            {
+                var titleBookmark = _iBookMarkDataService.CreateTitleBookmark(userid, titleid);
+                if (titleBookmark == null)
+                {
+                    return NotFound();
+                }
 
-            return Ok(titleBookmark);
+                return Ok(titleBookmark);
+            }
+
+            return Unauthorized();
         }
 
-        //  return Unauthorized();
-        //}
-
-
+        /*
+         * Deleting a specific bookmark.
+         */
         [HttpDelete("{userid}/titlebookmarks/{titleid}")]
         public IActionResult DeleteTitleBookmark(int userid, string titleid)
         {
@@ -99,8 +106,10 @@ namespace WebApplication.Controllers
             return NotFound();
         }
 
-        //for actor bookmark
-
+        /*
+         * These methods were created because we had an orginal plan to allow our users to bookmark actors as well.
+         * We have left them because we might come back to that thought in the future.
+         */
         [HttpGet("{userid}/namebookmarks/{pid}")]
         public IActionResult GetNameBookmark(int userid, string pid)
         {

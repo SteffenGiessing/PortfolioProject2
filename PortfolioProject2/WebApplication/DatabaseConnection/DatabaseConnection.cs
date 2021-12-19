@@ -1,3 +1,6 @@
+/*
+ * This class administrate our database connection and maps our entity to our DMO's.
+ */
 using System;
 using Microsoft.EntityFrameworkCore;
 //using Microsoft.EntityFrameworkCore;

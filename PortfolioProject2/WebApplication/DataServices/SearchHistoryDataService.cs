@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
-using PortfolioProject2.Models;
+﻿/*
+ * Searchhistory Data service this is where we will execute our commands towards the database regarding actors.
+ * This Dataservice is not in use but will be implemented in the future.
+ */
+using System.Collections.Generic;
 using User_History = WebApplication.DMOs.User_History;
 using ISearchHistoryDataService = WebApplication.DataInterfaces.ISearchHistoryDataService;
 

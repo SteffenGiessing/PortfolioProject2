@@ -1,4 +1,7 @@
-﻿using System;
+﻿/*
+ * Bookmark Data service this is where we will execute our commands towards the database regarding actors.
+ */
+using System;
 using System.Collections.Generic;
 using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
@@ -14,7 +17,9 @@ namespace WebApplication.DataServices
             return ctx.Title_Bookmark.Find(userid, titleid);
         }
 
-        //titlebookmarks
+        /*
+         * Getting title bookmarks. Based on specific id.
+         */
         public IList<Title_Bookmark> GetTitleBookmarks(int userid)
         {
             IList<Title_Bookmark> result = new List<Title_Bookmark>();
@@ -30,7 +35,9 @@ namespace WebApplication.DataServices
 
             return result;
         }
-
+        /*
+         * Creating a title bookmark needs both userid and title id.
+         */
         public Title_Bookmark CreateTitleBookmark(int userid, string titleid)
         {
             //need a way to validate user
@@ -50,7 +57,9 @@ namespace WebApplication.DataServices
 
             return result;
         }
-
+        /*
+         * Delete a user bookmark.
+         */
         public bool DeleteTitleBookmark(int userid, string titleid)
         {
             var titleBookmark = ctx.Title_Bookmark.Find(userid, titleid);
@@ -63,7 +72,9 @@ namespace WebApplication.DataServices
             ctx.SaveChanges();
             return true;
         }
-
+        /*
+         * Actor bookmarks is not fully implemented and is supposed to be used in the future.
+         */
         //actorbookmarks------------------------------------------------------
         public Name_Bookmark GetNameBookmark(int userid, string pid)
         {

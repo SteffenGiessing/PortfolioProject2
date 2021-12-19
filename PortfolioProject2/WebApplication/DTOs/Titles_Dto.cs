@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
-
+﻿/*
+ * Titles DTO.
+ */
 namespace WebApplication.DTOs
 {
     public class Titles_Dto

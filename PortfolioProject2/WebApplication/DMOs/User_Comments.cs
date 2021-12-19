@@ -1,3 +1,6 @@
+/*
+ * User_Comments table DMO.
+ */
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 

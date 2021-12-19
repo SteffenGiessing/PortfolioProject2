@@ -1,3 +1,6 @@
+/*
+ * Omdb_Data table DMO.
+ */
 namespace WebApplication.DMOs
 {
     public class Omdb_Data

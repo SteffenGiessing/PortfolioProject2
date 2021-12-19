@@ -1,4 +1,7 @@
-﻿namespace WebApplication.DMOs
+﻿/*
+ * Name Search table DMO.
+ */
+namespace WebApplication.DMOs
 {
     public class NameSearch
     {

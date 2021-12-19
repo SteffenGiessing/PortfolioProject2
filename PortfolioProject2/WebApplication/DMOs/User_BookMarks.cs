@@ -1,3 +1,6 @@
+/*
+ * User_Bookmarks table DMO.
+ */
 namespace WebApplication.DMOs
 {
     public class User_BookMarks

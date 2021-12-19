@@ -1,14 +1,14 @@
-﻿using System;
+﻿/*
+ * BookMark Interface.
+ */
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using WebApplication.DMOs;
 
 namespace WebApplication.DataInterfaces
 {
     public interface IBookMarkDataService
     {
-        //for titlebookmark
         Title_Bookmark CreateTitleBookmark(int userid, string titleid);
 
         Title_Bookmark GetTitleBookmark(int userid, string titleid);
@@ -17,7 +17,6 @@ namespace WebApplication.DataInterfaces
 
         bool DeleteTitleBookmark(int userid, string titleid);
 
-        //for actorbookmark
         Name_Bookmark GetNameBookmark(int userid, string titleid);
         IList<Name_Bookmark> GetNameBookmarks(int userid);
         Name_Bookmark CreateNameBookmark(int userid, string pid);

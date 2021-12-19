@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿/*
+ * Users Interface.
+ */
 using System.Threading.Tasks;
 using WebApplication.DMOs;
 

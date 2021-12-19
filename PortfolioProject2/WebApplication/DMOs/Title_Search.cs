@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿/*
+ * Title_search table DMO.
+ */
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApplication.DMOs
 {

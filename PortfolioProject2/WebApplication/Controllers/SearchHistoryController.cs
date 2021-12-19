@@ -1,7 +1,9 @@
-﻿using AutoMapper;
+﻿/*
+ * This controller was supposed to be implemented and will be the next course of action for this project.
+ */
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using PortfolioProject2.Models.DataInterfaces;
 using ISearchHistoryDataService = WebApplication.DataInterfaces.ISearchHistoryDataService;
 
 #nullable enable

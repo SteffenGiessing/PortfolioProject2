@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * The User controller is responsible for everything regarding our users.
+ * The User Controller is responsible for communication between our frontend and the "backend".
+ */
+
+using System;
 using System.Security.Cryptography;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
@@ -30,16 +35,21 @@ namespace WebApplication.Controllers
             _config = configuration;
         }
 
+        /*
+         * Creating the users for our system.
+         */
         [AllowAnonymous]
         [HttpPost("create")]
         public IActionResult CreateUser(UserToCreateOrLogin user)
         {
+            //Generating salt.
             byte[] getsalt = new byte[128 / 8];
             using (var rng = RandomNumberGenerator.Create())
             {
                 rng.GetBytes(getsalt);
             }
 
+            //Creating hashed password.
             string getHash = Convert.ToBase64String(KeyDerivation.Pbkdf2(
                 password: user.Password,
                 salt: getsalt,
@@ -65,10 +75,14 @@ namespace WebApplication.Controllers
             return Ok(userToReturn);
         }
 
+        /*
+         * Used to login our already existing users.
+         */
         [AllowAnonymous]
         [HttpPost("login")]
         public IActionResult LoginUser(UserToCreateOrLogin user)
         {
+            //Fetching user based on email
             var getUser = _iDataServices.GetUserByEmail(user.EmailAddress).Result;
 
             if (getUser == null)
@@ -76,6 +90,7 @@ namespace WebApplication.Controllers
                 return NotFound();
             }
 
+            //Using fetched information to regenerate hased password.
             string getHash = Convert.ToBase64String(
                 KeyDerivation.Pbkdf2(
                     password: user.Password,
@@ -83,7 +98,7 @@ namespace WebApplication.Controllers
                     prf: KeyDerivationPrf.HMACSHA1,
                     iterationCount: 10000,
                     numBytesRequested: 256 / 8));
-
+            // Validating if the password is correct.
             var validatedUser = _iDataServices.ValidatePassword(user.EmailAddress, getHash).Result;
 
             if (validatedUser == null)
@@ -97,6 +112,9 @@ namespace WebApplication.Controllers
             return Ok(userToReturn);
         }
 
+        /*
+         * Fetching User based on email
+         */
         [HttpGet("{email}")]
         public IActionResult GetUserByEmail(string email)
         {
@@ -104,6 +122,9 @@ namespace WebApplication.Controllers
             return Ok(getUserByEmail);
         }
 
+        /*
+         * Delete user.
+         */
         [HttpDelete("deleteuser")]
         public IActionResult DeleteUser(User_User user)
         {
@@ -111,6 +132,9 @@ namespace WebApplication.Controllers
             return Ok();
         }
 
+        /*
+        * Update User.
+        */
         [HttpPost("update")]
         public IActionResult UpdateUser(User_User user)
         {

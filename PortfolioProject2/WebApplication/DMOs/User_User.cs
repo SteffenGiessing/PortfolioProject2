@@ -1,3 +1,7 @@
+/*
+ * User_User table DMO.
+ */
+
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 

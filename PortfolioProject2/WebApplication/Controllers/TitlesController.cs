@@ -1,3 +1,7 @@
+/*
+ * The Titles Controller is responsible for everything regarding movies in our system.
+ * The Titles Controller is responsible for communication between our frontend and the "backend".
+ */
 #nullable enable
 using System;
 using System.Collections.Generic;
@@ -6,8 +10,6 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
-using PortfolioProject2;
-using PortfolioProject2.Models.DataInterfaces;
 using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 using WebApplication.ViewModels;
@@ -28,7 +30,9 @@ namespace WebApplication.Controllers
             _linkGenerator = linkGenerator;
             _mapper = mapper;
         }
-
+        /*
+         * Getting all titles.
+         */
         [HttpGet(Name = nameof(GetTitles))]
         public IActionResult GetTitles([FromQuery] QueryString queryString)
         {
@@ -40,7 +44,9 @@ namespace WebApplication.Controllers
 
             return Ok(result);
         }
-
+        /*
+         * Get the most popular titles.
+         */
         [HttpGet("populartitles", Name = nameof(GetPopularTitles))]
         public IActionResult GetPopularTitles([FromQuery] QueryString queryString)
         {
@@ -58,7 +64,10 @@ namespace WebApplication.Controllers
             var result = CreateResultModelForSearch(queryString, _iDataServices.NumberOffProducts(), items);
             return Ok(result);
         }*/
-
+        
+        /*
+         * Find all movies matching a users defined search criteria.
+         */
         [HttpGet("searchresult/{titlesearch}")]
         public async Task<ActionResult<TitleSearch>> TitleSearch(string titlesearch)
         {
@@ -67,13 +76,18 @@ namespace WebApplication.Controllers
             return Ok(titleName);
         }
 
+        /*
+         * Get title based on movies id
+         */
         [HttpGet("{titleId?}")]
         public async Task<ActionResult<Titles>> getTitleById(string? titleId)
         {
             var titles = _iDataServices.GetTitleById(titleId).Result;
             return Ok(titles);
         }
-
+        /*
+         * Get title by Name
+         */
         [HttpGet("result/{titleName}")]
         public async Task<ActionResult<Titles>> getTitleByName(string? titleName)
         {
@@ -81,7 +95,9 @@ namespace WebApplication.Controllers
             return Ok(nameTitles);
         }
 
-
+        /*
+         * Get information about a specific title based on the id.
+         */
         [HttpGet("titleinfo/{titleid?}")]
         public async Task<ActionResult<Title_Info>> GetInfoSpecificTitle(string? titleid)
         {
@@ -96,7 +112,9 @@ namespace WebApplication.Controllers
             return Ok(personKnownFor);
         }
          */
-
+        /*
+         * Helper methods for page pagination.
+         */
         // Helper Methods // 
         private static int GetLastPage(int pageSize, int total)
         {

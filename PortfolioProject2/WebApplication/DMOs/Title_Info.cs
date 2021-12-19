@@ -1,4 +1,7 @@
-﻿namespace WebApplication.DMOs
+﻿/*
+ * Title_info table DMO.
+ */
+namespace WebApplication.DMOs
 {
     public class Title_Info
     {

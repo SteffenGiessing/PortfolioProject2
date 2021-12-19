@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*
+ * This controller is used to fetch posters, award and plots about a movies
+ */
+using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using PortfolioProject2.Models.DataInterfaces;
 using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 
@@ -17,7 +19,9 @@ namespace WebApplication.Controllers
         {
             _iOmdbDataService = dataService;
         }
-
+        /*
+         * Getting the Omdb data for one specific movie
+         */
         [HttpGet("{omdbId}")]
         public async Task<ActionResult<Omdb_Data>> getOmdbDataById(string omdbId)
         {

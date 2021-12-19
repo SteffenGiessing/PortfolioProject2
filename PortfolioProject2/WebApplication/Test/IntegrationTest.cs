@@ -1,14 +1,13 @@
-﻿using System;
+﻿/*
+* Integration Testing
+*/
+
 using System.Net;
 using System.Net.Http;
-using System.Net.Mime;
-using System.Runtime.InteropServices;
 using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using WebApplication.DTOs;
 using Xunit;
-using HttpMethod = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod;
 
 namespace WebApplication.Test
 {

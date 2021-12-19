@@ -1,3 +1,6 @@
+/*
+ * Profiles used to map dto's and DMO's.
+ */
 using AutoMapper;
 using WebApplication.DMOs;
 using WebApplication.DTOs;

@@ -1,3 +1,6 @@
+/*
+ * Title_Known_as table DMO.
+ */
 namespace WebApplication.DMOs
 {
     public class Title_Known_As

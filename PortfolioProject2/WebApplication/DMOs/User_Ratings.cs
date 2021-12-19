@@ -1,3 +1,7 @@
+/*
+ * User_ratings table DMO.
+ */
+
 namespace WebApplication.DMOs
 {
     public class User_Ratings

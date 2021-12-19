@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿/*
+ * OMDB Interface.
+ */
+
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using WebApplication.DMOs;
 

@@ -1,3 +1,6 @@
+/*
+ * Genre table DMO.
+ */
 namespace WebApplication.DMOs
 {
     public class Genre

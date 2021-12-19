@@ -1,4 +1,7 @@
-﻿namespace WebApplication.DTOs
+﻿/*
+ * USerToCreateOrLogin DTO.
+ */
+namespace WebApplication.DTOs
 {
     public class UserToCreateOrLogin
         {

@@ -1,9 +1,11 @@
-﻿using System;
+﻿/*
+ * Comment Data service this is where we will execute our commands towards the database regarding actors.
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using PortfolioProject2.Models;
 using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 
@@ -18,7 +20,9 @@ namespace WebApplication.DataServices
             IList<User_Comments> list = ctx.User_Comments.ToList();
             return list;
         }
-
+        /*
+         * Get all comments that a specific user have created.
+         */
         public async Task<List<User_Comments>> GetUserComments(int userid)
         {
             var result = new User_Comments { };
@@ -33,7 +37,9 @@ namespace WebApplication.DataServices
             return await ctx.User_Comments.FromSqlRaw("SELECT * FROM user_comments WHERE userid = {0}", userid)
                 .ToListAsync();
         }
-
+        /*
+         * 
+         */
         public IList<User_Comments> GetCommentsFromTitle(string titleid)
         {
             List<User_Comments> result = new List<User_Comments>();
@@ -48,7 +54,9 @@ namespace WebApplication.DataServices
 
             return result;
         }
-
+        /*
+         * Creating a comment on a title a user interaction.
+         */
         // Comment POST
         public async Task<User_Comments> CreateTitleComments(User_Comments userComments)
         {

@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿/*
+ * Actor Interface.
+ */
+
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using WebApplication.DMOs;
 
-//why wont this crap work
-
-namespace PortfolioProject2.Models.DataInterfaces
+namespace WebApplication.DataInterfaces
 {
     public interface IActorDataService
     {

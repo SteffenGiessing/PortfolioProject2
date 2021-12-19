@@ -1,11 +1,13 @@
-﻿using System;
+﻿/*
+ * User Data service this is where we will execute our commands towards the database regarding actors.
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PortfolioProject2.Models;
 using WebApplication.DMOs;
 using IUserDataService = WebApplication.DataInterfaces.IUserDataService;
 
@@ -15,6 +17,9 @@ namespace WebApplication.DataServices
     {
         private int verify;
 
+        /*
+         * Create user.
+         */
         public async Task<User_User> CreateUser(User_User user)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
@@ -78,14 +83,18 @@ namespace WebApplication.DataServices
             return ctx.User_User.FromSqlRaw("SELECT * FROM user_user WHERE emailaddress = {0}", user.EmailAddress)
                 .FirstOrDefault();
         }
-
+        /*
+         * Get user by email.
+         */
         public Task<User_User> GetUserByEmail(string email)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
             return ctx.User_User.FromSqlRaw("SELECT * FROM user_user WHERE emailaddress = {0}", email)
                 .FirstOrDefaultAsync();
         }
-
+        /*
+         * Validate password for a user.
+         */
         public Task<User_User> ValidatePassword(string email, string hashed)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
@@ -93,7 +102,9 @@ namespace WebApplication.DataServices
                 .FromSqlRaw("SELECT * FROM user_user WHERE emailaddress = {0} AND password = {1}", email, hashed)
                 .FirstOrDefaultAsync();
         }
-
+        /*
+         * Delete a user
+         */
         public async Task<User_User> DeleteUser(User_User user)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();
@@ -112,7 +123,9 @@ namespace WebApplication.DataServices
 
             return null;
         }
-
+        /*
+         * Update User.
+         */
         public async Task<User_User> UpdateUser(User_User user)
         {
             var ctx = new DatabaseConnection.DatabaseConnection();

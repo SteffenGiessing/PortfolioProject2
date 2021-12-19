@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿/*
+ * PopularTitles table DMO.
+ */
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApplication.DMOs
 {

@@ -1,4 +1,7 @@
-﻿using System;
+﻿/*
+ * NameBookmark table DMO.
+ */
+using System;
 
 namespace WebApplication.DMOs
 {

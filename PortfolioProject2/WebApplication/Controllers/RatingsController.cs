@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using PortfolioProject2.Models.DataInterfaces;
 using WebApplication.DataInterfaces;
 using WebApplication.DMOs;
 
@@ -19,6 +18,9 @@ namespace WebApplication.Controllers
             _iratings = dataServices;
         }
 
+        /*
+         * 
+         */
         [HttpGet("{id}")]
         public ActionResult<IEnumerable<Ratings>> getRatings(string id)
         {
