@@ -26,7 +26,7 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
             });
         };
         getUserData();
-
+    
         let getUserComments = () => {
             ds.getUserComments(function (data) {
                 showComments(data)

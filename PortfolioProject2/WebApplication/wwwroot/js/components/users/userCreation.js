@@ -25,9 +25,14 @@ define(['knockout', 'dataService', 'postman'], function (ko, ds, postman) {
             });
         };
         
-      /*  getUser();*/
-
+        let switchToLogin = () => {
+            console.log("sign in button clicked");
+            postman.publish('changeToLogin');
+        }
+        
+        
         return {
+            switchToLogin,
             email,
             firstname,
             lastname,

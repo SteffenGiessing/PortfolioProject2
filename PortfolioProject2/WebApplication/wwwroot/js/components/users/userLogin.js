@@ -16,7 +16,12 @@
                 sessionStorage.setItem('email', data["emailAddress"])
                 userDetails(data);
             });
+            if (sessionStorage.getItem('userId') != null){
+                console.log("works")
+            }
         };
+
+
 
         let loginUser = () => {
             ds.loginUser(email(), password(), function (data) {
@@ -36,18 +41,6 @@
 
             });
         };
-
-        /*              let loginUser = () => {
-                          ds.loginUser(email(), password())
-                          postman.publish('changeUserView');
-                      };*/
-        /*
-        
-              let loggedInUser = userLog => {
-                  userLogged(userLog);
-                  postman.publish('changeUserView', userLogged());
-              }
-        */
 
 
         let getComments = () => {

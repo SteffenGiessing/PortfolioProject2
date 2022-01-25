@@ -1,7 +1,12 @@
 ﻿define(["knockout", "postman"], function (ko, postman) {
     let selectedComponent = ko.observable("home");
-    let menuElements = ["Home", "Popular Titles", "Login", "ActorSearch"];
+    
+    let menuElements2 = ["Home", "Popular Titles", "Login", "ActorSearch"];
+    let menuElements = ["Home", "Popular Titles", "ActorSearch"];
+    
+    // showMe = ko.observable(true);  // hidden initially
 
+    
     let searchWord = ko.observable().extend({
         validation: {
             message: "Please add a longer search string for better search results",
@@ -18,8 +23,7 @@
            }
        } 
     });
-
-
+    
     let currentParams = ko.observable({searchWord});
     let actorParam = ko.observable({actorSearchWord});
     let isActive = element => {
@@ -29,23 +33,6 @@
     postman.subscribe("changeContent", component => {
         changeContent(component);
     });
-
-
-    /*    let loginUser = ko.observable("loginUser");*/
-
-    /*    postman.subscribe("changeView", function(data) {
-            currentView(data);
-        });
-        postman.subscribe("changeView", function (data) {
-            loginUser(data);
-        });q
-        */
-
-    /*
-        postman.subscribe("userLogin", component => {
-            changeContent('loginUser');
-        });
-        */
     
     postman.subscribe("changeUserView", component => {
         changeContent('loggedin');
@@ -53,6 +40,10 @@
 
     postman.subscribe("userRegister", component => {
         changeContent('register');
+    });
+
+    postman.subscribe("changeToLogin", component => {
+        changeContent('login');
     });
     
     postman.subscribe("changeTitle", component => {
@@ -80,6 +71,7 @@
     }
 
     return {
+        // showMe,
         searchBtn,
         actorSearchBtn,
         loginBtw,
@@ -87,6 +79,7 @@
         actorSearchWord,
         selectedComponent,
         menuElements,
+        menuElements2,
         isActive,
         changeContent,
         currentParams
